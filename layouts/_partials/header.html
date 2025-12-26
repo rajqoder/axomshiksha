@@ -2,44 +2,59 @@
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
 
-      <!-- Site Logo -->
-      <a href="{{ .Site.BaseURL }}" class="cursor-pointer">
-        <img src="/logo.png" alt="{{ .Site.Title }}" class="h-8 w-auto">
-      </a>
+      <!-- Left Side: Logo + Navigation -->
+      <div class="flex items-center gap-8">
+        <!-- Site Logo -->
+        <a href="{{ .Site.BaseURL }}" class="cursor-pointer">
+          <img src="/logo.png" alt="{{ .Site.Title }}" class="h-8 w-auto">
+        </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <a href="/" class="{{ if .IsHome }}nav-active{{ else }}nav-link{{ end }}">Home</a>
-        <a href="/tutorials/" class="{{ if eq .Section "tutorials" }}nav-active{{ else }}nav-link{{ end }}">Tutorials</a>
-        <a href="/guides/" class="{{ if eq .Section "guides" }}nav-active{{ else }}nav-link{{ end }}">Guides</a>
-        <a href="/notes/" class="{{ if eq .Section "notes" }}nav-active{{ else }}nav-link{{ end }}">Notes</a>
-        <a href="/posts/" class="{{ if eq .Section "posts" }}nav-active{{ else }}nav-link{{ end }}">Blog</a>
-        <a href="/about/" class="{{ if eq .RelPermalink "/about/" }}nav-active{{ else }}nav-link{{ end }}">About</a>
-      </nav>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="/notes/" class="{{ if eq .Section "notes" }}nav-active{{ else }}nav-link{{ end }}">Notes</a>
+          <a href="/faq/" class="{{ if eq .RelPermalink "/faq/" }}nav-active{{ else }}nav-link{{ end }}">FAQ</a>
+          <a href="/about/" class="{{ if eq .RelPermalink "/about/" }}nav-active{{ else }}nav-link{{ end }}">About</a>
+        </nav>
+      </div>
 
       <!-- Action Buttons -->
-      <div class="header-actions">
-        <!-- Search Button -->
+      <div class="flex items-center gap-2">
+        <!-- Search Button (Desktop + Mobile) -->
         <button id="search-button" class="p-2 rounded-md text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors duration-200" aria-label="Search">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700 dark:text-gray-300" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
           </svg>
         </button>
 
-        <!-- Theme Toggle -->
-        <button id="theme-toggle" class="p-2 rounded-md text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-transform duration-300" aria-label="Toggle theme">
-          <span id="theme-icon" class="transition-opacity duration-300">☀️</span>
+        <!-- Theme Toggle (Desktop Only) -->
+        <button id="theme-toggle" class="hidden md:flex items-center p-1.5 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-300 relative w-14 h-7" aria-label="Toggle theme">
+          <div class="absolute inset-0 flex items-center justify-between px-1.5">
+            <!-- Sun Icon (Light Mode) -->
+            <svg class="w-4 h-4 text-yellow-500 transition-opacity duration-300" id="sun-icon-desktop" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+            </svg>
+            <!-- Moon Icon (Dark Mode) -->
+            <svg class="w-4 h-4 text-gray-300 transition-opacity duration-300" id="moon-icon-desktop" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+            </svg>
+          </div>
+          <!-- Toggle Circle -->
+          <div id="toggle-circle-desktop" class="w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ease-in-out translate-x-0 flex items-center justify-center z-10">
+            <svg class="w-3.5 h-3.5 text-yellow-500" id="toggle-icon-desktop" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+        </button>
+
+        <!-- Hamburger (Mobile Only) -->
+        <button id="menu-open"
+                class="md:hidden rounded-md p-2 text-gray-700 hover:bg-gray-100
+                       dark:text-gray-300 dark:hover:bg-gray-800"
+                aria-label="Open menu"
+                aria-expanded="false">
+          ☰
         </button>
       </div>
-
-      <!-- Hamburger (Mobile Only) -->
-      <button id="menu-open"
-              class="icon-button hover:cursor-pointer md:hidden rounded-md p-2 text-gray-700 hover:bg-gray-100
-                     dark:text-gray-300 dark:hover:bg-gray-800"
-              aria-label="Open menu"
-              aria-expanded="false">
-        ☰
-      </button>
 
     </div>
   </div>
@@ -66,29 +81,35 @@
   </div>
 
   <nav class="flex flex-col gap-6 text-base font-medium">
-
-    <a href="/" class="mobile-link">Home</a>
-
-    <!-- Learn Section -->
-    <div class="flex flex-col gap-1">
-      <p class="px-3 text-xs font-semibold uppercase tracking-wide text-muted">
-        Learn
-      </p>
-      <a href="/tutorials/" class="mobile-link">Tutorials</a>
-      <a href="/guides/" class="mobile-link">Guides</a>
-      <a href="/notes/" class="mobile-link">Notes</a>
-    </div>
-
-    <!-- Writing Section -->
-    <div class="flex flex-col gap-1">
-      <p class="px-3 text-xs font-semibold uppercase tracking-wide text-muted">
-        Writing
-      </p>
-      <a href="/posts/" class="mobile-link">Blog</a>
-      <a href="/about/" class="mobile-link">About</a>
-    </div>
-
+    <a href="/notes/" class="mobile-link">Notes</a>
+    <a href="/faq/" class="mobile-link">FAQ</a>
+    <a href="/about/" class="mobile-link">About</a>
   </nav>
+
+  <!-- Theme Toggle for Mobile -->
+  <div class="mt-8 pt-6 border-t border-main">
+    <button id="theme-toggle-mobile" type="button" class="flex items-center justify-between w-full p-3 rounded-md text-main hover:bg-muted transition-colors duration-200" aria-label="Toggle theme">
+      <span class="text-base font-medium">Theme</span>
+      <div class="flex items-center p-1 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-300 relative w-14 h-7">
+        <div class="absolute inset-0 flex items-center justify-between px-1.5">
+          <!-- Sun Icon (Light Mode) -->
+          <svg class="w-4 h-4 text-yellow-500 transition-opacity duration-300" id="sun-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+          </svg>
+          <!-- Moon Icon (Dark Mode) -->
+          <svg class="w-4 h-4 text-gray-300 transition-opacity duration-300" id="moon-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+          </svg>
+        </div>
+        <!-- Toggle Circle -->
+        <div id="toggle-circle-mobile" class="w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ease-in-out translate-x-0 flex items-center justify-center z-10">
+          <svg class="w-3.5 h-3.5 text-yellow-500" id="toggle-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+      </div>
+    </button>
+  </div>
 </aside>
 
 <!-- Mobile Menu Script -->

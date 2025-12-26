@@ -1,0 +1,110 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12 bg-main text-main">
+  
+  <!-- Header -->
+  <div class="text-center mb-12 opacity-0" data-animate-on-scroll>
+    <h1 class="text-4xl font-bold text-main mb-4">
+      {{ .Title | default "Frequently Asked Questions" }}
+    </h1>
+    <p class="text-lg text-muted max-w-2xl mx-auto">
+      {{ .Params.description | default "Find answers to common questions about our platform and services." }}
+    </p>
+  </div>
+
+  <!-- FAQ Accordion -->
+  <div class="space-y-4 opacity-0" data-animate-on-scroll>
+    {{ range .Params.faqs }}
+      <div class="faq-item" data-faq-item>
+        <!-- Question -->
+        <button 
+          class="faq-question w-full text-left p-5 rounded-lg border transition-all duration-300 flex justify-between items-center gap-4"
+          data-faq-button
+          aria-expanded="false">
+          <span class="text-lg font-semibold text-main">{{ .question }}</span>
+          <svg 
+            class="faq-icon w-5 h-5 transition-transform duration-300 flex-shrink-0" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        
+        <!-- Answer -->
+        <div 
+          class="faq-answer overflow-hidden transition-all duration-300"
+          data-faq-answer
+          style="max-height: 0;">
+          <div class="faq-answer-content p-5 rounded-b-lg border border-t-0">
+            <div class="text-main leading-relaxed">
+              {{ .answer | markdownify }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+  <!-- Contact Section -->
+  {{ if .Params.contactMessage }}
+  <div class="mt-12 card text-center opacity-0" data-animate-on-scroll>
+    <p class="text-main mb-4">{{ .Params.contactMessage }}</p>
+    {{ if .Params.contactLink }}
+    <a href="{{ .Params.contactLink }}" class="font-medium">
+      Get in Touch →
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+</div>
+
+<!-- FAQ Accordion Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('[data-faq-item]');
+    
+    faqItems.forEach(item => {
+      const button = item.querySelector('[data-faq-button]');
+      const answer = item.querySelector('[data-faq-answer]');
+      const icon = item.querySelector('.faq-icon');
+      const question = item.querySelector('.faq-question');
+      
+      button.addEventListener('click', function() {
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        
+        // Close all other FAQ items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            const otherButton = otherItem.querySelector('[data-faq-button]');
+            const otherAnswer = otherItem.querySelector('[data-faq-answer]');
+            const otherIcon = otherItem.querySelector('.faq-icon');
+            const otherQuestion = otherItem.querySelector('.faq-question');
+            
+            otherButton.setAttribute('aria-expanded', 'false');
+            otherAnswer.style.maxHeight = '0';
+            otherIcon.style.transform = 'rotate(0deg)';
+            otherQuestion.classList.remove('faq-question-expanded');
+            otherAnswer.classList.remove('faq-answer-expanded');
+          }
+        });
+        
+        // Toggle current item
+        if (isExpanded) {
+          button.setAttribute('aria-expanded', 'false');
+          answer.style.maxHeight = '0';
+          icon.style.transform = 'rotate(0deg)';
+          question.classList.remove('faq-question-expanded');
+          answer.classList.remove('faq-answer-expanded');
+        } else {
+          button.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          icon.style.transform = 'rotate(180deg)';
+          question.classList.add('faq-question-expanded');
+          answer.classList.add('faq-answer-expanded');
+        }
+      });
+    });
+  });
+</script>
+{{ end }}

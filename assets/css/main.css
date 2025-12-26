@@ -56,8 +56,16 @@
   }
 
   /* Typography (NO span here – critical for Chroma) */
-  h1,h2,h3,h4,h5,h6,
-  p,li,td,th {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  td,
+  th {
     color: hsl(var(--foreground));
   }
 
@@ -67,6 +75,15 @@
 
   .dark a {
     @apply text-blue-400 hover:text-blue-300;
+  }
+
+  /* FAQ answer links */
+  .faq-answer-content a {
+    color: #3b82f6 !important;
+  }
+
+  .dark .faq-answer-content a {
+    color: #60a5fa !important;
   }
 
   /* Code – allow Chroma to control colors */
@@ -83,6 +100,7 @@
 /* =========================================================
    SEMANTIC UTILITIES
    ========================================================= */
+
 @layer components {
   .text-main {
     color: hsl(var(--foreground));
@@ -130,9 +148,17 @@
   }
 
   /* Content */
-  .content-body h1 { @apply text-4xl font-bold mt-8 mb-4; }
-  .content-body h2 { @apply text-3xl font-bold mt-8 mb-4; }
-  .content-body h3 { @apply text-2xl font-bold mt-6 mb-4; }
+  .content-body h1 {
+    @apply text-4xl font-bold mt-8 mb-4;
+  }
+
+  .content-body h2 {
+    @apply text-3xl font-bold mt-8 mb-4;
+  }
+
+  .content-body h3 {
+    @apply text-2xl font-bold mt-6 mb-4;
+  }
 
   .content-body p {
     @apply mb-4 leading-relaxed;
@@ -152,7 +178,8 @@
     position: absolute;
     left: 0;
     top: -0.25rem;
-    color: #3b82f6; /* blue-500 */
+    color: #3b82f6;
+    /* blue-500 */
     font-size: 1.2em;
     font-weight: bold;
   }
@@ -162,7 +189,8 @@
   }
 
   .dark .content-body ul li::before {
-    color: #60a5fa; /* blue-400 for dark mode */
+    color: #60a5fa;
+    /* blue-400 for dark mode */
   }
 
   /* Nested lists */
@@ -194,8 +222,10 @@
     top: 0.5rem;
     right: 0.5rem;
     padding: 0.25rem 0.5rem;
-    background-color: transparent; /* Dark background like in dark mode */
-    color: hsl(0 0% 98%); /* Light text for contrast */
+    background-color: transparent;
+    /* Dark background like in dark mode */
+    color: hsl(0 0% 98%);
+    /* Light text for contrast */
     border: 1px solid white;
     border-radius: 0.25rem;
     font-size: 0.75rem;
@@ -208,14 +238,16 @@
   }
 
   .copy-code-button.copied {
-    background-color: #10b981; /* green-500 */
+    background-color: #10b981;
+    /* green-500 */
     color: white;
     border-color: #10b981;
   }
 
   /* Copy Link Button */
   #copy-link-button.copied {
-    background-color: #10b981; /* green-500 */
+    background-color: #10b981;
+    /* green-500 */
     color: white;
   }
 
@@ -243,7 +275,7 @@
     background-color: hsl(var(--header-scrolled-bg));
     backdrop-filter: blur(8px);
     border-color: hsl(var(--border));
-    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
   }
 
   /* TOC */
@@ -267,5 +299,92 @@
   blockquote {
     @apply pl-4 italic border-l-4 mb-4;
     border-color: hsl(var(--border));
+  }
+
+  /* FAQ Accordion */
+  .faq-item {
+    width: 100%;
+    margin-bottom: 1rem !important;
+  }
+
+  /* FAQ Page Title and Section Headings */
+  .faq-item h1,
+  .faq-item h2,
+  h1.text-gray-900,
+  h2.text-gray-900,
+  .text-gray-900 {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .dark .text-gray-900 {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .faq-question {
+    background-color: hsl(var(--background)) !important;
+    border: 1px solid hsl(var(--border)) !important;
+    border-color: hsl(var(--border)) !important;
+  }
+
+  .faq-answer,
+  .faq-answer-content {
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: hsl(var(--border)) !important;
+  }
+
+  /* Override hardcoded Tailwind border colors for FAQ items and containers */
+  .faq-item.border,
+  .faq-item.border-gray-200,
+  .faq-item.border-gray-700,
+  div.border-b.border-gray-200,
+  div.border-b.border-gray-800 {
+    border-color: hsl(var(--border)) !important;
+  }
+
+  .faq-question span,
+  .faq-question * {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .faq-question:hover {
+    background-color: hsl(var(--muted)) !important;
+  }
+
+  .faq-question-expanded {
+    background-color: hsl(var(--card)) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom: none !important;
+    border-bottom-color: transparent !important;
+  }
+
+  .faq-answer,
+  .faq-answer-content {
+    background-color: hsl(var(--card)) !important;
+  }
+
+  .faq-answer *,
+  .faq-answer-content *,
+  .faq-answer-content,
+  .faq-answer-content p,
+  .faq-answer-content li,
+  .faq-answer-content span,
+  .faq-answer-content div,
+  .faq-answer-content strong,
+  .faq-answer-content em {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .faq-item .faq-question {
+    width: 100% !important;
+  }
+
+  .faq-answer-expanded .faq-answer-content {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .dark .faq-answer-expanded .faq-answer-content {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   }
 }
