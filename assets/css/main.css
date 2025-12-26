@@ -1,0 +1,271 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+
+/* Import custom fonts */
+@import "fonts.css";
+
+/* =========================================================
+   THEME VARIABLES (ZINC – SHADCN STYLE)
+   ========================================================= */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --border: 240 5.9% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --code-bg: 240 4.8% 95.9%;
+
+    --header-initial-bg: 0 0% 100% / 0.8;
+    --header-scrolled-bg: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --border: 240 3.7% 15.9%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --code-bg: 240 3.7% 15.9%;
+
+    --header-initial-bg: 240 10% 3.9% / 0.8;
+    --header-scrolled-bg: 240 10% 3.9%;
+  }
+
+  html,
+  body {
+    @apply transition-colors duration-300;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Apply Montserrat to all elements */
+  * {
+    font-family: inherit;
+  }
+
+  /* Typography (NO span here – critical for Chroma) */
+  h1,h2,h3,h4,h5,h6,
+  p,li,td,th {
+    color: hsl(var(--foreground));
+  }
+
+  a {
+    @apply text-blue-600 hover:text-blue-800 underline-offset-2;
+  }
+
+  .dark a {
+    @apply text-blue-400 hover:text-blue-300;
+  }
+
+  /* Code – allow Chroma to control colors */
+  pre,
+  code {
+    color: inherit;
+  }
+
+  pre code span {
+    color: inherit;
+  }
+}
+
+/* =========================================================
+   SEMANTIC UTILITIES
+   ========================================================= */
+@layer components {
+  .text-main {
+    color: hsl(var(--foreground));
+  }
+
+  .text-muted {
+    color: hsl(var(--muted-foreground));
+  }
+
+  .bg-main {
+    background-color: hsl(var(--background));
+  }
+
+  .bg-main-80 {
+    background-color: hsl(var(--background) / 0.8);
+  }
+
+  .bg-muted {
+    background-color: hsl(var(--muted));
+  }
+
+  .border-main {
+    border-color: hsl(var(--border));
+  }
+
+  .card {
+    @apply rounded-lg p-5 border transition-shadow;
+    background-color: hsl(var(--card));
+    color: hsl(var(--card-foreground));
+    border-color: hsl(var(--border));
+  }
+
+  .card-title {
+    @apply text-xl font-bold;
+  }
+
+  .card-meta {
+    @apply text-sm flex gap-2;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .card-footer {
+    @apply pt-3 mt-4 border-t;
+    border-color: hsl(var(--border));
+  }
+
+  /* Content */
+  .content-body h1 { @apply text-4xl font-bold mt-8 mb-4; }
+  .content-body h2 { @apply text-3xl font-bold mt-8 mb-4; }
+  .content-body h3 { @apply text-2xl font-bold mt-6 mb-4; }
+
+  .content-body p {
+    @apply mb-4 leading-relaxed;
+  }
+
+  .content-body ul {
+    @apply list-none pl-6 mb-4;
+  }
+
+  .content-body ul li {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .content-body ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    top: -0.25rem;
+    color: #3b82f6; /* blue-500 */
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .content-body ol {
+    @apply list-decimal pl-6 mb-4;
+  }
+
+  .dark .content-body ul li::before {
+    color: #60a5fa; /* blue-400 for dark mode */
+  }
+
+  /* Nested lists */
+  .content-body ul ul,
+  .content-body ol ol,
+  .content-body ul ol,
+  .content-body ol ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Code Blocks */
+  pre {
+    background-color: hsl(var(--code-bg));
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    position: relative;
+  }
+
+  pre code {
+    background: transparent;
+    padding: 0;
+  }
+
+  /* Copy Code Button */
+  .copy-code-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: transparent; /* Dark background like in dark mode */
+    color: hsl(0 0% 98%); /* Light text for contrast */
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .copy-code-button:hover {
+    background-color: hsl(240 3.7% 25%);
+  }
+
+  .copy-code-button.copied {
+    background-color: #10b981; /* green-500 */
+    color: white;
+    border-color: #10b981;
+  }
+
+  /* Copy Link Button */
+  #copy-link-button.copied {
+    background-color: #10b981; /* green-500 */
+    color: white;
+  }
+
+  /* Images */
+  .card img {
+    @apply w-full rounded-lg;
+  }
+
+  .card-header-img {
+    @apply w-full h-48 object-cover rounded-lg mb-4;
+  }
+
+  .post-header-img {
+    @apply w-full h-64 object-cover rounded-lg mb-6;
+  }
+
+  /* Header */
+  .header-initial {
+    background-color: hsl(var(--header-initial-bg));
+    backdrop-filter: blur(8px);
+    border-color: transparent;
+  }
+
+  .header-scrolled {
+    background-color: hsl(var(--header-scrolled-bg));
+    backdrop-filter: blur(8px);
+    border-color: hsl(var(--border));
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  }
+
+  /* TOC */
+  #toc ul {
+    @apply list-none m-0 p-0;
+  }
+
+  #toc li {
+    @apply my-1;
+  }
+
+  #toc a {
+    @apply no-underline;
+  }
+
+  #toc a.active {
+    @apply text-blue-600 dark:text-blue-400 font-medium;
+  }
+
+  /* Blockquote */
+  blockquote {
+    @apply pl-4 italic border-l-4 mb-4;
+    border-color: hsl(var(--border));
+  }
+}
