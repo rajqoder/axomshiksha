@@ -8,7 +8,7 @@ tags:
     - 'education'
 categories:
     - 'MP'
-readingTime: '3 minutes'
+readingTime: '3 mins'
 writers:
     - 'Admin'
 thumbnail: 'https://picsum.photos/800/400?random=14'

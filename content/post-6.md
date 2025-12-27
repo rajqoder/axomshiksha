@@ -8,7 +8,7 @@ tags:
     - 'optimization'
 categories:
     - 'Degree'
-readingTime: '5 minutes'
+readingTime: '5 mins'
 writers: 
     - 'Admin'
 thumbnail: 'https://picsum.photos/800/400?random=6'

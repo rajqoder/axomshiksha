@@ -9,7 +9,7 @@ categories:
     - 'Degree'
 writers:
     - 'Admin'
-readingTime: '6 minutes'
+readingTime: '6 mins'
 thumbnail: 'https://picsum.photos/800/400?random=8'
 ---
 

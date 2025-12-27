@@ -10,7 +10,7 @@ categories:
     - 'High School'
 writers:
     - 'Admin'
-readingTime: '4 minutes'
+readingTime: '4 mins'
 thumbnail: 'https://picsum.photos/800/400?random=2'
 ---
 
