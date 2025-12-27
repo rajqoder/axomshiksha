@@ -1,5 +1,5 @@
 baseURL = 'https://axomshiksha.com/'
-languageCode = 'en-us'
+languageCode = 'as-IN'
 title = 'Axomshiksha'
 
 # SEO Configuration
@@ -16,7 +16,7 @@ keywords = ['education', 'learning', 'tutorials', 'guides', 'study materials', '
   description = 'Axomshiksha provides comprehensive educational resources, tutorials, and learning materials for students and educators.'
   author = 'Axomshiksha Team'
   defaultKeywords = 'education, learning, tutorials, guides, study materials, academic resources'
-  ogImage = '/images/og-image.jpg'
+  ogImage = 'og-image.jpg'
   twitterSite = '@axomshiksha'
   twitterCreator = '@axomshiksha'
 
