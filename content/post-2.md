@@ -7,7 +7,9 @@ tags:
     - 'themes'
     - 'design'
 categories:
-    - 'Tutorial'
+    - 'High School'
+writers:
+    - 'Admin'
 readingTime: '4 minutes'
 thumbnail: 'https://picsum.photos/800/400?random=2'
 ---

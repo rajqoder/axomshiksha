@@ -7,7 +7,9 @@ tags:
     - static-site
     - web-development
 categories:
-    - 'Tutorial'
+    - 'High School'
+writers:
+    - 'Admin'
 readingTime: '3 minutes'
 thumbnail: 'https://picsum.photos/800/400?random=1'
 ---

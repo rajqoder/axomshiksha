@@ -3,7 +3,7 @@ title: "Frequently Asked Questions"
 description: "Find answers to common questions about Axomshiksha and our educational content."
 layout: "faq"
 date: 2025-12-26
-_build:
+build:
   list: never
   render: always
 

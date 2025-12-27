@@ -1,0 +1,100 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-8">
+    <div class="mb-8 text-center">
+        <div class="w-20 h-20 rounded-full bg-muted mx-auto mb-4 flex items-center justify-center">
+            {{ $writer := index $.Site.Data.writers .Title }}
+            {{ if $writer.avatar }}
+                <img src="{{ $writer.avatar }}" alt="{{ .Title }}" class="w-full h-full rounded-full object-cover author-avatar">
+            {{ else }}
+                <span class="text-2xl font-bold text-main">{{ substr .Title 0 1 }}</span>
+            {{ end }}
+        </div>
+        <h1 class="text-3xl font-bold text-main mb-2">Writer: {{ .Title }}</h1>
+        <p class="text-muted-foreground">Published {{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }}</p>
+    </div>
+    
+    <div class="space-y-6">
+        {{ $paginator := .Paginate .Pages.ByDate.Reverse }}
+        {{ range $paginator.Pages }}
+        <article class="card opacity-0" data-animate-on-scroll>
+            <div class="mb-4">
+                <h2 class="text-xl font-bold text-main mb-2">
+                    <a href="{{ .RelPermalink }}" class="hover:text-blue-500 transition-colors">{{ .Title }}</a>
+                </h2>
+                <div class="flex items-center text-sm text-muted-foreground mb-3">
+                    {{ with .Params.writers }}
+                        <div class="flex flex-wrap gap-1 items-center">
+                            {{ range . }}
+                                {{ $writer := index $.Site.Data.writers . }}
+                                <a href="/writers/{{ . | urlize }}/" class="flex items-center text-xs text-muted-foreground hover:text-blue-600 transition-colors">
+                                    {{ if $writer.avatar }}
+                                        <img src="{{ $writer.avatar }}" alt="{{ $writer.name }}" class="w-4 h-4 rounded-full mr-1 object-cover author-avatar">
+                                    {{ else }}
+                                        <span class="w-4 h-4 rounded-full bg-muted flex items-center justify-center mr-1 text-xs">
+                                            {{ substr . 0 1 }}
+                                        </span>
+                                    {{ end }}
+                                    {{ . }}
+                                </a>
+                            {{ end }}
+                        </div>
+                        <span class="mx-2">•</span>
+                    {{ end }}
+                    
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+
+                    {{ with .Params.readingTime }}
+                        <span class="mx-2">•</span>
+                        <span class="text-xs text-muted-foreground">{{ . }}</span>
+                    {{ end }}
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <p class="text-main text-sm leading-relaxed">{{ .Summary | truncate 150 "..." }}</p>
+            </div>
+            
+            <div class="flex flex-wrap items-center justify-between">
+                <a href="{{ .RelPermalink }}" class="inline-flex items-center text-blue-500 hover:text-blue-700 font-medium text-sm">
+                    Read more
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+                
+                {{ with .Params.tags }}
+                    <div class="flex flex-wrap gap-1">
+                        {{ range first 3 . }}
+                            <a href="/tags/{{ . | urlize }}" class="bg-muted text-main text-xs font-medium px-1.5 py-0.5 rounded transition-colors duration-200 hover:bg-blue-600 hover:text-white">#{{ . }}</a>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
+    </div>
+    
+    <!-- Pagination -->
+    {{ if gt $paginator.TotalPages 1 }}
+    <div class="mt-12 flex justify-center">
+        <nav class="flex items-center space-x-2">
+            {{ if $paginator.HasPrev }}
+                <a href="{{ $paginator.Prev.URL }}" class="px-3 py-2 rounded-md bg-muted text-main hover:bg-blue-500 hover:text-white transition-colors duration-200">Previous</a>
+            {{ end }}
+            
+            {{ range $paginator.Pagers }}
+                {{ if eq . $paginator }}
+                    <span class="px-3 py-2 rounded-md bg-blue-500 text-white">{{ .PageNumber }}</span>
+                {{ else }}
+                    <a href="{{ .URL }}" class="px-3 py-2 rounded-md bg-muted text-main hover:bg-blue-500 hover:text-white transition-colors duration-200">{{ .PageNumber }}</a>
+                {{ end }}
+            {{ end }}
+            
+            {{ if $paginator.HasNext }}
+                <a href="{{ $paginator.Next.URL }}" class="px-3 py-2 rounded-md bg-muted text-main hover:bg-blue-500 hover:text-white transition-colors duration-200">Next</a>
+            {{ end }}
+        </nav>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

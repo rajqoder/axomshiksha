@@ -11,7 +11,7 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="/notes/" class="{{ if eq .Section "notes" }}nav-active{{ else }}nav-link{{ end }}">Notes</a>
+          <a href="/categories/" class="{{ if eq .RelPermalink "/categories/" }}nav-active{{ else }}nav-link{{ end }}">Categories</a>
           <a href="/faq/" class="{{ if eq .RelPermalink "/faq/" }}nav-active{{ else }}nav-link{{ end }}">FAQ</a>
           <a href="/about/" class="{{ if eq .RelPermalink "/about/" }}nav-active{{ else }}nav-link{{ end }}">About</a>
         </nav>
@@ -81,7 +81,8 @@
   </div>
 
   <nav class="flex flex-col gap-6 text-base font-medium">
-    <a href="/notes/" class="mobile-link">Notes</a>
+    <a href="/categories/" class="mobile-link">Categories</a>
+    <a href="/writers/" class="mobile-link">Writers</a>
     <a href="/faq/" class="mobile-link">FAQ</a>
     <a href="/about/" class="mobile-link">About</a>
   </nav>

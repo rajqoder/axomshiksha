@@ -11,6 +11,25 @@
         <h1 class="text-main text-4xl font-bold mb-4">{{ .Title }}</h1>
 
         <div class="card-meta">
+          {{ with .Params.writers }}
+            <div class="flex flex-wrap gap-2 items-center">
+              {{ range . }}
+                {{ $writer := index $.Site.Data.writers . }}
+                <a href="/writers/{{ . | urlize }}/" class="flex items-center text-sm text-muted-foreground hover:text-blue-600 transition-colors">
+                  {{ if $writer.avatar }}
+                    <img src="{{ $writer.avatar }}" alt="{{ $writer.name }}" class="w-4 h-4 rounded-full mr-1 object-cover author-avatar">
+                  {{ else }}
+                    <span class="w-4 h-4 rounded-full bg-muted flex items-center justify-center mr-1 text-xs">
+                      {{ substr . 0 1 }}
+                    </span>
+                  {{ end }}
+                  {{ . }}
+                </a>
+              {{ end }}
+            </div>
+            <span>•</span>
+          {{ end }}
+          
           <time datetime="{{ .Date.Format "2006-01-02" }}">
             {{ .Date.Format "January 2, 2006" }}
           </time>

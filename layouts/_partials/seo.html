@@ -1,0 +1,141 @@
+{{/* SEO Partial Template */}}
+
+<!-- Basic SEO Meta Tags -->
+{{ if .IsHome }}
+  <meta name="description" content="{{ .Site.Params.description | default .Site.Params.Description }}">
+{{ else }}
+  {{ if .Description }}
+    <meta name="description" content="{{ .Description }}">
+  {{ else }}
+    <meta name="description" content="{{ .Summary | default .Params.excerpt | truncate 160 }}">
+  {{ end }}
+{{ end }}
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Open Graph / Facebook Meta Tags -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:locale" content="{{ .Site.LanguageCode | default "en_US" }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+{{ if .Description }}
+  <meta property="og:description" content="{{ .Description }}">
+{{ else if .Summary }}
+  <meta property="og:description" content="{{ .Summary | truncate 160 }}">
+{{ end }}
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+
+{{ if .Params.thumbnail }}
+  <meta property="og:image" content="{{ .Params.thumbnail | absURL }}">
+{{ else if .Site.Params.ogImage }}
+  <meta property="og:image" content="{{ .Site.Params.ogImage | absURL }}">
+{{ else }}
+  <meta property="og:image" content="{{ "og-image.jpg" | absURL }}">
+{{ end }}
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+{{ if .Date }}
+  <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+{{ end }}
+{{ if .Lastmod }}
+  <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{ end }}
+
+{{ with .Params.writers }}
+  {{ range . }}
+    <meta property="article:author" content="{{ . }}">
+  {{ end }}
+{{ end }}
+
+{{ with .Params.categories }}
+  {{ range . }}
+    <meta property="article:section" content="{{ . }}">
+  {{ end }}
+{{ end }}
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ .Site.Params.twitterSite | default "@axomshiksha" }}">
+<meta name="twitter:creator" content="{{ .Site.Params.twitterCreator | default "@axomshiksha" }}">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+{{ if .Description }}
+  <meta name="twitter:description" content="{{ .Description }}">
+{{ else if .Summary }}
+  <meta name="twitter:description" content="{{ .Summary | truncate 160 }}">
+{{ end }}
+
+{{ if .Params.thumbnail }}
+  <meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
+{{ else if .Site.Params.ogImage }}
+  <meta name="twitter:image" content="{{ .Site.Params.ogImage | absURL }}">
+{{ else }}
+  <meta name="twitter:image" content="{{ "og-image.jpg" | absURL }}">
+{{ end }}
+
+<!-- Additional SEO Meta Tags -->
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ .Site.BaseURL }}index.xml">
+
+<!-- Structured Data (JSON-LD) -->
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ .Description | default .Summary | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": {{ with .Params.writers }}{{ index . 0 | jsonify }}{{ else }}{{ .Site.Params.author | default .Site.Author.name | default "Admin" | jsonify }}{{ end }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ .Site.Title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ "logo.png" | absURL | jsonify }}
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | jsonify }}
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ .Params.thumbnail | default .Site.Params.ogImage | default "og-image.jpg" | absURL | jsonify }},
+    "width": 1200,
+    "height": 630
+  }
+}
+</script>
+{{ else }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ .Site.Title | jsonify }},
+  "description": {{ .Site.Params.description | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }},
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ .Site.Title | jsonify }}
+  }
+}
+</script>
+{{ end }}
+
+<!-- Keywords Meta Tag -->
+{{ if .Keywords }}
+  <meta name="keywords" content="{{ delimit .Keywords ", " }}">
+{{ else if .Params.tags }}
+  <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
+{{ else }}
+  <meta name="keywords" content="{{ .Site.Params.defaultKeywords | default "education, learning, tutorials, guides" }}">
+{{ end }}

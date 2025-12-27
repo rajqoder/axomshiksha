@@ -7,8 +7,10 @@ tags:
     - 'performance'
     - 'optimization'
 categories:
-    - 'Tutorial'
+    - 'Degree'
 readingTime: '5 minutes'
+writers: 
+    - 'Admin'
 thumbnail: 'https://picsum.photos/800/400?random=6'
 ---
 

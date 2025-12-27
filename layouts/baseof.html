@@ -12,9 +12,7 @@
     {{ end }}
   </title>
 
-  {{ with .Params.description }}
-    <meta name="description" content="{{ . }}">
-  {{ end }}
+  {{ partial "seo.html" . }}
 
   <!-- Theme Preloader Script -->
   <script>

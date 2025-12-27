@@ -2,8 +2,29 @@ baseURL = 'https://axomshiksha.com/'
 languageCode = 'en-us'
 title = 'Axomshiksha'
 
+# SEO Configuration
+description = 'Axomshiksha provides comprehensive educational resources, tutorials, and learning materials for students and educators.'
+author = 'Axomshiksha Team'
+keywords = ['education', 'learning', 'tutorials', 'guides', 'study materials', 'academic resources']
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+  filename = 'sitemap.xml'
+
+[params]
+  description = 'Axomshiksha provides comprehensive educational resources, tutorials, and learning materials for students and educators.'
+  author = 'Axomshiksha Team'
+  defaultKeywords = 'education, learning, tutorials, guides, study materials, academic resources'
+  ogImage = '/images/og-image.jpg'
+  twitterSite = '@axomshiksha'
+  twitterCreator = '@axomshiksha'
+
+
 [taxonomies]
   tag = 'tags'
+  category = 'categories'
+  writer = 'writers'
 
 [pagination]
   pagerSize = 5

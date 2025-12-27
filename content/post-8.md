@@ -6,7 +6,9 @@ tags:
     - 'hugo'
     - 'i18n'
 categories:
-    - 'Tutorial'
+    - 'Degree'
+writers:
+    - 'Admin'
 readingTime: '6 minutes'
 thumbnail: 'https://picsum.photos/800/400?random=8'
 ---

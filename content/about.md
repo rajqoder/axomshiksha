@@ -3,7 +3,7 @@ title: "About Axomshiksha"
 description: "Learn more about Axomshiksha - our mission, vision, and commitment to making quality education accessible to everyone."
 layout: "about"
 date: 2025-12-26
-_build:
+build:
   list: never
   render: always
 ---

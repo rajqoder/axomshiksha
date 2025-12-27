@@ -7,8 +7,10 @@ tags:
     - 'taxonomy'
     - 'organization'
     - 'content'
+writers:
+    - 'Admin'
 categories:
-    - 'Tutorial'
+    - 'Degree'
 readingTime: '7 minutes'
 thumbnail: 'https://picsum.photos/800/400?random=10'
 ---

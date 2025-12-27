@@ -6,8 +6,10 @@ tags:
     - 'hugo'
     - 'content'
     - 'markdown'
-categories: 
-    - 'Guide'
+categories:
+    - 'Degree'
+writers:
+    - 'Admin'
 readingTime: '5 minutes'
 thumbnail: 'https://picsum.photos/800/400?random=3'
 ---

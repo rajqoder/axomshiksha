@@ -149,15 +149,15 @@
 
   /* Content */
   .content-body h1 {
-    @apply text-4xl font-bold mt-8 mb-4;
-  }
-
-  .content-body h2 {
     @apply text-3xl font-bold mt-8 mb-4;
   }
 
+  .content-body h2 {
+    @apply text-2xl font-bold mt-6 mb-3;
+  }
+
   .content-body h3 {
-    @apply text-2xl font-bold mt-6 mb-4;
+    @apply text-xl font-bold mt-5 mb-3;
   }
 
   .content-body p {
@@ -252,7 +252,7 @@
   }
 
   /* Images */
-  .card img {
+  .card img:not(.author-avatar) {
     @apply w-full rounded-lg;
   }
 

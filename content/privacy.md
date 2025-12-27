@@ -3,7 +3,7 @@ title: "Privacy Policy"
 description: "Learn how Axomshiksha collects, uses, and protects your personal information. Our GDPR-compliant privacy policy explains your rights and our commitment to data protection."
 layout: "privacy"
 date: 2025-12-26
-_build:
+build:
   list: never
   render: always
 ---

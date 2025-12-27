@@ -7,8 +7,10 @@ tags:
     - 'github'
     - 'deployment'
     - 'hosting'
+writers:
+    - 'Admin'
 categories:
-    - 'Guide'
+    - 'Diploma'
 readingTime: '8 minutes'
 thumbnail: 'https://picsum.photos/800/400?random=9'
 ---
