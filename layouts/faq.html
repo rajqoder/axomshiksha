@@ -2,7 +2,7 @@
 <div class="max-w-4xl mx-auto px-4 py-12 bg-main text-main">
   
   <!-- Header -->
-  <div class="text-center mb-12 opacity-0" data-animate-on-scroll>
+  <div class="text-center mb-12">
     <h1 class="text-4xl font-bold text-main mb-4">
       {{ .Title | default "Frequently Asked Questions" }}
     </h1>
@@ -12,7 +12,7 @@
   </div>
 
   <!-- FAQ Accordion -->
-  <div class="space-y-4 opacity-0" data-animate-on-scroll>
+  <div class="space-y-4">
     {{ range .Params.faqs }}
       <div class="faq-item" data-faq-item>
         <!-- Question -->
@@ -47,7 +47,7 @@
 
   <!-- Contact Section -->
   {{ if .Params.contactMessage }}
-  <div class="mt-12 card text-center opacity-0" data-animate-on-scroll>
+  <div class="mt-12 card text-center">
     <p class="text-main mb-4">{{ .Params.contactMessage }}</p>
     {{ if .Params.contactLink }}
     <a href="{{ .Params.contactLink }}" class="font-medium">

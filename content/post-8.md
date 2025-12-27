@@ -10,7 +10,7 @@ categories:
 writers:
     - 'Admin'
 readingTime: '6 mins'
-thumbnail: 'https://picsum.photos/800/400?random=8'
+thumbnail: 'https://picsum.photos/800/400?image=8'
 ---
 
 As the world becomes more connected, having a multilingual website is increasingly important. Hugo provides excellent built-in support for internationalization (i18n), making it easy to create sites that serve visitors in multiple languages.

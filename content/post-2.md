@@ -11,7 +11,7 @@ categories:
 writers:
     - 'Admin'
 readingTime: '4 mins'
-thumbnail: 'https://picsum.photos/800/400?random=2'
+thumbnail: 'https://picsum.photos/800/400?image=2'
 ---
 
 In this second post, we'll dive into creating custom themes for your Hugo site. Themes are a powerful way to customize the look and feel of your website without modifying the core Hugo installation.

@@ -11,7 +11,7 @@ categories:
 readingTime: '3 mins'
 writers:
     - 'Admin'
-thumbnail: 'https://picsum.photos/800/400?random=14'
+thumbnail: 'https://picsum.photos/800/400?image=14'
 ---
 
 # Introduction to Science for Middle Primary

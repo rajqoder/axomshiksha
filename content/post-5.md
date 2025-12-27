@@ -11,7 +11,7 @@ categories:
 writers: 
     - 'Admin'
 readingTime: '6 mins'
-thumbnail: 'https://picsum.photos/800/400?random=5'
+thumbnail: 'https://picsum.photos/800/400?image=5'
 ---
 
 In this final post of our series, we'll explore some advanced tips and tricks to get the most out of Hugo. These techniques will help you build more sophisticated and efficient sites.

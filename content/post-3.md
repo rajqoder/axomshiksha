@@ -11,7 +11,7 @@ categories:
 writers:
     - 'Admin'
 readingTime: '5 mins'
-thumbnail: 'https://picsum.photos/800/400?random=3'
+thumbnail: 'https://picsum.photos/800/400?image=3'
 ---
 
 Content management is at the heart of any successful website. In this post, we'll explore how Hugo handles content and how you can organize your content for maximum effectiveness.

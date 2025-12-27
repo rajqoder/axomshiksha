@@ -11,7 +11,7 @@ categories:
 writers: 
     - 'Admin'
 readingTime: '7 mins'
-thumbnail: 'https://picsum.photos/800/400?random=7'
+thumbnail: 'https://picsum.photos/800/400?image=7'
 ---
 
 Shortcodes are one of Hugo's most powerful features, allowing you to add rich content and functionality to your posts without writing complex HTML. In this post, we'll explore how to use and create shortcodes.

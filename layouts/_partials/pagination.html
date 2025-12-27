@@ -2,27 +2,27 @@
 {{ if gt $paginator.TotalPages 1 }}
 <nav class="pagination flex justify-center items-center space-x-1 my-8" role="navigation" aria-label="Pagination">
   {{ if $paginator.HasPrev }}
-    <a href="{{ $paginator.First.URL }}" class="px-3 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 text-gray-700" aria-label="First page">&laquo;&laquo;</a>
-    <a href="{{ $paginator.Prev.URL }}" class="px-3 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 text-gray-700" aria-label="Previous page">&laquo;</a>
+    <a href="{{ $paginator.First.URL }}" class="px-3 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700 dark:text-white text-gray-700" aria-label="First page">&laquo;&laquo;</a>
+    <a href="{{ $paginator.Prev.URL }}" class="px-3 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700 dark:text-white text-gray-700" aria-label="Previous page">&laquo;</a>
   {{ else }}
-    <span class="px-3 py-2 rounded-lg border border-gray-300 text-gray-400 cursor-not-allowed" aria-disabled="true">&laquo;&laquo;</span>
-    <span class="px-3 py-2 rounded-lg border border-gray-300 text-gray-400 cursor-not-allowed" aria-disabled="true">&laquo;</span>
+    <span class="px-3 py-2 rounded-lg border border-gray-300 text-gray-400 cursor-not-allowed dark:border-gray-600 dark:text-gray-500" aria-disabled="true">&laquo;&laquo;</span>
+    <span class="px-3 py-2 rounded-lg border border-gray-300 text-gray-400 cursor-not-allowed dark:border-gray-600 dark:text-gray-500" aria-disabled="true">&laquo;</span>
   {{ end }}
 
   {{ range $paginator.Pagers }}
     {{ if eq . $paginator }}
       <span class="px-4 py-2 rounded-lg bg-blue-600 text-white font-medium" aria-current="page">{{ .PageNumber }}</span>
     {{ else }}
-      <a href="{{ .URL }}" class="px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 text-gray-700">{{ .PageNumber }}</a>
+      <a href="{{ .URL }}" class="px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700 dark:text-white text-gray-700">{{ .PageNumber }}</a>
     {{ end }}
   {{ end }}
 
   {{ if $paginator.HasNext }}
-    <a href="{{ $paginator.Next.URL }}" class="px-3 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 text-gray-700" aria-label="Next page">&raquo;</a>
-    <a href="{{ $paginator.Last.URL }}" class="px-3 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 text-gray-700" aria-label="Last page">&raquo;&raquo;</a>
+    <a href="{{ $paginator.Next.URL }}" class="px-3 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700 dark:text-white text-gray-700" aria-label="Next page">&raquo;</a>
+    <a href="{{ $paginator.Last.URL }}" class="px-3 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700 dark:text-white text-gray-700" aria-label="Last page">&raquo;&raquo;</a>
   {{ else }}
-    <span class="px-3 py-2 rounded-lg border border-gray-300 text-gray-400 cursor-not-allowed" aria-disabled="true">&raquo;</span>
-    <span class="px-3 py-2 rounded-lg border border-gray-300 text-gray-400 cursor-not-allowed" aria-disabled="true">&raquo;&raquo;</span>
+    <span class="px-3 py-2 rounded-lg border border-gray-300 text-gray-400 cursor-not-allowed dark:border-gray-600 dark:text-gray-500" aria-disabled="true">&raquo;</span>
+    <span class="px-3 py-2 rounded-lg border border-gray-300 text-gray-400 cursor-not-allowed dark:border-gray-600 dark:text-gray-500" aria-disabled="true">&raquo;&raquo;</span>
   {{ end }}
 </nav>
 {{ end }}

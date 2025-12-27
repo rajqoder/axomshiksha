@@ -12,7 +12,7 @@ writers:
 categories:
     - 'Diploma'
 readingTime: '8 mins'
-thumbnail: 'https://picsum.photos/800/400?random=9'
+thumbnail: 'https://picsum.photos/800/400?image=9'
 ---
 
 GitHub Pages is a popular free hosting option for static sites, and Hugo integrates seamlessly with it. In this post, we'll walk through setting up continuous deployment of your Hugo site to GitHub Pages.

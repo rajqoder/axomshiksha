@@ -12,7 +12,7 @@ writers:
 categories:
     - 'Degree'
 readingTime: '7 mins'
-thumbnail: 'https://picsum.photos/800/400?random=10'
+thumbnail: 'https://picsum.photos/800/400?image=10'
 ---
 
 Taxonomies in Hugo provide powerful ways to organize and categorize your content. While basic tags and categories are useful, Hugo's taxonomy system can be extended and customized to meet complex organizational needs.

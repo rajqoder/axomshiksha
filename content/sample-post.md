@@ -10,7 +10,7 @@ categories:
 readingTime: '3 mins'
 writers:
     - 'Admin'
-thumbnail: 'https://picsum.photos/800/400?random=15'
+thumbnail: 'https://picsum.photos/800/400?image=15'
 ---
 
 # Sample Post

@@ -11,7 +11,7 @@ categories:
 writers:
     - 'Admin'
 readingTime: '4 mins'
-thumbnail: 'https://picsum.photos/800/400?random=4'
+thumbnail: 'https://picsum.photos/800/400?image=4'
 ---
 
 Once you've built your Hugo site, you'll need to deploy it to share it with the world. In this post, we'll cover various deployment options and best practices.

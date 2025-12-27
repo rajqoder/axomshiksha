@@ -11,7 +11,7 @@ categories:
 writers:
     - 'Admin'
 readingTime: '3 mins'
-thumbnail: 'https://picsum.photos/800/400?random=1'
+thumbnail: 'https://picsum.photos/800/400?image=1'
 ---
 
 Welcome to our Hugo blog! In this first post, we'll explore the basics of getting started with Hugo, the fast and modern static site generator.

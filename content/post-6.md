@@ -11,7 +11,7 @@ categories:
 readingTime: '5 mins'
 writers: 
     - 'Admin'
-thumbnail: 'https://picsum.photos/800/400?random=6'
+thumbnail: 'https://picsum.photos/800/400?image=6'
 ---
 
 Performance optimization is crucial for any modern website. In this post, we'll explore various techniques to make your Hugo sites lightning-fast and efficient.

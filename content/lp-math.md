@@ -11,7 +11,7 @@ categories:
 readingTime: '2 mins'
 writers:
     - 'Admin'
-thumbnail: 'https://picsum.photos/800/400?random=13'
+thumbnail: 'https://picsum.photos/800/400?image=13'
 ---
 
 # Basic Mathematics for Lower Primary

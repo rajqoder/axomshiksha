@@ -11,7 +11,7 @@ categories:
 readingTime: '4 mins'
 writers:
     - 'Admin'
-thumbnail: 'https://picsum.photos/800/400?random=12'
+thumbnail: 'https://picsum.photos/800/400?image=12'
 ---
 
 # Advanced Physics Concepts for Higher Secondary

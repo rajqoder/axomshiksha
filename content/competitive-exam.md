@@ -11,7 +11,7 @@ categories:
 readingTime: '5 mins'
 writers:
     - 'Admin'
-thumbnail: 'https://picsum.photos/800/400?random=11'
+thumbnail: 'https://picsum.photos/800/400?image=11'
 ---
 
 # Tips for Competitive Exam Preparation
