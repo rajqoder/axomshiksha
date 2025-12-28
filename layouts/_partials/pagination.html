@@ -7,8 +7,7 @@
   <a href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ else }}javascript:void(0){{ end }}"
      class="px-3 py-2 rounded-lg border bg-muted
             border-gray-300 text-main
-            hover:text-blue-600
-            dark:border-gray-600 dark:hover:text-blue-400
+            {{ if $paginator.HasPrev }}hover:text-blue-600 dark:hover:text-blue-400{{ end }}
             focus:outline-none focus:ring-2 focus:ring-blue-500 {{ if not $paginator.HasPrev }}opacity-50 cursor-not-allowed{{ end }}"
      aria-label="Previous page" {{ if not $paginator.HasPrev }}aria-disabled="true"{{ end }}>
     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -43,11 +42,11 @@
     {{ end }}
     
     {{ if eq $startPage 2 }}
-      <a href="{{ $paginator.First.URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:border-gray-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">1</a>
+      <a href="{{ $paginator.First.URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">1</a>
     {{ end }}
     
     {{ if gt $startPage 2 }}
-      <a href="{{ $paginator.First.URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:border-gray-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">1</a>
+      <a href="{{ $paginator.First.URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">1</a>
       <span class="px-2 py-2 text-main">...</span>
     {{ end }}
     
@@ -57,26 +56,25 @@
         {{ if eq . $paginator }}
           <span class="px-4 py-2 rounded-lg bg-blue-600 text-white font-semibold dark:bg-blue-500" aria-current="page">{{ .PageNumber }}</span>
         {{ else }}
-          <a href="{{ .URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:border-gray-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">{{ .PageNumber }}</a>
+          <a href="{{ .URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">{{ .PageNumber }}</a>
         {{ end }}
       {{ end }}
     {{ end }}
     
     {{ if lt $endPage (sub $lastPage 1) }}
       <span class="px-2 py-2 text-main">...</span>
-      <a href="{{ $paginator.Last.URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:border-gray-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">{{ $lastPage }}</a>
+      <a href="{{ $paginator.Last.URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">{{ $lastPage }}</a>
     {{ end }}
     
     {{ if and (eq $endPage (sub $lastPage 1)) (gt $totalPages 2) }}
-      <a href="{{ $paginator.Last.URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:border-gray-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">{{ $lastPage }}</a>
+      <a href="{{ $paginator.Last.URL }}" class="px-4 py-2 rounded-lg border bg-muted border-gray-300 text-main hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">{{ $lastPage }}</a>
     {{ end }}
   {{ end }}
   
   <a href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ else }}javascript:void(0){{ end }}"
   class="px-3 py-2 rounded-lg border bg-muted
             border-gray-300 text-main
-            hover:text-blue-600
-            dark:border-gray-600 dark:hover:text-blue-400
+            {{ if $paginator.HasNext }}hover:text-blue-600 dark:hover:text-blue-400{{ end }}
             focus:outline-none focus:ring-2 focus:ring-blue-500 {{ if not $paginator.HasNext }}opacity-50 cursor-not-allowed{{ end }}"
      aria-label="Next page" {{ if not $paginator.HasNext }}aria-disabled="true"{{ end }}>
     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
