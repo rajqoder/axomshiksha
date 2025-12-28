@@ -18,3 +18,5 @@ thumbnail: 'https://picsum.photos/800/400?image=15'
 This is a sample post to demonstrate the categories taxonomy in action. This post is assigned to both "High School" and "Degree" categories.
 
 When you have posts assigned to categories, those categories will appear on the Categories page with counts of how many posts are in each category.
+
+![sample](https://picsum.photos/900/400?image=16)
