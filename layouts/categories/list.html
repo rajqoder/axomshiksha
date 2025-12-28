@@ -6,7 +6,6 @@
     </div>
     
     <div class="flex flex-wrap gap-3 justify-center">
-        <p>Number of categories: {{ len .Site.Taxonomies.categories }}</p>
         {{ if .Site.Taxonomies.categories }}
             {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
                 <a href="/categories/{{ $name | urlize }}" class="bg-muted text-main px-4 py-2 rounded-full transition-colors duration-200 hover:bg-blue-600 hover:text-white">
