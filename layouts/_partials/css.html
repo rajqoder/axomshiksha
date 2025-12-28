@@ -14,7 +14,7 @@
 {{ if eq .Kind "page" }}
   {{ with resources.Get "css/chroma.css" }}
     {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
-    {{ with . | css.PostCSS $opts }}
+    {{ with . | css.tailwindCSS $opts }}
       {{ if hugo.IsDevelopment }}
         <link rel="stylesheet" href="{{ .RelPermalink }}">
       {{ else }}
