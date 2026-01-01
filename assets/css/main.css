@@ -152,6 +152,7 @@
     @apply text-3xl font-bold mt-8 mb-4;
     position: relative;
     padding-bottom: 0.5rem;
+    scroll-margin-top: 80px;
   }
   
   .content-body h1::after {
@@ -169,6 +170,7 @@
     @apply text-2xl font-bold mt-6 mb-3;
     position: relative;
     padding-bottom: 0.5rem;
+    scroll-margin-top: 80px;
   }
   
   .content-body h2::after {
@@ -186,6 +188,7 @@
     @apply text-xl font-bold mt-5 mb-3;
     position: relative;
     padding-bottom: 0.3rem;
+    scroll-margin-top: 80px;
   }
   
   .content-body h3::after {
