@@ -431,21 +431,15 @@
 
   /* Blockquote */
   blockquote {
-    @apply py-2 italic border-l-2 mb-6 relative;
+    @apply pt-2 pb-0.5 italic border-l-3 mb-4 relative;
     border-color: #3b82f6;
-    background-color: hsl(var(--muted));
+    background-color: hsl(240 4.8% 92%); /* Slightly darker than default muted in light mode */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     margin-right: 0.5rem;
   }
   
-  blockquote::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 2px;
-    background: linear-gradient(to bottom, #3b82f6, #60a5fa);
+  .dark blockquote {
+    background-color: hsl(var(--muted)); /* Keep original dark mode color */
   }
   
   blockquote > p {
@@ -455,7 +449,7 @@
 
   /* Tables */
   table {
-    @apply w-full border-collapse mb-6 rounded-lg overflow-hidden;
+    @apply border-collapse mb-6 rounded-lg overflow-hidden;
   }
   
   table th,

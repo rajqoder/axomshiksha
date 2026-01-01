@@ -126,37 +126,45 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
 
 6. **Write the rhyming words from the poem for the ones given below -**
 
-   | brown |             
-    :-----           
-   | .... |  
+   {{<flex>}}
+
+   | brown |
+   | :----- |
    | .... |
-   
+   | .... |
+
    | skies |
-    :-----
+   | :----- |
    | .... |
    | .... |
 
    | run |
-    :-----
+   | :----- |
    | .... |
-   | .... |
+   | .... | 
+
+   {{</flex>}}
 
    **Ans:**
 
-   | brown |             
-    :-----           
-   |  town |  
-   |  noun |
+   {{<flex>}}
+
+   | brown |
+   | :----- |
+   | crown |
+   | town |
 
    | skies |
-    :-----
-   | eyes |
+   | :----- |
    | cries |
+   | flies |
 
    | run |
-    :----
+   | :----- |
+   | gun |
    | fun |
-   | sun |
+
+   {{</flex>}}
 
 7. **Read the following phrases from the poem**
 
@@ -270,7 +278,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
     > You may hear the word **wind** pronounced in two different ways.
 
     | Box A | Box B |
-    |:-----:|:-----:|
+    |:-----|:-----|
     | hill | rise |
     | .... | .... |
     | .... | .... |
@@ -279,7 +287,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
     **Ans:**
 
     | Box A | Box B |
-    |:-----:|:-----:|
+    |:-----|:-----|
     | hill | rise |
     | thing | lights |
     | pick | mine |
@@ -303,7 +311,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
     Let’s learn the comparative and superlative degrees of a few adjectives.
 
     | Positive Degree | Comparative Degree | Superlative Degree |
-    |:---------------:|:------------------:|:------------------:|
+    |:---------------|:------------------|:------------------|
     | cold            | colder             | coldest            |
     | light           | lighter            | lightest           |
     | clean           | cleaner            | cleanest           |
@@ -313,7 +321,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
     b) Now complete the following table
 
     | Positive Degree | Comparative Degree | Superlative Degree |
-    |:---------------:|:------------------:|:------------------:|
+    |:---------------|:------------------|:------------------|
     | quiet           | .................. | .................. |
     | ............... | safer              | .................. |
     | ............... | .................. | slowest            |
@@ -321,7 +329,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
     **Ans:**
 
     | Positive Degree | Comparative Degree | Superlative Degree |
-    |:---------------:|:------------------:|:------------------:|
+    |:---------------|:------------------|:------------------|
     | quiet           | quieter            | quietest           |
     | safe            | safer              | safest             |
     | slow            | slower             | slowest            |
@@ -340,7 +348,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
     2. We should not cut trees unnecessarily.
     3. We should keep our surroundings clean.
     4. We should save water and electricity.
-    5. We should protect plants and animals.
+    5. We should protect plants and animals.  
 
 16. **Read these lines from the poem**
 
