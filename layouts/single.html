@@ -4,10 +4,6 @@
     <!-- Main Content -->
     <article class="lg:w-3/4">
       <header class="mb-8 pb-6 border-b border-main">
-        {{ $thumbnail := index .Params "thumbnail" }}
-        {{ if $thumbnail }}
-          <img src="{{ $thumbnail }}" alt="{{ .Title }}" class="post-header-img">
-        {{ end }}
         <h1 class="text-main text-4xl font-bold mb-4">{{ .Title }}</h1>
 
         <div class="card-meta">
