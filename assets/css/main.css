@@ -15,7 +15,7 @@
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --border: 240 5.9% 90%;
+    --border: oklch(0.92 0.004 286.32);
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
 
@@ -32,7 +32,7 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    --border: 240 3.7% 15.9%;
+    --border: oklch(1 0 0 / 10%);
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
 
@@ -238,14 +238,12 @@
     left: 0;
     top: -0.25rem;
     color: #3b82f6;
-    /* blue-500 */
     font-size: 1.2em;
     font-weight: bold;
   }
 
   .dark .content-body ul li::before {
     color: #60a5fa;
-    /* blue-400 for dark mode */
   }
 
   /* Nested lists */
@@ -360,9 +358,7 @@
     right: 0.5rem;
     padding: 0.25rem 0.5rem;
     background-color: transparent;
-    /* Dark background like in dark mode */
     color: hsl(0 0% 98%);
-    /* Light text for contrast */
     border: 1px solid white;
     border-radius: 0.25rem;
     font-size: 0.75rem;
@@ -376,7 +372,6 @@
 
   .copy-code-button.copied {
     background-color: #10b981;
-    /* green-500 */
     color: white;
     border-color: #10b981;
   }
@@ -384,7 +379,6 @@
   /* Copy Link Button */
   #copy-link-button.copied {
     background-color: #10b981;
-    /* green-500 */
     color: white;
   }
 
@@ -450,9 +444,13 @@
     padding: 0 1rem;
   }
 
+  blockquote > table {
+    @apply mx-4;
+  }
+
   /* Tables */
   table {
-    @apply border-collapse mb-6 rounded-lg overflow-hidden;
+    @apply border-collapse mb-6 overflow-hidden;
   }
   
   table th,

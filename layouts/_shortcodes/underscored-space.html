@@ -1,0 +1,11 @@
+{{ $count := .Get "no" | int }}
+
+{{if gt $count 1 }}
+<div class="flex flex-wrap gap-4 mb-4">
+  {{ range seq $count }}
+    <span>____________________</span>
+  {{ end }}
+</div>
+{{ else }}
+<span>____________________</span>
+{{ end }}

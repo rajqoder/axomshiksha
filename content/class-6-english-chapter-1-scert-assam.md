@@ -126,7 +126,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
 
 6. **Write the rhyming words from the poem for the ones given below -**
 
-   {{<flex>}}
+   {{<table-wrapper>}}
 
    | brown |
    | :----- |
@@ -143,11 +143,11 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
    | .... |
    | .... | 
 
-   {{</flex>}}
+   {{</table-wrapper>}}
 
    **Ans:**
 
-   {{<flex>}}
+   {{<table-wrapper>}}
 
    | brown |
    | :----- |
@@ -164,7 +164,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
    | gun |
    | fun |
 
-   {{</flex>}}
+   {{</table-wrapper>}}
 
 7. **Read the following phrases from the poem**
 
@@ -178,10 +178,10 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
 
    Now write down a few sets of words using alliteration. One is done for you.
 
-   a) **t**all **t**owers  
-   b) **b**ig **b**lue **b**alloons  
-   c) **s**hining **s**tars  
-   d) **c**lever **c**ats
+   (a) **t**all **t**owers  
+   (b) **b**ig **b**lue **b**alloons  
+   (c) **s**hining **s**tars  
+   (d) **c**lever **c**ats
 
 8. (a) "I will be the gladdest thing  
         Under the sun"
