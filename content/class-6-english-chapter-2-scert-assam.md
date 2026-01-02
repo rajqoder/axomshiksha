@@ -249,7 +249,7 @@ Let's see how much we have understood:
 
 8. **(a) Let's read an extract from a science fiction book.**
 
-   ![Science-Fiction-Book](/static/posts/class-6-english-chapter-2-scert-assam/science-fiction-book.webp)
+   ![science-fiction-book.webp](/static/posts/class-6-english-chapter-2-scert-assam/science-fiction-book.webp)
 
    **(b) Have you ever read science fiction before? Now, go to a library or search on the internet with the help of an elder to find such books. Write down the names of those books in the space given below:**
 
@@ -351,7 +351,7 @@ Let's see how much we have understood:
 
 12. **(a) Let's read the poster below :**
 
-    ![Magic-Poster](/static/posts/class-6-english-chapter-2-scert-assam/magic-poster.webp)
+    ![magic-poster.webp](/static/posts/class-6-english-chapter-2-scert-assam/magic-poster.webp)
 
     **(b) Use information from the poster to complete the sentences:**
 
@@ -394,4 +394,4 @@ Let's see how much we have understood:
 
     Ans: A Magic Wand
 
-    ![Magic-Wand](/static/posts/class-6-english-chapter-2-scert-assam/magic-wand.webp)
+    ![magic-wand.webp](/static/posts/class-6-english-chapter-2-scert-assam/magic-wand.webp)
