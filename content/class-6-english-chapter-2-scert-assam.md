@@ -245,7 +245,7 @@ Let's see how much we have understood:
 
    Ans:
 
-   King Midas wanted to be the richest king. So, he wished for the power to turn everything he touched into gold. The divine spirit granted him his wish. Midas touched a stone, and it turned into gold. The princess also turned to a statue of gold when the king hugged her. Slowly, he realised that everything he touched turned into gold. He wanted to get rid of the golden touch. He washed his hands in the river. The water of the river removed the golden touch from his hands.
+   King Midas *wanted* to be the richest king. So, he *wished* for the power to turn everything he touched into gold. The divine spirit *granted* him his wish. Midas *touched* a stone, and it *turned* into gold. The princess also turned to a statue of gold when the king *hugged* her. Slowly, he *realised* that everything he *touched* turned into gold. He *wanted* to get rid of the golden touch. He *washed* his hands in the river. The water of the river *removed* the golden touch from his hands.
 
 8. **(a) Let's read an extract from a science fiction book.**
 
@@ -308,27 +308,27 @@ Let's see how much we have understood:
 
 10. **(a) Look at the following words. They can be broken into different syllables. Read the words aloud and clap once for each syllable. Write down how many times you have clapped for each word. A few of them are done for you.**
 
-    |     |              |                       |                                                      |
-    |-----|--------------|-----------------------|------------------------------------------------------|
-    | i.  | fulfil       | ful-fil (2 syllables) | {{<box items="2 claps">}}                            |
-    | ii. | magical      | ma-gi-cal (3 syllables) | {{<box items="3 claps">}}                          |
-    | iii.| celebration  | {{<underscored-space>}} | {{<empty-box height="2.5rem" width="5.5rem">}}     |
-    | iv. | constantly   | {{<underscored-space>}} | {{<empty-box height="2.5rem" width="5.5rem">}}     |
-    | v.  | happiness    | {{<underscored-space>}} | {{<empty-box height="2.5rem" width="5.5rem">}}     |
-    | vi. | princess     | {{<underscored-space>}} | {{<empty-box height="2.5rem" width="5.5rem">}}     |
-    | vii.| river        | {{<underscored-space>}} | {{<empty-box height="2.5rem" width="5.5rem">}}     |
+    |              |                           |                                                    |
+    |--------------|---------------------------|----------------------------------------------------|
+    | fulfil       | ful-fil (2 syllables)     | {{<box items="2 claps">}}                          |
+    | magical      | ma-gi-cal (3 syllables)   | {{<box items="3 claps">}}                          |
+    | celebration  |                           | {{<empty-box height="2.5rem" width="5.5rem">}}     |
+    | constantly   |                           | {{<empty-box height="2.5rem" width="5.5rem">}}     |
+    | happiness    |                           | {{<empty-box height="2.5rem" width="5.5rem">}}     |
+    | princess     |                           | {{<empty-box height="2.5rem" width="5.5rem">}}     |
+    | river        |                           | {{<empty-box height="2.5rem" width="5.5rem">}}     |
 
     Ans: 
 
-    |     |              |                              |                               |
-    |-----|--------------|------------------------------|-------------------------------|
-    | i.  | fulfil       | ful-fil (2 syllables)        | {{<box items="2 claps">}}     |
-    | ii. | magical      | ma-gi-cal (3 syllables)      | {{<box items="3 claps">}}     |
-    | iii.| celebration  | ce-le-bra-tion (4 syllables) | {{<box items="4 claps">}}     |
-    | iv. | constantly   | con-stant-ly (3 syllables)   | {{<box items="3 claps">}}     |
-    | v.  | happiness    | hap-pi-ness (3 syllables)    | {{<box items="3 claps">}}     |
-    | vi. | princess     | prin-cess (2 syllables)      | {{<box items="2 claps">}}     |
-    | vii.| river        | ri-ver (2 syllables)         | {{<box items="2 claps">}}     |
+    |              |                              |                               |
+    |--------------|------------------------------|-------------------------------|
+    | fulfil       | ful-fil (2 syllables)        | {{<box items="2 claps">}}     |
+    | magical      | ma-gi-cal (3 syllables)      | {{<box items="3 claps">}}     |
+    | celebration  | ce-le-bra-tion (4 syllables) | {{<box items="4 claps">}}     |
+    | constantly   | con-stant-ly (3 syllables)   | {{<box items="3 claps">}}     |
+    | happiness    | hap-pi-ness (3 syllables)    | {{<box items="3 claps">}}     |
+    | princess     | prin-cess (2 syllables)      | {{<box items="2 claps">}}     |
+    | river        | ri-ver (2 syllables)         | {{<box items="2 claps">}}     |
 
 
     **Find out a few more words from the text having two or more syllables and complete the list above.**

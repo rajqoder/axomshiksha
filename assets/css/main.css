@@ -478,16 +478,9 @@
     background-color: hsl(var(--muted) / 0.5);
   }
   
-  /* Table without headers - no background */
-  table:not(:has(th)) td {
-    background-color: transparent !important;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-color: hsl(var(--border));
-  }
-  
-  table:not(:has(th)) tr:hover {
-    background-color: transparent !important;
+  /* Hide header row when it contains empty th elements */
+  table:has(th:empty) tr:first-child {
+    display: none !important;
   }
     
     /* FAQ Accordion */
