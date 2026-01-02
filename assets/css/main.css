@@ -15,7 +15,7 @@
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --border: oklch(0.92 0.004 286.32);
+    --border: oklch(0.80 0.004 286.32);
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
 
@@ -32,7 +32,7 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    --border: oklch(1 0 0 / 10%);
+    --border: oklch(1 0 0 / 15%);
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
 
@@ -123,14 +123,14 @@
   }
 
   .border-main {
-    border-color: hsl(var(--border));
+    border-color: var(--border);
   }
 
   .card {
     @apply rounded-lg p-5 border transition-shadow;
     background-color: hsl(var(--card));
     color: hsl(var(--card-foreground));
-    border-color: hsl(var(--border));
+    border-color: var(--border)
   }
 
   .card-title {
@@ -144,7 +144,7 @@
 
   .card-footer {
     @apply pt-3 mt-4 border-t;
-    border-color: hsl(var(--border));
+    border-color: var(--border);
   }
 
   /* Content */
@@ -405,7 +405,7 @@
   .header-scrolled {
     background-color: hsl(var(--header-scrolled-bg));
     backdrop-filter: blur(8px);
-    border-color: hsl(var(--border));
+    border-color: var(--border);
     box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
   }
 
@@ -456,7 +456,7 @@
   table th,
   table td {
     @apply p-3 text-left border;
-    border-color: hsl(var(--border));
+    border-color: var(--border);
   }
   
   table th {
@@ -504,15 +504,15 @@
 
   .faq-question {
     background-color: hsl(var(--background)) !important;
-    border: 1px solid hsl(var(--border)) !important;
-    border-color: hsl(var(--border)) !important;
+    border: 1px solid var(--border) !important;
+    border-color: var(--border) !important;
   }
 
   .faq-answer,
   .faq-answer-content {
     border-width: 1px !important;
     border-style: solid !important;
-    border-color: hsl(var(--border)) !important;
+    border-color: var(--border) !important;
   }
 
   /* Override hardcoded Tailwind border colors for FAQ items and containers */
@@ -521,7 +521,7 @@
   .faq-item.border-gray-700,
   div.border-b.border-gray-200,
   div.border-b.border-gray-800 {
-    border-color: hsl(var(--border)) !important;
+    border-color: var(--border) !important;
   }
 
   .faq-question span,
