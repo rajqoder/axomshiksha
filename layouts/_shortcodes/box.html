@@ -6,7 +6,9 @@
 
 <div class="flex flex-wrap gap-4 my-4">
   {{ range $items }}
-    <div style="width: {{ $width }}; height: {{ $height }}; background-color: {{ $bgColor }}" class="inline-flex border border-{{ $borderColor }} px-4 py-2 rounded-md">
+    <div style="width: {{ $width }}; height: {{ $height }}; background-color: {{ $bgColor }}; 
+    {{ if eq $bgColor "white" }}color: black;{{ end }}" 
+    class="inline-flex border border-{{ $borderColor }} px-4 py-2 rounded-md">
       {{ . | markdownify }}
     </div>
   {{ end }}
