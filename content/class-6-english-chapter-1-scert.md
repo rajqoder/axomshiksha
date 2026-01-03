@@ -4,6 +4,7 @@ draft = false
 subject = "English" 
 date = "2025-12-30T10:48:04+05:30"
 readingTime = "30 mins"
+description = "Complete solutions and explanations for Class 6 English Chapter 1 - Afternoon on a Hill from SCERT textbook. Includes summary, word meanings, activities and exercises."
 tags = ["scert", "class-6", "english", "solutions"]
 categories = ["middle-primary"]
 writers = ["Admin"]
@@ -230,8 +231,7 @@ Now write down a few sets of words using alliteration. One is done for you.
       (iv) **Table**: The book is on the *table*.  
       (v) **Gun**: The policeman has a *gun*.
 
-### 11. 
-(a) **In group, discuss with your friend how you can take care of nature. You can use the ideas given in the cards.**
+### 11. (a) In group, discuss with your friend how you can take care of nature. You can use the ideas given in the cards.
 
    ![Q.no-11(a)-diagram.webp](/posts/class-6-english-chapter-1-scert/qno-11a-diagram.webp)
 
@@ -242,7 +242,7 @@ Now write down a few sets of words using alliteration. One is done for you.
       (iv) Turn off lights and other electrical appliances when leaving room.  
       (v) Walk to nearby places instead of using vehicles to reduce pollution.
 
-   (b) **Look at the pictures. These represent some activities for nurturing a plant. Choose the appropriate words or phrases from the box and write them below the pictures:**
+#### **(b) Look at the pictures. These represent some activities for nurturing a plant. Choose the appropriate words or phrases from the box and write them below the pictures:**
 
    ![Q.no-11(b)-diagram.webp](/posts/class-6-english-chapter-1-scert/qno-11b-diagram.webp)
 

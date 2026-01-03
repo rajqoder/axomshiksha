@@ -2,8 +2,9 @@
 title = "A Curious Mind - Class 6 English Chapter 3 (SCERT)"
 draft = false
 subject = "English" 
-date = "2026-01-01T23:58:31+05:30"
+date = "2026-01-04T00:09:36+05:30"
 readingTime = "30 mins"
+description = "Complete solutions and explanations for Class 6 English Chapter 3 - A Curious Mind from SCERT textbook. Includes summary, word meanings, activities and exercises."
 tags = ["scert", "class-6", "english", "solutions"]
 categories = ["middle-primary"]
 writers = ["Admin"]

@@ -4,6 +4,7 @@ draft = false
 subject = "English" 
 date = "2026-01-01T23:58:31+05:30"
 readingTime = "30 mins"
+description = "Complete solutions and explanations for Class 6 English Chapter 2 - The Golden Touch from SCERT textbook. Includes summary, word meanings, activities and exercises."
 tags = ["scert", "class-6", "english", "solutions"]
 categories = ["middle-primary"]
 writers = ["Admin"]
