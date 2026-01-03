@@ -411,6 +411,6 @@ Year of receiving the Nobel Prize: 1998`>}}
 
 ![Space Shuttle](/posts/class-6-english-chapter-3-scert/q-19-diagram-1.webp "Box-1")
 
-{{<box borderColor="violet-600" width="400px" height="300px" items="Box-2">}}
+{{<box borderColor="violet-600" width="400px" height="300px" items="Box-2" bgColor="white">}}
 
 **Ans:** Do it yourself.
