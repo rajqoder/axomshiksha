@@ -1,9 +1,12 @@
 {{ $items := split (.Get "items") "," }}
+{{ $borderColor := .Get "borderColor" | default "main" }}
+{{ $width := .Get "width" | default "auto" }}
+{{ $height := .Get "height" | default "auto" }}
 
-<div class="flex flex-wrap gap-4 mb-4">
+<div class="flex flex-wrap gap-4 my-4">
   {{ range $items }}
-    <div class="inline-flex border border-main px-4 py-2 rounded-md">
-      {{ trim . " " }}
+    <div style="width: {{ $width }}; height: {{ $height }}" class="inline-flex border border-{{ $borderColor }} px-4 py-2 rounded-md">
+      {{ . | markdownify }}
     </div>
   {{ end }}
 </div>

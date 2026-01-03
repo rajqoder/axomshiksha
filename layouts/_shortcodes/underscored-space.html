@@ -1,7 +1,8 @@
 {{ $count := .Get "no" | int }}
+{{ $flexDirection := .Get "direction" | default "row" }}
 
 {{if gt $count 1 }}
-<div class="flex flex-wrap gap-4 mb-4">
+<div style="flex-direction: {{ $flexDirection }};" class="flex flex-wrap gap-4 mb-4">
   {{ range seq $count }}
     <span>____________________</span>
   {{ end }}

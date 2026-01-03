@@ -479,8 +479,13 @@
   }
   
   /* Hide header row when it contains empty th elements */
-  table:has(th:empty) tr:first-child {
+  table tr:first-child:has(th:empty) {
     display: none !important;
+  }
+  
+  /* Set minimum width for empty table cells */
+  table td:empty {
+    min-width: 150px;
   }
     
     /* FAQ Accordion */
