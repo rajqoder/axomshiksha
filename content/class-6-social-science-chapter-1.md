@@ -1,5 +1,5 @@
 +++
-title = "আমাৰ পৃথিৱী - ষষ্ঠ শ্ৰেণীৰ সমাজ বিজ্ঞানৰ প্ৰথম অধ্যায় - SCERT"
+title = "আমাৰ পৃথিৱী (Our Earth) Class 6 - SCERT"
 date = "2026-01-04T17:44:05+05:30"
 draft = false
 readingTime = "20 mins"

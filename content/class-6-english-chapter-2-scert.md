@@ -1,5 +1,5 @@
 +++
-title = "The Golden Touch - Class 6 English Chapter 2 (SCERT)"
+title = "The Golden Touch - Class 6 (SCERT)"
 draft = false
 subject = "English" 
 date = "2026-01-01T23:58:31+05:30"

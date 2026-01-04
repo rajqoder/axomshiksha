@@ -1,5 +1,5 @@
 +++
-title = "Afternoon on a hill - Class 6 English Chapter 1 Solutions (SCERT)"
+title = "Afternoon on a hill - Class 6 (SCERT)"
 draft = false
 subject = "English" 
 date = "2025-12-30T10:48:04+05:30"

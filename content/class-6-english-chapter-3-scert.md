@@ -1,5 +1,5 @@
 +++
-title = "A Curious Mind - Class 6 English Chapter 3 (SCERT)"
+title = "A Curious Mind - Class 6 (SCERT)"
 draft = false
 subject = "English" 
 date = "2026-01-04T00:09:36+05:30"
