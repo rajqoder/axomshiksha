@@ -3,7 +3,7 @@ title = "Afternoon on a hill - Class 6 English Chapter 1 Solutions (SCERT)"
 draft = false
 subject = "English" 
 date = "2025-12-30T10:48:04+05:30"
-readingTime = "30 mins"
+readingTime = "50 mins"
 description = "Complete solutions and explanations for Class 6 English Chapter 1 - Afternoon on a Hill from SCERT textbook. Includes summary, word meanings, activities and exercises."
 tags = ["scert", "class-6", "english", "solutions"]
 categories = ["middle-primary"]
@@ -323,7 +323,7 @@ Now write down a few sets of words using alliteration. One is done for you.
    | bright          | brighter           | brightest          |
    | tall            | taller             | tallest            |
 
-    (b) Now complete the following table
+   **(b) Now complete the following table**
 
    | Positive Degree | Comparative Degree | Superlative Degree |
    |:---------------|:------------------|:------------------|
@@ -339,7 +339,7 @@ Now write down a few sets of words using alliteration. One is done for you.
    | safe            | safer              | safest             |
    | slow            | slower             | slowest            |
 
-   (c) Look at the two pictures given below. Which picture do you like more and why? Discuss with your friend. You can use the adjectives given in the box in the comparative degree form.
+   **(c) Look at the two pictures given below. Which picture do you like more and why? Discuss with your friend. You can use the adjectives given in the box in the comparative degree form.**
 
    ![Q.15(c)-diagram.webp](/posts/class-6-english-chapter-1-scert/qno-15c-diagram.webp)
   

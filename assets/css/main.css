@@ -150,56 +150,17 @@
   /* Content */
   .content-body h1 {
     @apply text-3xl font-bold mt-8 mb-4;
-    position: relative;
-    padding-bottom: 0.5rem;
     scroll-margin-top: 80px;
-  }
-  
-  .content-body h1::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-    border-radius: 3px;
   }
 
   .content-body h2 {
     @apply text-2xl font-bold mt-6 mb-3;
-    position: relative;
-    padding-bottom: 0.5rem;
     scroll-margin-top: 80px;
-  }
-  
-  .content-body h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-    border-radius: 2px;
   }
 
   .content-body h3 {
     @apply text-xl font-bold mt-5 mb-3;
-    position: relative;
-    padding-bottom: 0.3rem;
     scroll-margin-top: 80px;
-  }
-  
-  .content-body h3::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 1.5px;
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-    border-radius: 1.5px;
   }
 
   .content-body p {
@@ -292,6 +253,16 @@
     @apply px-1.5 py-0.5 rounded text-sm;
     background-color: hsl(var(--muted));
     font-family: 'Fira Code', monospace;
+  }
+  
+  /* Heading box shortcode - allow custom text colors to override base styles */
+  .heading-box h1,
+  .heading-box h2,
+  .heading-box h3,
+  .heading-box h4,
+  .heading-box h5,
+  .heading-box h6 {
+    color: inherit !important;
   }
   
   /* Images */
