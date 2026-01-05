@@ -1,5 +1,5 @@
 +++
-title = "The Golden Touch - Class 6 (SCERT)"
+title = "The Golden Touch - Class 6 English (SCERT)"
 draft = false
 subject = "English" 
 date = "2026-01-01T23:58:31+05:30"
@@ -70,7 +70,10 @@ Let's see how much we have understood:
 
 ### 3. Read the sentences given below, and replace the underlined part with a word from the box.
 
-{{<box items="shocked, excited, granted, insisted">}}
+{{<box content="shocked" borderColor="blue-500">}}
+{{<box content="excited" borderColor="blue-500">}}
+{{<box content="granted" borderColor="blue-500">}}
+{{<box content="insisted" borderColor="blue-500">}}
 
 (i) Midas was *surprised*.  
 **Ans:** Midas was **shocked**.
@@ -175,7 +178,7 @@ i. Midas learned to be happy with what he had.
 
 **(b) Now fill in the blanks in the following sentences with words given in the box below:**
 
-{{<box borderColor="violet-600" items="lost &nbsp;&nbsp; she &nbsp;&nbsp; pull &nbsp;&nbsp; time">}}
+{{<box borderColor="blue-500" content="lost &nbsp;&nbsp; she &nbsp;&nbsp; pull &nbsp;&nbsp; time">}}
 
 (i) The sound of 'e' in 'get' is different from the sound of 'e' in _________.  
 **Ans:** (i) The sound of 'e' in 'get' is different from the sound of 'e' in **she**.
@@ -254,11 +257,19 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 **(b) Have you ever read science fiction before? Now, go to a library or search on the internet with the help of an elder to find such books. Write down the names of those books in the space given below:**
 
-{{<underscored-space no="4">}}
+{{<flex justifyContent="start">}}
+{{<flex direction="col" alignItems="start">}}
+{{<underscored-space no="2">}}
+{{</flex>}}
+
+{{<flex direction="col" alignItems="start">}}
+{{<underscored-space no="2">}}
+{{</flex>}}
+{{</flex>}}
 
 **Ans:**
 
-{{<box items="The Time Machine, Journey to the Centre of the Earth, Around the World in Eighty Days, Twenty Thousand Leagues Under the Sea">}}
+{{<box content="The Time Machine, Journey to the Centre of the Earth, Around the World in Eighty Days, Twenty Thousand Leagues Under the Sea">}}
 
 **(c) Imagine that you live on the moon. Now, talk to your partner about your life there. Share with your friend how it is different from life on earth.**
 
@@ -280,7 +291,9 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 **Make sentences using the word ‘drink’ to show two different meanings:**
 
+{{<flex direction="col" alignItems="start">}}
 {{<underscored-space no="2">}}
+{{</flex>}}
 
 **Ans:**
 
@@ -289,7 +302,9 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 **(c) Find more words from the lesson which can be used both as a noun and a verb. Write them down below:**
 
+{{<flex justifyContent="start">}}
 {{<underscored-space no="2">}}
+{{</flex>}}
 
 **Ans:**
 
@@ -298,7 +313,9 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 **Now, make sentences using these words as a noun and as a verb:**
 
+{{<flex direction="col" alignItems="start">}}
 {{<underscored-space no="4">}}
+{{</flex>}}
 
 **Ans:**
 
@@ -311,8 +328,8 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 |              |                           |                                                    |
 |--------------|---------------------------|----------------------------------------------------|
-| fulfil       | ful-fil (2 syllables)     | {{<box items="2 claps">}}                          |
-| magical      | ma-gi-cal (3 syllables)   | {{<box items="3 claps">}}                          |
+| fulfil       | ful-fil (2 syllables)     | {{<box content="2 claps">}}                          |
+| magical      | ma-gi-cal (3 syllables)   | {{<box content="3 claps">}}                          |
 | celebration  |                           | {{<empty-box height="2.5rem" width="5.5rem">}}     |
 | constantly   |                           | {{<empty-box height="2.5rem" width="5.5rem">}}     |
 | happiness    |                           | {{<empty-box height="2.5rem" width="5.5rem">}}     |
@@ -323,13 +340,13 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 |              |                              |                               |
 |--------------|------------------------------|-------------------------------|
-| fulfil       | ful-fil (2 syllables)        | {{<box items="2 claps">}}     |
-| magical      | ma-gi-cal (3 syllables)      | {{<box items="3 claps">}}     |
-| celebration  | ce-le-bra-tion (4 syllables) | {{<box items="4 claps">}}     |
-| constantly   | con-stant-ly (3 syllables)   | {{<box items="3 claps">}}     |
-| happiness    | hap-pi-ness (3 syllables)    | {{<box items="3 claps">}}     |
-| princess     | prin-cess (2 syllables)      | {{<box items="2 claps">}}     |
-| river        | ri-ver (2 syllables)         | {{<box items="2 claps">}}     |
+| fulfil       | ful-fil (2 syllables)        | {{<box content="2 claps">}}     |
+| magical      | ma-gi-cal (3 syllables)      | {{<box content="3 claps">}}     |
+| celebration  | ce-le-bra-tion (4 syllables) | {{<box content="4 claps">}}     |
+| constantly   | con-stant-ly (3 syllables)   | {{<box content="3 claps">}}     |
+| happiness    | hap-pi-ness (3 syllables)    | {{<box content="3 claps">}}     |
+| princess     | prin-cess (2 syllables)      | {{<box content="2 claps">}}     |
+| river        | ri-ver (2 syllables)         | {{<box content="2 claps">}}     |
 
 
 **Find out a few more words from the text having two or more syllables and complete the list above.**
@@ -383,7 +400,9 @@ iv. The story conveys the message that our words and actions reflect back on us,
 
 **Make a tongue twister on your own**
 
+{{<flex direction="col" alignItems="start">}}
 {{<underscored-space no="2">}}
+{{</flex>}}
 
 **Ans:**
 
@@ -391,7 +410,7 @@ iv. The story conveys the message that our words and actions reflect back on us,
 
 **Riddle Time :**
 
-{{<box items="I m waved by magicians to make things disappear. Who am I?">}}
+{{<box content="I m waved by magicians to make things disappear. Who am I?" borderColor="blue-500">}}
 
 **Ans:** A Magic Wand
 

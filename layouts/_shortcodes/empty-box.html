@@ -1,26 +1,13 @@
-{{/* defaults */}}
-{{ $count := 1 }}
 {{ $width := "5.5rem" }}
 {{ $height := "2.5rem" }}
-
-{{/* override if provided */}}
-{{ with .Get "no" }}
-  {{ $count = . | int }}
-{{ end }}
+{{ $borderColor := .Get "borderColor" | default "main" }}
 
 {{ with .Get "width" }}
-  {{ $width = . }}
+{{ $width = . }}
 {{ end }}
 
 {{ with .Get "height" }}
-  {{ $height = . }}
+{{ $height = . }}
 {{ end }}
 
-<div class="flex flex-wrap gap-4">
-  {{ range seq $count }}
-    <div
-      class="border border-main rounded-sm"
-      style="width: {{ $width }}; height: {{ $height }};"
-      ></div>
-  {{ end }}
-</div>
+<div class="inline-flex border border-{{ $borderColor }} rounded-sm" style="width: {{ $width }}; height: {{ $height }};"></div>

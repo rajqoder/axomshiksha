@@ -1,5 +1,7 @@
 {{ $flexDirection := .Get "direction" | default "row" }}
+{{ $justifyContent := .Get "justifyContent" | default "center" }}
+{{ $alignItems := .Get "alignItems" | default "center" }}
 
-<div class="flex gap-4 flex-{{ $flexDirection }}">
-  {{ .Inner | markdownify }}
+<div class="flex flex-wrap items-{{ $alignItems }} justify-{{ $justifyContent }} my-4 gap-4 flex-{{ $flexDirection }}">
+  {{ .Inner | safeHTML }}
 </div>

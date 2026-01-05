@@ -36,6 +36,9 @@ keywords = ['education', 'learning', 'tutorials', 'guides', 'study materials', '
     lineNos = true
     lineNumbersInTable = false
     style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [build]
   [build.buildStats]

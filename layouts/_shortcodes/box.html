@@ -1,15 +1,11 @@
-{{ $items := split (.Get "items") "," }}
+{{ $content := .Get "content" }}
 {{ $borderColor := .Get "borderColor" | default "main" }}
 {{ $width := .Get "width" | default "auto" }}
 {{ $height := .Get "height" | default "auto" }}
 {{ $bgColor := .Get "bgColor" | default "transparent" }}
 
-<div class="flex flex-wrap gap-4 my-4">
-  {{ range $items }}
-    <div style="width: {{ $width }}; height: {{ $height }}; background-color: {{ $bgColor }}; 
-    {{ if eq $bgColor "white" }}color: black;{{ end }}" 
-    class="inline-flex border border-{{ $borderColor }} px-4 py-2 rounded-md">
-      {{ . | markdownify }}
-    </div>
-  {{ end }}
+<div style="width: {{ $width }}; height: {{ $height }}; background-color: {{ $bgColor }}; 
+    {{ if eq $bgColor " white" }}color: black;{{ end }}"
+  class="inline-flex border border-{{ $borderColor }} mb-4 px-4 py-2 mr-4 rounded-md">
+  {{ $content | markdownify }}
 </div>

@@ -1,12 +1,8 @@
-{{ $count := .Get "no" | int }}
-{{ $flexDirection := .Get "direction" | default "row" }}
+{{ $count := .Get "no" | default 1 | int }}
+{{ $width := .Get "width" | default "200px" }}
 
-{{if gt $count 1 }}
-<div style="flex-direction: {{ $flexDirection }};" class="flex flex-wrap gap-4 mb-4">
-  {{ range seq $count }}
-    <span>____________________</span>
-  {{ end }}
-</div>
-{{ else }}
-<span>____________________</span>
+{{ range seq $count }}
+<span class="inline-block border-b border-blue-500 select-none"
+  style="width: {{ $width }}; height: 1.2em;">
+</span>
 {{ end }}
