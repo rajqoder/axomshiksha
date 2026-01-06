@@ -8,7 +8,7 @@ description = "Complete solutions and explanations for Class 6 English Chapter 3
 tags = ["scert", "class-6", "english", "solutions"]
 categories = ["middle-primary"]
 writers = ["Admin"]
-thumbnail = "/posts/class-6-english-chapter-3-scert/thumbnail.webp"
+thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczOOEFk6wo3EJ1mQJeFuSdDWckAEQlSdMWNijOg1IR6856coUU0iuFNCmJyYubs4i12wWLhD_CXJWl1G8URfZqP98AAKe7VmZM3QT_xk6-K26PyKVLkfHi1JC57mdAE06OobjrhrRriUGHcn8T-MNFHY=w455-h607-s-no-gm?authuser=0"
 +++
 
 ## Summary of the Story
@@ -130,7 +130,7 @@ Meera further explains Raman’s life, education, achievements, and contribution
 
 ### 4. Read the lesson to complete the timeline given below. One is done for you.
 
-   ![Timeline](/posts/class-6-english-chapter-3-scert/q-4-diagram.webp "Timeline")
+   ![Timeline](https://lh3.googleusercontent.com/pw/AP1GczNzE05THqASr9E2RyhdLH3RVIMCwOheQPTCmBQEdMq9y34i1_No6uSs7g7ubUY89e7MUOlGNPlyuonK17M_wh_Yb4v5EOzb-itc0Ts9ZwjGqHkPNdxkmlU9_TOPJ0RpSsdtSH4aH_tqtug732NZ7oD-=w662-h184-s-no-gm?authuser=0)
 
    **Ans:**
 
@@ -191,11 +191,11 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 
 ### 8. (a) Read the conversation between Orgo and his mother.
 
-   ![Conversation between Orgo and his mother](/posts/class-6-english-chapter-3-scert/q-8a-diagram.webp "Conversation between Orgo and his mother")
+   ![Conversation between Orgo and his mother](https://lh3.googleusercontent.com/pw/AP1GczOMb67MNipiwA43JKP4gszVqlfON28Zff0KQU0v_ywlYjqj-yrv9hAtCSwaahYGA1atbo2aeTzv4geM1aKooa42a3KlPxgMXIPvhYcvDghBgvZFhTNrSBN34nH5P9e8qQlgLOh8GzMuUR1nLydk0Uzk=w482-h336-s-no-gm?authuser=0)
 
 #### (b) Orgo went to the library accordingly. He came across a biography of **Thomas Alva Edison**, the great inventor, and read it.
 
-   ![Thomas Alva Edison biography](/posts/class-6-english-chapter-3-scert/q-8b-diagram.webp "Biography")
+   ![Thomas Alva Edison biography](https://lh3.googleusercontent.com/pw/AP1GczPGFj7oQRWrSPYBuNl3l65Ad0ae6l2i6Obo1NJhuMJ8Z6dsoOOERv7Yfwpf4W7fxUdlwmf7nuwj5TvJUhgEj288Xv09jrJsjbWxagNg0G5mWmW-SEh2xtk-dJHy_kL5j5jRYgL-Sornhg59FnwQTDow=w489-h271-s-no-gm?authuser=0)
 
 #### (c) Orgo made some notes of what he had read about Thomas Alva Edison. Read what Orgo wrote:  
 
@@ -234,7 +234,7 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 
 ### 9. (a) Orgo and his friends read the notice on the notice board.
 
-   ![Notice on the notice board](/posts/class-6-english-chapter-3-scert/q-9a-diagram.webp "Notice")
+   ![Notice on the notice board](https://lh3.googleusercontent.com/pw/AP1GczOx1pKVHml0OXsWjDl8jKfU_EWAhvAzdgW6vjGAOgkWqiIRmUwdrEU05ZUT8u5LW1fb8tOs6YtTCQvAdd44FCd433G9xdYhg5iT4-_XKzU4PdVlmYAW09fNIpij4kODGnFzIL2B_6xORpGEOEU-fytl=w495-h244-s-no-gm?authuser=0)
 
    **Complete the following sentence that conveys the message of the notice :**
 
@@ -243,19 +243,19 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 #### (b) Orgo wrote an email to Meera asking for help to prepare the speech.  
    Let's read what he wrote :
 
-   ![Orgo's Email](/posts/class-6-english-chapter-3-scert/q-9b-diagram.webp "Orgo's email")
+   ![Orgo's Email](https://lh3.googleusercontent.com/pw/AP1GczMMKyleNxLfRyalbeDe6lyF1htrowTyo4Zvb71spPjUaroylWHgEIsEfI7n2NmSKsizlDqD-kEwNUc7MQo425IXPeecxXJtTHlF4ohpEKv5z6erVd31TCKpuBnF1X2lrHzSawjX7peQYEkOZnWw46Bc=w460-h245-s-no-gm?authuser=0)
 
 #### (c) The reply given by Meera to Orgo are in parts written in the cards. Read the parts:
 
-   ![Meera's Email Parts](/posts/class-6-english-chapter-3-scert/q-9c-diagram.webp "Email Parts")
+   ![Meera's Email Parts](https://lh3.googleusercontent.com/pw/AP1GczN1iO2UVw3jhJensr2ib9oeEaRrUz0RgYTrN5R7iTmt10cMlSr1MxcGYBoutSvlA4U67yktBtZGpralUYO6erBbrFU-xYzWXhzP6uQN6wRP9Zp3LiHCGVFX_U9A6VQlb6QqUhCdx1Kl0X1mX_Dgwp2w=w503-h321-s-no-gm?authuser=0)
 
    **Now rearrange and write the parts in the proper places to get Meera's e-mail.**
 
-   ![Meera's Email Empty Template](/posts/class-6-english-chapter-3-scert/email-empty-template.webp "Empty Email Diagram")
+   ![Meera's Email Empty Template](https://lh3.googleusercontent.com/pw/AP1GczNKqhvpHek56Ox2f9qBxy_FdU-noUQGGXfWOteqtmynC7Gwto6v-DADXUCFtNUniXFcovd46Ls1cJ9eB0U0BtgTvoueqt5gT0yCGlDQQPkJePd62NBYKuUGpF7bgtjV2cm6gg74CSov1wxmT7eIHUGN=w488-h251-s-no-gm?authuser=0)
 
    **Ans:**
 
-   ![Meera's Reply](/posts/class-6-english-chapter-3-scert/meera's-email-reply.webp "Meera's Email Reply")
+   ![Meera's Reply](https://lh3.googleusercontent.com/pw/AP1GczNXAk9PxCM9S6VisLIGkSxKFiNdjL-a3tSosz2teVw2RLtvmov59iCBcwqEaqPWGaMuSSAaGoCQYrkzGThZZqlA8ep0oP31wSb82-XHdzs4VdOF0tYNmZsB_u8mnRv0b9WEYIvGDZeRnxOcnICsiOEE=w488-h251-s-no-gm?authuser=0)
 
 
 ### Let's learn some grammar
@@ -291,7 +291,7 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 
 ### 11. Look at the picture and read the sentences given beside it:
 
-![Nikita's Painting](/posts/class-6-english-chapter-3-scert/q-11-diagram.webp "Nikita's Painting")
+![Nikita's Painting](https://photos.google.com/share/AF1QipNoviUJDg4Q9LyVapCQCpvjDoWfCwV8SYOKJLROEcNkoyHgCT_zwthWd8Bz_UjSDg/photo/AF1QipOpL7uvUW7Wdec_xoi5zBQNtM020wZ0ieEJr-jG?key=R1dzcm1kdjBNdU5Kb2U0bXUzeGZ0X3RDUXhHbWpB)
 
 (i) Nikita is painting a scenery.  
 (ii) Orgo is standing near the painting.  
@@ -420,7 +420,7 @@ Year of receiving the Nobel Prize: 1998`>}}
 
 ### 19. Look at the illustration in Box 1. Try to draw a space shuttle in Box 2 following the steps shown in Box 1. Colour it and give it a name.
 
-![Space Shuttle](/posts/class-6-english-chapter-3-scert/q-19-diagram-1.webp "Box-1")
+![Space Shuttle](https://lh3.googleusercontent.com/pw/AP1GczNqdVo190lRy4vlZcZ6rdxOGLl8hXPiAov2k0DeBcgKsyVx_5HPgTHn_Js54gEnffpvmLPssPs0UfN5NAlPRlqtnZfAgyS55uFOJhBo3otvZL1hdAcb8lgLlsETp_GP7cGA-taB12egtIG-D_-lNN5y=w400-h205-s-no-gm?authuser=0)
 
 {{<box borderColor="blue-500" width="400px" height="300px" content="Box-2" bgColor="white">}}
 

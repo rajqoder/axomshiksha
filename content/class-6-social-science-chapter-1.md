@@ -3,12 +3,12 @@ title = "আমাৰ পৃথিৱী (Our Earth) Class 6 - SCERT"
 date = "2026-01-04T17:44:05+05:30"
 draft = false
 readingTime = "20 mins"
-thumbnail = "/posts/class-6-social-science-chapter-1/thumbnail.webp"
 description = "আমাৰ পৃথিৱী - ষষ্ঠ শ্ৰেণীৰ সমাজ বিজ্ঞানৰ প্ৰথম অধ্যায়ৰ সম্পূৰ্ণ প্ৰশ্নোত্তৰ, অনুশীলনী, আৰু বিস্তৃত আলোচনা, য'ত সৌৰজগত, পৃথিৱীৰ গোলাকাৰ আকৃতি, অক্ষৰেখা-দ্ৰাঘিমাৰেখা, পৃথিৱীৰ গতি আদি বিষয়ৰ বিৱৰণ অন্তৰ্ভুক্ত কৰা হৈছে। SCERT পাঠ্যপুথিৰ অনুশীলনীসমূহৰ ব্যাখ্যাসহ প্ৰশ্ন-উত্তৰ আৰু ভৌগোলিক ধাৰণাসমূহৰ সঠিক ব্যাখ্যা সন্নিবেশিত।"
 tags = ["social-science", "class-6", "scert"]
 categories = ["middle-primary"]
 writers = ["Admin"]
 subject = "Social Science"
+thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopycZkIdj0tnInxlsVJkJMK8bYBhPELw_e0eUG1FGpD56pd6HMYC3xE-4Ek_ShLw8d8scye1WhSyfTz2c85jxmyVqL-7qBKDtp3mgKmBsR4qGNbJbaxE5dG4-c2Y7Wbm1G=w400-h280-s-no-gm?authuser=0"
 +++
 
 {{<heading-box heading="### অনুশীলনী - ১" ariaLabel="অনুশীলনী - ১" bgColor="orange" textColor="white">}}
@@ -64,7 +64,7 @@ subject = "Social Science"
 
 **উত্তৰ:**
 
-![পৃথিৱীৰ ছবি](/posts/class-6-social-science-chapter-1/two-poles-with-equator.webp)
+![পৃথিৱীৰ ছবি](https://lh3.googleusercontent.com/pw/AP1GczOXjuNqrn5pbzXTMBdNiQ25IRmG5XTeGu1iTv8JER8bBWOXYNettOUZImwXnXYnb4iBEZpsbsk6_x0VlQw1yffPeNG8EQRihuE68BVyk573KeuHmi0vb3n2XgbTUsZLiLTBkkKgJ9TA2I2e6yZCEied=w355-h418-s-no-gm?authuser=0)
 
 {{<heading-box heading="### অনুশীলনী - ৩" ariaLabel="অনুশীলনী - ৩" bgColor="orange" textColor="white">}}
 
@@ -90,7 +90,7 @@ subject = "Social Science"
 
 #### **৩. এটা গোলকৰ ছবি আঁকি তাত প্ৰধান অক্ষৰেখা কেইডাল দেখুওৱা ।**
 
-**উত্তৰ:** ![Earth sphere with major axes](/posts/class-6-social-science-chapter-1/earth-sphere-with-major-axes.webp)
+**উত্তৰ:** ![Earth sphere with major axes](https://lh3.googleusercontent.com/pw/AP1GczPUBWPtKJYaa3_d2Y4aLq7PjvQUu3ivibFSRNAdUdBPrmbPCH1EiKeU5B0ARvwYimvsRdnysL-HH7cs1GoCG1Tp2SBUEsXIY2XrT3mzIR4jqHME1T-Z4vxrusaZrLi0QS_OBlIv-LeG7SS0PwbtCTs9=w557-h347-s-no-gm?authuser=0)
 
 {{<heading-box heading="### অনুশীলনী - ৪" ariaLabel="অনুশীলনী - ৪" bgColor="orange" textColor="white">}}
 

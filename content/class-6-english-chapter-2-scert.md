@@ -8,7 +8,7 @@ description = "Complete solutions and explanations for Class 6 English Chapter 2
 tags = ["scert", "class-6", "english", "solutions"]
 categories = ["middle-primary"]
 writers = ["Admin"]
-thumbnail = "/posts/class-6-english-chapter-2-scert/thumbnail.webp"
+thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczP6dYU1xE5EVgn_UsEWkQGIAIVv96NuSrWQe5X23jm95yQwQCvQi6hj9TmAhBdNmBdPiYlsDRbizVPLDd8RAdDLfnFCaOR0fJywlinOAMBxa51xjATjlV2gzpme4IF2yftiqM5BxpIxXx6OLUg7F7eG=w455-h607-s-no-gm?authuser=0"
 +++
 
 ## Summary of the Story
@@ -253,7 +253,7 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 ### 8. (a) Let's read an extract from a science fiction book.
 
-![science-fiction-book.webp](/posts/class-6-english-chapter-2-scert/science-fiction-book.webp "Science Fiction Book")
+![science-fiction-book.webp](https://lh3.googleusercontent.com/pw/AP1GczNPrkZcYJf3ylN8uQDpiltPX5YPcD7CggXJIEgG7PYI-9tk5ekBQn-XjEtIRN7ssnsMsS4Clq8jZ-P9jj06XL3t9LrkRUQhYaWqpIpiZIVEo0IdN847J-8_SwiTQM4M1R0YqthL5wAkug_-GHxIQN9l=w641-h334-s-no-gm?authuser=0)
 
 **(b) Have you ever read science fiction before? Now, go to a library or search on the internet with the help of an elder to find such books. Write down the names of those books in the space given below:**
 
@@ -369,7 +369,7 @@ iv. The story conveys the message that our words and actions reflect back on us,
 
 ### 12. (a) Let's read the poster below :
 
-![magic-poster.webp](/posts/class-6-english-chapter-2-scert/magic-poster.webp "Magic Poster")
+![magic-poster.webp](https://lh3.googleusercontent.com/pw/AP1GczOyKRAW1kTaMvK7P5rs27lk27_V5Fi8K4BtWD2FSvTheGaa6_-Tk4IYaHFITk6We0c2Zxv9LEAD0iW9u4oswKQts2UlJHwnZudso8qt-Vki97XZXlyQjj0YKiVs9Vc8DyjWNIHL0cr3PwlwEW0uVkPR=w283-h297-s-no-gm?authuser=0)
 
 **(b) Use information from the poster to complete the sentences:**
 
@@ -414,4 +414,4 @@ iv. The story conveys the message that our words and actions reflect back on us,
 
 **Ans:** A Magic Wand
 
-![magic-wand.webp](/posts/class-6-english-chapter-2-scert/magic-wand.webp "Magic wand")
+![magic-wand.webp](https://lh3.googleusercontent.com/pw/AP1GczPX6lIUKoVmF7c71FXNl_Y85EUlQh5Z9Is6hI8K1bF3qrihg4yErT1VwpAPkb0Zcq3DtACkHstpk2dJEdnThp3o2e39h4f9mUqnxGvzPHke1w_NYJGgIgfztFrgyVRC07E1O26LTgLMkhwEBPHl_qvt=w300-h300-s-no-gm?authuser=0)

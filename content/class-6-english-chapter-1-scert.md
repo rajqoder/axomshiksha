@@ -8,7 +8,7 @@ description = "Complete solutions and explanations for Class 6 English Chapter 1
 tags = ["scert", "class-6", "english", "solutions"]
 categories = ["middle-primary"]
 writers = ["Admin"]
-thumbnail = "/posts/class-6-english-chapter-1-scert/thumbnail.webp"
+thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczN28Nd3u_vM128uOILjwlJ_TIEuh5fO_4DL2m79WfXw8PHsRVA6x5pZYRQTrfAY97GoCydt_XeLQCTqkqL-4gtT6Np9l0qNccQgxGjoscu7k8rtb-PE0Ed-w1-Zc238reot_rA94OvZ3QRpfJlpU6c=w455-h607-s-no-gm?authuser=0"
 +++
 
 ## Afternoon on a hill
@@ -206,7 +206,7 @@ Now write down a few sets of words using alliteration. One is done for you.
 
 ### 9. Look at the picture and write description about it. You can use the ideas given in the box:
 
-   ![No-9-Question-Diagram.webp](/posts/class-6-english-chapter-1-scert/qno-9-diagram.webp)
+   ![No-9-Question-Diagram.webp](https://lh3.googleusercontent.com/pw/AP1GczOyIISxBOLWEKtR1XFoNb7hrMyzRkpaI4yBwpZIdZmHD55TjdWgxo55YqV8pY2MTgZJ1X_shs0Akho6jWYGnxto0iUvDT3uQLWtZYg9jWhVe0OwBJZ_ea5ZPu-3hbFcABUQfPNf9Gl1hUGQAtfWvig=w423-h262-s-no-gm?authuser=0)
 
    |          |          |          |
    |:--------|:--------|:--------|
@@ -220,7 +220,7 @@ Now write down a few sets of words using alliteration. One is done for you.
 
 ### 10. Find words related to nature in the grid and encircle them. One is done for you.
 
-   ![Word-puzzles.webp](/posts/class-6-english-chapter-1-scert/word-puzzles.webp)
+   ![Word-puzzles.webp](https://lh3.googleusercontent.com/pw/AP1GczMMwhUDSft_hRddYAoIb-Lrxn_Kg5trTStZFBy7r07-IrgvuXM48LSVrvPunB2x2q-4GgRM6s14i9hFn_L27ekjbsPXhTEQlbsiJPlJrhNrRApdjkz5d-qZHe8I1ryeGyS7OmrtmSYAT9ZBNU2Xrl4=w373-h269-s-no-gm?authuser=0)
 
    Now, make sentences using each word:
 
@@ -233,7 +233,7 @@ Now write down a few sets of words using alliteration. One is done for you.
 
 ### 11. (a) In group, discuss with your friend how you can take care of nature. You can use the ideas given in the cards.
 
-   ![Q.no-11(a)-diagram.webp](/posts/class-6-english-chapter-1-scert/qno-11a-diagram.webp)
+   ![Q.no-11(a)-diagram.webp](https://lh3.googleusercontent.com/pw/AP1GczO5POnHMWS2NI28kg1Xnx_LLfv7PjzCbuDoXtI5GuOZiW3aHIcApey6qLLxOGBkJ6B_a86uwnWKMs6BG-QHpWuRZsF9X_RUAmyApSLA4TpG6-3H2gC-kHrGql6HLU5ZGsGj-dhJRq3coqFO9-6MI7M=w662-h263-s-no-gm?authuser=0)
 
    **Ans:**  
       (i) Green the earth by planting trees and caring for them.  
@@ -244,7 +244,7 @@ Now write down a few sets of words using alliteration. One is done for you.
 
 #### **(b) Look at the pictures. These represent some activities for nurturing a plant. Choose the appropriate words or phrases from the box and write them below the pictures:**
 
-   ![Q.no-11(b)-diagram.webp](/posts/class-6-english-chapter-1-scert/qno-11b-diagram.webp)
+   ![Q.no-11(b)-diagram.webp](https://lh3.googleusercontent.com/pw/AP1GczPAUXVQ2amt_aNAC2VdJev2M0sIEv_s_GLXc3QP6VKEilEJrqE3uwj3mH7GXoViFZ2PxIwVEMhSQ3_0m9lpNGM2i7AwBshStg0enX0DqEoh3e9ePgJnloPjgcOk2BFr8O5P1Y6XMA65KuudFERsdaM=w475-h566-s-no-gm?authuser=0)
 
    **Ans:**  
       (i) Wedding  
@@ -257,7 +257,7 @@ Now write down a few sets of words using alliteration. One is done for you.
 ### 12. (a) **Draw a scenery**
 
    **Ans:**
-   ![Q.12(a)-diagram.webp](/posts/class-6-english-chapter-1-scert/qno-12a-diagram.webp)
+   ![Q.12(a)-diagram.webp](https://lh3.googleusercontent.com/pw/AP1GczMxRPlGej_A4gTtzs1cAnEUpxMWWe1NkxfccnrU7dcAz7WSH3P13tvJeSB4DAj6bjQdTtbVn54gCSvfiSm-c4-Aw5uJvfYb4vZugTZYdkv4GhnVMLnxx4R3gdxHlmDPrY3f5xEPA5T5BfRDSrY4sszi=w900-h450-s-no-gm?authuser=0)
 
    **(b) Describe the picture to your friend without showing it to him/her. Your friend will listen to you and draw accordingly. Match your drawing with the one your friend has drawn after listening to you. Are the two pictures the same? Now, take turns doing the activity. Have fun!**
 
@@ -341,7 +341,7 @@ Now write down a few sets of words using alliteration. One is done for you.
 
    **(c) Look at the two pictures given below. Which picture do you like more and why? Discuss with your friend. You can use the adjectives given in the box in the comparative degree form.**
 
-   ![Q.15(c)-diagram.webp](/posts/class-6-english-chapter-1-scert/qno-15c-diagram.webp)
+   ![Q.15(c)-diagram.webp](https://lh3.googleusercontent.com/pw/AP1GczOzrkQrekaMfg6n6RCuERtbppc-qYdF7Pc1q0E49aYepjgeSz_GChYgtIFMzHPJvq52IRRm5YB3osy3CWfG8EsACTYqcKwFqmUjxB0Th2KxKubBpHcwwyWr__HQlBqAZR9wgGzLe-TlJnCs7UK9xwmr=w661-h265-s-no-gm?authuser=0)
   
    Work with your friend and suggest some ways to protect nature.
 
