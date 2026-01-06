@@ -5,7 +5,8 @@ subject = "English"
 date = "2026-01-01T23:58:31+05:30"
 readingTime = "35 mins"
 description = "Complete solutions and explanations for Class 6 English Chapter 2 - The Golden Touch from SCERT textbook. Includes summary, word meanings, activities and exercises."
-tags = ["scert", "class-6", "english", "solutions"]
+tags = ["scert", "class-6", "english"]
+keywords = ["scert", "class-6", "english", "solutions", "textbook", "lesson-2"]
 categories = ["middle-primary"]
 writers = ["Admin"]
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczP6dYU1xE5EVgn_UsEWkQGIAIVv96NuSrWQe5X23jm95yQwQCvQi6hj9TmAhBdNmBdPiYlsDRbizVPLDd8RAdDLfnFCaOR0fJywlinOAMBxa51xjATjlV2gzpme4IF2yftiqM5BxpIxXx6OLUg7F7eG=w455-h607-s-no-gm?authuser=0"
@@ -70,10 +71,10 @@ Let's see how much we have understood:
 
 ### 3. Read the sentences given below, and replace the underlined part with a word from the box.
 
-{{<box content="shocked" borderColor="blue-500">}}
-{{<box content="excited" borderColor="blue-500">}}
-{{<box content="granted" borderColor="blue-500">}}
-{{<box content="insisted" borderColor="blue-500">}}
+{{<box content="shocked">}}
+{{<box content="excited">}}
+{{<box content="granted">}}
+{{<box content="insisted">}}
 
 (i) Midas was *surprised*.  
 **Ans:** Midas was **shocked**.
@@ -178,7 +179,7 @@ i. Midas learned to be happy with what he had.
 
 **(b) Now fill in the blanks in the following sentences with words given in the box below:**
 
-{{<box borderColor="blue-500" content="lost &nbsp;&nbsp; she &nbsp;&nbsp; pull &nbsp;&nbsp; time">}}
+{{<box content="lost &nbsp;&nbsp; she &nbsp;&nbsp; pull &nbsp;&nbsp; time">}}
 
 (i) The sound of 'e' in 'get' is different from the sound of 'e' in _________.  
 **Ans:** (i) The sound of 'e' in 'get' is different from the sound of 'e' in **she**.
@@ -410,7 +411,7 @@ iv. The story conveys the message that our words and actions reflect back on us,
 
 **Riddle Time :**
 
-{{<box content="I m waved by magicians to make things disappear. Who am I?" borderColor="blue-500">}}
+{{<box content="I m waved by magicians to make things disappear. Who am I?">}}
 
 **Ans:** A Magic Wand
 

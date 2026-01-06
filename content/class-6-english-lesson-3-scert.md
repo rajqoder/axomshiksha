@@ -5,7 +5,8 @@ subject = "English"
 date = "2026-01-04T00:09:36+05:30"
 readingTime = "45 mins"
 description = "Complete solutions and explanations for Class 6 English Chapter 3 - A Curious Mind from SCERT textbook. Includes summary, word meanings, activities and exercises."
-tags = ["scert", "class-6", "english", "solutions"]
+tags = ["scert", "class-6", "english"]
+keywords = ["scert", "class-6", "english", "solutions", "textbook", "lesson-3"]
 categories = ["middle-primary"]
 writers = ["Admin"]
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczOOEFk6wo3EJ1mQJeFuSdDWckAEQlSdMWNijOg1IR6856coUU0iuFNCmJyYubs4i12wWLhD_CXJWl1G8URfZqP98AAKe7VmZM3QT_xk6-K26PyKVLkfHi1JC57mdAE06OobjrhrRriUGHcn8T-MNFHY=w455-h607-s-no-gm?authuser=0"
@@ -200,9 +201,9 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 #### (c) Orgo made some notes of what he had read about Thomas Alva Edison. Read what Orgo wrote:  
 
    {{<flex direction="col" alignItems="start">}}
-   {{<box borderColor="blue-500" content="Main topic: Edison became a great inventor due to certain qualities.">}}
+   {{<box  content="Main topic: Edison became a great inventor due to certain qualities.">}}
 
-   {{<box borderColor="blue-500" content=`Supporting information: The qualities  
+   {{<box  content=`Supporting information: The qualities  
    (i) curiosity  
    (ii) independent learning  
    (iii) determination`>}}
@@ -218,7 +219,7 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
    {{<flex direction="col" alignItems="start">}}
    {{<underscored-space no="5">}}
    {{</flex>}}
-   {{<box borderColor="blue-500" content=`secondly  
+   {{<box  content=`secondly  
    lastly`>}}
    {{</flex>}}
 
@@ -319,7 +320,7 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 
 ### 14. (a) Let’s read the words in the box aloud and notice the beginning sound of each word:
 
-{{<box content="scene &nbsp;&nbsp; scolded &nbsp;&nbsp; science &nbsp;&nbsp; scattering" borderColor="blue-500">}}
+{{<box content="scene &nbsp;&nbsp; scolded &nbsp;&nbsp; science &nbsp;&nbsp; scattering">}}
 
 > All the four words begin with the consonant blend **“sc”**.  
 > When we say the words *scene* and *science*, they begin with the sound **“s”** as in *sun*.  
@@ -392,7 +393,7 @@ As you listen, fill in the blanks with the correct pieces of information.
 
 **You have learnt that C. V. Raman won the Nobel Prize for Physics in 1930. Now, find out the names of other Indians who won the Nobel Prize in different fields. Collect and paste their pictures on a chart paper. Include the following information about each of them:**  
 
-{{<box borderColor="blue-500" content=`Name:  
+{{<box content=`Name:  
 Date of birth:  
 Place of birth:  
 Nobel Prize in the field:  
@@ -400,19 +401,19 @@ Year of receiving the Nobel Prize:`>}}
 
 **Ans:**
 
-{{<box borderColor="blue-500" content=`Name: Rabindranath Tagore  
+{{<box content=`Name: Rabindranath Tagore  
 Date of birth: 7 May 1861  
 Place of birth: Calcutta  
 Nobel Prize in the field: Literature  
 Year of receiving the Nobel Prize: 1913`>}}
 
-{{<box borderColor="blue-500" content=`Name: Mother Teresa  
+{{<box content=`Name: Mother Teresa  
 Date of birth: 26 August 1910  
 Place of birth: Skopje  
 Nobel Prize in the field: Peace  
 Year of receiving the Nobel Prize: 1979`>}}
 
-{{<box borderColor="blue-500" content=`Name: Amartya Sen  
+{{<box content=`Name: Amartya Sen  
 Date of birth: 3 November 1933  
 Place of birth: Santiniketan  
 Nobel Prize in the field: Economics  
@@ -422,6 +423,6 @@ Year of receiving the Nobel Prize: 1998`>}}
 
 ![Space Shuttle](https://lh3.googleusercontent.com/pw/AP1GczNqdVo190lRy4vlZcZ6rdxOGLl8hXPiAov2k0DeBcgKsyVx_5HPgTHn_Js54gEnffpvmLPssPs0UfN5NAlPRlqtnZfAgyS55uFOJhBo3otvZL1hdAcb8lgLlsETp_GP7cGA-taB12egtIG-D_-lNN5y=w400-h205-s-no-gm?authuser=0)
 
-{{<box borderColor="blue-500" width="400px" height="300px" content="Box-2" bgColor="white">}}
+{{<box width="400px" height="300px" content="Box-2" bgColor="white">}}
 
 **Ans:** Do it yourself.

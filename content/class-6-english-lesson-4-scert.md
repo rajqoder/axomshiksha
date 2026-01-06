@@ -4,7 +4,9 @@ date = "2026-01-04T22:23:05+05:30"
 description = "Complete solutions and explanations for Class 6 English Chapter 4 - My Land from SCERT textbook. Includes summary, word meanings, activities and exercises."
 readingTime = "48 mins"
 tags = ["class-6", "scert", "english"]
+keywords = ["class-6", "scert", "english", "solutions", "textbook", "lesson-4"]
 categories = ["middle-primary"]
+writers = ["Admin"]
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczNHBgOtrGx5hjjg1K8fVR2ctM-m4H0ptD8lkU3IfIlFgnCSK9M9PB2sZLZv5y2GnPrvoGxnAIkoaa1ooZcNyOmjhqkOMaklBToW9sO4plcT7Z2-lPPgUDPc-MtD-dyS1sRYdIGo261yOGwm58v31PE=w340-h428-s-no-gm?authuser=0"
 +++
 
@@ -53,17 +55,17 @@ The poem **My Land** is a vibrant expression of the poet's love, pride, and resp
 
 {{<flex justifyContent="start">}}
 
-{{<box content="The poet says that the men of his native land are braver than those of other lands. The women are courageous. The poet will die willingly to save his native land and will consider his lot divine if that happens." borderColor="blue-500" width="75%">}}
+{{<box content="The poet says that the men of his native land are braver than those of other lands. The women are courageous. The poet will die willingly to save his native land and will consider his lot divine if that happens."  width="75%">}}
 
-{{<box content="**Second stanza**" borderColor="blue-500">}}
+{{<box content="**Second stanza**" >}}
 
 {{</flex>}}
 
 {{<flex justifyContent="start">}}
 
-{{<box content="The poet is all praise for his native land. He says that his native land is rich and rare, fresh and fair,dear land. He takes pride in the uniqueness of his native land." borderColor="blue-500" width="75%">}}
+{{<box content="The poet is all praise for his native land. He says that his native land is rich and rare, fresh and fair,dear land. He takes pride in the uniqueness of his native land."  width="75%">}}
 
-{{<box borderColor="blue-500" content="**First stanza**">}}
+{{<box  content="**First stanza**">}}
 
 {{</flex>}}
 
@@ -101,24 +103,24 @@ shine
 {{<flex direction="col">}}
 
 fare
-{{<box content="care" borderColor="blue-500">}}
-{{<box content="share" borderColor="blue-500">}}
+{{<box content="care" >}}
+{{<box content="share" >}}
 
 {{</flex>}}
 
 {{<flex direction="col">}}
 
 saver
-{{<box content="braver" borderColor="blue-500">}}
-{{<box content="clever" borderColor="blue-500">}}
+{{<box content="braver" >}}
+{{<box content="clever" >}}
 
 {{</flex>}}
 
 {{<flex direction="col">}}
 
 shine
-{{<box content="mine" borderColor="blue-500">}}
-{{<box content="pine" borderColor="blue-500">}}
+{{<box content="mine" >}}
+{{<box content="pine" >}}
 
 {{</flex>}}
 
@@ -278,13 +280,13 @@ Some places of importance in Assam are **Kaziranga National Park**, **Majuli**, 
 ### 15. Let us say these words aloud and notice the pronunciation of 's' in *s*ave, 'sh' in fre*sh* and 'ch' in ri*ch*.
 
 {{<flex justifyContent="start">}}
-{{<box borderColor="blue-500" content="*s*ave &nbsp;&nbsp; fre*sh* &nbsp;&nbsp; ri*ch* &nbsp;&nbsp;">}}
+{{<box content="*s*ave &nbsp;&nbsp; fre*sh* &nbsp;&nbsp; ri*ch* &nbsp;&nbsp;">}}
 {{</flex>}}
 
 **Now, let’s practise saying the following words correctly:**
 
 {{<flex alignItems="start" direction="col">}}
-{{<box borderColor="blue-500" content="sun &nbsp;&nbsp; she &nbsp;&nbsp; sure &nbsp;&nbsp; wish &nbsp;&nbsp; shine &nbsp;&nbsp; touch &nbsp;&nbsp; change &nbsp;&nbsp; each">}}
+{{<box content="sun &nbsp;&nbsp; she &nbsp;&nbsp; sure &nbsp;&nbsp; wish &nbsp;&nbsp; shine &nbsp;&nbsp; touch &nbsp;&nbsp; change &nbsp;&nbsp; each">}}
 {{</flex>}}
  
 **Ans:** Do yourself.
@@ -307,7 +309,7 @@ Here, **‘ly’** is added to the adjective **‘free’** to make a new word *
 #### **b) Read the adjectives written in the box:**  
 
 {{<flex justifyContent="start">}}
-{{<box borderColor="blue-500" content="rare &nbsp;&nbsp; fresh &nbsp;&nbsp; fair &nbsp;&nbsp; dear &nbsp;&nbsp; divine &nbsp;&nbsp; brave &nbsp;&nbsp;">}}
+{{<box content="rare &nbsp;&nbsp; fresh &nbsp;&nbsp; fair &nbsp;&nbsp; dear &nbsp;&nbsp; divine &nbsp;&nbsp; brave &nbsp;&nbsp;">}}
 {{</flex>}}
 
 **Now, add ‘ly’ to each of them to make adverbs and write in the given spaces:**
