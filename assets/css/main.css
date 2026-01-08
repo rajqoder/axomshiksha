@@ -163,6 +163,10 @@
     scroll-margin-top: 80px;
   }
 
+  .content-body h4 {
+    @apply text-lg font-bold mb-2;
+  }
+
   .content-body p {
     @apply mb-4 leading-relaxed;
   }

@@ -157,7 +157,7 @@ shine
 - dear  
 - divine  
 
-#### **b) Now, write a few sentences using the words you have listed above to describe the poet's Native Land.**
+#### b) Now, write a few sentences using the words you have listed above to describe the poet's Native Land.
 
 {{<flex direction="col" alignItems="start">}}
 {{<underscored-space no="4" width="20rem">}}
@@ -299,14 +299,14 @@ Some places of importance in Assam are **Kaziranga National Park**, **Majuli**, 
 ### 16. Let’s learn some grammar:
 
 
-#### **a) Notice the underlined word in the following line from the poem:**  
+#### a) Notice the underlined word in the following line from the poem:  
 
 “I’d freely die to save her…”
 
 Here, **‘ly’** is added to the adjective **‘free’** to make a new word **‘freely’**.  
 **‘Freely’ is an adverb.**
 
-#### **b) Read the adjectives written in the box:**  
+#### b) Read the adjectives written in the box:
 
 {{<flex justifyContent="start">}}
 {{<box content="rare &nbsp;&nbsp; fresh &nbsp;&nbsp; fair &nbsp;&nbsp; dear &nbsp;&nbsp; divine &nbsp;&nbsp; brave &nbsp;&nbsp;">}}
@@ -339,7 +339,7 @@ Here, **‘ly’** is added to the adjective **‘free’** to make a new word *
 - divine → **divinely**  
 - brave → **bravely**
 
-#### **c) Choose one adjective and the adverb formed by adding ‘ly’ to it and make sentences using the adjective and the adverb:**
+#### c) Choose one adjective and the adverb formed by adding ‘ly’ to it and make sentences using the adjective and the adverb:
 
 {{<flex direction="col" alignItems="start">}}
 {{<underscored-space no="2" width="15rem">}}

@@ -38,8 +38,6 @@ Outdoor hobbies: gardening, swimming, trekking, photography.
 **(g) “Every morning I water the plants and clean the beds.” – What does ‘beds’ mean here?**  
 **Ans:** Here, ‘beds’ means the prepared soil areas in the garden where plants are grown.
 
----
-
 ### 2. A synonym is a word that has the same or nearly the same meaning as another word. Example: happy - joyful.
 
 From the box below, choose words which are synonyms of the given words, and write each synonym next to the word in the blanks below:
@@ -71,8 +69,6 @@ From the box below, choose words which are synonyms of the given words, and writ
 (e) start — begin  
 (f) develop — grow
 
----
-
 ### 3. Look at the pictures of objects given below. Each object is related to an activity.
 
 Write the name of the object and the related activity in the space provided.
@@ -88,13 +84,9 @@ Write the name of the object and the related activity in the space provided.
 - Book — Reading  
 - Boat — Boating  
 
----
-
 ### 4. Let’s play a game. Sit in groups according to your hobbies. Discuss in your group why you like this hobby and how you pursue it.
 
 **Ans:** Do yourselves with your classmate.
-
----
 
 ### 5. Parveen’s hobby is baking. Fill in the blanks in the paragraph below with words that rhyme with *bake*, such as *shake*:
 
@@ -105,8 +97,6 @@ Juri said to Parveen, “Please tell me how to bake a {{<underscored-space width
 **Ans:**
 
 Juri said to Parveen, “Please tell me how to bake a *cake*.” Parveen replied, “Preheat the oven to 350°F and gather all the ingredients you need to *bake* a cake. *Take* 2 cups of flour, 4 eggs, 1 cup sugar, 1 cup butter or oil, 1 teaspoon baking powder and vanilla essence. You will need a cake pan and a sieve too. Put the flour and baking powder in the sieve, *shake* the sieve to remove lumps, if any. Cream the butter and sugar. Add a few drops of vanilla essence. *Take* care to *mix* the mixture light and creamy. Beat in the eggs and *make* them one at a time. Add the dry mixture to the wet mixture little by little. Don’t forget to grease the *cake* pan and dust it with flour. Then *take* the smooth mixture and pour it into the pan. Place the mixture in the oven till your *cake* turns golden brown.”
-
----
 
 ### 6. Roktim’s hobby is travelling. He loves visiting places. He always prepares his itinerary before travelling. He leaves his itinerary with his mother. His mother knows where he is by looking at his itinerary. Read his itinerary.
 
@@ -139,8 +129,6 @@ Date of arrival: 15 December
 Place of stay: Hotel Sunrise, Darjeeling  
 What to do: Visit Tiger Hill, enjoy the toy train ride, visit tea gardens, explore local markets, and enjoy local food.
 
----
-
 ### 7. Read this sentence. Note the part of the sentence in italics.
 
 A happy person is usually *as busy as a bee.*  
@@ -169,8 +157,6 @@ He left the village *bag and baggage* to start a new life in the city.
 **(c) beat about the bush**  
 She *beat about the bush* before answering.
 
----
-
 ### 8. In class VI you learnt that we can make a new word by adding a suffix, i.e., a letter or a group of letters at the end of a word. In the exercise below, write the new words by adding **-ment** at the end of the words.
 
 ![Suffice Example](https://lh3.googleusercontent.com/pw/AP1GczMUYQESYjNM22ZiBNCQcw_GslEvmQo4LqDDDbSzANLAlz7VNwL_0FcVvcKdZrGIKfP1mz3kQfJXI0PEb0Fa9KZtft1PavWTK4E9uXIcnwXN69-eKn8kvp7blHECpy0YJ5ax5fQh0PiUJFy4Pcqm12j-=w543-h164-s-no-gm?authuser=0)
@@ -182,8 +168,6 @@ She *beat about the bush* before answering.
 **treat — treatment**  
 **encourage — encouragement**  
 **agree — agreement**
-
----
 
 **Now read the lesson and write in the box the words ending with the following suffixes:**
 
@@ -210,8 +194,6 @@ She *beat about the bush* before answering.
 | ... | morning | ... |
 | ... | working | ... |
 | ... | reading | ... |
-
----
 
 ### 9. Read the lesson and locate the sentences where the following phrasal verbs beginning with ‘take’ occur. Then write the sentences in the space given below the word web:
 

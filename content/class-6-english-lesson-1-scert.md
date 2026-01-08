@@ -243,7 +243,7 @@ Now write down a few sets of words using alliteration. One is done for you.
       (iv) Turn off lights and other electrical appliances when leaving room.  
       (v) Walk to nearby places instead of using vehicles to reduce pollution.
 
-#### **(b) Look at the pictures. These represent some activities for nurturing a plant. Choose the appropriate words or phrases from the box and write them below the pictures:**
+#### (b) Look at the pictures. These represent some activities for nurturing a plant. Choose the appropriate words or phrases from the box and write them below the pictures:
 
    ![Q.no-11(b)-diagram.webp](https://lh3.googleusercontent.com/pw/AP1GczPAUXVQ2amt_aNAC2VdJev2M0sIEv_s_GLXc3QP6VKEilEJrqE3uwj3mH7GXoViFZ2PxIwVEMhSQ3_0m9lpNGM2i7AwBshStg0enX0DqEoh3e9ePgJnloPjgcOk2BFr8O5P1Y6XMA65KuudFERsdaM=w475-h566-s-no-gm?authuser=0)
 
