@@ -1,6 +1,6 @@
 ---
 title: "About Axomshiksha"
-description: "Learn more about Axomshiksha - our mission, vision, and commitment to making quality education accessible to everyone."
+description: "Learn more about Axomshiksha - our mission, vision, and commitment to making quality education accessible to students across Assam."
 layout: "about"
 date: 2025-12-26
 build:
@@ -10,32 +10,34 @@ build:
 
 ## Our Mission
 
-Axomshiksha is dedicated to making quality education accessible to everyone through free, comprehensive educational content. We believe that knowledge should be freely available to all learners, regardless of their background or location.
+Axomshiksha is dedicated to making quality education accessible to students across Assam through free, comprehensive educational resources. We believe that knowledge should be freely available to all learners, regardless of their background or location, especially those following the SCERT curriculum.
 
 ## What We Offer
 
-- **Comprehensive Tutorials**: Step-by-step guides on programming, technology, and various educational topics
-- **In-depth Articles**: Detailed explorations of concepts, tools, and best practices
-- **Learning Resources**: Curated content designed to help learners at every level
-- **Community-Focused**: Content created with learners' needs in mind
+- **SCERT Curriculum Support**: Comprehensive solutions and explanations for SCERT-prescribed textbooks
+- **Educational Lessons**: Detailed study materials aligned with Assam state board requirements
+- **Subject-wise Resources**: Organized content by subject for easy navigation
+- **Exam Preparation**: Study materials designed to help students understand concepts clearly and score well in exams
+- **Assamese Educational Focus**: Tailored content specifically for students in Assam
 
 ## Our Vision
 
-We envision a world where quality education is accessible to everyone, where learners can freely explore topics that interest them, and where knowledge sharing becomes a natural part of the learning journey.
+We envision a world where quality education is accessible to every student in Assam, where learners can freely access resources that help them excel academically, and where knowledge sharing becomes a natural part of the educational journey.
 
-## Technology Stack
+## Educational Approach
 
-This platform is built with modern web technologies to ensure a fast, accessible, and enjoyable learning experience:
+Our educational content is designed with students' needs in mind:
 
-- **Hugo**: Lightning-fast static site generation
-- **Tailwind CSS**: Modern, responsive design
-- **Dark Mode**: Comfortable reading in any lighting condition
-- **Search Functionality**: Quickly find the content you need
+- **Simple Language**: All explanations are written in simple, easy-to-understand language
+- **Curriculum Aligned**: Strictly following the SCERT syllabus to ensure relevance
+- **Comprehensive Coverage**: Complete solutions and explanations for textbook chapters
+- **Visual Learning**: Use of diagrams and examples to enhance understanding
 
 ## Get in Touch
 
 Have questions, suggestions, or feedback? We'd love to hear from you! Feel free to reach out through our contact page or engage with our content.
 
----
+## Contact us
 
-*Last updated: December 2025*
+- Email: <a href="mailto:shikshaaxom@gmail.com">shikshaaxom@gmail.com</a>
+- WhatsApp: <a href="https://wa.me/919954765021">+919954765021</a>
