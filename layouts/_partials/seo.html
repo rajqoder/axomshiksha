@@ -32,11 +32,11 @@
 {{ else if .Site.Params.ogImage }}
   <meta property="og:image" content="{{ .Site.Params.ogImage | absURL }}">
 {{ else }}
-  <meta property="og:image" content="{{ "/og-image.jpg" | absURL }}">
+  <meta property="og:image" content="{{ "https://lh3.googleusercontent.com/pw/AP1GczMu0GCUfGWtG3RUvE8Ug-lI0p5br5lOR1CdOtnbbPPwZkZJ21j7nxf9uexYRlvj_-nIIyl0cE1hoc6FmGX0nPwpNRSkdA1XNLjHrTxhRCI1XBDV-g70c0ObJ8c919sQ70QEyB7DyREwPj4HyRtbN_NX=w900-h450-s-no-gm?authuser=0" | absURL }}">
 {{ end }}
 
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="900">
+<meta property="og:image:height" content="450">
 
 {{ if .Date }}
   <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
@@ -73,7 +73,7 @@
 {{ else if .Site.Params.ogImage }}
   <meta name="twitter:image" content="{{ .Site.Params.ogImage | absURL }}">
 {{ else }}
-  <meta name="twitter:image" content="{{ "/og-image.jpg" | absURL }}">
+  <meta name="twitter:image" content="{{ "https://lh3.googleusercontent.com/pw/AP1GczMu0GCUfGWtG3RUvE8Ug-lI0p5br5lOR1CdOtnbbPPwZkZJ21j7nxf9uexYRlvj_-nIIyl0cE1hoc6FmGX0nPwpNRSkdA1XNLjHrTxhRCI1XBDV-g70c0ObJ8c919sQ70QEyB7DyREwPj4HyRtbN_NX=w900-h450-s-no-gm?authuser=0" | absURL }}">
 {{ end }}
 
 <!-- Additional SEO Meta Tags -->
@@ -109,9 +109,9 @@
   },
   "image": {
     "@type": "ImageObject",
-    "url": {{ .Params.thumbnail | default .Site.Params.ogImage | default "/og-image.jpg" | absURL | jsonify }}
-    "width": 1200,
-    "height": 630
+    "url": {{ .Params.thumbnail | default .Site.Params.ogImage | default "https://lh3.googleusercontent.com/pw/AP1GczMu0GCUfGWtG3RUvE8Ug-lI0p5br5lOR1CdOtnbbPPwZkZJ21j7nxf9uexYRlvj_-nIIyl0cE1hoc6FmGX0nPwpNRSkdA1XNLjHrTxhRCI1XBDV-g70c0ObJ8c919sQ70QEyB7DyREwPj4HyRtbN_NX=w900-h450-s-no-gm?authuser=0" | absURL | jsonify }}
+    "width": 900,
+    "height": 450
   }
 }
 </script>
