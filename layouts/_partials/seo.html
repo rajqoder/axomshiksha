@@ -29,19 +29,17 @@
 
 {{ if .Params.thumbnail }}
   <meta property="og:image" content="{{ .Params.thumbnail | absURL }}">
-{{ else if .Site.Params.ogImage }}
-  <meta property="og:image" content="{{ .Site.Params.ogImage | absURL }}">
-{{ else if .IsTaxonomy }}
+{{ else if and (eq .Kind "taxonomy") (or (eq .Type "categories") (eq .Type "tags")) }}
   <!-- Different images for category and tag taxonomies -->
   {{ if eq .Type "categories" }}
     <meta property="og:image" content="{{ .Site.Params.categoryImage | absURL }}">
   {{ else if eq .Type "tags" }}
     <meta property="og:image" content="{{ .Site.Params.tagImage | absURL }}">
   {{ else }}
-    <meta property="og:image" content="{{ "https://lh3.googleusercontent.com/pw/AP1GczMu0GCUfGWtG3RUvE8Ug-lI0p5br5lOR1CdOtnbbPPwZkZJ21j7nxf9uexYRlvj_-nIIyl0cE1hoc6FmGX0nPwpNRSkdA1XNLjHrTxhRCI1XBDV-g70c0ObJ8c919sQ70QEyB7DyREwPj4HyRtbN_NX=w900-h450-s-no-gm?authuser=0" | absURL }}">
+    <meta property="og:image" content="{{ .Site.Params.homeImage | absURL }}">
   {{ end }}
 {{ else }}
-  <meta property="og:image" content="{{ "https://lh3.googleusercontent.com/pw/AP1GczMu0GCUfGWtG3RUvE8Ug-lI0p5br5lOR1CdOtnbbPPwZkZJ21j7nxf9uexYRlvj_-nIIyl0cE1hoc6FmGX0nPwpNRSkdA1XNLjHrTxhRCI1XBDV-g70c0ObJ8c919sQ70QEyB7DyREwPj4HyRtbN_NX=w900-h450-s-no-gm?authuser=0" | absURL }}">
+  <meta property="og:image" content="{{ .Site.Params.homeImage | absURL }}">
 {{ end }}
 
 <meta property="og:image:width" content="900">
@@ -79,19 +77,17 @@
 
 {{ if .Params.thumbnail }}
   <meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
-{{ else if .Site.Params.ogImage }}
-  <meta name="twitter:image" content="{{ .Site.Params.ogImage | absURL }}">
-{{ else if .IsTaxonomy }}
+{{ else if and (eq .Kind "taxonomy") (or (eq .Type "categories") (eq .Type "tags")) }}
   <!-- Different images for category and tag taxonomies -->
   {{ if eq .Type "categories" }}
     <meta name="twitter:image" content="{{ .Site.Params.categoryImage | absURL }}">
   {{ else if eq .Type "tags" }}
     <meta name="twitter:image" content="{{ .Site.Params.tagImage | absURL }}">
   {{ else }}
-    <meta name="twitter:image" content="{{ "https://lh3.googleusercontent.com/pw/AP1GczMu0GCUfGWtG3RUvE8Ug-lI0p5br5lOR1CdOtnbbPPwZkZJ21j7nxf9uexYRlvj_-nIIyl0cE1hoc6FmGX0nPwpNRSkdA1XNLjHrTxhRCI1XBDV-g70c0ObJ8c919sQ70QEyB7DyREwPj4HyRtbN_NX=w900-h450-s-no-gm?authuser=0" | absURL }}">
+    <meta name="twitter:image" content="{{ .Site.Params.homeImage | absURL }}">
   {{ end }}
 {{ else }}
-  <meta name="twitter:image" content="{{ "https://lh3.googleusercontent.com/pw/AP1GczMu0GCUfGWtG3RUvE8Ug-lI0p5br5lOR1CdOtnbbPPwZkZJ21j7nxf9uexYRlvj_-nIIyl0cE1hoc6FmGX0nPwpNRSkdA1XNLjHrTxhRCI1XBDV-g70c0ObJ8c919sQ70QEyB7DyREwPj4HyRtbN_NX=w900-h450-s-no-gm?authuser=0" | absURL }}">
+  <meta name="twitter:image" content="{{ .Site.Params.homeImage  | absURL }}">
 {{ end }}
 
 <!-- Additional SEO Meta Tags -->
@@ -129,18 +125,16 @@
     "@type": "ImageObject",
     {{ if .Params.thumbnail }}
     "url": {{ .Params.thumbnail | absURL | jsonify }},
-    {{ else if .Site.Params.ogImage }}
-    "url": {{ .Site.Params.ogImage | absURL | jsonify }},
-    {{ else if .IsTaxonomy }}
+    {{ else if and (eq .Kind "taxonomy") (or (eq .Type "categories") (eq .Type "tags")) }}
     {{ if eq .Type "categories" }}
     "url": {{ .Site.Params.categoryImage | absURL | jsonify }},
     {{ else if eq .Type "tags" }}
     "url": {{ .Site.Params.tagImage | absURL | jsonify }},
     {{ else }}
-    "url": {{ "https://lh3.googleusercontent.com/pw/AP1GczMu0GCUfGWtG3RUvE8Ug-lI0p5br5lOR1CdOtnbbPPwZkZJ21j7nxf9uexYRlvj_-nIIyl0cE1hoc6FmGX0nPwpNRSkdA1XNLjHrTxhRCI1XBDV-g70c0ObJ8c919sQ70QEyB7DyREwPj4HyRtbN_NX=w900-h450-s-no-gm?authuser=0" | absURL | jsonify }},
+    "url": {{ "https://lh3.googleusercontent.com/pw/AP1GczOb2pocXlBb9jrQ_CIb3m5KeillWfJBV1mAC8PVnfP1xFguPPvL0kJo8sWfYxcrVAffhDZ43lVUyHGAuhvnrFYZo2hzwLBUUMPNU_ESZqBXBpmEyQIR7-1AVJLoqwIZH7ZcvcROs5p1rJ6JTN7hOM01=w900-h450-s-no-gm?authuser=0" | absURL | jsonify }},
     {{ end }}
     {{ else }}
-    "url": {{ "https://lh3.googleusercontent.com/pw/AP1GczMu0GCUfGWtG3RUvE8Ug-lI0p5br5lOR1CdOtnbbPPwZkZJ21j7nxf9uexYRlvj_-nIIyl0cE1hoc6FmGX0nPwpNRSkdA1XNLjHrTxhRCI1XBDV-g70c0ObJ8c919sQ70QEyB7DyREwPj4HyRtbN_NX=w900-h450-s-no-gm?authuser=0" | absURL | jsonify }},
+    "url": {{ "https://lh3.googleusercontent.com/pw/AP1GczOb2pocXlBb9jrQ_CIb3m5KeillWfJBV1mAC8PVnfP1xFguPPvL0kJo8sWfYxcrVAffhDZ43lVUyHGAuhvnrFYZo2hzwLBUUMPNU_ESZqBXBpmEyQIR7-1AVJLoqwIZH7ZcvcROs5p1rJ6JTN7hOM01=w900-h450-s-no-gm?authuser=0" | absURL | jsonify }},
     {{ end }}
     "width": 900,
     "height": 450
