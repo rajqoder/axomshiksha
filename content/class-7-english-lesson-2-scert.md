@@ -5,7 +5,7 @@ description = "The lesson “Uruka Adventure” tells the story of Mahendra and 
 
 keywords = ["uruka-adventure", "class 7", "english", "scert", "textbook"]
 tags = ["class 7", "english", "scert"]
-categories = ["middle-primary"]
+categories = ["upper-primary"]
 writers = ["Admin"]
 draft = false
 readingTime = "56 mins"
