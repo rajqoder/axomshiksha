@@ -39,5 +39,6 @@ Have questions, suggestions, or feedback? We'd love to hear from you! Feel free 
 
 ## Contact us
 
-- Email: <a href="mailto:shikshaaxom@gmail.com">shikshaaxom@gmail.com</a>
-- WhatsApp: <a href="https://wa.me/919954765021">+919954765021</a>
+Email: <a href="mailto:shikshaaxom@gmail.com">shikshaaxom@gmail.com</a>
+
+{{<qr >}} https://wa.me/919954765021 {{</qr>}}
