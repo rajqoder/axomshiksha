@@ -89,6 +89,9 @@
             setTimeout(() => {
               updateActiveLink(targetId);
             }, 100);
+            
+            // Scroll the TOC to keep the clicked item visible
+            this.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
           }
         });
       });

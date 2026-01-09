@@ -401,6 +401,29 @@
     @apply text-blue-600 dark:text-blue-400 font-medium;
   }
 
+  /* Scrollable TOC */
+  #toc {
+    max-height: 18rem;
+    overflow-y: auto;
+  }
+
+  #toc::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  #toc::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  #toc::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground));
+    border-radius: 3px;
+  }
+
+  #toc::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--foreground));
+  }
+
   /* Blockquote */
   blockquote {
     @apply pt-2 pb-0.5 italic border-l-3 mb-4 relative;

@@ -2,12 +2,22 @@
 
 <!-- Basic SEO Meta Tags -->
 {{ if .IsHome }}
-  <meta name="description" content="{{ .Site.Params.description | default .Site.Params.Description }}">
+<meta name="description" content="{{ .Site.Params.description }}">
+<meta property="og:description" content="{{ .Site.Params.description }}">
+<meta name="twitter:description" content="{{ .Site.Params.description }}">
+{{ else if and (eq .Kind "taxonomy") (eq .Type "tags") }}
+<meta name="description" content="{{ .Site.Params.tagsDescription }}">
+<meta property="og:description" content="{{ .Site.Params.tagsDescription }}">
+<meta name="twitter:description" content="{{ .Site.Params.tagsDescription }}">
+{{ else if and (eq .Kind "taxonomy") (eq .Type "categories") }}
+<meta name="description" content="{{ .Site.Params.categoriesDescription }}">
+<meta property="og:description" content="{{ .Site.Params.categoriesDescription }}">
+<meta name="twitter:description" content="{{ .Site.Params.categoriesDescription }}">
 {{ else }}
-  {{ if .Description }}
-    <meta name="description" content="{{ .Description }}">
-  {{ else }}
-    <meta name="description" content="{{ .Summary | default .Params.excerpt | truncate 160 }}">
+{{ if .Description }}
+<meta name="description" content="{{ .Description }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta name="twitter:description" content="{{ .Description }}">
   {{ end }}
 {{ end }}
 
@@ -19,11 +29,6 @@
 <meta property="og:locale" content="{{ .Site.LanguageCode | default "en_US" }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
-{{ if .Description }}
-  <meta property="og:description" content="{{ .Description }}">
-{{ else if .Summary }}
-  <meta property="og:description" content="{{ .Summary | truncate 160 }}">
-{{ end }}
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 
@@ -66,14 +71,9 @@
 
 <!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="{{ .Site.Params.twitterSite | default "@axomshiksha" }}">
-<meta name="twitter:creator" content="{{ .Site.Params.twitterCreator | default "@axomshiksha" }}">
+<meta name="twitter:site" content="@shikshaaxom">
+<meta name="twitter:creator" content="@shikshaaxom">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
-{{ if .Description }}
-  <meta name="twitter:description" content="{{ .Description }}">
-{{ else if .Summary }}
-  <meta name="twitter:description" content="{{ .Summary | truncate 160 }}">
-{{ end }}
 
 {{ if .Params.thumbnail }}
   <meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
@@ -102,7 +102,7 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": {{ .Title | jsonify }},
-  "description": {{ .Description | default .Summary | jsonify }},
+  "description": {{ .Description | jsonify }},
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "author": {
@@ -131,10 +131,10 @@
     {{ else if eq .Type "tags" }}
     "url": {{ .Site.Params.tagImage | absURL | jsonify }},
     {{ else }}
-    "url": {{ "https://lh3.googleusercontent.com/pw/AP1GczOb2pocXlBb9jrQ_CIb3m5KeillWfJBV1mAC8PVnfP1xFguPPvL0kJo8sWfYxcrVAffhDZ43lVUyHGAuhvnrFYZo2hzwLBUUMPNU_ESZqBXBpmEyQIR7-1AVJLoqwIZH7ZcvcROs5p1rJ6JTN7hOM01=w900-h450-s-no-gm?authuser=0" | absURL | jsonify }},
+    "url": {{ .Site.Params.homeImage | absURL | jsonify }},
     {{ end }}
     {{ else }}
-    "url": {{ "https://lh3.googleusercontent.com/pw/AP1GczOb2pocXlBb9jrQ_CIb3m5KeillWfJBV1mAC8PVnfP1xFguPPvL0kJo8sWfYxcrVAffhDZ43lVUyHGAuhvnrFYZo2hzwLBUUMPNU_ESZqBXBpmEyQIR7-1AVJLoqwIZH7ZcvcROs5p1rJ6JTN7hOM01=w900-h450-s-no-gm?authuser=0" | absURL | jsonify }},
+    "url": {{ .Site.Params.homeImage | absURL | jsonify }},
     {{ end }}
     "width": 900,
     "height": 450
@@ -163,5 +163,5 @@
 {{ else if .Params.tags }}
   <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
 {{ else }}
-  <meta name="keywords" content="{{ .Site.Params.defaultKeywords | default "education, learning, tutorials, guides" }}">
+  <meta name="keywords" content="{{ .Site.Params.defaultKeywords }}">
 {{ end }}

@@ -1,0 +1,30 @@
+{{/* Related Content Partial Template */}}
+{{ $related := .Site.RegularPages.Related . | first 4 }}
+{{ if $related }}
+<div class="card mt-6">
+  <h3 class="card-title mb-3">Related Posts</h3>
+  <div class="space-y-3">
+    {{ range $related }}
+    <div class="flex gap-3 border-b border-border pb-3 last:border-0 last:pb-0">
+      {{ if .Params.thumbnail }}
+      <div class="shrink-0">
+        <a href="{{ .RelPermalink }}" class="block w-16 h-16 overflow-hidden rounded">
+          <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="w-full h-full object-cover">
+        </a>
+      </div>
+      {{ end }}
+      <div class="flex-1 min-w-0">
+        <a href="{{ .RelPermalink }}" class="block text-main hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+          <h4 class="font-medium text-base line-clamp-2">{{ .Title }}</h4>
+        </a>
+        <div class="flex items-center text-xs text-muted-foreground mt-1">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "Jan 2, 2006" }}
+          </time>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

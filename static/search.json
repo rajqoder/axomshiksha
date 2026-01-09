@@ -1,57 +1,37 @@
 [
   {
-    "title": "Getting Started with Hugo",
-    "publishTime": "2025-12-21T11:09:31+05:30",
-    "url": "/post-1/"
+    "title": "Afternoon on a hill - Class 6 English (SCERT)",
+    "publishTime": "2025-12-30T10:48:04+05:30",
+    "url": "/class-6-english-lesson-1-scert/"
   },
   {
-    "title": "Creating Custom Themes in Hugo",
-    "publishTime": "2025-12-21T11:09:38+05:30",
-    "url": "/post-2/"
+    "title": "The Golden Touch - Class 6 English (SCERT)",
+    "publishTime": "2026-01-01T23:58:31+05:30",
+    "url": "/class-6-english-lesson-2-scert/"
   },
   {
-    "title": "Managing Content with Hugo",
-    "publishTime": "2025-12-21T11:09:43+05:30",
-    "url": "/post-3/"
+    "title": "A Curious Mind - Class 6 English (SCERT)",
+    "publishTime": "2026-01-04T00:09:36+05:30",
+    "url": "/class-6-english-lesson-3-scert/"
   },
   {
-    "title": "Deploying Hugo Sites",
-    "publishTime": "2025-12-21T11:09:48+05:30",
-    "url": "/post-4/"
+    "title": "My Land - Class 6 English (SCERT)",
+    "publishTime": "2026-01-04T22:23:05+05:30",
+    "url": "/class-6-english-lesson-4-scert/"
   },
   {
-    "title": "Advanced Hugo Tips and Tricks",
-    "publishTime": "2025-12-21T11:09:52+05:30",
-    "url": "/post-5/"
+    "title": "আমাৰ পৃথিৱী (Our Earth) Class 6 - SCERT",
+    "publishTime": "2026-01-04T17:44:05+05:30",
+    "url": "/class-6-social-science-lesson-1/"
   },
   {
-    "title": "Optimizing Hugo Sites for Performance",
-    "publishTime": "2025-12-21T12:00:00+05:30",
-    "url": "/post-6/"
+    "title": "Hobbies - Class 7 English (SCERT)",
+    "publishTime": "2026-01-07T00:07:15+05:30",
+    "url": "/class-7-english-lesson-1-scert/"
   },
   {
-    "title": "Working with Hugo Shortcodes",
-    "publishTime": "2025-12-21T12:05:00+05:30",
-    "url": "/post-7/"
-  },
-  {
-    "title": "Internationalization in Hugo",
-    "publishTime": "2025-12-21T12:10:00+05:30",
-    "url": "/post-8/"
-  },
-  {
-    "title": "Hugo with GitHub Pages",
-    "publishTime": "2025-12-21T12:15:00+05:30",
-    "url": "/post-9/"
-  },
-  {
-    "title": "Advanced Taxonomy Usage in Hugo",
-    "publishTime": "2025-12-21T12:20:00+05:30",
-    "url": "/post-10/"
-  },
-  {
-    "title": "Sample Post for Categories",
-    "publishTime": "2025-12-27T12:00:00+05:30",
-    "url": "/sample-post/"
+    "title": "Uruka Adventure - Class 7 English (SCERT)",
+    "publishTime": "2026-01-07T11:27:36+05:30",
+    "url": "/class-7-english-lesson-2-scert/"
   }
 ]
