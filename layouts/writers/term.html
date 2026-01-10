@@ -2,14 +2,14 @@
 <div class="max-w-4xl mx-auto px-4 py-8">
     <div class="mb-8 text-center">
         <div class="w-20 h-20 rounded-full bg-muted mx-auto mb-4 flex items-center justify-center">
-            {{ $writer := index $.Site.Data.writers .Title }}
+            {{ $writer := index $.Site.Data.writers .Data.Term }}
             {{ if $writer.avatar }}
                 <img src="{{ $writer.avatar }}" alt="{{ .Title }}" class="w-full h-full rounded-full object-cover author-avatar">
             {{ else }}
                 <span class="text-2xl font-bold text-main">{{ substr .Title 0 1 }}</span>
             {{ end }}
         </div>
-        <h1 class="text-3xl font-bold text-main mb-2">Writer: {{ .Title }}</h1>
+        <h1 class="text-3xl font-bold text-main mb-2">{{ $writer.name }}</h1>
         <p class="text-muted-foreground">Published {{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }}</p>
     </div>
     
