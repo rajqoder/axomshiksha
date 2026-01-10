@@ -1,14 +1,13 @@
 +++
 title = "Afternoon on a hill - Class 6 English (SCERT)"
-draft = false
-subject = "English" 
+draft = false 
 date = "2025-12-30T10:48:04+05:30"
 readingTime = "50 mins"
 description = "Complete solutions and explanations for Class 6 English Chapter 1 - Afternoon on a Hill from SCERT textbook. Includes summary, word meanings, activities and exercises."
 tags = ["scert", "class-6", "english"]
 keywords = ["scert", "class-6", "english", "solutions", "textbook", "lesson-1"]
 categories = ["upper-primary"]
-writers = ["Admin"]
+writers = ["dekalasit"]
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczN28Nd3u_vM128uOILjwlJ_TIEuh5fO_4DL2m79WfXw8PHsRVA6x5pZYRQTrfAY97GoCydt_XeLQCTqkqL-4gtT6Np9l0qNccQgxGjoscu7k8rtb-PE0Ed-w1-Zc238reot_rA94OvZ3QRpfJlpU6c=w455-h607-s-no-gm?authuser=0"
 +++
 

@@ -6,7 +6,7 @@ readingTime = "48 mins"
 tags = ["class-6", "scert", "english"]
 keywords = ["class-6", "scert", "english", "solutions", "textbook", "lesson-4"]
 categories = ["upper-primary"]
-writers = ["Admin"]
+writers = ["dekalasit"]
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczNHBgOtrGx5hjjg1K8fVR2ctM-m4H0ptD8lkU3IfIlFgnCSK9M9PB2sZLZv5y2GnPrvoGxnAIkoaa1ooZcNyOmjhqkOMaklBToW9sO4plcT7Z2-lPPgUDPc-MtD-dyS1sRYdIGo261yOGwm58v31PE=w340-h428-s-no-gm?authuser=0"
 +++
 
