@@ -1,6 +1,7 @@
 +++
 title = "The Golden Touch - Class 6 English (SCERT)"
 draft = false
+slug = "class-6-english-lesson-2-scert"
 date = "2026-01-01T23:58:31+05:30"
 readingTime = "35 mins"
 description = "Complete solutions and explanations for Class 6 English Chapter 2 - The Golden Touch from SCERT textbook. Includes summary, word meanings, activities and exercises."

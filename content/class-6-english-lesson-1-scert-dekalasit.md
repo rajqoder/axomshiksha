@@ -1,6 +1,7 @@
 +++
 title = "Afternoon on a hill - Class 6 English (SCERT)"
 draft = false 
+slug = "class-6-english-lesson-1-scert"
 date = "2025-12-30T10:48:04+05:30"
 readingTime = "50 mins"
 description = "Complete solutions and explanations for Class 6 English Chapter 1 - Afternoon on a Hill from SCERT textbook. Includes summary, word meanings, activities and exercises."

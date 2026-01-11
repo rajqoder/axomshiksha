@@ -8,6 +8,7 @@ tags = ["class 7", "english", "scert"]
 categories = ["upper-primary"]
 writers = ["dekalasit"]
 draft = false
+slug = "class-7-english-lesson-2-scert"
 readingTime = "56 mins"
 date = "2026-01-07T11:27:36+05:30"
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczOaqbutWqwBPx6OfUYxwcpXTlLofkrUAq-anqjj82Y0UKc2_i-yTySmDKJa7q0kTD8bfyj4ArXDPbeYpFvCtGjt5qhMsaIZ56ibjv-G-XThHtDM4gmFcBaJ-VxvSjwhMNCM2xsaFZVngft3wtm2qzkG=w483-h289-s-no-gm?authuser=0"

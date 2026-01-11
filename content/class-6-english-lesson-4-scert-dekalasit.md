@@ -1,6 +1,8 @@
 +++
 title = "My Land - Class 6 English (SCERT)"
 date = "2026-01-04T22:23:05+05:30"
+draft = false
+slug = "class-6-english-lesson-4-scert"
 description = "Complete solutions and explanations for Class 6 English Chapter 4 - My Land from SCERT textbook. Includes summary, word meanings, activities and exercises."
 readingTime = "48 mins"
 tags = ["class-6", "scert", "english"]
