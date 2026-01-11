@@ -1,8 +1,7 @@
 {{ $count := .Get "no" | default 1 | int }}
-{{ $width := .Get "width" | default "6em" }}
+{{ $width := .Get "width" | default "6rem" }}
 
 {{ range seq $count }}
-<span class="inline-block border-b border-gray-500 select-none"
-  style="width: {{ $width }}; height: 1.2em; max-width: 100%;">
+<span class="inline-block border-b border-gray-500 select-none w-[{{ $width }}] mt-4 h-1 max-w-full">
 </span>
 {{ end }}

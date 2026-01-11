@@ -1,6 +1,6 @@
 {{ $width := .Get "width" | default "100%" }}
 {{ $height := .Get "height" | default "1px" }}
 {{ $color := .Get "color" | default "gray-500" }}
-{{ $marginY := .Get "marginY" | default "4.5" }}
+{{ $marginY := .Get "marginY" | default "1.125rem" }}
 
-<span class="inline-block border-b border-{{ $color }}{{ if ne $marginY "0" }} my-{{ $marginY }}{{ end }}" style="width: {{ $width }}; height: {{ $height }}; max-width: 100%;"></span>
+<span class="inline-block border-b border-[{{ $color }}]{{ if ne $marginY "0" }} my-[{{ $marginY }}]{{ end }} w-[{{ $width }}] h-[{{ $height }}] max-w-full"></span>

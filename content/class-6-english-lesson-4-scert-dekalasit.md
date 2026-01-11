@@ -105,7 +105,7 @@ shine
 {{<flex direction="col">}}
 
 fare
-{{<content-box content="care" >}}
+{{<content-box content="care">}}
 {{<content-box content="share" >}}
 
 {{</flex>}}

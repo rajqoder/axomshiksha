@@ -293,7 +293,7 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 **Make sentences using the word ‘drink’ to show two different meanings:**
 
 {{<flex direction="col">}}
-{{<underscored-space no="2">}}
+{{<underscored-space no="2" width="100%">}}
 {{</flex>}}
 
 **Ans:**
@@ -315,7 +315,7 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 **Now, make sentences using these words as a noun and as a verb:**
 
 {{<flex direction="col">}}
-{{<underscored-space no="4">}}
+{{<underscored-space no="4" width="100%">}}
 {{</flex>}}
 
 **Ans:**
@@ -402,7 +402,7 @@ iv. The story conveys the message that our words and actions reflect back on us,
 **Make a tongue twister on your own**
 
 {{<flex direction="col">}}
-{{<underscored-space no="2">}}
+{{<underscored-space no="2" width="100%">}}
 {{</flex>}}
 
 **Ans:**

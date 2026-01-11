@@ -162,7 +162,7 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 
 {{<flex direction="col">}}
 
-{{<underscored-space no="4">}}
+{{<underscored-space no="4" width="100%">}}
 
 {{</flex>}}
 
@@ -216,8 +216,8 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
    *him to become a great inventor.*  
 
    {{<flex>}}
-   {{<flex direction="col">}}
-   {{<underscored-space no="5">}}
+   {{<flex direction="col" flex="1">}}
+   {{<underscored-space no="5" width="100%">}}
    {{</flex>}}
    {{<content-box  content=`secondly  
    lastly`>}}

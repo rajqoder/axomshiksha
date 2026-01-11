@@ -1,7 +1,10 @@
 {{ $flexDirection := .Get "direction" | default "row" }}
 {{ $justifyContent := .Get "justifyContent" | default "start" }}
 {{ $alignItems := .Get "alignItems" | default "start" }}
+{{ $gap := .Get "gap" | default "1rem" }}
+{{ $marginY := .Get "marginY" | default "1rem" }}
+{{ $flex := .Get "flex" }}
 
-<div class="flex flex-wrap items-{{ $alignItems }} justify-{{ $justifyContent }} my-4 gap-4 flex-{{ $flexDirection }}">
+<div class="flex flex-wrap items-{{ $alignItems }} justify-{{ $justifyContent }} my-[{{ $marginY }}] gap-[{{ $gap }}] flex-{{ $flexDirection }}{{ if $flex }}{{ if or (eq $flex "1") (eq $flex "auto") (eq $flex "initial") (eq $flex "none") }} flex-{{ $flex }}{{ else }} flex-[{{ $flex }}]{{ end }}{{ end }}">
   {{ .Inner | safeHTML }}
 </div>
