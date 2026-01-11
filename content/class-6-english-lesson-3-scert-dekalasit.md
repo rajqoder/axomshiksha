@@ -160,7 +160,7 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 
 ### 6. Frame a sentence of your own by using each word you have listed in the table above.
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 
 {{<underscored-space no="4">}}
 
@@ -200,10 +200,10 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 
 #### (c) Orgo made some notes of what he had read about Thomas Alva Edison. Read what Orgo wrote:  
 
-   {{<flex direction="col" alignItems="start">}}
-   {{<box  content="Main topic: Edison became a great inventor due to certain qualities.">}}
+   {{<flex direction="col">}}
+   {{<content-box  content="Main topic: Edison became a great inventor due to certain qualities.">}}
 
-   {{<box  content=`Supporting information: The qualities  
+   {{<content-box  content=`Supporting information: The qualities  
    (i) curiosity  
    (ii) independent learning  
    (iii) determination`>}}
@@ -215,11 +215,11 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
    *Thomas Alva Edison had certain qualities that helped*  
    *him to become a great inventor.*  
 
-   {{<flex justifyContent="start">}}
-   {{<flex direction="col" alignItems="start">}}
+   {{<flex>}}
+   {{<flex direction="col">}}
    {{<underscored-space no="5">}}
    {{</flex>}}
-   {{<box  content=`secondly  
+   {{<content-box  content=`secondly  
    lastly`>}}
    {{</flex>}}
 
@@ -320,7 +320,7 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 
 ### 14. (a) Let’s read the words in the box aloud and notice the beginning sound of each word:
 
-{{<box content="scene &nbsp;&nbsp; scolded &nbsp;&nbsp; science &nbsp;&nbsp; scattering">}}
+{{<content-box content="scene &nbsp;&nbsp; scolded &nbsp;&nbsp; science &nbsp;&nbsp; scattering">}}
 
 > All the four words begin with the consonant blend **“sc”**.  
 > When we say the words *scene* and *science*, they begin with the sound **“s”** as in *sun*.  
@@ -393,7 +393,7 @@ As you listen, fill in the blanks with the correct pieces of information.
 
 **You have learnt that C. V. Raman won the Nobel Prize for Physics in 1930. Now, find out the names of other Indians who won the Nobel Prize in different fields. Collect and paste their pictures on a chart paper. Include the following information about each of them:**  
 
-{{<box content=`Name:  
+{{<content-box content=`Name:  
 Date of birth:  
 Place of birth:  
 Nobel Prize in the field:  
@@ -401,19 +401,19 @@ Year of receiving the Nobel Prize:`>}}
 
 **Ans:**
 
-{{<box content=`Name: Rabindranath Tagore  
+{{<content-box content=`Name: Rabindranath Tagore  
 Date of birth: 7 May 1861  
 Place of birth: Calcutta  
 Nobel Prize in the field: Literature  
 Year of receiving the Nobel Prize: 1913`>}}
 
-{{<box content=`Name: Mother Teresa  
+{{<content-box content=`Name: Mother Teresa  
 Date of birth: 26 August 1910  
 Place of birth: Skopje  
 Nobel Prize in the field: Peace  
 Year of receiving the Nobel Prize: 1979`>}}
 
-{{<box content=`Name: Amartya Sen  
+{{<content-box content=`Name: Amartya Sen  
 Date of birth: 3 November 1933  
 Place of birth: Santiniketan  
 Nobel Prize in the field: Economics  
@@ -423,6 +423,6 @@ Year of receiving the Nobel Prize: 1998`>}}
 
 ![Space Shuttle](https://lh3.googleusercontent.com/pw/AP1GczNqdVo190lRy4vlZcZ6rdxOGLl8hXPiAov2k0DeBcgKsyVx_5HPgTHn_Js54gEnffpvmLPssPs0UfN5NAlPRlqtnZfAgyS55uFOJhBo3otvZL1hdAcb8lgLlsETp_GP7cGA-taB12egtIG-D_-lNN5y=w400-h205-s-no-gm?authuser=0)
 
-{{<box width="400px" height="300px" content="Box-2" bgColor="white">}}
+{{<content-box width="400px" height="300px" content="Box-2" bgColor="white">}}
 
 **Ans:** Do it yourself.

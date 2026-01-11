@@ -130,7 +130,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
 
 ### 6. **Write the rhyming words from the poem for the ones given below -**
 
-{{<table-wrapper>}}
+{{<table-flex>}}
 
 | brown |
 | :----- |
@@ -147,11 +147,11 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
 | .... |
 | .... | 
 
-{{</table-wrapper>}}
+{{</table-flex>}}
 
 **Ans:**
 
-{{<table-wrapper>}}
+{{<table-flex>}}
 
 | brown |
 | :----- |
@@ -168,7 +168,7 @@ The poem shows how nature brings peace to the human mind. It teaches us that spe
 | gun |
 | fun |
 
-{{</table-wrapper>}}
+{{</table-flex>}}
 
 ### 7. **Read the following phrases from the poem**
 

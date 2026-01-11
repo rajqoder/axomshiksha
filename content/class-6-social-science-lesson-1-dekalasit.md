@@ -12,7 +12,7 @@ writers = ["dekalasit"]
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopycZkIdj0tnInxlsVJkJMK8bYBhPELw_e0eUG1FGpD56pd6HMYC3xE-4Ek_ShLw8d8scye1WhSyfTz2c85jxmyVqL-7qBKDtp3mgKmBsR4qGNbJbaxE5dG4-c2Y7Wbm1G=w400-h280-s-no-gm?authuser=0"
 +++
 
-{{<heading-box heading="### অনুশীলনী - ১" ariaLabel="অনুশীলনী - ১" bgColor="orange" textColor="white">}}
+{{<content-box type="heading" content="### অনুশীলনী - ১" ariaLabel="অনুশীলনী - ১" bgColor="orange" textColor="white">}}
 
 #### ১. তলৰ প্ৰশ্নবোৰৰ উত্তৰ দিয়া -
 
@@ -41,7 +41,7 @@ thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopyc
 
 **উত্তৰ:** চন্দ্ৰটো সূৰ্যৰ তুলনাত বহুগুণে সৰু যদিও ই পৃথিৱীৰ যথেষ্ট ওচৰত আছে, সেয়েহে চন্দ্ৰ আৰু সূৰ্যক পৃথিৱীৰ পৰা আকাৰত প্ৰায় সমান দেখি।
 
-{{<heading-box heading="### অনুশীলনী - ২" ariaLabel="অনুশীলনী - ২" bgColor="orange" textColor="white">}}
+{{<content-box type="heading" content="### অনুশীলনী - ২" ariaLabel="অনুশীলনী - ২" bgColor="orange" textColor="white">}}
 
 #### ১. তলৰ প্ৰশ্নবোৰৰ উত্তৰ দিয়া -
 
@@ -67,7 +67,7 @@ thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopyc
 
 ![পৃথিৱীৰ ছবি](https://lh3.googleusercontent.com/pw/AP1GczOXjuNqrn5pbzXTMBdNiQ25IRmG5XTeGu1iTv8JER8bBWOXYNettOUZImwXnXYnb4iBEZpsbsk6_x0VlQw1yffPeNG8EQRihuE68BVyk573KeuHmi0vb3n2XgbTUsZLiLTBkkKgJ9TA2I2e6yZCEied=w355-h418-s-no-gm?authuser=0)
 
-{{<heading-box heading="### অনুশীলনী - ৩" ariaLabel="অনুশীলনী - ৩" bgColor="orange" textColor="white">}}
+{{<content-box type="heading" content="### অনুশীলনী - ৩" ariaLabel="অনুশীলনী - ৩" bgColor="orange" textColor="white">}}
 
 #### ১. তলৰ প্ৰশ্নবোৰৰ উত্তৰ দিয়া -
 
@@ -93,7 +93,7 @@ thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopyc
 
 **উত্তৰ:** ![Earth sphere with major axes](https://lh3.googleusercontent.com/pw/AP1GczPUBWPtKJYaa3_d2Y4aLq7PjvQUu3ivibFSRNAdUdBPrmbPCH1EiKeU5B0ARvwYimvsRdnysL-HH7cs1GoCG1Tp2SBUEsXIY2XrT3mzIR4jqHME1T-Z4vxrusaZrLi0QS_OBlIv-LeG7SS0PwbtCTs9=w557-h347-s-no-gm?authuser=0)
 
-{{<heading-box heading="### অনুশীলনী - ৪" ariaLabel="অনুশীলনী - ৪" bgColor="orange" textColor="white">}}
+{{<content-box type="heading" content="### অনুশীলনী - ৪" ariaLabel="অনুশীলনী - ৪" bgColor="orange" textColor="white">}}
 
 #### ১. তলৰ প্ৰশ্নবোৰৰ উত্তৰ দিয়া -
 
@@ -129,7 +129,7 @@ thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopyc
 | অক্ষৰেখাই কোনো এখন ঠাই পৃথিৱীৰ উত্তৰ বা দক্ষিণ দিশত ক'ত আছে তাক সূচায় | দ্ৰাঘিমাৰেখাই কোনো এখন ঠাই পূব বা পশ্চিম দিশে ক'ত আছে তাক সূচায় |
 | মুঠ অক্ষৰেখাৰ সংখ্যা হ'ল ১৮১ ডাল | মুঠ দ্ৰাঘিমাৰেখাৰ সংখ্যা হ'ল ৩৬০ ডাল |
 
-{{<heading-box heading="### অনুশীলনী - ৫" ariaLabel="অনুশীলনী - ৫" bgColor="orange" textColor="white">}}
+{{<content-box type="heading" content="### অনুশীলনী - ৫" ariaLabel="অনুশীলনী - ৫" bgColor="orange" textColor="white">}}
 
 #### ১. তলৰ প্ৰশ্নবোৰৰ উত্তৰ দিয়া -
 

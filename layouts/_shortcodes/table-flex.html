@@ -1,0 +1,10 @@
+{{ $flexDirection := .Get "direction" | default "row" }}
+{{ $justifyContent := .Get "justifyContent" | default "start" }}
+{{ $alignItems := .Get "alignItems" | default "start" }}
+{{ $gap := .Get "gap" | default "4" }}
+{{ $wrap := .Get "wrap" | default "wrap" }}
+{{ $marginY := .Get "marginY" | default "4" }}
+
+<div class="flex flex-{{ $wrap }} items-{{ $alignItems }} justify-{{ $justifyContent }} my-{{ $marginY }} gap-{{ $gap }} flex-{{ $flexDirection }}">
+  {{ .Inner | markdownify }}
+</div>

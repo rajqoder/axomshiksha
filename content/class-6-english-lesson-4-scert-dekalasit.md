@@ -55,25 +55,25 @@ The poem **My Land** is a vibrant expression of the poet's love, pride, and resp
 
 **Ans:**
 
-{{<flex justifyContent="start">}}
+{{<flex>}}
 
-{{<box content="The poet says that the men of his native land are braver than those of other lands. The women are courageous. The poet will die willingly to save his native land and will consider his lot divine if that happens."  width="75%">}}
+{{<content-box content="The poet says that the men of his native land are braver than those of other lands. The women are courageous. The poet will die willingly to save his native land and will consider his lot divine if that happens."  width="75%">}}
 
-{{<box content="**Second stanza**" >}}
+{{<content-box content="**Second stanza**" >}}
 
 {{</flex>}}
 
-{{<flex justifyContent="start">}}
+{{<flex>}}
 
-{{<box content="The poet is all praise for his native land. He says that his native land is rich and rare, fresh and fair,dear land. He takes pride in the uniqueness of his native land."  width="75%">}}
+{{<content-box content="The poet is all praise for his native land. He says that his native land is rich and rare, fresh and fair,dear land. He takes pride in the uniqueness of his native land."  width="75%">}}
 
-{{<box  content="**First stanza**">}}
+{{<content-box  content="**First stanza**">}}
 
 {{</flex>}}
 
 ### 4. Write the rhyming words from the poem for the ones given below:
 
-{{<flex justifyContent="start">}}
+{{<flex>}}
 
 {{<flex direction="col">}}
 
@@ -100,29 +100,29 @@ shine
 
 **Ans:**
 
-{{<flex justifyContent="start">}}
+{{<flex>}}
 
 {{<flex direction="col">}}
 
 fare
-{{<box content="care" >}}
-{{<box content="share" >}}
+{{<content-box content="care" >}}
+{{<content-box content="share" >}}
 
 {{</flex>}}
 
 {{<flex direction="col">}}
 
 saver
-{{<box content="braver" >}}
-{{<box content="clever" >}}
+{{<content-box content="braver" >}}
+{{<content-box content="clever" >}}
 
 {{</flex>}}
 
 {{<flex direction="col">}}
 
 shine
-{{<box content="mine" >}}
-{{<box content="pine" >}}
+{{<content-box content="mine" >}}
+{{<content-box content="pine" >}}
 
 {{</flex>}}
 
@@ -134,7 +134,7 @@ shine
 
 ### 6. Find out some examples of alliterations from the poem and write down in the space provided:
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="3" width="20rem">}}
 {{</flex>}}
 
@@ -146,7 +146,7 @@ shine
   
 ### 7. a) The poet has used a few adjectives to describe his Native Land. Write the adjectives in the space provided:
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="3" width="20rem">}}
 {{</flex>}}
 
@@ -161,7 +161,7 @@ shine
 
 #### b) Now, write a few sentences using the words you have listed above to describe the poet's Native Land.
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="4" width="20rem">}}
 {{</flex>}}
 
@@ -178,7 +178,7 @@ b) Conserving electricity by turning off lights and fans when not in use.
 
 **Now, add a few such acts to the list and write down in the space provided:**
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="2" width="20rem">}}
 {{</flex>}}
 
@@ -215,7 +215,7 @@ Courage, peace and prosperity in three colours.
 
 ### 11. We take pride in our national flag, historical monuments, etc. Write the names of a few historical monuments of Assam in the space given below:
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="2" width="20rem">}}
 {{</flex>}}
 
@@ -233,7 +233,7 @@ Courage, peace and prosperity in three colours.
 
 **Now, find out who the writer of the letter is and what the matter of pride is that the writer is talking about. Write your answer in the space provided below:**
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="4" width="20rem">}}
 {{</flex>}}
 
@@ -268,7 +268,7 @@ Courage, peace and prosperity in three colours.
 
 ### 14. Work in groups. Discuss and find out the names of a few historical monuments and a few places of importance of Assam. After the discussion, write the names and the information that you have about the historical monuments and the places of importance of Assam.
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="14" width="20rem">}}
 {{</flex>}}
 
@@ -281,14 +281,14 @@ Some places of importance in Assam are **Kaziranga National Park**, **Majuli**, 
 
 ### 15. Let us say these words aloud and notice the pronunciation of 's' in *s*ave, 'sh' in fre*sh* and 'ch' in ri*ch*.
 
-{{<flex justifyContent="start">}}
-{{<box content="*s*ave &nbsp;&nbsp; fre*sh* &nbsp;&nbsp; ri*ch* &nbsp;&nbsp;">}}
+{{<flex>}}
+{{<content-box content="*s*ave &nbsp;&nbsp; fre*sh* &nbsp;&nbsp; ri*ch* &nbsp;&nbsp;">}}
 {{</flex>}}
 
 **Now, let’s practise saying the following words correctly:**
 
-{{<flex alignItems="start" direction="col">}}
-{{<box content="sun &nbsp;&nbsp; she &nbsp;&nbsp; sure &nbsp;&nbsp; wish &nbsp;&nbsp; shine &nbsp;&nbsp; touch &nbsp;&nbsp; change &nbsp;&nbsp; each">}}
+{{<flex direction="col">}}
+{{<content-box content="sun &nbsp;&nbsp; she &nbsp;&nbsp; sure &nbsp;&nbsp; wish &nbsp;&nbsp; shine &nbsp;&nbsp; touch &nbsp;&nbsp; change &nbsp;&nbsp; each">}}
 {{</flex>}}
  
 **Ans:** Do yourself.
@@ -310,23 +310,23 @@ Here, **‘ly’** is added to the adjective **‘free’** to make a new word *
 
 #### b) Read the adjectives written in the box:
 
-{{<flex justifyContent="start">}}
-{{<box content="rare &nbsp;&nbsp; fresh &nbsp;&nbsp; fair &nbsp;&nbsp; dear &nbsp;&nbsp; divine &nbsp;&nbsp; brave &nbsp;&nbsp;">}}
+{{<flex>}}
+{{<content-box content="rare &nbsp;&nbsp; fresh &nbsp;&nbsp; fair &nbsp;&nbsp; dear &nbsp;&nbsp; divine &nbsp;&nbsp; brave &nbsp;&nbsp;">}}
 {{</flex>}}
 
 **Now, add ‘ly’ to each of them to make adverbs and write in the given spaces:**
 
-{{<flex justifyContent="start">}}
+{{<flex>}}
 
-{{<flex alignItems="start" direction="col">}}
+{{<flex direction="col">}}
 {{<underscored-space no="2" width="15rem">}}
 {{</flex>}}
 
-{{<flex alignItems="start" direction="col">}}
+{{<flex direction="col">}}
 {{<underscored-space no="2" width="15rem">}}
 {{</flex>}}
 
-{{<flex alignItems="start" direction="col">}}
+{{<flex direction="col">}}
 {{<underscored-space no="2" width="15rem">}}
 {{</flex>}}
 
@@ -343,7 +343,7 @@ Here, **‘ly’** is added to the adjective **‘free’** to make a new word *
 
 #### c) Choose one adjective and the adverb formed by adding ‘ly’ to it and make sentences using the adjective and the adverb:
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="2" width="15rem">}}
 {{</flex>}}
 

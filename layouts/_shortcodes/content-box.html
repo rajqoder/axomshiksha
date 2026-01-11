@@ -1,0 +1,30 @@
+{{ $type := .Get "type" | default "content" }}
+{{ $content := .Get "content" }}
+{{ $heading := .Get "heading" }}
+{{ $ariaLabel := .Get "ariaLabel" }}
+{{ $borderColor := .Get "borderColor" | default "main" }}
+{{ $width := .Get "width" | default "auto" }}
+{{ $height := .Get "height" | default "auto" }}
+{{ $bgColor := .Get "bgColor" | default "transparent" }}
+{{ $textColor := .Get "textColor" }}
+
+{{ if eq $type "heading" }}
+<div class="flex justify-center items-center">
+    <div 
+    style="
+    {{if $bgColor}}background-color: {{ $bgColor }};{{end}}
+    {{if $textColor}}color: {{ $textColor }};{{end}}
+    {{if $borderColor}}border-color: {{ $borderColor }};{{end}}
+    "
+    aria-label="{{ $ariaLabel }}" 
+    class="heading-box flex px-4 my-4 border border-main rounded-md">
+        {{ if $heading }}{{ $heading | markdownify }}{{ else }}{{ $content | markdownify }}{{ end }}
+    </div>
+</div>
+{{ else }}
+<div style="width: {{ $width }}; height: {{ $height }}; background-color: {{ $bgColor }}; 
+    {{ if eq $bgColor " white" }}color: black;{{ end }}"
+  class="inline-flex border border-{{ $borderColor }} mb-4 px-4 py-2 mr-4 rounded-md">
+  {{ $content | markdownify }}
+</div>
+{{ end }}

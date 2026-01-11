@@ -254,7 +254,7 @@ Makar Sankranti is a festival celebrated all over India in the month of January.
 
 > Notice that the ‘ght’ in all the past forms is pronounced as the 't' is pronounced in ‘co*t*’.
 
-{{<box content="bought  caught  taught  brought  fought">}}  
+{{<content-box content="bought  caught  taught  brought  fought">}}  
 
 **Can you think of more words ending with ‘ght’? Work with a friend. Practise saying aloud the words you have listed.**
 
@@ -268,7 +268,7 @@ Makar Sankranti is a festival celebrated all over India in the month of January.
 
 ### 12. Read the following words. Some of them are related to adventure. Find out the meanings of those words and make sentences with them:
 
-{{<box content="plan  thrill  excitement  enjoyment  feast  cooperation  custom  experiment  night  voice">}}
+{{<content-box content="plan  thrill  excitement  enjoyment  feast  cooperation  custom  experiment  night  voice">}}
 
 **Ans:**
 

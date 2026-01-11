@@ -1,6 +1,6 @@
 {{ $flexDirection := .Get "direction" | default "row" }}
-{{ $justifyContent := .Get "justifyContent" | default "center" }}
-{{ $alignItems := .Get "alignItems" | default "center" }}
+{{ $justifyContent := .Get "justifyContent" | default "start" }}
+{{ $alignItems := .Get "alignItems" | default "start" }}
 
 <div class="flex flex-wrap items-{{ $alignItems }} justify-{{ $justifyContent }} my-4 gap-4 flex-{{ $flexDirection }}">
   {{ .Inner | safeHTML }}

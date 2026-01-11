@@ -43,17 +43,17 @@ Outdoor hobbies: gardening, swimming, trekking, photography.
 
 From the box below, choose words which are synonyms of the given words, and write each synonym next to the word in the blanks below:
 
-{{<box content="pleasure &nbsp;&nbsp; free time &nbsp;&nbsp; lovely &nbsp;&nbsp; begin &nbsp;&nbsp; energetic &nbsp;&nbsp; grow &nbsp;&nbsp; happiness &nbsp;&nbsp; sporty &nbsp;&nbsp; pretty &nbsp;&nbsp; spare time &nbsp;&nbsp; launch &nbsp;&nbsp; evolve" width="50%">}}
+{{<content-box content="pleasure &nbsp;&nbsp; free time &nbsp;&nbsp; lovely &nbsp;&nbsp; begin &nbsp;&nbsp; energetic &nbsp;&nbsp; grow &nbsp;&nbsp; happiness &nbsp;&nbsp; sporty &nbsp;&nbsp; pretty &nbsp;&nbsp; spare time &nbsp;&nbsp; launch &nbsp;&nbsp; evolve" width="50%">}}
 
-{{<flex justifyContent="start">}}
+{{<flex>}}
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<flex>}}(a) joy {{<underscored-space width="10rem">}}{{</flex>}}  
 {{<flex>}}(b) beautiful {{<underscored-space width="10rem">}}{{</flex>}}  
 {{<flex>}}(c) active {{<underscored-space width="10rem">}}{{</flex>}}  
 {{</flex>}}
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<flex>}}(d) leisure {{<underscored-space width="10rem">}}{{</flex>}}  
 {{<flex>}}(e) start {{<underscored-space width="10rem">}}{{</flex>}}  
 {{<flex>}}(f) develop {{<underscored-space width="10rem">}}{{</flex>}}  
@@ -143,7 +143,7 @@ The use of common idioms makes English appear more natural. Some common English 
 
 **Try to use these idioms in sentences of your own. You can look up the dictionary to learn their meaning.**
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="3" width="100%">}}
 {{</flex>}}
 
@@ -160,7 +160,7 @@ She *beat about the bush* before answering.
 
 ### 8. In class VI you learnt that we can make a new word by adding a suffix, i.e., a letter or a group of letters at the end of a word. In the exercise below, write the new words by adding **-ment** at the end of the words.
 
-![Suffice Example](https://lh3.googleusercontent.com/pw/AP1GczMUYQESYjNM22ZiBNCQcw_GslEvmQo4LqDDDbSzANLAlz7VNwL_0FcVvcKdZrGIKfP1mz3kQfJXI0PEb0Fa9KZtft1PavWTK4E9uXIcnwXN69-eKn8kvp7blHECpy0YJ5ax5fQh0PiUJFy4Pcqm12j-=w543-h164-s-no-gm?authuser=0)
+![Suffix Example](https://lh3.googleusercontent.com/pw/AP1GczMUYQESYjNM22ZiBNCQcw_GslEvmQo4LqDDDbSzANLAlz7VNwL_0FcVvcKdZrGIKfP1mz3kQfJXI0PEb0Fa9KZtft1PavWTK4E9uXIcnwXN69-eKn8kvp7blHECpy0YJ5ax5fQh0PiUJFy4Pcqm12j-=w543-h164-s-no-gm?authuser=0)
 
 > **Suffix:** A letter or a group of letters added at the end of a word is called a suffix.
 
@@ -198,11 +198,11 @@ She *beat about the bush* before answering.
 
 ### 9. Read the lesson and locate the sentences where the following phrasal verbs beginning with ‘take’ occur. Then write the sentences in the space given below the word web:
 
-{{<flex justifyContent="start" alignItems="center">}}
-{{<box content="up">}}---{{<box content="take" borderColor="blue-500">}}---{{<box content="out">}}
+{{<flex>}}
+{{<content-box content="up">}}{{<line width="2rem">}}{{<content-box content="take" borderColor="blue-500">}}{{<line width="2rem">}}{{<content-box content="out">}}
 {{</flex>}}
 
-{{<flex direction="col" alignItems="start">}}
+{{<flex direction="col">}}
 {{<underscored-space no="4" width="100%">}}
 {{</flex>}}
 
