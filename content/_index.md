@@ -2,6 +2,6 @@
 title: "Home Page"
 ---
 
-Welcome to our blog! Here you'll find tutorials, guides, and insights on web development, Hugo static site generation, and modern web technologies. Explore our latest posts below to stay up-to-date with the newest trends and best practices.
+Welcome to Axomshiksha! Your trusted source for comprehensive educational resources and study materials for students following the SCERT curriculum in Assam.
 
-Our content covers a wide range of topics from beginner-friendly introductions to advanced techniques, helping developers of all skill levels enhance their web development skills.
+We provide detailed solutions, explanations, and study guides for SCERT-prescribed textbooks, helping students understand concepts clearly and excel in their academic journey. Explore our latest educational content below, organized by classes and subjects.
