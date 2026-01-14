@@ -2,23 +2,34 @@
 {{ $content := .Get "content" }}
 {{ $heading := .Get "heading" }}
 {{ $ariaLabel := .Get "ariaLabel" }}
-{{ $borderColor := .Get "borderColor" | default "main" }}
+{{ $borderColor := .Get "borderColor" | default "#3b82f6" }}
 {{ $width := .Get "width" | default "auto" }}
 {{ $height := .Get "height" | default "auto" }}
 {{ $bgColor := .Get "bgColor" | default "transparent" }}
 {{ $textColor := .Get "textColor" }}
-{{ $marginY := .Get "marginY" | default "1rem" }}
+{{ $marginY := .Get "marginY" | default "0" }}
+{{ $marginX := .Get "marginX" | default "0" }}
+{{ $flex := .Get "flex" }}
+
+{{ $flexClass := "" }}
+{{ if $flex }}
+  {{ if or (eq $flex "1") (eq $flex "auto") (eq $flex "initial") (eq $flex "none") }}
+    {{ $flexClass = (printf " flex-%s" $flex) }}
+  {{ else }}
+    {{ $flexClass = (printf " flex-[%s]" $flex) }}
+  {{ end }}
+{{ end }}
 
 {{ if eq $type "heading" }}
 <div class="flex justify-center items-center">
     <div 
     aria-label="{{ $ariaLabel }}" 
-    class="heading-box flex px-4 border rounded-md my-[{{ $marginY }}]{{ if $bgColor }} bg-[{{ $bgColor }}]{{ end }}{{ if $textColor }} text-[{{ $textColor }}]{{ end }}{{ if $borderColor }} border-[{{ $borderColor }}]{{ else }} border-main{{ end }}">
+    class="heading-box flex px-4 border rounded-md{{ if ne $marginY "0" }} my-[{{ $marginY }}]{{ end }}{{ if ne $marginX "0" }} mx-[{{ $marginX }}]{{ end }}{{ if $bgColor }} bg-[{{ $bgColor }}]{{ end }}{{ if $textColor }} text-[{{ $textColor }}]{{ end }}{{ if $borderColor }} border-[{{ $borderColor }}]{{ else }} border-[#3b82f6]{{ end }}{{ $flexClass }}">
         {{ if $heading }}{{ $heading | markdownify }}{{ else }}{{ $content | markdownify }}{{ end }}
     </div>
 </div>
 {{ else }}
-<div class="inline-flex border px-4 py-2 mr-4 rounded-md my-[{{ $marginY }}]{{ if ne $width "auto" }} w-[{{ $width }}]{{ end }}{{ if ne $height "auto" }} h-[{{ $height }}]{{ end }}{{ if $bgColor }} bg-[{{ $bgColor }}]{{ end }}{{ if eq $bgColor "white" }} text-black{{ end }} border-[{{ $borderColor }}]">
+<div class="inline-flex border px-4 py-2{{ if ne $marginY "0" }} my-[{{ $marginY }}]{{ end }}{{ if ne $marginX "0" }} mx-[{{ $marginX }}]{{ end }} rounded-md{{ if ne $width "auto" }} w-[{{ $width }}]{{ end }}{{ if ne $height "auto" }} h-[{{ $height }}]{{ end }}{{ if $bgColor }} bg-[{{ $bgColor }}]{{ end }}{{ if eq $bgColor "white" }} text-black{{ end }} border-[{{ $borderColor }}]{{ $flexClass }}">
   {{ $content | markdownify }}
 </div>
 {{ end }}

@@ -43,20 +43,20 @@ Outdoor hobbies: gardening, swimming, trekking, photography.
 
 From the box below, choose words which are synonyms of the given words, and write each synonym next to the word in the blanks below:
 
-{{<content-box content="pleasure &nbsp;&nbsp; free time &nbsp;&nbsp; lovely &nbsp;&nbsp; begin &nbsp;&nbsp; energetic &nbsp;&nbsp; grow &nbsp;&nbsp; happiness &nbsp;&nbsp; sporty &nbsp;&nbsp; pretty &nbsp;&nbsp; spare time &nbsp;&nbsp; launch &nbsp;&nbsp; evolve" width="50%">}}
+{{<content-box marginY="1rem" content="pleasure &nbsp;&nbsp; free time &nbsp;&nbsp; lovely &nbsp;&nbsp; begin &nbsp;&nbsp; energetic &nbsp;&nbsp; grow &nbsp;&nbsp; happiness &nbsp;&nbsp; sporty &nbsp;&nbsp; pretty &nbsp;&nbsp; spare time &nbsp;&nbsp; launch &nbsp;&nbsp; evolve" width="50%">}}
 
 {{<flex>}}
 
-{{<flex direction="col">}}
-{{<flex>}}(a) joy {{<underscored-space width="10rem">}}{{</flex>}}  
-{{<flex>}}(b) beautiful {{<underscored-space width="10rem">}}{{</flex>}}  
-{{<flex>}}(c) active {{<underscored-space width="10rem">}}{{</flex>}}  
+{{<flex direction="col" marginY="1rem">}}
+{{<flex alignItems="end">}}(a) joy {{<underscored-space width="10rem">}}{{</flex>}}  
+{{<flex alignItems="end">}}(b) beautiful {{<underscored-space width="10rem">}}{{</flex>}}  
+{{<flex alignItems="end">}}(c) active {{<underscored-space width="10rem">}}{{</flex>}}  
 {{</flex>}}
 
-{{<flex direction="col">}}
-{{<flex>}}(d) leisure {{<underscored-space width="10rem">}}{{</flex>}}  
-{{<flex>}}(e) start {{<underscored-space width="10rem">}}{{</flex>}}  
-{{<flex>}}(f) develop {{<underscored-space width="10rem">}}{{</flex>}}  
+{{<flex direction="col" marginY="1rem">}}
+{{<flex alignItems="end">}}(d) leisure {{<underscored-space width="10rem">}}{{</flex>}}  
+{{<flex alignItems="end">}}(e) start {{<underscored-space width="10rem">}}{{</flex>}}  
+{{<flex alignItems="end">}}(f) develop {{<underscored-space width="10rem">}}{{</flex>}}  
 {{</flex>}}
 
 {{</flex>}}
@@ -143,7 +143,7 @@ The use of common idioms makes English appear more natural. Some common English 
 
 **Try to use these idioms in sentences of your own. You can look up the dictionary to learn their meaning.**
 
-{{<flex direction="col">}}
+{{<flex direction="col" marginY="1rem">}}
 {{<underscored-space no="3" width="100%">}}
 {{</flex>}}
 
@@ -198,11 +198,11 @@ She *beat about the bush* before answering.
 
 ### 9. Read the lesson and locate the sentences where the following phrasal verbs beginning with ‘take’ occur. Then write the sentences in the space given below the word web:
 
-{{<flex>}}
+{{<flex alignItems="center" marginY="1rem">}}
 {{<content-box content="up">}}{{<line width="2rem">}}{{<content-box content="take" borderColor="blue-500">}}{{<line width="2rem">}}{{<content-box content="out">}}
 {{</flex>}}
 
-{{<flex direction="col">}}
+{{<flex direction="col" marginY="1rem">}}
 {{<underscored-space no="4" width="100%">}}
 {{</flex>}}
 

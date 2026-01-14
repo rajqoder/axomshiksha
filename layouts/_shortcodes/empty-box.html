@@ -1,6 +1,9 @@
 {{ $width := "5.5rem" }}
 {{ $height := "2.5rem" }}
-{{ $borderColor := .Get "borderColor" | default "main" }}
+{{ $borderColor := .Get "borderColor" | default "#3b82f6" }}
+{{ $marginY := .Get "marginY" | default "0" }}
+{{ $marginX := .Get "marginX" | default "0" }}
+{{ $flex := .Get "flex" }}
 
 {{ with .Get "width" }}
 {{ $width = . }}
@@ -10,4 +13,13 @@
 {{ $height = . }}
 {{ end }}
 
-<div class="inline-flex border border-[{{ $borderColor }}] rounded-sm w-[{{ $width }}] h-[{{ $height }}]"></div>
+{{ $flexClass := "" }}
+{{ if $flex }}
+  {{ if or (eq $flex "1") (eq $flex "auto") (eq $flex "initial") (eq $flex "none") }}
+    {{ $flexClass = (printf " flex-%s" $flex) }}
+  {{ else }}
+    {{ $flexClass = (printf " flex-[%s]" $flex) }}
+  {{ end }}
+{{ end }}
+
+<div class="inline-flex border border-[{{ $borderColor }}] rounded-sm{{ if ne $marginY "0" }} my-[{{ $marginY }}]{{ end }}{{ if ne $marginX "0" }} mx-[{{ $marginX }}]{{ end }} w-[{{ $width }}] h-[{{ $height }}]{{ $flexClass }}"></div>

@@ -1,10 +1,50 @@
 {{ $flexDirection := .Get "direction" | default "row" }}
 {{ $justifyContent := .Get "justifyContent" | default "start" }}
 {{ $alignItems := .Get "alignItems" | default "start" }}
+{{ $alignContent := .Get "alignContent" | default "start" }}
 {{ $gap := .Get "gap" | default "1rem" }}
-{{ $marginY := .Get "marginY" | default "1rem" }}
+{{ $marginY := .Get "marginY" | default "0" }}
+{{ $marginX := .Get "marginX" | default "0" }}
 {{ $flex := .Get "flex" }}
+{{ $flexTarget := .Get "flexTarget" | default "container" }}
 
-<div class="flex flex-wrap items-{{ $alignItems }} justify-{{ $justifyContent }} my-[{{ $marginY }}] gap-[{{ $gap }}] flex-{{ $flexDirection }}{{ if $flex }}{{ if or (eq $flex "1") (eq $flex "auto") (eq $flex "initial") (eq $flex "none") }} flex-{{ $flex }}{{ else }} flex-[{{ $flex }}]{{ end }}{{ end }}">
+{{ $containerFlexClass := "" }}
+{{ if and $flex (eq $flexTarget "container") }}
+  {{ if or (eq $flex "1") (eq $flex "auto") (eq $flex "initial") (eq $flex "none") }}
+    {{ $containerFlexClass = (printf " flex-%s" $flex) }}
+  {{ else }}
+    {{ $containerFlexClass = (printf " flex-[%s]" $flex) }}
+  {{ end }}
+{{ end }}
+
+{{ $alignContentValue := "flex-start" }}
+{{ if eq $alignContent "center" }}
+  {{ $alignContentValue = "center" }}
+{{ else if eq $alignContent "end" }}
+  {{ $alignContentValue = "flex-end" }}
+{{ else if eq $alignContent "between" }}
+  {{ $alignContentValue = "space-between" }}
+{{ else if eq $alignContent "around" }}
+  {{ $alignContentValue = "space-around" }}
+{{ else if eq $alignContent "stretch" }}
+  {{ $alignContentValue = "stretch" }}
+{{ end }}
+
+{{ $flexId := printf "flex-%d" (now.Unix) }}
+<div class="flex flex-wrap items-{{ $alignItems }} justify-{{ $justifyContent }}{{ if ne $marginY "0" }} my-[{{ $marginY }}]{{ end }}{{ if ne $marginX "0" }} mx-[{{ $marginX }}]{{ end }} gap-[{{ $gap }}] flex-{{ $flexDirection }}{{ $containerFlexClass }}" id="{{ $flexId }}"{{ if and $flex (ne $flexTarget "container") }} data-flex-target="{{ $flexTarget }}" data-flex-value="{{ $flex }}"{{ end }} style="align-content: {{ $alignContentValue }};">
   {{ .Inner | safeHTML }}
 </div>
+
+{{ if and $flex (ne $flexTarget "container") }}
+<style>
+  #{{ $flexId }}[data-flex-target="all-children"] > * {
+    flex: {{ $flex }};
+  }
+  #{{ $flexId }}[data-flex-target="first-child"] > *:first-child {
+    flex: {{ $flex }};
+  }
+  #{{ $flexId }}[data-flex-target="last-child"] > *:last-child {
+    flex: {{ $flex }};
+  }
+</style>
+{{ end }}

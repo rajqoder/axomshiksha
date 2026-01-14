@@ -1,10 +1,25 @@
 {{ $flexDirection := .Get "direction" | default "row" }}
 {{ $justifyContent := .Get "justifyContent" | default "start" }}
 {{ $alignItems := .Get "alignItems" | default "start" }}
+{{ $alignContent := .Get "alignContent" | default "start" }}
 {{ $gap := .Get "gap" | default "1rem" }}
 {{ $wrap := .Get "wrap" | default "wrap" }}
-{{ $marginY := .Get "marginY" | default "1rem" }}
+{{ $marginY := .Get "marginY" | default "0" }}
+{{ $marginX := .Get "marginX" | default "0" }}
 
-<div class="flex flex-{{ $wrap }} items-{{ $alignItems }} justify-{{ $justifyContent }} my-[{{ $marginY }}] gap-[{{ $gap }}] flex-{{ $flexDirection }}">
+{{ $alignContentValue := "flex-start" }}
+{{ if eq $alignContent "center" }}
+  {{ $alignContentValue = "center" }}
+{{ else if eq $alignContent "end" }}
+  {{ $alignContentValue = "flex-end" }}
+{{ else if eq $alignContent "between" }}
+  {{ $alignContentValue = "space-between" }}
+{{ else if eq $alignContent "around" }}
+  {{ $alignContentValue = "space-around" }}
+{{ else if eq $alignContent "stretch" }}
+  {{ $alignContentValue = "stretch" }}
+{{ end }}
+
+<div class="flex flex-{{ $wrap }} items-{{ $alignItems }} justify-{{ $justifyContent }}{{ if ne $marginY "0" }} my-[{{ $marginY }}]{{ end }}{{ if ne $marginX "0" }} mx-[{{ $marginX }}]{{ end }} gap-[{{ $gap }}] flex-{{ $flexDirection }}" style="align-content: {{ $alignContentValue }};">
   {{ .Inner | markdownify }}
 </div>

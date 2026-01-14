@@ -71,10 +71,10 @@ Let's see how much we have understood:
 
 ### 3. Read the sentences given below, and replace the underlined part with a word from the box.
 
-{{<content-box content="shocked">}}
-{{<content-box content="excited">}}
-{{<content-box content="granted">}}
-{{<content-box content="insisted">}}
+{{<content-box marginY="1rem" content="shocked">}}
+{{<content-box marginY="1rem" content="excited">}}
+{{<content-box marginY="1rem" content="granted">}}
+{{<content-box marginY="1rem" content="insisted">}}
 
 (i) Midas was *surprised*.  
 **Ans:** Midas was **shocked**.
@@ -179,7 +179,7 @@ i. Midas learned to be happy with what he had.
 
 **(b) Now fill in the blanks in the following sentences with words given in the box below:**
 
-{{<content-box content="lost &nbsp;&nbsp; she &nbsp;&nbsp; pull &nbsp;&nbsp; time">}}
+{{<content-box marginY="1rem" content="lost &nbsp;&nbsp; she &nbsp;&nbsp; pull &nbsp;&nbsp; time">}}
 
 (i) The sound of 'e' in 'get' is different from the sound of 'e' in _________.  
 **Ans:** (i) The sound of 'e' in 'get' is different from the sound of 'e' in **she**.
@@ -258,19 +258,19 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 **(b) Have you ever read science fiction before? Now, go to a library or search on the internet with the help of an elder to find such books. Write down the names of those books in the space given below:**
 
-{{<flex>}}
+{{<flex marginY="1rem">}}
 {{<flex direction="col">}}
 {{<underscored-space no="2">}}
 {{</flex>}}
 
-{{<flex direction="col">}}
+{{<flex direction="col" marginY="1rem">}}
 {{<underscored-space no="2">}}
 {{</flex>}}
 {{</flex>}}
 
 **Ans:**
 
-{{<content-box content="The Time Machine, Journey to the Centre of the Earth, Around the World in Eighty Days, Twenty Thousand Leagues Under the Sea">}}
+{{<content-box marginY="1rem" content="The Time Machine, Journey to the Centre of the Earth, Around the World in Eighty Days, Twenty Thousand Leagues Under the Sea">}}
 
 **(c) Imagine that you live on the moon. Now, talk to your partner about your life there. Share with your friend how it is different from life on earth.**
 
@@ -292,7 +292,7 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 **Make sentences using the word ‘drink’ to show two different meanings:**
 
-{{<flex direction="col">}}
+{{<flex direction="col" marginY="1rem">}}
 {{<underscored-space no="2" width="100%">}}
 {{</flex>}}
 
@@ -303,7 +303,7 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 **(c) Find more words from the lesson which can be used both as a noun and a verb. Write them down below:**
 
-{{<flex>}}
+{{<flex marginY="1rem">}}
 {{<underscored-space no="2">}}
 {{</flex>}}
 
@@ -314,7 +314,7 @@ King Midas *wanted* to be the richest king. So, he *wished* for the power to tur
 
 **Now, make sentences using these words as a noun and as a verb:**
 
-{{<flex direction="col">}}
+{{<flex direction="col" marginY="1rem">}}
 {{<underscored-space no="4" width="100%">}}
 {{</flex>}}
 
@@ -401,7 +401,7 @@ iv. The story conveys the message that our words and actions reflect back on us,
 
 **Make a tongue twister on your own**
 
-{{<flex direction="col">}}
+{{<flex direction="col" marginY="1rem">}}
 {{<underscored-space no="2" width="100%">}}
 {{</flex>}}
 
@@ -411,7 +411,7 @@ iv. The story conveys the message that our words and actions reflect back on us,
 
 **Riddle Time :**
 
-{{<content-box content="I m waved by magicians to make things disappear. Who am I?">}}
+{{<content-box marginY="1rem" content="I m waved by magicians to make things disappear. Who am I?">}}
 
 **Ans:** A Magic Wand
 
