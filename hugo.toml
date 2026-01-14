@@ -1,7 +1,6 @@
 baseURL = 'https://axomshiksha.com/'
 languageCode = 'as-IN'
 title = 'Axomshiksha'
-enableRobotsTXT = true
 
 # SEO Configuration
 description = 'Axomshiksha provides comprehensive educational resources, tutorials, and learning materials for students and educators.'
