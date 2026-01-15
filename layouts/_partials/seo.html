@@ -13,6 +13,10 @@
 <meta name="description" content="{{ .Site.Params.categoriesDescription }}">
 <meta property="og:description" content="{{ .Site.Params.categoriesDescription }}">
 <meta name="twitter:description" content="{{ .Site.Params.categoriesDescription }}">
+{{ else if and (eq .Kind "taxonomy") (eq .Type "writers") }}
+<meta name="description" content="{{ .Site.Params.writersDescription }}">
+<meta property="og:description" content="{{ .Site.Params.writersDescription }}">
+<meta name="twitter:description" content="{{ .Site.Params.writersDescription }}">
 {{ else }}
 {{ if .Description }}
 <meta name="description" content="{{ .Description }}">

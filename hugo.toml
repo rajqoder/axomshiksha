@@ -20,6 +20,7 @@ keywords = ['education', 'learning', 'tutorials', 'guides', 'study materials', '
   homeImage = 'https://lh3.googleusercontent.com/pw/AP1GczOb2pocXlBb9jrQ_CIb3m5KeillWfJBV1mAC8PVnfP1xFguPPvL0kJo8sWfYxcrVAffhDZ43lVUyHGAuhvnrFYZo2hzwLBUUMPNU_ESZqBXBpmEyQIR7-1AVJLoqwIZH7ZcvcROs5p1rJ6JTN7hOM01=w900-h450-s-no-gm?authuser=0'
   tagsDescription = 'Browse all tags used throughout Axomshiksha educational resources. Find specific topics and subjects across our comprehensive collection of learning materials.'
   categoriesDescription = 'Explore educational content organized by categories. Browse our structured learning resources designed for students and educators.'
+  writersDescription = 'Meet our dedicated team of writers and educators who create comprehensive educational content for Axomshiksha. Discover talented authors contributing tutorials, study materials, and learning resources across various subjects including competitive exam preparation, physics, mathematics, and science.'
 
 [taxonomies]
   tag = 'tags'
