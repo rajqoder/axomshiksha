@@ -7,6 +7,13 @@
   <title>
     {{ if .IsHome }}
       Home Page | {{ .Site.Title }}
+    {{ else if and .Data.Term .Site.Data.writers }}
+      {{ $writer := index .Site.Data.writers .Data.Term }}
+      {{ if $writer }}
+        {{ $writer.name }} | {{ .Site.Title }}
+      {{ else }}
+        {{ .Title }} | {{ .Site.Title }}
+      {{ end }}
     {{ else }}
       {{ .Title }} | {{ .Site.Title }}
     {{ end }}
