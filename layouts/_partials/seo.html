@@ -17,6 +17,44 @@
 <meta name="description" content="{{ .Site.Params.writersDescription }}">
 <meta property="og:description" content="{{ .Site.Params.writersDescription }}">
 <meta name="twitter:description" content="{{ .Site.Params.writersDescription }}">
+{{ else if and (eq .Kind "term") (eq .Type "tags") }}
+  {{ $termKey := "" }}
+  {{ if .Data.Term }}
+    {{ $termKey = .Data.Term | urlize }}
+  {{ else }}
+    {{ $termKey = .Title | urlize }}
+  {{ end }}
+  {{ $tagData := index .Site.Data.tags $termKey }}
+  {{ if $tagData }}
+    {{ $description := $tagData.description }}
+<meta name="description" content="{{ $description }}">
+<meta property="og:description" content="{{ $description }}">
+<meta name="twitter:description" content="{{ $description }}">
+  {{ end }}
+{{ else if and (eq .Kind "term") (eq .Type "categories") }}
+  {{ $termKey := "" }}
+  {{ if .Data.Term }}
+    {{ $termKey = .Data.Term | urlize }}
+  {{ else }}
+    {{ $termKey = .Title | urlize }}
+  {{ end }}
+  {{ $categoryData := index .Site.Data.categories $termKey }}
+  {{ if $categoryData }}
+    {{ $description := $categoryData.description }}
+<meta name="description" content="{{ $description }}">
+<meta property="og:description" content="{{ $description }}">
+<meta name="twitter:description" content="{{ $description }}">
+  {{ end }}
+{{ else if and (eq .Kind "term") (eq .Type "writers") }}
+  {{ if and .Data.Term .Site.Data.writers }}
+    {{ $writer := index .Site.Data.writers .Data.Term }}
+    {{ if and $writer $writer.bio }}
+      {{ $description := $writer.bio }}
+<meta name="description" content="{{ $description }}">
+<meta property="og:description" content="{{ $description }}">
+<meta name="twitter:description" content="{{ $description }}">
+    {{ end }}
+  {{ end }}
 {{ else }}
 {{ if .Description }}
 <meta name="description" content="{{ .Description }}">
@@ -48,8 +86,8 @@
 
 {{ if .Params.thumbnail }}
   <meta property="og:image" content="{{ .Params.thumbnail | absURL }}">
-{{ else if and (eq .Kind "taxonomy") (or (eq .Type "categories") (eq .Type "tags")) }}
-  <!-- Different images for category and tag taxonomies -->
+{{ else if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (or (eq .Type "categories") (eq .Type "tags")) }}
+  <!-- Different images for category and tag taxonomies/terms -->
   {{ if eq .Type "categories" }}
     <meta property="og:image" content="{{ .Site.Params.categoryImage | absURL }}">
   {{ else if eq .Type "tags" }}
@@ -103,8 +141,8 @@
 
 {{ if .Params.thumbnail }}
   <meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
-{{ else if and (eq .Kind "taxonomy") (or (eq .Type "categories") (eq .Type "tags")) }}
-  <!-- Different images for category and tag taxonomies -->
+{{ else if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (or (eq .Type "categories") (eq .Type "tags")) }}
+  <!-- Different images for category and tag taxonomies/terms -->
   {{ if eq .Type "categories" }}
     <meta name="twitter:image" content="{{ .Site.Params.categoryImage | absURL }}">
   {{ else if eq .Type "tags" }}

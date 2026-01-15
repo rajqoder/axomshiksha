@@ -1,0 +1,38 @@
+{
+  "lower-primary": {
+    "description": "Explore Lower Primary (Classes 1 to 5) educational resources, lessons, and study materials on Axomshiksha. Comprehensive learning content designed for elementary school students."
+  },
+  "upper-primary": {
+    "description": "Browse Upper Primary (Classes 6 to 8) educational content, tutorials, and study materials on Axomshiksha. Access quality learning resources for middle school students."
+  },
+  "secondary": {
+    "description": "Discover Secondary (Classes 9 to 10) educational resources, tutorials, and study materials on Axomshiksha. Comprehensive learning content for high school students."
+  },
+  "higher-secondary": {
+    "description": "Find Higher Secondary (Classes 11 to 12) educational resources, tutorials, and study materials on Axomshiksha. Quality learning content designed for senior secondary students."
+  },
+  "ug": {
+    "description": "Explore Undergraduate (UG) educational resources, tutorials, and study materials on Axomshiksha. Comprehensive learning content for undergraduate degree students."
+  },
+  "pg": {
+    "description": "Browse Postgraduate (PG) educational content, tutorials, and study materials on Axomshiksha. Access quality learning resources for postgraduate degree students."
+  },
+  "diploma": {
+    "description": "Discover Diploma course educational resources, tutorials, and study materials on Axomshiksha. Comprehensive learning content for diploma students."
+  },
+  "teaching-course": {
+    "description": "Find Teaching Course educational resources, tutorials, and study materials on Axomshiksha. Quality learning content designed for aspiring teachers and educators."
+  },
+  "competitive-exams": {
+    "description": "Explore Competitive Exams preparation resources, tutorials, and study materials on Axomshiksha. Comprehensive content for various competitive examination aspirants including APSC, ADRE, TET, CTET, and more."
+  },
+  "skill-development": {
+    "description": "Browse Skill Development educational content, tutorials, and study materials on Axomshiksha. Access quality learning resources for skill enhancement and professional development."
+  },
+  "doctorate": {
+    "description": "Discover Doctorate (PhD) educational resources, research materials, and study guides on Axomshiksha. Comprehensive learning content for doctoral students and researchers."
+  },
+  "research": {
+    "description": "Find Research educational resources, academic materials, and study guides on Axomshiksha. Quality learning content for researchers and academic scholars."
+  }
+}

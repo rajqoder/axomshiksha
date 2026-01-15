@@ -1,0 +1,182 @@
+{
+  "class-1": {
+    "description": "Explore Class 1 educational resources, lessons, and study materials. Find comprehensive learning content designed for first-grade students."
+  },
+  "class-2": {
+    "description": "Browse Class 2 educational content, tutorials, and study materials. Access quality learning resources for second-grade students."
+  },
+  "class-3": {
+    "description": "Discover Class 3 lessons, educational resources, and study materials. Comprehensive learning content for third-grade students."
+  },
+  "class-4": {
+    "description": "Find Class 4 educational resources, tutorials, and study materials. Quality learning content designed for fourth-grade students."
+  },
+  "class-5": {
+    "description": "Explore Class 5 lessons, educational resources, and study materials. Comprehensive learning content for fifth-grade students."
+  },
+  "class-6": {
+    "description": "Browse Class 6 educational content, tutorials, and study materials. Access quality learning resources for sixth-grade students."
+  },
+  "class-7": {
+    "description": "Discover Class 7 lessons, educational resources, and study materials. Comprehensive learning content for seventh-grade students."
+  },
+  "class-8": {
+    "description": "Find Class 8 educational resources, tutorials, and study materials. Quality learning content designed for eighth-grade students."
+  },
+  "class-9": {
+    "description": "Explore Class 9 lessons, educational resources, and study materials. Comprehensive learning content for ninth-grade students."
+  },
+  "class-10": {
+    "description": "Browse Class 10 educational content, tutorials, and study materials. Access quality learning resources for tenth-grade students."
+  },
+  "class-11": {
+    "description": "Discover Class 11 lessons, educational resources, and study materials. Comprehensive learning content for eleventh-grade students."
+  },
+  "class-12": {
+    "description": "Find Class 12 educational resources, tutorials, and study materials. Quality learning content designed for twelfth-grade students."
+  },
+  "bsc": {
+    "description": "Explore BSc (Bachelor of Science) educational resources, tutorials, and study materials. Comprehensive learning content for undergraduate science students."
+  },
+  "bca": {
+    "description": "Browse BCA (Bachelor of Computer Applications) educational content, tutorials, and study materials. Access quality learning resources for computer science students."
+  },
+  "b-tech": {
+    "description": "Discover B.Tech (Bachelor of Technology) lessons, educational resources, and study materials. Comprehensive learning content for engineering students."
+  },
+  "ba": {
+    "description": "Find BA (Bachelor of Arts) educational resources, tutorials, and study materials. Quality learning content designed for arts students."
+  },
+  "bcom": {
+    "description": "Explore BCom (Bachelor of Commerce) lessons, educational resources, and study materials. Comprehensive learning content for commerce students."
+  },
+  "d.el.ed": {
+    "description": "Browse D.El.Ed (Diploma in Elementary Education) educational content, tutorials, and study materials. Access quality learning resources for aspiring teachers."
+  },
+  "b.ed": {
+    "description": "Discover B.Ed (Bachelor of Education) lessons, educational resources, and study materials. Comprehensive learning content for education students."
+  },
+  "apsc": {
+    "description": "Find APSC (Assam Public Service Commission) exam preparation resources, tutorials, and study materials. Quality content for competitive exam aspirants."
+  },
+  "adre": {
+    "description": "Explore ADRE (Assam Direct Recruitment Examination) exam preparation resources, tutorials, and study materials. Comprehensive content for competitive exam aspirants."
+  },
+  "tet": {
+    "description": "Browse TET (Teacher Eligibility Test) exam preparation content, tutorials, and study materials. Access quality learning resources for teaching exam aspirants."
+  },
+  "ctet": {
+    "description": "Discover CTET (Central Teacher Eligibility Test) exam preparation resources, tutorials, and study materials. Comprehensive learning content for teaching exam aspirants."
+  },
+  "scert": {
+    "description": "Find SCERT (State Council of Educational Research and Training) syllabus-based educational resources, tutorials, and study materials. Quality learning content aligned with SCERT curriculum."
+  },
+  "ncert": {
+    "description": "Explore NCERT (National Council of Educational Research and Training) syllabus-based educational resources, tutorials, and study materials. Comprehensive learning content aligned with NCERT curriculum."
+  },
+  "computer-science": {
+    "description": "Browse Computer Science educational content, programming tutorials, and study materials. Access quality learning resources for computer science students and enthusiasts."
+  },
+  "english": {
+    "description": "Discover English language lessons, grammar tutorials, and study materials. Comprehensive learning content for English language students."
+  },
+  "maths": {
+    "description": "Find Mathematics educational resources, problem-solving tutorials, and study materials. Quality learning content for mathematics students."
+  },
+  "assamese": {
+    "description": "Explore Assamese language lessons, grammar tutorials, and study materials. Comprehensive learning content for Assamese language students."
+  },
+  "social-science": {
+    "description": "Browse Social Science educational content, history, geography, and civics tutorials. Access quality learning resources for social science students."
+  },
+  "science": {
+    "description": "Discover Science educational resources, experiments, and study materials. Comprehensive learning content covering physics, chemistry, and biology."
+  },
+  "arts": {
+    "description": "Find Arts educational resources, creative tutorials, and study materials. Quality learning content for arts and humanities students."
+  },
+  "physics": {
+    "description": "Explore Physics educational resources, problem-solving tutorials, and study materials. Comprehensive learning content for physics students."
+  },
+  "chemistry": {
+    "description": "Browse Chemistry educational content, experiments, and study materials. Access quality learning resources for chemistry students."
+  },
+  "biology": {
+    "description": "Discover Biology educational resources, tutorials, and study materials. Comprehensive learning content for biology students."
+  },
+  "zoology": {
+    "description": "Find Zoology educational resources, tutorials, and study materials. Quality learning content for zoology students."
+  },
+  "botany": {
+    "description": "Explore Botany educational resources, tutorials, and study materials. Comprehensive learning content for botany students."
+  },
+  "history": {
+    "description": "Browse History educational content, tutorials, and study materials. Access quality learning resources for history students."
+  },
+  "geography": {
+    "description": "Discover Geography educational resources, tutorials, and study materials. Comprehensive learning content for geography students."
+  },
+  "politics": {
+    "description": "Find Political Science educational resources, tutorials, and study materials. Quality learning content for political science students."
+  },
+  "bodo": {
+    "description": "Explore Bodo language lessons, grammar tutorials, and study materials. Comprehensive learning content for Bodo language students."
+  },
+  "economics": {
+    "description": "Browse Economics educational content, tutorials, and study materials. Access quality learning resources for economics students."
+  },
+  "accountancy": {
+    "description": "Discover Accountancy educational resources, tutorials, and study materials. Comprehensive learning content for accountancy students."
+  },
+  "hindi": {
+    "description": "Find Hindi language lessons, grammar tutorials, and study materials. Quality learning content for Hindi language students."
+  },
+  "seba": {
+    "description": "Explore SEBA (Board of Secondary Education, Assam) syllabus-based educational resources, tutorials, and study materials. Comprehensive learning content aligned with SEBA curriculum."
+  },
+  "ahsec": {
+    "description": "Browse AHSEC (Assam Higher Secondary Education Council) syllabus-based educational content, tutorials, and study materials. Access quality learning resources aligned with AHSEC curriculum."
+  },
+  "asseb": {
+    "description": "Discover ASSEB (Assam Secondary Education Board) syllabus-based educational resources, tutorials, and study materials. Comprehensive learning content aligned with ASSEB curriculum."
+  },
+  "evs": {
+    "description": "Find EVS (Environmental Studies) educational resources, tutorials, and study materials. Quality learning content for environmental studies students."
+  },
+  "gk": {
+    "description": "Explore General Knowledge (GK) educational resources, quizzes, and study materials. Comprehensive learning content for general knowledge enhancement."
+  },
+  "grammar": {
+    "description": "Discover grammar lessons, rules, and study materials for specific languages. This tag covers grammar concepts, sentence structure, parts of speech, and language-specific grammatical rules to help students master proper language usage."
+  },
+  "music": {
+    "description": "Browse Music educational content, tutorials, and study materials. Access quality learning resources for music students and enthusiasts."
+  },
+  "dance": {
+    "description": "Discover Dance educational resources, tutorials, and study materials. Comprehensive learning content for dance students and enthusiasts."
+  },
+  "mil": {
+    "description": "Find MIL (Modern Indian Language) educational resources, tutorials, and study materials. Quality learning content for modern Indian language students."
+  },
+  "sanskrit": {
+    "description": "Explore Sanskrit language lessons, grammar tutorials, and study materials. Comprehensive learning content for Sanskrit language students."
+  },
+  "elective": {
+    "description": "Browse Elective subject educational content, tutorials, and study materials. Access quality learning resources for various elective subjects."
+  },
+  "adv-maths": {
+    "description": "Discover Advanced Mathematics educational resources, problem-solving tutorials, and study materials. Comprehensive learning content for advanced mathematics students."
+  },
+  "adv-assamese": {
+    "description": "Find Advanced Assamese language lessons, grammar tutorials, and study materials. Quality learning content for advanced Assamese language students."
+  },
+  "statistics": {
+    "description": "Explore Statistics educational resources, data analysis tutorials, and study materials. Comprehensive learning content for statistics students."
+  },
+  "biotechnology": {
+    "description": "Browse Biotechnology educational content, tutorials, and study materials. Access quality learning resources for biotechnology students."
+  },
+  "agriculture": {
+    "description": "Discover Agriculture educational resources, tutorials, and study materials. Comprehensive learning content for agriculture students."
+  }
+}
