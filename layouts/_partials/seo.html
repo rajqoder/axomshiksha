@@ -192,7 +192,7 @@
     {{ $firstWriter := index $.Site.Data.writers $firstWriterHandle }}
     "name": {{ $firstWriter.name | jsonify }}
     {{ else }}
-    "name": {{ .Site.Params.author | default .Site.Author.name | default "Admin" | jsonify }}
+    "name": {{ .Site.Params.author | default .Site.Author.name | jsonify }}
     {{ end }}
   },
   "publisher": {

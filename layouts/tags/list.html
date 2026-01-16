@@ -6,7 +6,6 @@
     </div>
     
     <div class="flex flex-wrap gap-3 justify-center">
-        <p>Number of tags: {{ len .Site.Taxonomies.tags }}</p>
         {{ if .Site.Taxonomies.tags }}
             {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                 <a href="/tags/{{ $name | urlize }}" class="bg-muted text-main px-4 py-2 rounded-full transition-colors duration-200 hover:bg-blue-600 hover:text-white">

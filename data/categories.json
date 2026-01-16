@@ -1,38 +1,38 @@
 {
   "lower-primary": {
-    "description": "Explore Lower Primary (Classes 1 to 5) educational resources, lessons, and study materials on Axomshiksha. Comprehensive learning content designed for elementary school students."
+    "description": "Lower Primary (Class 1-5) notes, worksheets, and study materials for Axomshiksha students. Build a strong foundation with easy-to-understand lessons and interactive activities."
   },
   "upper-primary": {
-    "description": "Browse Upper Primary (Classes 6 to 8) educational content, tutorials, and study materials on Axomshiksha. Access quality learning resources for middle school students."
+    "description": "Upper Primary (Class 6-8) guides, subject notes, and exam prep for middle schoolers. Enhance learning with comprehensive study resources on all key subjects."
   },
   "secondary": {
-    "description": "Discover Secondary (Classes 9 to 10) educational resources, tutorials, and study materials on Axomshiksha. Comprehensive learning content for high school students."
+    "description": "Secondary (Class 9-10) SEBA/CBSE notes, question banks, and textbook solutions. Prepare for board exams with targeted study materials and expert guidance."
   },
   "higher-secondary": {
-    "description": "Find Higher Secondary (Classes 11 to 12) educational resources, tutorials, and study materials on Axomshiksha. Quality learning content designed for senior secondary students."
+    "description": "Higher Secondary (Class 11-12) AHSEC/CBSE study notes, previous papers, and important questions. Master Science, Arts, and Commerce streams with in-depth academic resources."
   },
   "ug": {
-    "description": "Explore Undergraduate (UG) educational resources, tutorials, and study materials on Axomshiksha. Comprehensive learning content for undergraduate degree students."
+    "description": "Undergraduate (BA, BSc, BCom) notes, lecture summaries, and university exam guides. Ace your semester exams with specialized study content for college students."
   },
   "pg": {
-    "description": "Browse Postgraduate (PG) educational content, tutorials, and study materials on Axomshiksha. Access quality learning resources for postgraduate degree students."
+    "description": "Postgraduate (MA, MSc, MCom) research notes, thesis guides, and advanced study materials. Deepen your subject knowledge with expert-curated academic resources."
   },
   "diploma": {
-    "description": "Discover Diploma course educational resources, tutorials, and study materials on Axomshiksha. Comprehensive learning content for diploma students."
+    "description": "Diploma and Polytechnic course notes, practical manuals, and technical study guides. Get career-ready with specialized resources for vocational and technical education."
   },
   "teaching-course": {
-    "description": "Find Teaching Course educational resources, tutorials, and study materials on Axomshiksha. Quality learning content designed for aspiring teachers and educators."
+    "description": "B.Ed and D.El.Ed study notes, lesson plans, and TET preparation materials. Essential resources for aspiring teachers to succeed in competitive teaching exams."
   },
   "competitive-exams": {
-    "description": "Explore Competitive Exams preparation resources, tutorials, and study materials on Axomshiksha. Comprehensive content for various competitive examination aspirants including APSC, ADRE, TET, CTET, and more."
+    "description": "APSC, ADRE, TET, and Railway exam study materials, current affairs, and mock tests. Crack government exams with focused preparation strategies and notes."
   },
   "skill-development": {
-    "description": "Browse Skill Development educational content, tutorials, and study materials on Axomshiksha. Access quality learning resources for skill enhancement and professional development."
+    "description": "Professional skill courses, computer notes, and soft skills training materials. Up-level your career path with practical guides for modern workplace success."
   },
   "doctorate": {
-    "description": "Discover Doctorate (PhD) educational resources, research materials, and study guides on Axomshiksha. Comprehensive learning content for doctoral students and researchers."
+    "description": "PhD research methodology notes, thesis writing tips, and academic publication guides. Support your doctoral journey with advanced scholarly resources."
   },
   "research": {
-    "description": "Find Research educational resources, academic materials, and study guides on Axomshiksha. Quality learning content for researchers and academic scholars."
+    "description": "Academic research papers, methodology guides, and project proposal templates. Comprehensive tools and notes for scholars, students, and independent researchers."
   }
 }
