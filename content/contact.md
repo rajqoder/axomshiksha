@@ -1,5 +1,5 @@
 ---
-title: "Contact Us"
+title: "Contact Us - Axomshiksha"
 description: "Get in touch with the Axomshiksha team. We welcome your feedback, questions, and suggestions regarding our educational resources."
 layout: "contact"
 date: 2025-01-16

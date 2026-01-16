@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
     {{ if .IsHome }}
-      Home Page | {{ .Site.Title }}
-    {{ else if and .Data.Term .Site.Data.writers }}
-      {{ $writer := index .Site.Data.writers .Data.Term }}
-      {{ if $writer }}
-        {{ $writer.name }} | {{ .Site.Title }}
-      {{ else }}
-        {{ .Title }} | {{ .Site.Title }}
-      {{ end }}
+    {{ .Site.Title }}
+    {{ else if .IsPage }}
+    {{ .Title }}
+    {{ else if eq .Kind "taxonomy" }}
+    {{ .Title }} - {{ .Site.Title }}
+    {{ else if eq .Kind "term" }}
+    {{ if and (eq .Type "writers") .Site.Data.writers }}
+    {{ $writer := index .Site.Data.writers .Data.Term }}
+    {{ $writer.name }} - {{ .Site.Title }}
     {{ else }}
-      {{ .Title }} | {{ .Site.Title }}
+    {{ .Title }} - {{ .Site.Title }}
+    {{ end }}
     {{ end }}
   </title>
 
@@ -23,11 +26,11 @@
 
   <!-- AdSense Code -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741779077297678"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 
   <!-- Theme Preloader Script -->
   <script>
-    (function() {
+    (function () {
       const savedTheme = localStorage.getItem('theme');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
@@ -37,10 +40,10 @@
     })();
   </script>
 
- {{ with (templates.Defer (dict "key" "global")) }}
-    {{ partial "css.html" . }}
+  {{ with (templates.Defer (dict "key" "global")) }}
+  {{ partial "css.html" . }}
   {{ end }}
-  
+
   {{ hugo.Generator }}
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -59,41 +62,45 @@
 
   <!-- Copy Code Script -->
   {{ $copyCode := resources.Get "js/copy-code.js" }}
-  {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath" "js/copy-code.js" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
+  "js/copy-code.js" }}
   {{ with $copyCode | js.Build $opts }}
-    {{ if hugo.IsDevelopment }}
-      <script src="{{ .RelPermalink }}"></script>
-    {{ else }}
-      {{ with . | fingerprint }}
-        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-      {{ end }}
-    {{ end }}
+  {{ if hugo.IsDevelopment }}
+  <script src="{{ .RelPermalink }}"></script>
+  {{ else }}
+  {{ with . | fingerprint }}
+  <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+  {{ end }}
+  {{ end }}
   {{ end }}
 
   <!-- Table of Contents Script -->
   {{ $toc := resources.Get "js/toc.js" }}
-  {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath" "js/toc.js" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
+  "js/toc.js" }}
   {{ with $toc | js.Build $opts }}
-    {{ if hugo.IsDevelopment }}
-      <script src="{{ .RelPermalink }}"></script>
-    {{ else }}
-      {{ with . | fingerprint }}
-        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-      {{ end }}
-    {{ end }}
+  {{ if hugo.IsDevelopment }}
+  <script src="{{ .RelPermalink }}"></script>
+  {{ else }}
+  {{ with . | fingerprint }}
+  <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+  {{ end }}
+  {{ end }}
   {{ end }}
 
   <!-- Copy Link Script -->
   {{ $copyLink := resources.Get "js/copy-link.js" }}
-  {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath" "js/copy-link.js" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
+  "js/copy-link.js" }}
   {{ with $copyLink | js.Build $opts }}
-    {{ if hugo.IsDevelopment }}
-      <script src="{{ .RelPermalink }}"></script>
-    {{ else }}
-      {{ with . | fingerprint }}
-        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-      {{ end }}
-    {{ end }}
+  {{ if hugo.IsDevelopment }}
+  <script src="{{ .RelPermalink }}"></script>
+  {{ else }}
+  {{ with . | fingerprint }}
+  <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+  {{ end }}
+  {{ end }}
   {{ end }}
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 ---
-title: "Frequently Asked Questions"
+title: "Frequently Asked Questions - Axomshiksha"
 description: "Find answers to common questions about Axomshiksha and our educational content."
 layout: "faq"
 date: 2025-12-26

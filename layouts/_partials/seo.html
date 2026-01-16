@@ -18,49 +18,49 @@
 <meta property="og:description" content="{{ .Site.Params.writersDescription }}">
 <meta name="twitter:description" content="{{ .Site.Params.writersDescription }}">
 {{ else if and (eq .Kind "term") (eq .Type "tags") }}
-  {{ $termKey := "" }}
-  {{ if .Data.Term }}
-    {{ $termKey = .Data.Term | urlize }}
-  {{ else }}
-    {{ $termKey = .Title | urlize }}
-  {{ end }}
-  {{ $tagData := index .Site.Data.tags $termKey }}
-  {{ if $tagData }}
-    {{ $description := $tagData.description }}
+{{ $termKey := "" }}
+{{ if .Data.Term }}
+{{ $termKey = .Data.Term | urlize }}
+{{ else }}
+{{ $termKey = .Title | urlize }}
+{{ end }}
+{{ $tagData := index .Site.Data.tags $termKey }}
+{{ if $tagData }}
+{{ $description := $tagData.description }}
 <meta name="description" content="{{ $description }}">
 <meta property="og:description" content="{{ $description }}">
 <meta name="twitter:description" content="{{ $description }}">
-  {{ end }}
+{{ end }}
 {{ else if and (eq .Kind "term") (eq .Type "categories") }}
-  {{ $termKey := "" }}
-  {{ if .Data.Term }}
-    {{ $termKey = .Data.Term | urlize }}
-  {{ else }}
-    {{ $termKey = .Title | urlize }}
-  {{ end }}
-  {{ $categoryData := index .Site.Data.categories $termKey }}
-  {{ if $categoryData }}
-    {{ $description := $categoryData.description }}
+{{ $termKey := "" }}
+{{ if .Data.Term }}
+{{ $termKey = .Data.Term | urlize }}
+{{ else }}
+{{ $termKey = .Title | urlize }}
+{{ end }}
+{{ $categoryData := index .Site.Data.categories $termKey }}
+{{ if $categoryData }}
+{{ $description := $categoryData.description }}
 <meta name="description" content="{{ $description }}">
 <meta property="og:description" content="{{ $description }}">
 <meta name="twitter:description" content="{{ $description }}">
-  {{ end }}
+{{ end }}
 {{ else if and (eq .Kind "term") (eq .Type "writers") }}
-  {{ if and .Data.Term .Site.Data.writers }}
-    {{ $writer := index .Site.Data.writers .Data.Term }}
-    {{ if and $writer $writer.bio }}
-      {{ $description := $writer.bio }}
+{{ if and .Data.Term .Site.Data.writers }}
+{{ $writer := index .Site.Data.writers .Data.Term }}
+{{ if and $writer $writer.bio }}
+{{ $description := $writer.bio }}
 <meta name="description" content="{{ $description }}">
 <meta property="og:description" content="{{ $description }}">
 <meta name="twitter:description" content="{{ $description }}">
-    {{ end }}
-  {{ end }}
+{{ end }}
+{{ end }}
 {{ else }}
 {{ if .Description }}
 <meta name="description" content="{{ .Description }}">
 <meta property="og:description" content="{{ .Description }}">
 <meta name="twitter:description" content="{{ .Description }}">
-  {{ end }}
+{{ end }}
 {{ end }}
 
 <!-- Canonical URL -->
@@ -68,58 +68,66 @@
 
 <!-- Open Graph / Facebook Meta Tags -->
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:locale" content="{{ .Site.LanguageCode | default "en_US" }}">
+<meta property="og:locale" content="{{ .Site.LanguageCode | default " en_US" }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 {{ if .IsHome }}
 <meta property="og:title" content="{{ .Site.Title }}">
-{{ else if and .Data.Term .Site.Data.writers }}
-  {{ $writer := index .Site.Data.writers .Data.Term }}
-  {{ if $writer }}
-<meta property="og:title" content="{{ $writer.name }} | {{ .Site.Title }}">
-  {{ else }}
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
-  {{ end }}
+{{ else if .IsPage }}
+<meta property="og:title" content="{{ .Title }}">
+{{ else if eq .Kind "taxonomy" }}
+<meta property="og:title" content="{{ .Title }}">
+{{ else if eq .Kind "term" }}
+{{ if and (eq .Type "writers") .Site.Data.writers }}
+{{ $writer := index .Site.Data.writers .Data.Term }}
+{{ if $writer }}
+<meta property="og:title" content="{{ $writer.name }}">
 {{ else }}
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+<meta property="og:title" content="{{ .Title }}">
+{{ end }}
+{{ else }}
+<meta property="og:title" content="{{ .Title }}">
+{{ end }}
+{{ else }}
+<meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{ end }}
 <meta property="og:url" content="{{ .Permalink }}">
 
 {{ if .Params.thumbnail }}
-  <meta property="og:image" content="{{ .Params.thumbnail | absURL }}">
+<meta property="og:image" content="{{ .Params.thumbnail | absURL }}">
 {{ else if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (or (eq .Type "categories") (eq .Type "tags")) }}
-  <!-- Different images for category and tag taxonomies/terms -->
-  {{ if eq .Type "categories" }}
-    <meta property="og:image" content="{{ .Site.Params.categoryImage | absURL }}">
-  {{ else if eq .Type "tags" }}
-    <meta property="og:image" content="{{ .Site.Params.tagImage | absURL }}">
-  {{ else }}
-    <meta property="og:image" content="{{ .Site.Params.homeImage | absURL }}">
-  {{ end }}
+<!-- Different images for category and tag taxonomies/terms -->
+{{ if eq .Type "categories" }}
+<meta property="og:image" content="{{ .Site.Params.categoryImage | absURL }}">
+{{ else if eq .Type "tags" }}
+<meta property="og:image" content="{{ .Site.Params.tagImage | absURL }}">
 {{ else }}
-  <meta property="og:image" content="{{ .Site.Params.homeImage | absURL }}">
+<meta property="og:image" content="{{ .Site.Params.homeImage | absURL }}">
+{{ end }}
+{{ else }}
+<meta property="og:image" content="{{ .Site.Params.homeImage | absURL }}">
 {{ end }}
 
 <meta property="og:image:width" content="900">
 <meta property="og:image:height" content="450">
 
 {{ if .Date }}
-  <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:published_time" content="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
 {{ end }}
 {{ if .Lastmod }}
-  <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format " 2006-01-02T15:04:05Z07:00" }}">
 {{ end }}
 
 {{ with .Params.writers }}
-  {{ range . }}
-    {{ $writer := index $.Site.Data.writers . }}
-    <meta property="article:author" content="{{ $writer.name }}">
-  {{ end }}
+{{ range . }}
+{{ $writer := index $.Site.Data.writers . }}
+<meta property="article:author" content="{{ $writer.name }}">
+{{ end }}
 {{ end }}
 
 {{ with .Params.categories }}
-  {{ range . }}
-    <meta property="article:section" content="{{ . }}">
-  {{ end }}
+{{ range . }}
+<meta property="article:section" content="{{ . }}">
+{{ end }}
 {{ end }}
 
 <!-- Twitter Card Meta Tags -->
@@ -128,30 +136,38 @@
 <meta name="twitter:creator" content="@shikshaaxom">
 {{ if .IsHome }}
 <meta name="twitter:title" content="{{ .Site.Title }}">
-{{ else if and .Data.Term .Site.Data.writers }}
-  {{ $writer := index .Site.Data.writers .Data.Term }}
-  {{ if $writer }}
-<meta name="twitter:title" content="{{ $writer.name }} | {{ .Site.Title }}">
-  {{ else }}
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
-  {{ end }}
+{{ else if .IsPage }}
+<meta name="twitter:title" content="{{ .Title }}">
+{{ else if eq .Kind "taxonomy" }}
+<meta name="twitter:title" content="{{ .Title }}">
+{{ else if eq .Kind "term" }}
+{{ if and (eq .Type "writers") .Site.Data.writers }}
+{{ $writer := index .Site.Data.writers .Data.Term }}
+{{ if $writer }}
+<meta name="twitter:title" content="{{ $writer.name }}">
 {{ else }}
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
+<meta name="twitter:title" content="{{ .Title }}">
+{{ end }}
+{{ else }}
+<meta name="twitter:title" content="{{ .Title }}">
+{{ end }}
+{{ else }}
+<meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{ end }}
 
 {{ if .Params.thumbnail }}
-  <meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
+<meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
 {{ else if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (or (eq .Type "categories") (eq .Type "tags")) }}
-  <!-- Different images for category and tag taxonomies/terms -->
-  {{ if eq .Type "categories" }}
-    <meta name="twitter:image" content="{{ .Site.Params.categoryImage | absURL }}">
-  {{ else if eq .Type "tags" }}
-    <meta name="twitter:image" content="{{ .Site.Params.tagImage | absURL }}">
-  {{ else }}
-    <meta name="twitter:image" content="{{ .Site.Params.homeImage | absURL }}">
-  {{ end }}
+<!-- Different images for category and tag taxonomies/terms -->
+{{ if eq .Type "categories" }}
+<meta name="twitter:image" content="{{ .Site.Params.categoryImage | absURL }}">
+{{ else if eq .Type "tags" }}
+<meta name="twitter:image" content="{{ .Site.Params.tagImage | absURL }}">
 {{ else }}
-  <meta name="twitter:image" content="{{ .Site.Params.homeImage  | absURL }}">
+<meta name="twitter:image" content="{{ .Site.Params.homeImage | absURL }}">
+{{ end }}
+{{ else }}
+<meta name="twitter:image" content="{{ .Site.Params.homeImage  | absURL }}">
 {{ end }}
 
 <!-- Additional SEO Meta Tags -->
@@ -229,9 +245,9 @@
 
 <!-- Keywords Meta Tag -->
 {{ if .Keywords }}
-  <meta name="keywords" content="{{ delimit .Keywords ", " }}">
+<meta name="keywords" content="{{ delimit .Keywords " , " }}">
 {{ else if .Params.tags }}
-  <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
+<meta name="keywords" content="{{ delimit .Params.tags " , " }}">
 {{ else }}
-  <meta name="keywords" content="{{ .Site.Params.defaultKeywords }}">
+<meta name="keywords" content="{{ .Site.Params.defaultKeywords }}">
 {{ end }}
