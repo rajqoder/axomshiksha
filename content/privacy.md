@@ -141,7 +141,10 @@ We implement appropriate technical and organizational security measures to prote
 
 ## 9. Children's Privacy
 
-Our website is intended for general audiences and users of all ages. However, we do not knowingly collect personal information from children under the age of 13 without parental consent. If you are a parent or guardian and believe your child under 13 has provided us with personal information without your consent, please contact us, and we will take steps to delete such information.
+Our website is intended for general audiences and users of all ages that are looking for educational resources. We do not knowingly collect personal information from children under the age of 13 without parental consent.
+
+### 9.1 AdSense and Children
+We comply with the Children's Online Privacy Protection Act (COPPA). We do not use interest-based advertising (personalized ads) on content that is specifically directed to children under 13. If you believe we have inadvertently collected data from a child under 13, please contact us immediately for removal.
 
 For users in the European Economic Area (EEA), we do not knowingly collect personal information from children under 16 without parental consent.
 
@@ -182,7 +185,7 @@ If you have any questions, concerns, or requests regarding this Privacy Policy o
 
 **Axomshiksha**  
 Website: [https://axomshiksha.com/](https://axomshiksha.com/)  
-Contact Page: [https://axomshiksha.com/about/](https://axomshiksha.com/about/)
+Contact Page: [https://axomshiksha.com/contact/](https://axomshiksha.com/contact/)
 
 ---
 

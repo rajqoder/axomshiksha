@@ -16,6 +16,12 @@ build:
 
 By accessing and using this website, you accept and agree to be bound by these Terms and Conditions and our Privacy Policy. These terms apply to all visitors, users, and others who access or use the service.
 
+## 2. Government Affiliation Disclaimer
+
+**Axomshiksha is an independent educational platform and is NOT affiliated, associated, authorized, endorsed by, or in any way officially connected with SCERT, SEBA, AHSEC, the Government of Assam, or any other educational board.**
+
+All study materials, solutions, and explanations provided on this website are created by our team for educational purposes to assist students from Class 1 to higher education levels. References to specific boards or curriculums are solely for descriptive purposes to indicate the content alignment.
+
 ---
 
 ## 2. Changes to Terms
@@ -227,7 +233,7 @@ If you have any questions, concerns, or requests regarding these Terms and Condi
 
 **Axomshiksha**  
 Website: [https://axomshiksha.com/](https://axomshiksha.com/)  
-Contact Page: [https://axomshiksha.com/about/](https://axomshiksha.com/about/)
+Contact Page: [https://axomshiksha.com/contact/](https://axomshiksha.com/contact/)
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "About Axomshiksha"
-description: "Learn more about Axomshiksha - our mission, vision, and commitment to making quality education accessible to students across Assam."
+description: "Learn more about Axomshiksha - our mission, vision, and commitment to making quality education accessible to students across Assam from primary to higher education."
 layout: "about"
 date: 2025-12-26
 build:
@@ -10,15 +10,15 @@ build:
 
 ## Our Mission
 
-Axomshiksha is dedicated to making quality education accessible to students across Assam through free, comprehensive educational resources. We believe that knowledge should be freely available to all learners, regardless of their background or location, especially those following the SCERT curriculum.
+Axomshiksha is dedicated to making quality education accessible to every student in Assam. We provide free, comprehensive educational resources for learners from **Class 1 to higher education levels**. We believe that knowledge should be freely available to all, regardless of background, ensuring that every student has the tools they need to succeed in their academic journey.
 
 ## What We Offer
 
-- **SCERT Curriculum Support**: Comprehensive solutions and explanations for SCERT-prescribed textbooks
-- **Educational Lessons**: Detailed study materials aligned with Assam state board requirements
-- **Subject-wise Resources**: Organized content by subject for easy navigation
-- **Exam Preparation**: Study materials designed to help students understand concepts clearly and score well in exams
-- **Assamese Educational Focus**: Tailored content specifically for students in Assam
+- **All-Level Curriculum Support**: Solutions and study materials for SCERT, SEBA, AHSEC, and university-level courses.
+- **Comprehensive Lessons**: Detailed explanations covering a wide range of subjects and streams.
+- **Subject-wise Resources**: Organized content to help you find exactly what you need, from primary schooling to advanced studies.
+- **Exam Preparation**: Guides and materials designed to help students score well in board exams and competitive tests.
+- **Assamese Focus**: Content tailored specifically for the educational context of Assam.
 
 ## Our Vision
 
@@ -28,17 +28,17 @@ We envision a world where quality education is accessible to every student in As
 
 Our educational content is designed with students' needs in mind:
 
-- **Simple Language**: All explanations are written in simple, easy-to-understand language
-- **Curriculum Aligned**: Strictly following the SCERT syllabus to ensure relevance
-- **Comprehensive Coverage**: Complete solutions and explanations for textbook chapters
-- **Visual Learning**: Use of diagrams and examples to enhance understanding
+- **Simple Language**: All explanations are written in clear, easy-to-understand language.
+- **Broad Coverage**: From foundational literacy to complex higher-education concepts.
+- **Visual Learning**: Use of diagrams and examples to enhance understanding.
+- **Exam-Oriented**: Focused on helping students perform their best in assessments.
+
+## Disclaimer
+
+**Axomshiksha is an independent educational initiative and is NOT affiliated, associated, authorized, endorsed by, or in any way officially connected with SCERT, SEBA, AHSEC, the Government of Assam, or any educational board.**
+
+All content provided on this website is for educational purposes only. While we strive to provide accurate and up-to-date information, we refer to official curriculums solely for the purpose of providing study aids and solutions. Official websites for respective boards should be consulted for authoritative information.
 
 ## Get in Touch
 
-Have questions, suggestions, or feedback? We'd love to hear from you! Feel free to reach out through our contact page or engage with our content.
-
-## Contact us
-
-Email: <a href="mailto:shikshaaxom@gmail.com">shikshaaxom@gmail.com</a>
-
-{{<qr >}} https://wa.me/919954765021 {{</qr>}}
+Have questions, suggestions, or feedback? We'd love to hear from you! Please visit our **[Contact Us](/contact/)** page to get in touch with our team.

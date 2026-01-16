@@ -11,47 +11,61 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="/categories/" class="{{ if eq .RelPermalink "/categories/" }}nav-active{{ else }}nav-link{{ end }}">Categories</a>
-          <a href="/faq/" class="{{ if eq .RelPermalink "/faq/" }}nav-active{{ else }}nav-link{{ end }}">FAQ</a>
-          <a href="/about/" class="{{ if eq .RelPermalink "/about/" }}nav-active{{ else }}nav-link{{ end }}">About</a>
+          <a href="/categories/" class="{{ if eq .RelPermalink " /categories/" }}nav-active{{ else }}nav-link{{ end
+            }}">Categories</a>
+          <a href="/faq/" class="{{ if eq .RelPermalink " /faq/" }}nav-active{{ else }}nav-link{{ end }}">FAQ</a>
+          <a href="/about/" class="{{ if eq .RelPermalink " /about/" }}nav-active{{ else }}nav-link{{ end }}">About</a>
+          <a href="/contact/" class="{{ if eq .RelPermalink " /contact/" }}nav-active{{ else }}nav-link{{ end
+            }}">Contact</a>
         </nav>
       </div>
 
       <!-- Action Buttons -->
       <div class="flex items-center gap-2">
         <!-- Search Button (Desktop + Mobile) -->
-        <button id="search-button" class="p-2 rounded-md hover:cursor-pointer text-gray-900 dark:text-gray-300 transition-colors duration-200" aria-label="Search">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-900 dark:text-gray-300" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+        <button id="search-button"
+          class="p-2 rounded-md hover:cursor-pointer text-gray-900 dark:text-gray-300 transition-colors duration-200"
+          aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-900 dark:text-gray-300" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd" />
           </svg>
         </button>
 
         <!-- Theme Toggle (Desktop Only) -->
-        <button id="theme-toggle" class="hidden hover:cursor-pointer md:flex items-center p-1.5 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-300 relative w-14 h-7" aria-label="Toggle theme">
+        <button id="theme-toggle"
+          class="hidden hover:cursor-pointer md:flex items-center p-1.5 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-300 relative w-14 h-7"
+          aria-label="Toggle theme">
           <div class="absolute inset-0 flex items-center justify-between px-1.5">
             <!-- Sun Icon (Light Mode) -->
-            <svg class="w-4 h-4 text-yellow-500 transition-opacity duration-300" id="sun-icon-desktop" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+            <svg class="w-4 h-4 text-yellow-500 transition-opacity duration-300" id="sun-icon-desktop"
+              fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                clip-rule="evenodd" />
             </svg>
             <!-- Moon Icon (Dark Mode) -->
-            <svg class="w-4 h-4 text-gray-300 transition-opacity duration-300" id="moon-icon-desktop" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+            <svg class="w-4 h-4 text-gray-300 transition-opacity duration-300" id="moon-icon-desktop"
+              fill="currentColor" viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
             </svg>
           </div>
           <!-- Toggle Circle -->
-          <div id="toggle-circle-desktop" class="w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ease-in-out translate-x-0 flex items-center justify-center z-10">
+          <div id="toggle-circle-desktop"
+            class="w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ease-in-out translate-x-0 flex items-center justify-center z-10">
             <svg class="w-3.5 h-3.5 text-yellow-500" id="toggle-icon-desktop" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+              <path fill-rule="evenodd"
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                clip-rule="evenodd" />
             </svg>
           </div>
         </button>
 
         <!-- Hamburger (Mobile Only) -->
-        <button id="menu-open"
-                class="md:hidden rounded-md p-2 text-gray-700 hover:bg-gray-100
-                       dark:text-gray-300 dark:hover:bg-gray-800"
-                aria-label="Open menu"
-                aria-expanded="false">
+        <button id="menu-open" class="md:hidden rounded-md p-2 text-gray-700 hover:bg-gray-100
+                       dark:text-gray-300 dark:hover:bg-gray-800" aria-label="Open menu" aria-expanded="false">
           ☰
         </button>
       </div>
@@ -61,21 +75,16 @@
 </header>
 
 <!-- Overlay -->
-<div id="overlay"
-     class="fixed inset-0 z-40 hidden bg-black/40 md:hidden"
-     tabindex="-1">
+<div id="overlay" class="fixed inset-0 z-40 hidden bg-black/40 md:hidden" tabindex="-1">
 </div>
 
 <!-- Mobile Sidebar -->
-<aside id="sidebar"
-       class="fixed right-0 top-0 z-50 hidden h-full w-80
-              bg-main p-6 shadow-xl md:hidden"
-       role="dialog"
-       aria-modal="true">
+<aside id="sidebar" class="fixed right-0 top-0 z-50 hidden h-full w-80
+              bg-main p-6 shadow-xl md:hidden" role="dialog" aria-modal="true">
 
   <div class="mb-6 flex items-center justify-between">
     {{ with resources.Get "logo.png" }}
-      <img src="{{ .Permalink }}" alt="Logo" width="32" height="32" />
+    <img src="{{ .Permalink }}" alt="Logo" width="32" height="32" />
     {{ end }}
     <button id="menu-close" class="icon-button hover:cursor-pointer text-main" aria-label="Close menu">✕</button>
   </div>
@@ -84,27 +93,38 @@
     <a href="/categories/" class="mobile-link">Categories</a>
     <a href="/faq/" class="mobile-link">FAQ</a>
     <a href="/about/" class="mobile-link">About</a>
+    <a href="/contact/" class="mobile-link">Contact</a>
   </nav>
 
   <!-- Theme Toggle for Mobile -->
   <div class="mt-8 pt-6 border-t border-main">
-    <button id="theme-toggle-mobile" type="button" class="flex items-center justify-between w-full p-3 rounded-md text-main hover:bg-muted transition-colors duration-200" aria-label="Toggle theme">
+    <button id="theme-toggle-mobile" type="button"
+      class="flex items-center justify-between w-full p-3 rounded-md text-main hover:bg-muted transition-colors duration-200"
+      aria-label="Toggle theme">
       <span class="text-base font-medium">Theme</span>
-      <div class="flex items-center p-1 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-300 relative w-14 h-7">
+      <div
+        class="flex items-center p-1 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-300 relative w-14 h-7">
         <div class="absolute inset-0 flex items-center justify-between px-1.5">
           <!-- Sun Icon (Light Mode) -->
-          <svg class="w-4 h-4 text-yellow-500 transition-opacity duration-300" id="sun-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+          <svg class="w-4 h-4 text-yellow-500 transition-opacity duration-300" id="sun-icon-mobile" fill="currentColor"
+            viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              clip-rule="evenodd" />
           </svg>
           <!-- Moon Icon (Dark Mode) -->
-          <svg class="w-4 h-4 text-gray-300 transition-opacity duration-300" id="moon-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+          <svg class="w-4 h-4 text-gray-300 transition-opacity duration-300" id="moon-icon-mobile" fill="currentColor"
+            viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
           </svg>
         </div>
         <!-- Toggle Circle -->
-        <div id="toggle-circle-mobile" class="w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ease-in-out translate-x-0 flex items-center justify-center z-10">
+        <div id="toggle-circle-mobile"
+          class="w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ease-in-out translate-x-0 flex items-center justify-center z-10">
           <svg class="w-3.5 h-3.5 text-yellow-500" id="toggle-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd"
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              clip-rule="evenodd" />
           </svg>
         </div>
       </div>
@@ -114,66 +134,69 @@
 
 <!-- Mobile Menu Script -->
 {{ $mobile := resources.Get "js/mobile-menu.js" }}
-{{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath" "js/mobile-menu.js" }}
+{{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
+"js/mobile-menu.js" }}
 {{ with $mobile | js.Build $opts }}
-  {{ if hugo.IsDevelopment }}
-    <script type="module" src="{{ .RelPermalink }}"></script>
-  {{ else }}
-    {{ with . | fingerprint }}
-      <script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-    {{ end }}
-  {{ end }}
+{{ if hugo.IsDevelopment }}
+<script type="module" src="{{ .RelPermalink }}"></script>
+{{ else }}
+{{ with . | fingerprint }}
+<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ end }}
 {{ end }}
 
 <!-- Header Scroll Effect Script -->
 {{ $scroll := resources.Get "js/header-scroll.js" }}
-{{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath" "js/header-scroll.js" }}
+{{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
+"js/header-scroll.js" }}
 {{ with $scroll | js.Build $opts }}
-  {{ if hugo.IsDevelopment }}
-    <script src="{{ .RelPermalink }}"></script>
-  {{ else }}
-    {{ with . | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-    {{ end }}
-  {{ end }}
+{{ if hugo.IsDevelopment }}
+<script src="{{ .RelPermalink }}"></script>
+{{ else }}
+{{ with . | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ end }}
 {{ end }}
 
 <!-- Search Modal -->
 <div id="search-modal" class="hidden fixed inset-0 z-100 flex items-center justify-center p-4">
   <!-- Overlay -->
   <div id="search-overlay" class="absolute inset-0 bg-black/40"></div>
-  
+
   <!-- Modal Content -->
   <div class="relative w-full max-w-2xl bg-white dark:bg-gray-900 rounded-lg shadow-xl max-h-[90vh] flex flex-col">
     <!-- Modal Header -->
     <div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800">
       <h2 class="text-lg font-medium text-white">Search</h2>
-      <button class="close-search-modal hover:cursor-pointer p-2 rounded-md text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800" aria-label="Close search">
+      <button
+        class="close-search-modal hover:cursor-pointer p-2 rounded-md text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
+        aria-label="Close search">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd" />
         </svg>
       </button>
     </div>
-    
+
     <!-- Search Input -->
     <div class="p-4 border-b border-gray-200 dark:border-gray-800">
       <div class="relative">
         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            <path fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd" />
           </svg>
         </div>
-        <input 
-          type="text" 
-          id="search-input" 
-          class="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" 
-          placeholder="Search posts..."
-          autocomplete="off"
-          autofocus
-        >
+        <input type="text" id="search-input"
+          class="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          placeholder="Search posts..." autocomplete="off" autofocus>
       </div>
     </div>
-    
+
     <!-- Search Results -->
     <div id="search-results" class="flex-1 overflow-y-auto p-4">
       <!-- Results will be populated by JavaScript -->
@@ -186,26 +209,28 @@
 
 <!-- Search Script -->
 {{ $search := resources.Get "js/search.js" }}
-{{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath" "js/search.js" }}
+{{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
+"js/search.js" }}
 {{ with $search | js.Build $opts }}
-  {{ if hugo.IsDevelopment }}
-    <script src="{{ .RelPermalink }}"></script>
-  {{ else }}
-    {{ with . | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-    {{ end }}
-  {{ end }}
+{{ if hugo.IsDevelopment }}
+<script src="{{ .RelPermalink }}"></script>
+{{ else }}
+{{ with . | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ end }}
 {{ end }}
 
 <!-- Theme Switcher Script -->
 {{ $theme := resources.Get "js/theme-switcher.js" }}
-{{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath" "js/theme-switcher.js" }}
+{{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
+"js/theme-switcher.js" }}
 {{ with $theme | js.Build $opts }}
-  {{ if hugo.IsDevelopment }}
-    <script src="{{ .RelPermalink }}"></script>
-  {{ else }}
-    {{ with . | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-    {{ end }}
-  {{ end }}
+{{ if hugo.IsDevelopment }}
+<script src="{{ .RelPermalink }}"></script>
+{{ else }}
+{{ with . | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ end }}
 {{ end }}
