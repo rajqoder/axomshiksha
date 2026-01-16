@@ -3,8 +3,8 @@ title = "Uruka Adventure - Class 7 English (SCERT)"
 
 description = "The lesson “Uruka Adventure” tells the story of Mahendra and his friends from the village of Assam. They plan an adventure on uruka night, following an old custom before Magh Bihu. At night, they secretly go to Shantiram’s vegetable garden to pick vegetables for a feast. In the darkness, strange sounds and a black heap frighten them. Later, they discover that the fear was caused by an owl and Shantiram wrapped in a black blanket. Realising their mistake, they escape safely and feel thankful to be alive, deciding not to think of such adventures again."
 
-keywords = ["uruka-adventure", "class 7", "english", "scert", "textbook"]
-tags = ["class 7", "english", "scert"]
+keywords = ["uruka-adventure", "class-7", "english", "scert", "textbook"]
+tags = ["class-7", "english", "scert"]
 categories = ["upper-primary"]
 writers = ["dekalasit"]
 draft = false

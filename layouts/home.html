@@ -68,7 +68,7 @@
                 {{ range first 2 . }}
                 <a href="/tags/{{ . | urlize }}"
                   class="bg-muted text-main text-xs px-2 py-0.5 rounded transition-colors duration-200 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-700 dark:hover:text-white">
-                  #{{ . }}
+                  #{{ . | urlize }}
                 </a>
                 {{ end }}
               </div>

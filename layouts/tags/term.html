@@ -3,10 +3,89 @@
   <div class="flex flex-col lg:flex-row gap-8">
     <!-- Main Content -->
     <div class="lg:w-2/3">
-      <div class="mb-8 text-center">
-        <h1 class="text-3xl font-bold text-main mb-2">Posts tagged "{{ .Title }}"</h1>
-        <p class="text-muted-foreground">Showing {{ len .Pages }} posts with this tag</p>
+      <div
+        class="mb-8 rounded-xl border border-blue-100 dark:border-blue-800/30 overflow-hidden transition-all duration-300"
+        id="tag-header">
+        <div class="p-6 relative transition-all duration-300" id="tag-header-container">
+          <button onclick="toggleHeader('tag-header')"
+            class="absolute top-1/2 -translate-y-1/2 right-6 p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none z-10">
+            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300" id="tag-header-arrow"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+            </svg>
+          </button>
+
+          <div class="flex items-center gap-4 transition-all duration-300" id="tag-header-content">
+            <div
+              class="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl text-blue-600 dark:text-blue-400 transition-all duration-300"
+              id="tag-header-icon-box">
+              <svg class="w-6 h-6 transition-all duration-300" id="tag-header-icon" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-0.5"
+                id="tag-header-label">
+                Browsing Tag
+              </p>
+              <div class="flex items-baseline gap-3">
+                <h1 class="text-2xl font-bold text-main transition-all duration-300" id="tag-header-title">#{{
+                  .Data.Term | urlize }}</h1>
+                <span class="text-sm text-muted-foreground" id="tag-header-count">
+                  {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <script>
+        function toggleHeader(id) {
+          const container = document.getElementById(id + '-container');
+          const label = document.getElementById(id + '-label');
+          const count = document.getElementById(id + '-count');
+          const arrow = document.getElementById(id + '-arrow');
+          const iconBox = document.getElementById(id + '-icon-box');
+          const icon = document.getElementById(id + '-icon');
+          const title = document.getElementById(id + '-title');
+
+          if (label.style.display === 'none') {
+            // Expand
+            label.style.display = 'block';
+            count.style.display = 'inline';
+            arrow.style.transform = 'rotate(0deg)';
+
+            // Restore styles
+            container.classList.remove('py-3', 'px-6');
+            container.classList.add('p-6');
+            iconBox.classList.remove('p-2');
+            iconBox.classList.add('p-3');
+            icon.classList.remove('w-5', 'h-5');
+            icon.classList.add('w-6', 'h-6');
+            title.classList.remove('text-lg');
+            title.classList.add('text-2xl');
+          } else {
+            // Collapse
+            label.style.display = 'none';
+            count.style.display = 'none';
+            arrow.style.transform = 'rotate(180deg)';
+
+            // Compact styles
+            container.classList.remove('p-6');
+            container.classList.add('py-3', 'px-6');
+            iconBox.classList.remove('p-3');
+            iconBox.classList.add('p-2');
+            icon.classList.remove('w-6', 'h-6');
+            icon.classList.add('w-5', 'h-5');
+            title.classList.remove('text-2xl');
+            title.classList.add('text-lg');
+          }
+        }
+      </script>
 
       <div class="space-y-6">
         {{ $paginator := .Paginate .Pages.ByDate.Reverse }}
@@ -67,7 +146,7 @@
                 {{ range first 2 . }}
                 <a href="/tags/{{ . | urlize }}"
                   class="bg-muted text-main text-xs px-2 py-0.5 rounded transition-colors duration-200 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-700 dark:hover:text-white">
-                  #{{ . }}
+                  #{{ . | urlize }}
                 </a>
                 {{ end }}
               </div>
@@ -172,11 +251,11 @@
 
     <!-- Sidebar -->
     <aside class="lg:w-1/3">
-      <div class="sticky top-24 flex flex-col mb-8">
-        <div class="grow flex flex-col space-y-6">
+      <div class="sticky top-24 mb-8">
+        <div class="space-y-6">
 
           <!-- About -->
-          <div class="card grow">
+          <div class="card">
             <h3 class="card-title mb-3">About The Tag</h3>
             <p class="text-main leading-relaxed">
               {{ $tag := index $.Site.Data.tags (.Data.Term | urlize) }}
@@ -189,25 +268,10 @@
           </div>
 
           <!-- Other Tags -->
-          <div class="card">
-            <h3 class="card-title mb-3">Other Tags</h3>
-            <div class="flex flex-wrap gap-2 items-center">
-              {{ range first 10 .Site.Taxonomies.tags.ByCount }}
-              {{ if ne .Page.Title $.Title }}
-              <a href="{{ .Page.RelPermalink }}"
-                class="bg-muted text-main text-sm px-3 py-1 rounded-full hover:bg-blue-600 hover:text-white transition-colors duration-200">
-                #{{ .Page.Title }}
-              </a>
-              {{ end }}
-              {{ end }}
-              <a href="/tags/" class="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors ml-1">
-                View All →
-              </a>
-            </div>
-          </div>
+
 
           <!-- Social Media -->
-          <div class="card grow">
+          <div class="card">
             <h3 class="card-title mb-3">Connect With Us</h3>
             <p class="text-main text-sm mb-4">
               Follow us on social media for updates and discussions.
@@ -253,6 +317,16 @@
                 </svg>
               </a>
             </div>
+          </div>
+
+          <div class="pt-6 border-t border-gray-200 dark:border-gray-700 text-center">
+            <a href="/tags/" class="inline-flex items-center text-sm font-medium hover:text-blue-600 transition-colors">
+              View All Tags
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                </path>
+              </svg>
+            </a>
           </div>
 
         </div>
