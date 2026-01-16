@@ -1,6 +1,6 @@
 +++
 title = "Hobbies - Class 7 English (SCERT)"
-description = "The lesson explains what hobbies are and why they are important in our lives. A hobby is an activity that we enjoy doing in our free time. It helps us relax, feel happy, and use our leisure time in a useful way. Hobbies can be indoor or outdoor activities such as singing, painting, reading, gardening, swimming, and collecting stamps."
+description = "This lesson explains what hobbies are and why they are important in our lives. A hobby is an activity that we enjoy doing in our free time. It helps us relax, feel happy, and use our leisure time in a useful way. Hobbies can be indoor or outdoor activities such as singing, painting, reading, gardening, swimming, and collecting stamps."
 keywords = ["hobbies", "class-7", "english", "scert", "textbook"]
 tags = ["class-7", "english", "scert"]
 categories = ["upper-primary"]
