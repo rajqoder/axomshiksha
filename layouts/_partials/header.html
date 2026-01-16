@@ -22,17 +22,7 @@
 
       <!-- Action Buttons -->
       <div class="flex items-center gap-2">
-        <!-- Search Button (Desktop + Mobile) -->
-        <button id="search-button"
-          class="p-2 rounded-md hover:cursor-pointer text-gray-900 dark:text-gray-300 transition-colors duration-200"
-          aria-label="Search">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-900 dark:text-gray-300" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-              clip-rule="evenodd" />
-          </svg>
-        </button>
+
 
         <!-- Theme Toggle (Desktop Only) -->
         <button id="theme-toggle"
@@ -160,66 +150,9 @@
 {{ end }}
 {{ end }}
 
-<!-- Search Modal -->
-<div id="search-modal" class="hidden fixed inset-0 z-100 flex items-center justify-center p-4">
-  <!-- Overlay -->
-  <div id="search-overlay" class="absolute inset-0 bg-black/40"></div>
 
-  <!-- Modal Content -->
-  <div class="relative w-full max-w-2xl bg-white dark:bg-gray-900 rounded-lg shadow-xl max-h-[90vh] flex flex-col">
-    <!-- Modal Header -->
-    <div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800">
-      <h2 class="text-lg font-medium text-white">Search</h2>
-      <button
-        class="close-search-modal hover:cursor-pointer p-2 rounded-md text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
-        aria-label="Close search">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd" />
-        </svg>
-      </button>
-    </div>
 
-    <!-- Search Input -->
-    <div class="p-4 border-b border-gray-200 dark:border-gray-800">
-      <div class="relative">
-        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-              clip-rule="evenodd" />
-          </svg>
-        </div>
-        <input type="text" id="search-input"
-          class="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-          placeholder="Search posts..." autocomplete="off" autofocus>
-      </div>
-    </div>
 
-    <!-- Search Results -->
-    <div id="search-results" class="flex-1 overflow-y-auto p-4">
-      <!-- Results will be populated by JavaScript -->
-      <div class="text-center py-8">
-        <p class="text-white">Type something to search...</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Search Script -->
-{{ $search := resources.Get "js/search.js" }}
-{{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
-"js/search.js" }}
-{{ with $search | js.Build $opts }}
-{{ if hugo.IsDevelopment }}
-<script src="{{ .RelPermalink }}"></script>
-{{ else }}
-{{ with . | fingerprint }}
-<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-{{ end }}
-{{ end }}
-{{ end }}
 
 <!-- Theme Switcher Script -->
 {{ $theme := resources.Get "js/theme-switcher.js" }}
