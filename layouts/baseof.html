@@ -4,31 +4,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>
-    {{ if .IsHome }}
+    {{- if .IsHome }}
     {{ .Site.Title }}
-    {{ else if .IsPage }}
+    {{- else if .IsPage }}
     {{ .Title }}
-    {{ else if eq .Kind "taxonomy" }}
+    {{- else if eq .Kind "taxonomy" }}
     {{ .Title }} - {{ .Site.Title }}
-    {{ else if eq .Kind "term" }}
-    {{ if and (eq .Type "writers") .Site.Data.writers }}
-    {{ $writer := index .Site.Data.writers .Data.Term }}
-    {{ $writer.name }} - {{ .Site.Title }}
-    {{ else }}
+    {{- else if eq .Kind "term" }}
+    {{- if and (eq .Type "writers") .Site.Data.writers }}
+    {{- $writer := index .Site.Data.writers .Data.Term }}
+    {{- $writer.name }} - {{ .Site.Title }}
+    {{- else }}
     {{ .Title }} - {{ .Site.Title }}
-    {{ end }}
-    {{ end }}
+    {{- end }}
+    {{- end }}
   </title>
 
   {{ partial "seo.html" . }}
 
-  <!-- AdSense Code -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741779077297678"
     crossorigin="anonymous"></script>
-
-  <!-- Theme Preloader Script -->
   <script>
     (function () {
       const savedTheme = localStorage.getItem('theme');
@@ -40,9 +36,9 @@
     })();
   </script>
 
-  {{ with (templates.Defer (dict "key" "global")) }}
+  {{- with (templates.Defer (dict "key" "global")) }}
   {{ partial "css.html" . }}
-  {{ end }}
+  {{- end }}
 
   {{ hugo.Generator }}
 
@@ -60,9 +56,7 @@
   </main>
 
   {{ partial "footer.html" . }}
-
-
-  <!-- Copy Code Script -->
+  
   {{ $copyCode := resources.Get "js/copy-code.js" }}
   {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
   "js/copy-code.js" }}
@@ -75,8 +69,6 @@
   {{ end }}
   {{ end }}
   {{ end }}
-
-  <!-- Table of Contents Script -->
   {{ $toc := resources.Get "js/toc.js" }}
   {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
   "js/toc.js" }}
@@ -89,8 +81,6 @@
   {{ end }}
   {{ end }}
   {{ end }}
-
-  <!-- Copy Link Script -->
   {{ $copyLink := resources.Get "js/copy-link.js" }}
   {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
   "js/copy-link.js" }}
