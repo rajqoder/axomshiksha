@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ .Site.Title }},
+  "alternateName": {{ .Site.Params.alternateName }},
+  "url": {{ .Site.BaseURL }},
+  "slogan": {{ .Site.Params.slogan }},
+  "logo": {
+    "@type": "ImageObject",
+    "url": {{ "/organization-image.jpg" | absURL }},
+    "width": 512,
+    "height": 512
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+919954765021",
+    "contactType": "customer service",
+    "email": "shikshaaxom@gmail.com"
+  },
+  "email": "shikshaaxom@gmail.com",
+  "foundingDate": "2026-01-07",
+  "description": "Axomshiksha provides comprehensive educational resources, tutorials, and learning materials for students and educators.",
+  "sameAs": [
+    {{ .Site.Params.social.facebook }},
+    {{ .Site.Params.social.instagram }},
+    {{ .Site.Params.social.twitter }},
+    {{ .Site.Params.social.youtube }}
+  ]
+}
+</script>

@@ -171,71 +171,10 @@
 <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ .Site.BaseURL }}index.xml">
 
 <!-- Structured Data (JSON-LD) -->
-{{- if .IsPage }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ .Title }},
-  "description": {{ .Description }},
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-  "author": {
-    "@type": "Person",
-    {{- with .Params.writers }}
-    {{- $firstWriterHandle := index . 0 }}
-    {{- $firstWriter := index $.Site.Data.writers $firstWriterHandle }}
-    "name": {{ $firstWriter.name }}
-    "url": {{ printf "/writers/%s/" $firstWriterHandle | absURL }}
-    {{- end }}
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": {{ .Site.Title }},
-    "logo": {
-      "@type": "ImageObject",
-      "url": {{ "/png-logo.png" | absURL }}
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": {{ .Permalink }}
-  },
-  "image": {
-    "@type": "ImageObject",
-    {{- if .Params.thumbnail }}
-    "url": {{ .Params.thumbnail | absURL }},
-    {{- else if and (eq .Kind "taxonomy") (or (eq .Type "categories") (eq .Type "tags")) }}
-    {{- if eq .Type "categories" }}
-    "url": {{ .Site.Params.categoryImage | absURL }},
-    {{- else if eq .Type "tags" }}
-    "url": {{ .Site.Params.tagImage | absURL }},
-    {{- end }}
-    {{- end }}
-    "width": 900,
-    "height": 450
-  }
-}
-</script>
-{{- else }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": {{ .Site.Title }},
-  "alternateName": {{ .Site.Params.alternateName }},
-  "description": {{ .Site.Params.description }},
-  "url": {{ .Site.BaseURL }},
-  "publisher": {
-    "@type": "Organization",
-    "name": {{ .Site.Title }},
-    "logo": {
-      "@type": "ImageObject",
-      "url": {{ "/png-logo.png" | absURL }}
-    }
-  }
-}
-</script>
+{{ partial "schema/website.html" . }}
+{{ partial "schema/organization.html" . }}
+{{- if and .IsPage .Params.writers }}
+{{ partial "schema/blogposting.html" . }}
 {{- end }}
 
 <!-- Keywords Meta Tag -->

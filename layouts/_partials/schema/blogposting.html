@@ -1,0 +1,33 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ .Title }},
+  "description": {{ .Description }},
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    {{- with .Params.writers }}
+    {{- $firstWriterHandle := index . 0 }}
+    {{- $firstWriter := index $.Site.Data.writers $firstWriterHandle }}
+    "name": {{ $firstWriter.name }}
+    {{- if $firstWriterHandle }}
+    ,"url": {{ printf "/writers/%s/" $firstWriterHandle | absURL }}
+    {{- end }}
+    {{- end }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ .Site.Title }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ "/png-logo.png" | absURL }}
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink }}
+  }
+}
+</script>
