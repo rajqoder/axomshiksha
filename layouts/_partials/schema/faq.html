@@ -1,0 +1,19 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $index, $element := .Params.faqs }}
+    {{- if $index }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ $element.question }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $element.answer }}"
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>

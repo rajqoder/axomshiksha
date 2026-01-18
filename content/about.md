@@ -33,12 +33,6 @@ Our educational content is designed with students' needs in mind:
 - **Visual Learning**: Use of diagrams and examples to enhance understanding.
 - **Exam-Oriented**: Focused on helping students perform their best in assessments.
 
-## Disclaimer
-
-**Axomshiksha is an independent educational initiative and is NOT affiliated, associated, authorized, endorsed by, or in any way officially connected with SCERT, SEBA, AHSEC, the Government of Assam, or any educational board.**
-
-All content provided on this website is for educational purposes only. While we strive to provide accurate and up-to-date information, we refer to official curriculums solely for the purpose of providing study aids and solutions. Official websites for respective boards should be consulted for authoritative information.
-
 ## Get in Touch
 
 Have questions, suggestions, or feedback? We'd love to hear from you! Please visit our **[Contact Us](/contact/)** page to get in touch with our team.

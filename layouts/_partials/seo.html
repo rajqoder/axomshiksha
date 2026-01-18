@@ -106,10 +106,10 @@
 <meta property="og:image:height" content="450">
 
 {{- if .Date }}
-<meta property="article:published_time" content="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:published_time" content="{{ .Date.Format " 2006-01-02" }}">
 {{- end }}
 {{- if .Lastmod }}
-<meta property="article:modified_time" content="{{ .Lastmod.Format " 2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format " 2006-01-02" }}">
 {{- end }}
 
 {{- with .Params.writers }}
@@ -175,6 +175,12 @@
 {{ partial "schema/organization.html" . }}
 {{- if and .IsPage .Params.writers }}
 {{ partial "schema/blogposting.html" . }}
+{{- end }}
+{{- if eq .Layout "faq" }}
+{{ partial "schema/faq.html" . }}
+{{- end }}
+{{- if eq .Layout "about" }}
+{{ partial "schema/about.html" . }}
 {{- end }}
 
 <!-- Keywords Meta Tag -->

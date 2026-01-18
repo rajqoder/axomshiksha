@@ -1,0 +1,18 @@
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": {{ .Site.Title }},
+        "url": {{ .Site.BaseURL }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ .Site.Params.logo | absURL }}
+        }
+      },
+      "name": "About Us",
+      "description": {{ .Params.description | default .Site.Params.description }},
+      "url": {{ .Permalink }}
+    }
+</script>
