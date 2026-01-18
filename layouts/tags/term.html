@@ -15,7 +15,7 @@
             </svg>
           </button>
 
-          <div class="flex items-center gap-4 transition-all duration-300" id="tag-header-content">
+          <div class="flex items-center gap-4 transition-all duration-300 pr-12" id="tag-header-content">
             <div
               class="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl text-blue-600 dark:text-blue-400 transition-all duration-300"
               id="tag-header-icon-box">
@@ -31,7 +31,7 @@
                 id="tag-header-label">
                 Browsing Tag
               </p>
-              <div class="flex items-baseline gap-3">
+              <div class="flex flex-wrap items-baseline gap-x-3 gap-y-0">
                 <h1 class="text-2xl font-bold text-main transition-all duration-300" id="tag-header-title">#{{
                   .Data.Term | urlize }}</h1>
                 <span class="text-sm text-muted-foreground" id="tag-header-count">
