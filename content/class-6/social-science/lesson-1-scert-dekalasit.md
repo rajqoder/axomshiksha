@@ -1,14 +1,13 @@
 +++
 title = "আমাৰ পৃথিৱী (Our Earth) Class 6 - SCERT"
 date = "2026-01-04T17:44:05+05:30"
-slug = "class-6-social-science-lesson-1"
+slug = "lesson-1-scert"
 draft = false
 readingTime = "20 mins"
 description = "আমাৰ পৃথিৱী - ষষ্ঠ শ্ৰেণীৰ সমাজ বিজ্ঞানৰ প্ৰথম অধ্যায়ৰ সম্পূৰ্ণ প্ৰশ্নোত্তৰ, অনুশীলনী, আৰু বিস্তৃত আলোচনা, য'ত সৌৰজগত, পৃথিৱীৰ গোলাকাৰ আকৃতি, অক্ষৰেখা-দ্ৰাঘিমাৰেখা, পৃথিৱীৰ গতি আদি বিষয়ৰ বিৱৰণ অন্তৰ্ভুক্ত কৰা হৈছে। SCERT পাঠ্যপুথিৰ অনুশীলনীসমূহৰ ব্যাখ্যাসহ প্ৰশ্ন-উত্তৰ আৰু ভৌগোলিক ধাৰণাসমূহৰ সঠিক ব্যাখ্যা সন্নিবেশিত।"
-tags = ["social-science", "class-6", "scert"]
 keywords = ["social-science", "class-6", "scert", "solutions", "textbook"]
-categories = ["upper-primary"]
 writers = ["dekalasit"]
+categories = ["upper-primary"]
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopycZkIdj0tnInxlsVJkJMK8bYBhPELw_e0eUG1FGpD56pd6HMYC3xE-4Ek_ShLw8d8scye1WhSyfTz2c85jxmyVqL-7qBKDtp3mgKmBsR4qGNbJbaxE5dG4-c2Y7Wbm1G=w400-h280-s-no-gm?authuser=0"
 +++
 

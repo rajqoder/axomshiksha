@@ -1,41 +1,25 @@
 {{ define "main" }}
-<div class="max-w-4xl mx-auto px-4 py-8">
+<div class="max-w-6xl mx-auto px-4 py-8">
     <div class="mb-8 text-center">
-        <h1 class="text-3xl font-bold text-main mb-2">Education Categories</h1>
-        <p class="text-muted-foreground">Browse content by education level</p>
+        <p class="text-muted-foreground max-w-2xl mx-auto">{{ .Site.Params.categoriesDescription }}</p>
     </div>
-    
-    <div class="flex flex-wrap gap-3 justify-center">
-        {{ if .Site.Taxonomies.categories }}
-            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                <a href="/categories/{{ $name | urlize }}" class="bg-muted text-main px-4 py-2 rounded-full transition-colors duration-200 hover:bg-blue-600 hover:text-white">
-                    {{ $name }} <span class="text-muted-foreground">({{ len $taxonomy }})</span>
-                </a>
-            {{ end }}
-        {{ else }}
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a href="/categories/LP" class="bg-muted text-main p-4 rounded-lg transition-colors duration-200 hover:bg-blue-600 hover:text-white text-center">
-                    LP (Lower Primary) <span class="text-muted-foreground">(0)</span>
-                </a>
-                <a href="/categories/MP" class="bg-muted text-main p-4 rounded-lg transition-colors duration-200 hover:bg-blue-600 hover:text-white text-center">
-                    MP (Middle Primary) <span class="text-muted-foreground">(0)</span>
-                </a>
-                <a href="/categories/High-School" class="bg-muted text-main p-4 rounded-lg transition-colors duration-200 hover:bg-blue-600 hover:text-white text-center">
-                    High School <span class="text-muted-foreground">(0)</span>
-                </a>
-                <a href="/categories/HS" class="bg-muted text-main p-4 rounded-lg transition-colors duration-200 hover:bg-blue-600 hover:text-white text-center">
-                    HS (Higher Secondary) <span class="text-muted-foreground">(0)</span>
-                </a>
-                <a href="/categories/Degree" class="bg-muted text-main p-4 rounded-lg transition-colors duration-200 hover:bg-blue-600 hover:text-white text-center">
-                    Degree <span class="text-muted-foreground">(0)</span>
-                </a>
-                <a href="/categories/Diploma" class="bg-muted text-main p-4 rounded-lg transition-colors duration-200 hover:bg-blue-600 hover:text-white text-center">
-                    Diploma <span class="text-muted-foreground">(0)</span>
-                </a>
-                <a href="/categories/Competitive" class="bg-muted text-main p-4 rounded-lg transition-colors duration-200 hover:bg-blue-600 hover:text-white text-center">
-                    Competitive <span class="text-muted-foreground">(0)</span>
-                </a>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{ range .Data.Terms }}
+        <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+            {{ $categoryData := index $.Site.Data.categories ( .Page.Title | urlize ) }}
+            {{ if $categoryData.image }}
+            <div
+                class="mb-4 aspect-video w-full rounded-lg overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                <img src="{{ $categoryData.image }}" alt="{{ .Page.Title }}" class="w-full h-full object-cover">
             </div>
+            {{ end }}
+            <!-- Title removed as it is now embedded in the image -->
+            <a href="{{ .Page.RelPermalink }}"
+                class="inline-block bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded transition-colors">
+                Explore
+            </a>
+        </div>
         {{ end }}
     </div>
 </div>

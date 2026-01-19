@@ -31,7 +31,6 @@ keywords = ['education', 'learning', 'tutorials', 'guides', 'study materials', '
     youtube = 'https://www.youtube.com/@shikshaaxomyt'
 
 [taxonomies]
-  tag = 'tags'
   category = 'categories'
   writer = 'writers'
 
