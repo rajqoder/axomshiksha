@@ -4,6 +4,7 @@
         <!-- Main Content -->
         <div class="lg:w-2/3">
             <div class="mb-8">
+                {{ partial "breadcrumbs.html" . }}
                 <h1 class="text-3xl font-bold text-main mb-2">Category: {{ .Title | humanize }}</h1>
                 <p class="text-muted-foreground">Browsing all articles in this category.</p>
             </div>
@@ -18,14 +19,21 @@
                 {{ end }}
                 {{ end }}
 
-                {{/* Display the unique Sections */}}
+                {{/* Display all Sections in a single grid */}}
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {{ range sort $sections "Title" "asc" }}
                     <div class="card p-6 hover:shadow-lg transition-shadow">
                         <h2 class="text-xl font-bold text-main mb-2">
                             <a href="{{ .RelPermalink }}" class="hover:text-blue-600 transition-colors">{{ .Title }}</a>
                         </h2>
-                        <p class="text-muted-foreground text-sm mb-3">{{ .Description | truncate 100 }}</p>
+                        {{ $tagData := index (index $.Site.Data "sub-category") ( .Title | urlize ) }}
+                        <p class="text-muted-foreground text-sm mb-3">
+                            {{ if $tagData }}
+                            {{ $tagData.description | truncate 100 }}
+                            {{ else }}
+                            {{ .Description | truncate 100 }}
+                            {{ end }}
+                        </p>
                         <a href="{{ .RelPermalink }}"
                             class="inline-block bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded transition-colors">
                             Explore {{ .Title }}

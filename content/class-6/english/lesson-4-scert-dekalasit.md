@@ -6,9 +6,11 @@ slug = "lesson-4-scert"
 description = "The lesson - 'My Land' celebrates the poet's intense love and passion for their home country, inspiring a strong sense of patriotism. Examine the complete study guide and its solutions."
 readingTime = "48 mins"
 keywords = ["class-6", "scert", "english", "solutions", "textbook", "lesson-4"]
-writers = ["dekalasit"]
 categories = ["upper-primary"]
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczNHBgOtrGx5hjjg1K8fVR2ctM-m4H0ptD8lkU3IfIlFgnCSK9M9PB2sZLZv5y2GnPrvoGxnAIkoaa1ooZcNyOmjhqkOMaklBToW9sO4plcT7Z2-lPPgUDPc-MtD-dyS1sRYdIGo261yOGwm58v31PE=w340-h428-s-no-gm?authuser=0"
+
+[params]
+  author = 'Ankur Rajbongshi'
 +++
 
 ## Summary of the poem
@@ -356,3 +358,5 @@ Here, **‘ly’** is added to the adjective **‘free’** to make a new word *
 Collect old magazines, newspapers, etc. and cut out images that represent landscapes, food, clothing and cultural symbols of your native land. Now, make a collage by pasting these cut-outs on a cardboard. Display it in the classroom.
 
 **Ans:** Do yourself.
+
+

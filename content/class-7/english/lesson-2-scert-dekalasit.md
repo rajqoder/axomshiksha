@@ -4,13 +4,15 @@ title = "Uruka Adventure - Class 7 English (SCERT)"
 description = "The lesson 'Uruka Adventure' tells the story of Mahendra and his friends from the village of Assam. They plan an adventure on uruka night, following an old custom before Magh Bihu. At night, they secretly go to Shantiram's vegetable garden to pick vegetables for a feast. In the darkness, strange sounds and a black heap frighten them. Later, they discover that the fear was caused by an owl and Shantiram wrapped in a black blanket. Realising their mistake, they escape safely and feel thankful to be alive, deciding not to think of such adventures again."
 
 keywords = ["uruka-adventure", "class-7", "english", "scert", "textbook"]
-writers = ["dekalasit"]
 categories = ["upper-primary"]
 draft = false
 slug = "lesson-2-scert"
 readingTime = "56 mins"
 date = "2026-01-07T11:27:36+05:30"
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczOaqbutWqwBPx6OfUYxwcpXTlLofkrUAq-anqjj82Y0UKc2_i-yTySmDKJa7q0kTD8bfyj4ArXDPbeYpFvCtGjt5qhMsaIZ56ibjv-G-XThHtDM4gmFcBaJ-VxvSjwhMNCM2xsaFZVngft3wtm2qzkG=w483-h289-s-no-gm?authuser=0"
+
+[params]
+  author = 'Ankur Rajbongshi'
 +++
 
 ## ACTIVITIES
@@ -288,3 +290,4 @@ Makar Sankranti is a festival celebrated all over India in the month of January.
 
 > Magh Bihu is one festival which is linked to nature and its nurture. It is also a celebration of the northward movement of the sun called Uttaraayan (uttar
 means north and aayana means movement). Bihu, Karbi-Dehal-Kachir-Dom, Karam Puja, etc. are all festivals closely linked to nature. In groups, choose a festival like the above and make a poster on it. Remember to use pictures and interesting captions (headings) along with short descriptions of the food, dress, rituals, etc. that are part of the festival.
+

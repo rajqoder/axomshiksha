@@ -2,32 +2,13 @@
 <meta name="description" content="{{ .Site.Params.description }}">
 <meta property="og:description" content="{{ .Site.Params.description }}">
 <meta name="twitter:description" content="{{ .Site.Params.description }}">
-{{- else if and (eq .Kind "taxonomy") (eq .Type "tags") }}
-<meta name="description" content="{{ .Site.Params.tagsDescription }}">
-<meta property="og:description" content="{{ .Site.Params.tagsDescription }}">
-<meta name="twitter:description" content="{{ .Site.Params.tagsDescription }}">
+
 {{- else if and (eq .Kind "taxonomy") (eq .Type "categories") }}
 <meta name="description" content="{{ .Site.Params.categoriesDescription }}">
 <meta property="og:description" content="{{ .Site.Params.categoriesDescription }}">
 <meta name="twitter:description" content="{{ .Site.Params.categoriesDescription }}">
-{{- else if and (eq .Kind "taxonomy") (eq .Type "writers") }}
-<meta name="description" content="{{ .Site.Params.writersDescription }}">
-<meta property="og:description" content="{{ .Site.Params.writersDescription }}">
-<meta name="twitter:description" content="{{ .Site.Params.writersDescription }}">
-{{- else if and (eq .Kind "term") (eq .Type "tags") }}
-{{- $termKey := "" }}
-{{- if .Data.Term }}
-{{- $termKey = .Data.Term | urlize }}
-{{- else }}
-{{- $termKey = .Title | urlize }}
-{{- end }}
-{{- $tagData := index .Site.Data.tags $termKey }}
-{{- if $tagData }}
-{{- $description := $tagData.description }}
-<meta name="description" content="{{ $description }}">
-<meta property="og:description" content="{{ $description }}">
-<meta name="twitter:description" content="{{ $description }}">
-{{- end }}
+
+
 {{- else if and (eq .Kind "term") (eq .Type "categories") }}
 {{- $termKey := "" }}
 {{- if .Data.Term }}
@@ -42,16 +23,7 @@
 <meta property="og:description" content="{{ $description }}">
 <meta name="twitter:description" content="{{ $description }}">
 {{- end }}
-{{- else if and (eq .Kind "term") (eq .Type "writers") }}
-{{- if and .Data.Term .Site.Data.writers }}
-{{- $writer := index .Site.Data.writers .Data.Term }}
-{{- if and $writer $writer.bio }}
-{{- $description := $writer.bio }}
-<meta name="description" content="{{ $description }}">
-<meta property="og:description" content="{{ $description }}">
-<meta name="twitter:description" content="{{ $description }}">
-{{- end }}
-{{- end }}
+
 {{- else }}
 {{- if .Description }}
 <meta name="description" content="{{ .Description }}">
@@ -73,17 +45,7 @@
 <meta property="og:title" content="{{ .Title }}">
 {{- else if eq .Kind "taxonomy" }}
 <meta property="og:title" content="{{ .Title }}">
-{{- else if eq .Kind "term" }}
-{{- if and (eq .Type "writers") .Site.Data.writers }}
-{{- $writer := index .Site.Data.writers .Data.Term }}
-{{- if $writer }}
-<meta property="og:title" content="{{ $writer.name }}">
-{{- else }}
-<meta property="og:title" content="{{ .Title }}">
-{{- end }}
-{{- else }}
-<meta property="og:title" content="{{ .Title }}">
-{{- end }}
+
 {{- else }}
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{- end }}
@@ -91,13 +53,11 @@
 
 {{- if .Params.thumbnail }}
 <meta property="og:image" content="{{ .Params.thumbnail | absURL }}">
-{{- else if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (or (eq .Type "categories") (eq .Type "tags")) }}
-<!-- Different images for category and tag taxonomies/terms -->
-{{- if eq .Type "categories" }}
+{{- else if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (eq .Type "categories") }}
+
 <meta property="og:image" content="{{ .Site.Params.categoryImage | absURL }}">
-{{- else if eq .Type "tags" }}
-<meta property="og:image" content="{{ .Site.Params.tagImage | absURL }}">
-{{- end }}
+
+
 {{- else }}
 <meta property="og:image" content="{{ .Site.Params.homeImage | absURL }}">
 {{- end }}
@@ -112,11 +72,8 @@
 <meta property="article:modified_time" content="{{ .Lastmod.Format " 2006-01-02" }}">
 {{- end }}
 
-{{- with .Params.writers }}
-{{- range . }}
-{{- $writer := index $.Site.Data.writers . }}
-<meta property="article:author" content="{{ $writer.name }}">
-{{- end }}
+{{- with .Params.author }}
+<meta property="article:author" content="{{ . }}">
 {{- end }}
 
 {{- with .Params.categories }}
@@ -135,35 +92,21 @@
 <meta name="twitter:title" content="{{ .Title }}">
 {{- else if eq .Kind "taxonomy" }}
 <meta name="twitter:title" content="{{ .Title }}">
-{{- else if eq .Kind "term" }}
-{{- if and (eq .Type "writers") .Site.Data.writers }}
-{{- $writer := index .Site.Data.writers .Data.Term }}
-{{- if $writer }}
-<meta name="twitter:title" content="{{ $writer.name }}">
-{{- else }}
-<meta name="twitter:title" content="{{ .Title }}">
-{{- end }}
-{{- else }}
-<meta name="twitter:title" content="{{ .Title }}">
-{{- end }}
+
 {{- else }}
 <meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{- end }}
 
 {{- if .Params.thumbnail }}
 <meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
-{{- else if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (or (eq .Type "categories") (eq .Type "tags")) }}
-<!-- Different images for category and tag taxonomies/terms -->
-{{- if eq .Type "categories" }}
+{{- else if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (eq .Type "categories") }}
+
 <meta name="twitter:image" content="{{ .Site.Params.categoryImage | absURL }}">
-{{- else if eq .Type "tags" }}
-<meta name="twitter:image" content="{{ .Site.Params.tagImage | absURL }}">
+
 {{- else }}
 <meta name="twitter:image" content="{{ .Site.Params.homeImage | absURL }}">
 {{- end }}
-{{- else }}
-<meta name="twitter:image" content="{{ .Site.Params.homeImage  | absURL }}">
-{{- end }}
+
 
 <!-- Additional SEO Meta Tags -->
 <meta name="robots" content="index, follow">
@@ -173,8 +116,11 @@
 <!-- Structured Data (JSON-LD) -->
 {{ partial "schema/website.html" . }}
 {{ partial "schema/organization.html" . }}
-{{- if and .IsPage .Params.writers }}
+{{- if and .IsPage .Params.author }}
 {{ partial "schema/blogposting.html" . }}
+{{- end }}
+{{- if not .IsHome }}
+{{ partial "schema/breadcrumb.html" . }}
 {{- end }}
 {{- if eq .Layout "faq" }}
 {{ partial "schema/faq.html" . }}
@@ -186,8 +132,6 @@
 <!-- Keywords Meta Tag -->
 {{- if .Keywords }}
 <meta name="keywords" content="{{ delimit .Keywords " , " }}">
-{{- else if .Params.tags }}
-<meta name="keywords" content="{{ delimit .Params.tags " , " }}">
 {{- else }}
 <meta name="keywords" content="{{ .Site.Params.defaultKeywords }}">
 {{- end }}

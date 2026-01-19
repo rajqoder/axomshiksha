@@ -12,13 +12,9 @@
     {{- else if eq .Kind "taxonomy" }}
     {{ .Title }} - {{ .Site.Title }}
     {{- else if eq .Kind "term" }}
-    {{- if and (eq .Type "writers") .Site.Data.writers }}
-    {{- $writer := index .Site.Data.writers .Data.Term }}
-    {{- $writer.name }} - {{ .Site.Title }}
-    {{- else }}
     {{ .Title }} - {{ .Site.Title }}
     {{- end }}
-    {{- end }}
+
   </title>
 
   {{ partial "seo.html" . }}
@@ -56,7 +52,7 @@
   </main>
 
   {{ partial "footer.html" . }}
-  
+
   {{ $copyCode := resources.Get "js/copy-code.js" }}
   {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
   "js/copy-code.js" }}

@@ -2,13 +2,15 @@
 title = "Hobbies - Class 7 English (SCERT)"
 description = 'This lesson explains what hobbies are and why they are important in our lives. A hobby is an activity that we enjoy doing in our free time. It helps us relax, feel happy, and use our leisure time in a useful way. Hobbies can be indoor or outdoor activities such as singing, painting, reading, gardening, swimming, and collecting stamps.'
 keywords = ["hobbies", "class-7", "english", "scert", "textbook"]
-writers = ["dekalasit"]
 categories = ["upper-primary"]
 draft = false
 slug = "lesson-1-scert"
 readingTime = "36 mins"
 date = "2026-01-07T00:07:15+05:30"
 thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczORWB6hQct3eoh9qc8lfPJGvzgToTEr0iGhUa-l2_xen8oln0j3_EDSWlEdARobXdcH_AVxJ32H9c-kdNw3Sn4eje6nVzHvdRGXPMAx4iN6yowP1PqWzQ2W9FL4xp50tNpEm8MEcDtYqYZHsRgV92qu=w403-h333-s-no-gm?authuser=0"
+
+[params]
+  author = 'Ankur Rajbongshi'
 +++
 
 ## ACTIVITIES
@@ -216,3 +218,4 @@ She *beat about the bush* before answering.
 
 1. I want to *take up* painting as my hobby.
 2. She *took out* my pens.
+

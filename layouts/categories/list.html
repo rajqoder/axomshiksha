@@ -1,5 +1,6 @@
 {{ define "main" }}
-<div class="max-w-6xl mx-auto px-4 py-8">
+<div class="max-w-6xl mx-auto p-6">
+    {{ partial "breadcrumbs.html" . }}
     <div class="mb-8 text-center">
         <p class="text-muted-foreground max-w-2xl mx-auto">{{ .Site.Params.categoriesDescription }}</p>
     </div>

@@ -1,0 +1,24 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{- $position := 1 }}
+    {{- range .Ancestors.Reverse }}
+    {
+      "@type": "ListItem",
+      "position": {{ $position }},
+      "name": {{ .Title }},
+      "item": {{ .Permalink }}
+    },
+    {{- $position = add $position 1 }}
+    {{- end }}
+    {
+      "@type": "ListItem",
+      "position": {{ $position }},
+      "name": {{ .Title }},
+      "item": {{ .Permalink }}
+    }
+  ]
+}
+</script>

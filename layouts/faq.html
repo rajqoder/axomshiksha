@@ -1,8 +1,9 @@
 {{ define "main" }}
-<div class="max-w-4xl mx-auto px-4 py-12 bg-main text-main">
-  
+<div class="max-w-4xl mx-auto p-6 bg-main text-main">
+
   <!-- Header -->
   <div class="text-center mb-12">
+    {{ partial "breadcrumbs.html" . }}
     <h1 class="text-4xl font-bold text-main mb-4">
       Frequently Asked Questions
     </h1>
@@ -14,34 +15,27 @@
   <!-- FAQ Accordion -->
   <div class="space-y-4">
     {{ range .Params.faqs }}
-      <div class="faq-item" data-faq-item>
-        <!-- Question -->
-        <button 
-          class="faq-question w-full text-left p-5 rounded-lg border transition-all duration-300 flex justify-between items-center gap-4"
-          data-faq-button
-          aria-expanded="false">
-          <span class="text-lg font-semibold text-main">{{ .question }}</span>
-          <svg 
-            class="faq-icon w-5 h-5 transition-transform duration-300 flex-shrink-0" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        
-        <!-- Answer -->
-        <div 
-          class="faq-answer overflow-hidden transition-all duration-300"
-          data-faq-answer
-          style="max-height: 0;">
-          <div class="faq-answer-content p-5 rounded-b-lg border border-t-0">
-            <div class="text-main leading-relaxed">
-              {{ .answer | markdownify }}
-            </div>
+    <div class="faq-item" data-faq-item>
+      <!-- Question -->
+      <button
+        class="faq-question w-full text-left p-5 rounded-lg border transition-all duration-300 flex justify-between items-center gap-4"
+        data-faq-button aria-expanded="false">
+        <span class="text-lg font-semibold text-main">{{ .question }}</span>
+        <svg class="faq-icon w-5 h-5 transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+
+      <!-- Answer -->
+      <div class="faq-answer overflow-hidden transition-all duration-300" data-faq-answer style="max-height: 0;">
+        <div class="faq-answer-content p-5 rounded-b-lg border border-t-0">
+          <div class="text-main leading-relaxed">
+            {{ .answer | markdownify }}
           </div>
         </div>
       </div>
+    </div>
     {{ end }}
   </div>
 
@@ -61,18 +55,18 @@
 
 <!-- FAQ Accordion Script -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const faqItems = document.querySelectorAll('[data-faq-item]');
-    
+
     faqItems.forEach(item => {
       const button = item.querySelector('[data-faq-button]');
       const answer = item.querySelector('[data-faq-answer]');
       const icon = item.querySelector('.faq-icon');
       const question = item.querySelector('.faq-question');
-      
-      button.addEventListener('click', function() {
+
+      button.addEventListener('click', function () {
         const isExpanded = button.getAttribute('aria-expanded') === 'true';
-        
+
         // Close all other FAQ items
         faqItems.forEach(otherItem => {
           if (otherItem !== item) {
@@ -80,7 +74,7 @@
             const otherAnswer = otherItem.querySelector('[data-faq-answer]');
             const otherIcon = otherItem.querySelector('.faq-icon');
             const otherQuestion = otherItem.querySelector('.faq-question');
-            
+
             otherButton.setAttribute('aria-expanded', 'false');
             otherAnswer.style.maxHeight = '0';
             otherIcon.style.transform = 'rotate(0deg)';
@@ -88,7 +82,7 @@
             otherAnswer.classList.remove('faq-answer-expanded');
           }
         });
-        
+
         // Toggle current item
         if (isExpanded) {
           button.setAttribute('aria-expanded', 'false');

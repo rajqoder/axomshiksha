@@ -1,11 +1,12 @@
 {{ define "main" }}
-<div class="max-w-7xl mx-auto px-4 py-8">
+<div class="max-w-7xl mx-auto p-6">
     <div class="flex flex-col lg:flex-row gap-8">
         <!-- Main Content -->
         <div class="lg:w-2/3">
 
             <!-- Section Header -->
             <div class="mb-8">
+                {{ partial "breadcrumbs.html" . }}
                 <h1 class="text-3xl font-bold text-main mb-4">{{ .Title }}</h1>
                 {{ with .Content }}
                 <div class="prose dark:prose-invert max-w-none mb-6">

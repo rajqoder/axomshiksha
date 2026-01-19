@@ -1,5 +1,5 @@
 +++
-title = 'Class 6 Social Science'
+title = 'Social Science'
 date = 2024-01-01
 draft = false
 +++
