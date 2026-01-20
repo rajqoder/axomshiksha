@@ -13,6 +13,7 @@ thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczOaqbutWqwBPx6OfUYxwcpXTl
 
 [params]
   author = 'Ankur Rajbongshi'
+  chapter_title = "Uruka Adventure"
 +++
 
 ## ACTIVITIES

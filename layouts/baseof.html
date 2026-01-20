@@ -10,9 +10,15 @@
     {{- else if .IsPage }}
     {{ .Title }}
     {{- else if eq .Kind "taxonomy" }}
-    {{ .Title }} - {{ .Site.Title }}
+    {{ .Title }}
     {{- else if eq .Kind "term" }}
-    {{ .Title }} - {{ .Site.Title }}
+    {{ .Title }}
+    {{- else }}
+    {{- if and .Parent (not .Parent.IsHome) }}
+    {{ .Parent.Title }} - {{ .Title }}
+    {{- else }}
+    {{ .Title }}
+    {{- end }}
     {{- end }}
 
   </title>

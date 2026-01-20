@@ -1,11 +1,8 @@
 {{ define "main" }}
-<div class="max-w-6xl mx-auto p-6">
+<div class="max-w-7xl mx-auto p-6">
     {{ partial "breadcrumbs.html" . }}
-    <div class="mb-8 text-center">
-        <p class="text-muted-foreground max-w-2xl mx-auto">{{ .Site.Params.categoriesDescription }}</p>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {{ range .Data.Terms }}
         <div class="card p-6 text-center hover:shadow-lg transition-shadow">
             {{ $categoryData := index $.Site.Data.categories ( .Page.Title | urlize ) }}

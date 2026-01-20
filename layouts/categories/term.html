@@ -1,12 +1,10 @@
 {{ define "main" }}
-<div class="max-w-7xl mx-auto px-4 py-8">
+<div class="max-w-7xl mx-auto p-6">
     <div class="flex flex-col lg:flex-row gap-8">
         <!-- Main Content -->
         <div class="lg:w-2/3">
             <div class="mb-8">
                 {{ partial "breadcrumbs.html" . }}
-                <h1 class="text-3xl font-bold text-main mb-2">Category: {{ .Title | humanize }}</h1>
-                <p class="text-muted-foreground">Browsing all articles in this category.</p>
             </div>
 
             <div class="space-y-6">
@@ -49,19 +47,45 @@
         <!-- Sidebar -->
         <aside class="lg:w-1/3">
             <div class="sticky top-24 space-y-8">
+                <!-- About Category Widget -->
+                {{ $categoryData := index .Site.Data.categories ( .Title | urlize ) }}
+                {{ if or $categoryData .Description }}
+                <div class="card">
+                    <h3 class="card-title mb-4">{{ .Title | humanize }}</h3>
+                    <p class="text-muted-foreground">
+                        {{ if $categoryData }}
+                        {{ $categoryData.description }}
+                        {{ else }}
+                        {{ .Description }}
+                        {{ end }}
+                    </p>
+                </div>
+                {{ end }}
+
                 <!-- Categories Widget -->
                 <div class="card">
-                    <h3 class="card-title mb-4">All Categories</h3>
+                    <h3 class="card-title mb-4">Other Categories</h3>
                     <div class="flex flex-col gap-2">
+                        {{ $currentCategory := .Title | urlize }}
+                        {{ $count := 0 }}
                         {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                        <a href="{{ " /categories/" | relLangURL }}{{ $name | urlize }}"
+                        {{ if and (ne ($name | urlize) $currentCategory) (lt $count 3) }}
+                        <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}"
                             class="flex items-center justify-between text-main hover:text-blue-600 transition-colors">
                             <span>{{ $name | humanize }}</span>
                             <span
-                                class="text-sm text-muted-foreground bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">{{
+                                class="text-sm font-medium text-gray-700 bg-gray-200 dark:text-gray-300 dark:bg-gray-800 px-2.5 py-0.5 rounded-full">{{
                                 $taxonomy.Count }}</span>
                         </a>
+                        {{ $count = add $count 1 }}
                         {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+                        <a href="/categories/"
+                            class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View All →
+                        </a>
                     </div>
                 </div>
             </div>

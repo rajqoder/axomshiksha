@@ -11,6 +11,7 @@ thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczORWB6hQct3eoh9qc8lfPJGvz
 
 [params]
   author = 'Ankur Rajbongshi'
+  chapter_title = "Hobbies"
 +++
 
 ## ACTIVITIES

@@ -7,18 +7,12 @@ readingTime = "50 mins"
 description = "Edna St. Vincent Millay's poem 'Afternoon on a Hill' - which depicts a peaceful moment spent on a hilltop, encapsulates the essence of nature's beauty in the SCERT Class 6 English textbook. Word meanings, explanations, and comprehensive solutions are all included in this post."
 keywords = ["scert", "class-6", "english", "solutions", "textbook", "lesson-1"]
 categories = ["upper-primary"]
-thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczN28Nd3u_vM128uOILjwlJ_TIEuh5fO_4DL2m79WfXw8PHsRVA6x5pZYRQTrfAY97GoCydt_XeLQCTqkqL-4gtT6Np9l0qNccQgxGjoscu7k8rtb-PE0Ed-w1-Zc238reot_rA94OvZ3QRpfJlpU6c=w455-h607-s-no-gm?authuser=0"
+thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczN28Nd3u_vM128uOILjwlJ_TIEuh5fO_4DL2m79WfXw8PHsRVA6x5pZYRQTrfAY97GoCydt_XeLQCTkqqL-4gtT6Np9l0qNccQgxGjoscu7k8rtb-PE0Ed-w1-Zc238reot_rA94OvZ3QRpfJlpU6c=w455-h607-s-no-gm?authuser=0"
 
 [params]
   author = 'Ankur Rajbongshi'
+  chapter_title = "Afternoon on a hill"
 +++
-
-## Afternoon on a hill
-“Afternoon on a Hill” is the first chapter from the **Class 6 English textbook prescribed by SCERT**. This poem is written by **Edna St. Vincent Millay** and describes the beauty of nature as seen from the top of a hill.
-
-In this chapter, students learn how the poet uses simple words to show trees, grass, sky, and moving clouds. The poem helps students develop imagination, observation skills, and an appreciation of nature.
-
-In this post, I will give you **easy explanations and complete solutions** of *Chapter 1 – Afternoon on a Hill*. All answers are written in **simple language**, strictly following the **SCERT syllabus**, to help students understand the lesson clearly and score well in exams.
 
 ## Summary of the Poem
 

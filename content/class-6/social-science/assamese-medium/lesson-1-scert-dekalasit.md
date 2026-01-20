@@ -11,6 +11,8 @@ thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopyc
 
 [params]
   author = 'Ankur Rajbongshi'
+  chapter_title = "Our Earth in the Solar System"
+  medium = "assamese"
 +++
 
 {{<content-box type="heading" content="### অনুশীলনী - ১" ariaLabel="অনুশীলনী - ১" bgColor="orange" textColor="white">}}
@@ -175,6 +177,3 @@ thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopyc
 #### ৪. পৃথিৱীৰ দুটা ভিন্ন অঞ্চলত একে সময়তে দিন-ৰাতি নহয় ?
 
 **উত্তৰ:** পৃথিৱীৰ আকাৰ গোলাকাৰ আৰু পৃথিৱীয়ে নিজ কক্ষপথত পশ্চিমৰ পৰা পূবলৈ অবিৰামভাৱে ঘূৰি থাকে । গতিকে, পৃথিৱীৰ যিটো ফাল সূৰ্যৰ পিনে থাকে, সেইফালে দিন হৈ থাকে, আনহাতে যিটো ফাল সূৰ্যৰ বিপৰীতফালে থাকে সেইটো ফালে ৰাতি হৈ থাকে । সেয়েহে, পৃথিৱীৰ দুটা ভিন্ন অঞ্চলত একে সময়তে দিন-ৰাতি নহয় ।
-
-
-

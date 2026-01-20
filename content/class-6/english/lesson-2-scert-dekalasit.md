@@ -11,6 +11,7 @@ thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczP6dYU1xE5EVgn_UsEWkQGIAI
 
 [params]
   author = 'Ankur Rajbongshi'
+  chapter_title = "The Golden Touch"
 +++
 
 ## Summary of the Story
