@@ -24,11 +24,16 @@
 
             <div class="card-meta mb-3">
               {{ with .Params.author }}
+              {{ $authorName := . }}
+              {{ if site.Data.writers }}
+              {{ with index site.Data.writers . }}
+              {{ if .name }}
+              {{ $authorName = .name }}
+              {{ end }}
+              {{ end }}
+              {{ end }}
               <div class="flex items-center text-xs text-muted-foreground hover:text-blue-600 transition-colors">
-                <span class="w-4 h-4 rounded-full bg-muted flex items-center justify-center mr-1 text-xs">
-                  {{ substr . 0 1 }}
-                </span>
-                <span class="truncate max-w-[80px] sm:max-w-none">{{ . }}</span>
+                <span class="truncate max-w-[80px] sm:max-w-none">{{ $authorName }}</span>
               </div>
               <span class="mx-2">•</span>
               {{ end }}

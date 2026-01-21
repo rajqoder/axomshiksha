@@ -94,7 +94,15 @@
 
                         <div class="card-meta mb-3">
                             {{ with .Params.author }}
-                            <span class="font-medium mr-2">{{ . }}</span>
+                            {{ $authorName := . }}
+                            {{ if site.Data.writers }}
+                            {{ with index site.Data.writers . }}
+                            {{ if .name }}
+                            {{ $authorName = .name }}
+                            {{ end }}
+                            {{ end }}
+                            {{ end }}
+                            <span class="font-medium mr-2">{{ $authorName }}</span>
                             <span class="mx-2">•</span>
                             {{ end }}
                             <time datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
@@ -168,13 +176,20 @@
                 {{ if $subjectSyllabus }}
                 {{ $pages := .RegularPages }}
                 <div class="card">
-                    <h3 class="card-title mb-4">Textbook: {{ $subjectSyllabus.title }}</h3>
+                    {{ $textbookTitle := $subjectSyllabus.title }}
+                    {{ if or (eq $.Params.medium "assamese") (not $textbookTitle) }}
+                    {{ if $subjectSyllabus.title_as }}
+                    {{ $textbookTitle = $subjectSyllabus.title_as }}
+                    {{ end }}
+                    {{ end }}
+                    <h3 class="card-title mb-4">{{ $textbookTitle }}</h3>
                     <div class="flex flex-col gap-2 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
                         {{ range $index, $element := $subjectSyllabus.chapters }}
 
                         {{ $matchedLink := "" }}
                         {{ range $pages }}
-                        {{ if eq .Params.chapter_title $element.title }}
+                        {{ if and .Params.chapter_title (or (eq .Params.chapter_title $element.title) (eq
+                        .Params.chapter_title $element.title_as)) }}
                         {{ $matchedLink = .RelPermalink }}
                         {{ end }}
                         {{ end }}
@@ -185,8 +200,11 @@
                                 {{ add $index 1 }}
                             </span>
                             {{ $displayTitle := $element.title }}
-                            {{ if and (eq $.Params.medium "assamese") $element.title_as }}
+                            {{/* Fallback to title_as if title is empty OR if medium is explicitly set to assamese */}}
+                            {{ if or (eq $.Params.medium "assamese") (not $displayTitle) }}
+                            {{ if $element.title_as }}
                             {{ $displayTitle = $element.title_as }}
+                            {{ end }}
                             {{ end }}
 
                             {{ if $matchedLink }}
