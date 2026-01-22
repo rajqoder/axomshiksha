@@ -1,0 +1,66 @@
+{
+  "title": "Class-9: Maths",
+  "title_as": "নৱম শ্ৰেণী: গণিত",
+  "chapters": [
+    {
+      "title": "Number Systems",
+      "title_as": "সংখ্যা প্ৰণালী"
+    },
+    {
+      "title": "Polynomials",
+      "title_as": "বহুপদ"
+    },
+    {
+      "title": "Coordinate Geometry",
+      "title_as": "স্থানাংক জ্যামিতি"
+    },
+    {
+      "title": "Linear Equations in Two Variables",
+      "title_as": "দুটা চলকত ৰৈখিক সমীকৰণ"
+    },
+    {
+      "title": "Introduction To Euclid's Geometry",
+      "title_as": "ইউক্লিডৰ জ্যামিতিৰ পৰিচয়"
+    },
+    {
+      "title": "Lines and Angles",
+      "title_as": "ৰেখা আৰু কোণ"
+    },
+    {
+      "title": "Triangles",
+      "title_as": "ত্ৰিভুজ"
+    },
+    {
+      "title": "Quadrilaterals",
+      "title_as": "চতুৰ্ভুজ"
+    },
+    {
+      "title": "Areas of Parellelograms and Triangles",
+      "title_as": "সামান্তৰিক আৰু ত্ৰিভুজৰ কালি"
+    },
+    {
+      "title": "Circles",
+      "title_as": "বৃত্ত"
+    },
+    {
+      "title": "Constructions",
+      "title_as": "অংকণ"
+    },
+    {
+      "title": "Heron's Formula",
+      "title_as": "হিৰ'ণৰ সূত্ৰ"
+    },
+    {
+      "title": "Surface Areas and Volumes",
+      "title_as": "পৃষ্ঠকালি আৰু আয়তন"
+    },
+    {
+      "title": "Statistics",
+      "title_as": "পৰিসংখ্যা"
+    },
+    {
+      "title": "Probability",
+      "title_as": "সম্ভাৱিতা"
+    }
+  ]
+}
