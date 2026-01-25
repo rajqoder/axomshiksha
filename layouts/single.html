@@ -17,8 +17,12 @@
           {{ end }}
           {{ end }}
           {{ end }}
-          <div class="flex items-center text-sm text-muted-foreground hover:text-blue-600 transition-colors">
-            {{ $authorName }}
+          <div class="flex items-center text-sm text-muted-foreground transition-colors">
+            {{ $authorPage := site.GetPage (printf "/authors/%s" (. | urlize)) }}
+            <a href="{{ if $authorPage }}{{ $authorPage.RelPermalink }}{{ else }}#{{ end }}"
+              class="hover:text-blue-600 font-medium">
+              {{ $authorName }}
+            </a>
           </div>
           <span>•</span>
           {{ end }}

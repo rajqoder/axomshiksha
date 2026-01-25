@@ -5,7 +5,7 @@
     <!-- Main Content -->
     <div class="lg:w-2/3">
       <!-- Posts -->
-      {{ $paginator := .Paginate .Site.RegularPages }}
+      {{ $paginator := .Paginate (where .Site.RegularPages "Section" "!=" "authors") }}
       <div class="space-y-6">
         {{ range $paginator.Pages }}
         {{ $page := . }}

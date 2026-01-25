@@ -29,6 +29,9 @@ keywords = ['education', 'learning', 'tutorials', 'guides', 'study materials', '
 
 [taxonomies]
   category = 'categories'
+[permalinks]
+  [permalinks.page]
+    authors = '/:slug/'
 
 [pagination]
   pagerSize = 5
