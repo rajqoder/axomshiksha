@@ -1,16 +1,16 @@
 +++
 title = "A Curious Mind - Class 6 English (SCERT)"
 draft = false
-slug = "lesson-3-scert"
-date = "2026-01-04T00:09:36+05:30"
+date = "2026-01-25T14:56:40+05:30"
 readingTime = "45 mins"
 description = "The lesson - 'A Curious Mind' explores the life of C.V. Raman and encourages pupils to value curiosity and the spirit of scientific inquiry. includes thorough answers and educational resources."
-keywords = ["scert", "class-6", "english", "solutions", "textbook", "lesson-3"]
+keywords = ["scert","class-6","english","solutions","textbook","lesson-3"]
 categories = ["upper-primary"]
-thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczOOEFk6wo3EJ1mQJeFuSdDWckAEQlSdMWNijOg1IR6856coUU0iuFNCmJyYubs4i12wWLhD_CXJWl1G8URfZpP98AAKe7VmZM3QT_xk6-K26PyKVLkfHi1JC57mdAE06OobjrhrRriUGHcn8T-MNFHY=w455-h607-s-no-gm?authuser=0"
+thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczOgJYsPO3Pj3qq34D928MaXVvEo_Jl8AXgZsWsCG946jswmngIz6sgNYeMoaq2SY5RqWMdhHBk9ZmOKE-u07LhVGfLnD2v2ypMWK3NivJ-WH7tv-5GI22ciG5NB1ksfSidGSoiGEg_NtrNJ3j4UUoNt=w449-h599-s-no-gm?authuser=0"
+slug = "lesson-3-scert"
 
 [params]
-  author = 'Ankur Rajbongshi'
+  author = "dekalasit"
   chapter_title = "A Curious Mind"
 +++
 
@@ -294,7 +294,7 @@ Write the meaning of each word (by looking up in a dictionary) in the right colu
 
 ### 11. Look at the picture and read the sentences given beside it:
 
-![Nikita's Painting](https://photos.google.com/share/AF1QipNoviUJDg4Q9LyVapCQCpvjDoWfCwV8SYOKJLROEcNkoyHgCT_zwthWd8Bz_UjSDg/photo/AF1QipOpL7uvUW7Wdec_xoi5zBQNtM020wZ0ieEJr-jG?key=R1dzcm1kdjBNdU5Kb2U0bXUzeGZ0X3RDUXhHbWpB)
+![Nikita's Painting](https://lh3.googleusercontent.com/pw/AP1GczOuCORVtI18Qja0jHHalKFFo2zfMtoOt4EjaZXvOGKFlmx1z41bA-So6BTqNtfsZb6GGihznvgYgU1OqFm4I42fzq6l0P_Hb4x41zYKwz3jC11sJZ_TUhvavCco7m3GF98A9X_VAX6t68lnqyfmWtWb=w242-h145-s-no-gm?authuser=0)
 
 (i) Nikita is painting a scenery.  
 (ii) Orgo is standing near the painting.  
