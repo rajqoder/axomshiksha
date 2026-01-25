@@ -1,19 +1,24 @@
-+++
-title = "A Curious Mind - Class 6 English (SCERT)"
-draft = false
-date = "2026-01-04T00:09:36+05:30"
-lastmod = "2026-01-25T14:56:40+05:30"
-readingTime = "45 mins"
-description = "The lesson - 'A Curious Mind' explores the life of C.V. Raman and encourages pupils to value curiosity and the spirit of scientific inquiry. includes thorough answers and educational resources."
-keywords = ["scert","class-6","english","solutions","textbook","lesson-3"]
-categories = ["upper-primary"]
-thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczOgJYsPO3Pj3qq34D928MaXVvEo_Jl8AXgZsWsCG946jswmngIz6sgNYeMoaq2SY5RqWMdhHBk9ZmOKE-u07LhVGfLnD2v2ypMWK3NivJ-WH7tv-5GI22ciG5NB1ksfSidGSoiGEg_NtrNJ3j4UUoNt=w449-h599-s-no-gm?authuser=0"
-slug = "lesson-3-scert"
-
-[params]
-  author = "dekalasit"
-  chapter_title = "A Curious Mind"
-+++
+---
+title: A Curious Mind - Class 6 English (SCERT)
+draft: false
+date: 2026-01-04T00:09:36+05:30
+lastmod: 2026-01-25T14:56:40+05:30
+readingTime: 45 mins
+description: The lesson - 'A Curious Mind' explores the life of C.V. Raman and encourages pupils to value curiosity and the spirit of scientific inquiry. includes thorough answers and educational resources.
+keywords:
+  - scert
+  - class-6
+  - english
+  - solutions
+  - textbook
+  - lesson-3
+categories:
+  - upper-primary
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczOgJYsPO3Pj3qq34D928MaXVvEo_Jl8AXgZsWsCG946jswmngIz6sgNYeMoaq2SY5RqWMdhHBk9ZmOKE-u07LhVGfLnD2v2ypMWK3NivJ-WH7tv-5GI22ciG5NB1ksfSidGSoiGEg_NtrNJ3j4UUoNt=w449-h599-s-no-gm?authuser=0
+slug: lesson-3-scert
+author: dekalasit
+chapter_title: A Curious Mind
+---
 
 ## Summary of the Story
 

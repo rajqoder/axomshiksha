@@ -1,18 +1,23 @@
-+++
-title = "My Land - Class 6 English (SCERT)"
-date = "2026-01-04T22:23:05+05:30"
-draft = false
-slug = "lesson-4-scert"
-description = "The lesson - 'My Land' celebrates the poet's intense love and passion for their home country, inspiring a strong sense of patriotism. Examine the complete study guide and its solutions."
-readingTime = "48 mins"
-keywords = ["class-6", "scert", "english", "solutions", "textbook", "lesson-4"]
-categories = ["upper-primary"]
-thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczNHBgOtrGx5hjjg1K8fVR2ctM-m4H0ptD8lkU3IfIlFgnCSK9M9PB2sZLZv5y2GnPrvoGxnAIkoaa1ooZcNyOmjhqkOMaklBToW9sO4plcT7Z2-lPPgUDPc-MtD-dyS1sRYdIGo261yOGwm58v31PE=w340-h428-s-no-gm?authuser=0"
-
-[params]
-  author = 'Ankur Rajbongshi'
-  chapter_title = "My Land"
-+++
+---
+title: My Land - Class 6 English (SCERT)
+date: 2026-01-04T22:23:05+05:30
+draft: false
+slug: lesson-4-scert
+description: The lesson - 'My Land' celebrates the poet's intense love and passion for their home country, inspiring a strong sense of patriotism. Examine the complete study guide and its solutions.
+readingTime: 48 mins
+keywords:
+  - class-6
+  - scert
+  - english
+  - solutions
+  - textbook
+  - lesson-4
+categories:
+  - upper-primary
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczNHBgOtrGx5hjjg1K8fVR2ctM-m4H0ptD8lkU3IfIlFgnCSK9M9PB2sZLZv5y2GnPrvoGxnAIkoaa1ooZcNyOmjhqkOMaklBToW9sO4plcT7Z2-lPPgUDPc-MtD-dyS1sRYdIGo261yOGwm58v31PE=w340-h428-s-no-gm?authuser=0
+author: dekalasit
+chapter_title: My Land
+---
 
 ## Summary of the poem
 

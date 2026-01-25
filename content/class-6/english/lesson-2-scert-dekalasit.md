@@ -1,18 +1,23 @@
-+++
-title = "The Golden Touch - Class 6 English (SCERT)"
-draft = false
-slug = "lesson-2-scert"
-date = "2026-01-01T23:58:31+05:30"
-readingTime = "35 mins"
-description = "The warning story of King Midas, who discovers that human connection is far more valuable than golden riches, is told in the SCERT Class 6 English textbook lesson 'The Golden Touch'. You can find comprehensive replies, clarifications, and answers to questions here."
-keywords = ["scert", "class-6", "english", "solutions", "textbook", "lesson-2"]
-categories = ["upper-primary"]
-thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczP6dYU1xE5EVgn_UsEWkQGIAIVv96NuSrWQe5X23jm95yQwQCvQi6hj9TmAhBdNmBdPiYlsDRbizVPLDd8RAdDLfnFCaOR0fJywlinOAMBxa51xjATjlV2gzpme4IF2yftiqM5BxpIxXx6OLUg7F7eG=w455-h607-s-no-gm?authuser=0"
-
-[params]
-  author = 'Ankur Rajbongshi'
-  chapter_title = "The Golden Touch"
-+++
+---
+title: The Golden Touch - Class 6 English (SCERT)
+draft: false
+slug: lesson-2-scert
+date: 2026-01-01T23:58:31+05:30
+readingTime: 35 mins
+description: The warning story of King Midas, who discovers that human connection is far more valuable than golden riches, is told in the SCERT Class 6 English textbook lesson 'The Golden Touch'. You can find comprehensive replies, clarifications, and answers to questions here.
+keywords:
+  - scert
+  - class-6
+  - english
+  - solutions
+  - textbook
+  - lesson-2
+categories:
+  - upper-primary
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczP6dYU1xE5EVgn_UsEWkQGIAIVv96NuSrWQe5X23jm95yQwQCvQi6hj9TmAhBdNmBdPiYlsDRbizVPLDd8RAdDLfnFCaOR0fJywlinOAMBxa51xjATjlV2gzpme4IF2yftiqM5BxpIxXx6OLUg7F7eG=w455-h607-s-no-gm?authuser=0
+author: dekalasit
+chapter_title: The Golden Touch
+---
 
 ## Summary of the Story
 

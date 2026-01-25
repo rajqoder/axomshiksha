@@ -1,18 +1,22 @@
-+++
-title = "The Fun They Had - Class 9 English"
-draft = false
-date = "2026-01-25T09:48:11+05:30"
-readingTime = "45 mins"
-description = "Isaac Asimov's science fiction novel The Fun They Had examines how education will develop in the future. It depicts a society in which kids use computer displays and mechanical teachers to learn by themselves at home. The narrative contrasts traditional schools with human teachers and classrooms with contemporary digital learning through Margie and Tommy. The narrative emphasises the value of friendship, personal connection, and joy in learning and serves as a reminder to readers that education is about more than just technology—it's also about fun and shared experiences."
-keywords = ["seba","class-9","the-fun-they-had","lesson-1"]
-categories = ["secondary"]
-thumbnail = "https://lh3.googleusercontent.com/pw/AP1GczNJ-Kx7l6vRSBWh9F7208FwxJEn_GRpxIhw7vP1AhxP2E55L2PqgqHoqXd_fr3MjhmOQvEP1uSp71YLg8x3i-mzb9zQcTYlQwCtY-dL1SyAL0kz47-s7braSk1IsB3ussmU59XYI3FFzTKhWnBdp9kP=w589-h331-s-no-gm?authuser=0"
-slug = "class-9-lesson-1-seba"
+---
+title: The Fun They Had - Class 9 English
+draft: false
+date: 2026-01-25T09:48:11+05:30
+readingTime: 45 mins
+description: Isaac Asimov's science fiction novel The Fun They Had examines how education will develop in the future. It depicts a society in which kids use computer displays and mechanical teachers to learn by themselves at home. The narrative contrasts traditional schools with human teachers and classrooms with contemporary digital learning through Margie and Tommy. The narrative emphasises the value of friendship, personal connection, and joy in learning and serves as a reminder to readers that education is about more than just technology—it's also about fun and shared experiences.
+keywords:
+  - seba
+  - class-9
+  - the-fun-they-had
+  - lesson-1
+categories:
+  - secondary
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczNJ-Kx7l6vRSBWh9F7208FwxJEn_GRpxIhw7vP1AhxP2E55L2PqgqHoqXd_fr3MjhmOQvEP1uSp71YLg8x3i-mzb9zQcTYlQwCtY-dL1SyAL0kz47-s7braSk1IsB3ussmU59XYI3FFzTKhWnBdp9kP=w589-h331-s-no-gm?authuser=0
+slug: class-9-lesson-1-seba
+author: dekalasit
+chapter_title: The Fun They Had
+---
 
-[params]
-  author = "dekalasit"
-  chapter_title = "The Fun They Had"
-+++
 ## Activity
 
 > Calculate how many years and months ahead from now Margie’s diary entry is.
