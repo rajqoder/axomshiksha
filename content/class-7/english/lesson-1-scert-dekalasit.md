@@ -11,7 +11,7 @@ categories:
   - upper-primary
 draft: false
 slug: lesson-1-scert
-readingTime: 36 mins
+reading_time: 36
 date: 2026-01-07T00:07:15+05:30
 thumbnail: https://lh3.googleusercontent.com/pw/AP1GczORWB6hQct3eoh9qc8lfPJGvzgToTEr0iGhUa-l2_xen8oln0j3_EDSWlEdARobXdcH_AVxJ32H9c-kdNw3Sn4eje6nVzHvdRGXPMAx4iN6yowP1PqWzQ2W9FL4xp50tNpEm8MEcDtYqYZHsRgV92qu=w403-h333-s-no-gm?authuser=0
 author: dekalasit

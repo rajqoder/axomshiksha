@@ -3,7 +3,7 @@ title: The Golden Touch - Class 6 English (SCERT)
 draft: false
 slug: lesson-2-scert
 date: 2026-01-01T23:58:31+05:30
-readingTime: 35 mins
+reading_time: 35
 description: The warning story of King Midas, who discovers that human connection is far more valuable than golden riches, is told in the SCERT Class 6 English textbook lesson 'The Golden Touch'. You can find comprehensive replies, clarifications, and answers to questions here.
 keywords:
   - scert

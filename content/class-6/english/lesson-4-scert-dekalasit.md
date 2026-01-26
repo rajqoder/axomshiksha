@@ -4,7 +4,7 @@ date: 2026-01-04T22:23:05+05:30
 draft: false
 slug: lesson-4-scert
 description: The lesson - 'My Land' celebrates the poet's intense love and passion for their home country, inspiring a strong sense of patriotism. Examine the complete study guide and its solutions.
-readingTime: 48 mins
+reading_time: 48
 keywords:
   - class-6
   - scert

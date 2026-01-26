@@ -3,7 +3,7 @@ title: A Curious Mind - Class 6 English (SCERT)
 draft: false
 date: 2026-01-04T00:09:36+05:30
 lastmod: 2026-01-25T14:56:40+05:30
-readingTime: 45 mins
+reading_time: 45
 description: The lesson - 'A Curious Mind' explores the life of C.V. Raman and encourages pupils to value curiosity and the spirit of scientific inquiry. includes thorough answers and educational resources.
 keywords:
   - scert

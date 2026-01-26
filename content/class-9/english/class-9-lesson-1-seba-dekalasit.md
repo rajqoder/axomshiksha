@@ -2,7 +2,7 @@
 title: The Fun They Had - Class 9 English
 draft: false
 date: 2026-01-25T09:48:11+05:30
-readingTime: 45 mins
+reading_time: 45
 description: Isaac Asimov's science fiction novel The Fun They Had examines how education will develop in the future. It depicts a society in which kids use computer displays and mechanical teachers to learn by themselves at home. The narrative contrasts traditional schools with human teachers and classrooms with contemporary digital learning through Margie and Tommy. The narrative emphasises the value of friendship, personal connection, and joy in learning and serves as a reminder to readers that education is about more than just technology—it's also about fun and shared experiences.
 keywords:
   - seba

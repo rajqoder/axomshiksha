@@ -3,7 +3,7 @@ title: Afternoon on a hill - Class 6 English (SCERT)
 draft: false
 slug: lesson-1-scert
 date: 2025-12-30T10:48:04+05:30
-readingTime: 50 mins
+reading_time: 50
 description: Edna St. Vincent Millay's poem 'Afternoon on a Hill' - which depicts a peaceful moment spent on a hilltop, encapsulates the essence of nature's beauty in the SCERT Class 6 English textbook. Word meanings, explanations, and comprehensive solutions are all included in this post.
 keywords:
   - scert

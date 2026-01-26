@@ -8,11 +8,11 @@
     "image": "/images/categories/upper-primary.png"
   },
   "secondary": {
-    "description": "Secondary (Class 9-10) SEBA/CBSE notes, question banks, and textbook solutions. Prepare for board exams with targeted study materials and expert guidance.",
+    "description": "Secondary (Class 9-10) SEBA notes, question banks, and textbook solutions. Prepare for board exams with targeted study materials and expert guidance.",
     "image": "/images/categories/secondary.png"
   },
   "higher-secondary": {
-    "description": "Higher Secondary (Class 11-12) AHSEC/CBSE study notes, previous papers, and important questions. Master Science, Arts, and Commerce streams with in-depth academic resources.",
+    "description": "Higher Secondary (Class 11-12) AHSEC notes, previous papers, and important questions. Master Science, Arts, and Commerce streams with in-depth academic resources.",
     "image": "/images/categories/higher-secondary.png"
   },
   "ug": {
