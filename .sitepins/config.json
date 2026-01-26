@@ -1,0 +1,11 @@
+{
+  "content": "content",
+  "media": "static/images",
+  "public": "static",
+  "code": "",
+  "configs": [
+    "hugo.toml"
+  ],
+  "custom-commit": false,
+  "arrangement": []
+}
