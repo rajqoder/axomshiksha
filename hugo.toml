@@ -13,6 +13,7 @@ keywords = ['education', 'learning', 'tutorials', 'guides', 'study materials', '
   filename = 'sitemap.xml'
 
 [params]
+  math = true
   description = 'Axomshiksha provides comprehensive educational resources, tutorials, and learning materials for students and educators.'
   alternateName = 'Axom Shiksha'
   author = 'Axomshiksha Team'
@@ -44,6 +45,12 @@ keywords = ['education', 'learning', 'tutorials', 'guides', 'study materials', '
     lineNumbersInTable = false
     style = "dracula"
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['@@', '@@']]
+          inline = [['\(', '\)'], ['@', '@']]
     [markup.goldmark.renderer]
       unsafe = true
 

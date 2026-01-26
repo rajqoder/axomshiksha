@@ -20,7 +20,6 @@
     {{ .Title }}
     {{- end }}
     {{- end }}
-
   </title>
 
   {{ partial "seo.html" . }}
@@ -47,6 +46,9 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/png-logo.png" sizes="128x128" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  {{ if .Param "math" }}
+  {{ partial "math.html" . }}
+  {{ end }}
 </head>
 
 <body class="min-h-screen bg-main text-main">
