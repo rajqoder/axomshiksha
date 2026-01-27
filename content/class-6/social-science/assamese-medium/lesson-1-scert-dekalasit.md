@@ -15,7 +15,7 @@ categories:
   - upper-primary
 thumbnail: https://lh3.googleusercontent.com/pw/AP1GczMdC5siegA_GOeaxUWxojopycZkIdj0tnInxlsVJkJMK8bYBhPELw_e0eUG1FGpD56pd6HMYC3xE-4Ek_ShLw8d8scye1WhSyfTz2c85jxmyVqL-7qBKDtp3mgKmBsR4qGNbJbaxE5dG4-c2Y7Wbm1G=w400-h280-s-no-gm?authuser=0
 author: dekalasit
-chapter_title: Our Earth in the Solar System
+chapter_title: আমাৰ পৃথিৱী
 medium: assamese
 ---
 

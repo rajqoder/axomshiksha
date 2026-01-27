@@ -3,100 +3,64 @@
     "title_as": "সমাজ বিজ্ঞান",
     "chapters": [
         {
-            "title": "Our Earth in the Solar System",
-            "title_as": "সৌৰজগতৰ আমাৰ পৃথিৱী"
+            "title": "Our Earth",
+            "title_as": "আমাৰ পৃথিৱী"
         },
         {
-            "title": "The Shape and Size of the Earth",
-            "title_as": "পৃথিৱীৰ আকাৰ আৰু আকৃতি"
+            "title": "Time Zones and Maps",
+            "title_as": "সময় মণ্ডল আৰু মানচিত্ৰ"
         },
         {
-            "title": "Motions of the Earth",
-            "title_as": "পৃথিৱীৰ গতি"
+            "title": "Landforms and the People",
+            "title_as": "ভূ-অৱয়ব আৰু মানুহ"
         },
         {
-            "title": "Major Domains of the Earth",
-            "title_as": "পৃথিৱীৰ প্ৰধান মণ্ডলসমূহ"
+            "title": "Countries and Continents: Japan",
+            "title_as": "দেশ-মহাদেশৰ কথা: জাপান"
         },
         {
-            "title": "Tools for Geographical Study: Map",
-            "title_as": "ভূগোল অধ্যয়নৰ আহিলাঃ মানচিত্ৰ"
+            "title": "India and its Geographical Diversity",
+            "title_as": "ভাৰত: পৰিচয় আৰু ভৌগোলিক বৈচিত্ৰ্য"
         },
         {
-            "title": "Major Landforms of the Earth",
-            "title_as": "পৃথিৱীৰ প্ৰধান ভূ-অৱয়ব"
+            "title": "Significance of Time and source in the Writing of History and the Origin of the Name of India",
+            "title_as": "ইতিহাস লিখনত সময় গণনা, উৎস আৰু ভাৰতবৰ্ষ"
         },
         {
-            "title": "Assam: Climate, Natural Vegetation, Wildlife and Agriculture",
-            "title_as": "অসমঃ জলবায়ু প্ৰাকৃতিক উদ্ভিদ বন্যপ্ৰাণী আৰু কৃষি"
+            "title": "Development of Human Lifestyle",
+            "title_as": "মানুহৰ জীৱনপ্ৰণালীৰ বিকাশ"
         },
         {
-            "title": "Our India",
-            "title_as": "আমাৰ ভাৰতবৰ্ষ"
+            "title": "Beginning of Indian Civilization",
+            "title_as": "ভাৰতীয় সভ্যতাৰ আৰম্ভণি"
         },
         {
-            "title": "What, Where, When and Why",
-            "title_as": "কি, ক'ত, কেতিয়া আৰু কেনেকৈ"
+            "title": "Ancient Indian Dynasties and Societies",
+            "title_as": "প্রাচীন ভাৰতীৰ ৰাজবংশ আৰু সমাজ"
         },
         {
-            "title": "Early Paleolithic Age",
-            "title_as": "আদিপ্ৰস্তৰ যুগ"
+            "title": "The Roots of Indian Culture",
+            "title_as": "ভাৰতীয় সংস্কৃতিৰ ভেটি"
         },
         {
-            "title": "Economic Activity and Permanent Habitation of the Early Man (Neolithic Age)",
-            "title_as": "আদিম মানুহৰ অৰ্থনৈতিক কাৰ্যকলাপ আৰু স্থায়ী বসবাস (নৱ প্রস্তুৰ যুগ)"
+            "title": "Unity in Diversity: Life in India's North-East",
+            "title_as": "বৈচিত্ৰ্যৰ মাজত ঐক্য: ভাৰত আৰু উত্তৰ-পূৰ্বাঞ্চলৰ জীৱন"
         },
         {
-            "title": "The Indus Valley Civilization",
-            "title_as": "সিন্ধু উপত্যকাৰ সভ্যতা"
+            "title": "Society: Family, Neighbours and Community",
+            "title_as": "সমাজ: পৰিয়াল, প্ৰতিৱেশী আৰু ৰাইজ"
         },
         {
-            "title": "The Vedic Age",
-            "title_as": "বৈদিক সভ্যতা"
+            "title": "Structure of Governance in India",
+            "title_as": "ভাৰতৰ শাসন ব্যৱস্থাৰ গঠন"
         },
         {
-            "title": "Mahajanapada",
-            "title_as": "মহাজনপদ"
+            "title": "Local Self Government",
+            "title_as": "স্থানীয় স্ৱায়ত্তশাসন ব্যৱস্থা"
         },
         {
-            "title": "Emergence of New Ideas",
-            "title_as": "নতুন ধৰ্মৰ উদ্ভৱ"
-        },
-        {
-            "title": "The Mauryan Empire",
-            "title_as": "মৌৰ্য সাম্ৰাজ্য"
-        },
-        {
-            "title": "Our Basic Needs",
-            "title_as": "আমাৰ মৌলিক প্ৰয়োজনসমূহ"
-        },
-        {
-            "title": "Needs of a Quality Life (Individual and Social Needs)",
-            "title_as": "উন্নত জীৱনৰ প্ৰয়োজনসমূহ (আমাৰ ব্যক্তিগত আৰু সামাজিক প্রয়োজন)"
-        },
-        {
-            "title": "Impact of Technology in Promoting Standard of Living",
-            "title_as": "জীৱন-ধাৰণৰ মান উন্নয়নত প্ৰযুক্তিৰ প্ৰভাৱ"
-        },
-        {
-            "title": "Impact of Technology in Agriculture, Industry and Service Sector",
-            "title_as": "কৃষি, উদ্যোগ আৰু সেৱা খণ্ডত প্ৰযুক্তিৰ প্ৰভাৱ"
-        },
-        {
-            "title": "Concept of a Government and Various Types of Government",
-            "title_as": "চৰকাৰৰ ধাৰণা আৰু বিভিন্ন প্ৰকাৰৰ চৰকাৰ"
-        },
-        {
-            "title": "Democracy and Its Principles",
-            "title_as": "গণতন্ত্ৰ আৰু ইয়াৰ নীতিসমূহ"
-        },
-        {
-            "title": "The Central and the State Government",
-            "title_as": "কেন্দ্ৰীয় আৰু ৰাজ্যিক চৰকাৰ"
-        },
-        {
-            "title": "The Local-Self Government",
-            "title_as": "স্থানীয় স্বায়ত্তশাসনৰ ব্যৱস্থা"
+            "title": "The Economy, its Sectors and Medium of Exchange",
+            "title_as": "অৰ্থনীতি, ইয়াৰ খণ্ডসমূহ আৰু বিনিময়ৰ মাধ্যম"
         }
     ]
 }

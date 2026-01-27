@@ -25,18 +25,6 @@
                     <!-- Priority: Local Description > Specific Course Description (data/course_descriptions.json) > Global Subject Data > Default -->
                     {{ $description := .Description }}
 
-                    {{ if not $description }}
-                    <!-- Check data/course_descriptions.json for specific "class-x-subject" description -->
-                    {{ $courseKey := printf "%s-%s" (.Parent.Title | urlize) (.Title | urlize) }}
-                    {{ $data := index .Site.Data "course_descriptions" }}
-                    {{ if $data }}
-                    {{ $courseDesc := index $data $courseKey }}
-                    {{ if $courseDesc }}
-                    {{ $description = $courseDesc }}
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
-
                     {{ if $subjectData }}
                     {{ if reflect.IsMap $subjectData }}
                     {{ $gradient = $subjectData.gradient }}
@@ -93,19 +81,17 @@
             <div class="sticky top-24 space-y-8">
                 <!-- About Widget -->
                 {{ $description := .Description }}
-                {{ if not $description }}
-                {{ $data := index .Site.Data "sub-category" }}
-                {{ if $data }}
-                {{ $subCategoryData := index $data ( .Title | urlize ) }}
-                {{ if $subCategoryData }}
-                {{ $description = $subCategoryData.description }}
-                {{ end }}
-                {{ end }}
-                {{ end }}
+
 
                 {{ if $description }}
                 <div class="card">
-                    <h3 class="card-title mb-4">{{ .Title }}</h3>
+                    {{ $aboutTitle := .Title }}
+                    {{ if eq .Params.medium "assamese" }}
+                    {{ $aboutTitle = "এই পৃষ্ঠাৰ বিষয়ে" }}
+                    {{ else if eq .Params.medium "english" }}
+                    {{ $aboutTitle = "About the page" }}
+                    {{ end }}
+                    <h3 class="card-title mb-4 border-b-2 border-primary/20 pb-2 w-fit">{{ $aboutTitle }}</h3>
                     <p class="text-muted-foreground">{{ $description }}</p>
                 </div>
                 {{ end }}
@@ -135,7 +121,20 @@
 
                 {{ if $classData }}
                 {{ $subjectSyllabus := index $classData $subjectName }}
-                {{ if $subjectSyllabus }}
+
+                {{ $shouldShowSyllabus := false }}
+                {{ $subjectDetails := index site.Data.subjects .Title }}
+                {{ if $subjectDetails }}
+                {{ if $subjectDetails.isLanguageSubject }}
+                {{ $shouldShowSyllabus = true }}
+                {{ end }}
+                {{ end }}
+
+                {{ if .Params.medium }}
+                {{ $shouldShowSyllabus = true }}
+                {{ end }}
+
+                {{ if and $subjectSyllabus $shouldShowSyllabus }}
                 {{ $pages := .RegularPages }}
                 <div class="card">
                     {{ $textbookTitle := $subjectSyllabus.title }}
@@ -144,7 +143,7 @@
                     {{ $textbookTitle = $subjectSyllabus.title_as }}
                     {{ end }}
                     {{ end }}
-                    <h3 class="card-title mb-4">{{ $textbookTitle }}</h3>
+                    <h3 class="card-title mb-4 border-b-2 border-primary/20 pb-2 w-fit">{{ $textbookTitle }}</h3>
                     <div class="flex flex-col gap-2 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
                         {{ range $index, $element := $subjectSyllabus.chapters }}
 
@@ -200,21 +199,25 @@
                 {{ end }}
 
                 {{ if $siblings }}
+                <!-- Filter out "Our Authors" and current page, then limit to 5 -->
+                {{ $filteredSiblings := where $siblings "Title" "ne" "Our Authors" }}
+                {{ $filteredSiblings = where $filteredSiblings "Title" "ne" .Title }}
+                {{ $filteredSiblings = first 5 $filteredSiblings }}
+
+                {{ if $filteredSiblings }}
                 <div class="card">
-                    <h3 class="card-title mb-4">{{ $sidebarTitle }}</h3>
+                    <h3 class="card-title mb-4 border-b-2 border-primary/20 pb-2 w-fit">{{ $sidebarTitle }}</h3>
                     <div class="flex flex-col gap-2">
-                        {{ $currentTitle := .Title }}
-                        {{ range $siblings }}
-                        {{ if ne .Title $currentTitle }}
+                        {{ range $filteredSiblings }}
                         <a href="{{ .RelPermalink }}" class="flex items-center justify-between group">
                             <span class="text-main group-hover:text-blue-600 transition-colors">{{ .Title }}</span>
                             <span
                                 class="text-xs text-muted-foreground group-hover:text-blue-500 transition-colors">→</span>
                         </a>
                         {{ end }}
-                        {{ end }}
                     </div>
                 </div>
+                {{ end }}
                 {{ end }}
             </div>
         </aside>
