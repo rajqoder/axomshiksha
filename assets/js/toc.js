@@ -64,6 +64,11 @@
     if (tocList.children.length > 0) {
       tocContainer.appendChild(tocList);
       
+      // Render MathJax in TOC if present
+      if (window.MathJax) {
+          MathJax.typesetPromise([tocContainer]).catch((err) => console.log('MathJax TOC rendering error:', err));
+      }
+      
       // Add smooth scrolling to all TOC links
       tocContainer.querySelectorAll('a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {

@@ -1,9 +1,14 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script>
     MathJax = {
+        loader: { load: ['[tex]/cancel'] },
         tex: {
             displayMath: [['\\[', '\\]'], ['@@', '@@']],  // block
             inlineMath: [['\\(', '\\)'], ['@', '@']],      // inline
+            packages: { '[+]': ['cancel'] }
+        },
+        chtml: {
+            mtextInheritFont: true
         },
         options: {
             enableMenu: false
