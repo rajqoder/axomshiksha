@@ -89,6 +89,7 @@ author: dekalasit
 
 প্ৰমাণ কৰিব লাগে, @a^0 = 1@
 
+{{<scrollable>}}
 @
 \begin{align}
 & a^m \div a^n = a^{m-n} \\
@@ -97,6 +98,7 @@ author: dekalasit
 \Rightarrow \; & a^0 = 1
 \end{align}
 @
+{{</scrollable>}}
 
 ### 5. সূচক বিধি @a^m \div a^n = a^{m-n}@ অত @m=0@ লৈ প্ৰমাণ কৰা @a^{-n} = \frac{1}{a^n}@ {#ex-R1:qno5}
 
@@ -104,6 +106,7 @@ author: dekalasit
 
 প্ৰমাণ কৰিব লাগে, @a^{-n} = \frac{1}{a^n}@
 
+{{<scrollable>}}
 @
 \begin{align}
 & a^m \div a^n = a^{m-n} \\
@@ -113,6 +116,7 @@ author: dekalasit
 \Rightarrow \; & a^{-n} = \frac{1}{a^n}
 \end{align}
 @
+{{</scrollable>}}
 
 ### 6. তলৰ যোৰৰ প্ৰত্যকৰে মৌলিক উৎপাদক উলিয়াই গ.সা.গু. আৰু ল.সা.গু. থিৰ কৰা। {#ex-R1:qno6}
 
@@ -167,7 +171,6 @@ author: dekalasit
 
 @ 5\sqrt{2} \approx 5 \times 1.41 = \boxed{7.05} @
 
-
 ### 9. @\frac{p}{q}@ আৰ্হিৰ ভগ্নাংশত প্ৰকাশ কৰা : {#ex-R1:qno9}
 
 @(i) \; 0.\dot{8}\dot{1}@  
@@ -178,6 +181,7 @@ author: dekalasit
 
 এতিয়া @(2)@ ৰ পৰা @(1)@ বিয়োগ কৰি পাঁও -
 
+{{<scrollable>}}
 @
 \begin{align}
 & 100x - x = 81.818181\ldots - 0.818181\ldots \\
@@ -186,6 +190,7 @@ author: dekalasit
 \Rightarrow &\; \boxed{x = \frac{9}{11}}
 \end{align}
 @
+{{</scrollable>}}
 
 @(ii) \; 0.1\dot{8}@  
 
@@ -197,6 +202,7 @@ author: dekalasit
 
 এতিয়া @(2)@ ৰ পৰা @(1)@ বিয়োগ কৰি পাঁও -
 
+{{<scrollable>}}
 @
 \begin{align}
 & 100x - 10x = 18.888\ldots - 1.888\ldots \\
@@ -204,6 +210,7 @@ author: dekalasit
 \Rightarrow &\; \boxed{x = \frac{17}{90}}
 \end{align}
 @
+{{</scrollable>}}
 
 @(iii) \; 2.4\dot{7}@  
 
@@ -214,6 +221,7 @@ author: dekalasit
 
 এতিয়া @(2)@ ৰ পৰা @(1)@ বিয়োগ কৰি পাঁও -
 
+{{<scrollable>}}
 @
 \begin{align}
 & 100x - 10x = 247.777\ldots - 24.777\ldots \\
@@ -221,6 +229,7 @@ author: dekalasit
 \Rightarrow &\; \boxed{x = \frac{223}{90}}
 \end{align}
 @
+{{</scrollable>}}
 
 @(iv) \; 2.44\dot{3}\dot{1}@  
 
@@ -231,6 +240,7 @@ author: dekalasit
 
 এতিয়া @(2)@ ৰ পৰা @(1)@ বিয়োগ কৰি পাঁও -
 
+{{<scrollable>}}
 @
 \begin{align}
 & 10000x - 100x = 24431.313131... - 244.313131... \\ 
@@ -238,6 +248,7 @@ author: dekalasit
 \Rightarrow \; & \boxed{x = \frac{24187}{9900}}
 \end{align}
 @
+{{</scrollable>}}
 
 ### 10. সৰল কৰা : {#ex-R1:qno10}
 
@@ -254,6 +265,7 @@ author: dekalasit
 
 @\underline{Solution}:@
 
+{{<scrollable>}}
 @
 \begin{align}
 (i) & \; (\sqrt{3}-\sqrt{2})^2 \\
@@ -261,7 +273,10 @@ author: dekalasit
 & = \boxed{5 - 2\sqrt{6}}
 \end{align}
 @
+{{</scrollable>}}
 
+
+{{<scrollable>}}
 @
 \begin{align}
 (ii) & \; (2\sqrt{3}+\sqrt{5})(2\sqrt{3}-\sqrt{5}) \\
@@ -270,7 +285,10 @@ author: dekalasit
 & = \boxed{7}
 \end{align}
 @
+{{</scrollable>}}
 
+
+{{<scrollable>}}
 @
 \begin{align}
 (iii) & \; (8+\sqrt{3})(2+\sqrt{3}) \\
@@ -278,7 +296,10 @@ author: dekalasit
 & = \boxed{19 + 10\sqrt{3}}
 \end{align}
 @
+{{</scrollable>}}
 
+
+{{<scrollable>}}
 @
 \begin{align}
 (iv) & \; \frac{1}{1+\sqrt{2}} \\
@@ -288,7 +309,10 @@ author: dekalasit
 & = \boxed{\sqrt{2} - 1}
 \end{align}
 @
+{{</scrollable>}}
 
+
+{{<scrollable>}}
 @
 \begin{align}
 (v) & \; \frac{4}{\sqrt{7}+\sqrt{3}} \\
@@ -298,7 +322,10 @@ author: dekalasit
 & = \boxed{\sqrt{7} - \sqrt{3}}
 \end{align}
 @
+{{</scrollable>}}
 
+
+{{<scrollable>}}
 @
 \begin{align}
 (vi) & \; \frac{7+\sqrt{3}}{7-\sqrt{3}} \\
@@ -308,7 +335,11 @@ author: dekalasit
 & = \boxed{\frac{26 + 7\sqrt{3}}{23}}
 \end{align}
 @
+{{</scrollable>}}
 
+
+
+{{<scrollable>}}
 @
 \begin{align}
 (vii) & \; \frac{1}{1+\sqrt{2}} + \frac{1}{\sqrt{2}+\sqrt{3}} + \frac{1}{\sqrt{3}+\sqrt{4}} \\
@@ -317,7 +348,10 @@ author: dekalasit
 & = \boxed{1}
 \end{align}
 @
+{{</scrollable>}}
 
+
+{{<scrollable>}}
 @
 \begin{align}
 (viii) & \; \frac{\sqrt{a+x}-\sqrt{a-x}}{\sqrt{a+x}+\sqrt{a-x}} \\
@@ -327,11 +361,14 @@ author: dekalasit
 & = \boxed{\frac{a - \sqrt{a^2-x^2}}{x}}
 \end{align}
 @
+{{</scrollable>}}
+
 
 ### 11. প্ৰমাণ কৰা যে : @\frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 - \sqrt{5}} = 0@ {#ex-R1:qno11}
 
 @\underline{Solution}:@
 
+{{<scrollable>}}
 @
 \begin{align}
 L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 - \sqrt{5}} \\
@@ -343,6 +380,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 & = R.H.S.
 \end{align}
 @
+{{</scrollable>}}
 
 ### 12. @\sqrt{3} = 1.732@ আৰু @\sqrt{2} = 1.414@ ধৰি তলৰ ৰাশিৰ আসন্ন মান উলিওৱা । {#ex-R1:qno12}
 
@@ -353,6 +391,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 
 @\underline{Solution}:@ 
 
+{{<scrollable>}}
 @
 \begin{align}
 (i) & \; \frac{1}{\sqrt{3}-\sqrt{2}} \\
@@ -361,7 +400,10 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 & = 1.732 + 1.414 = 3.146 \\
 \end{align}
 @
+{{</scrollable>}}
 
+
+{{<scrollable>}}
 @
 \begin{align}
 (ii) & \; \frac{2}{\sqrt{3}+\sqrt{2}} \\
@@ -370,6 +412,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 & = 2(1.732 - 1.414) = 0.636 \\
 \end{align}
 @
+{{</scrollable>}}
 
 ### 13. হৰণ কাৰ্য নকৰাকৈ তলৰ পৰিমেয় সংখ্যাবোৰক দশমিকত প্ৰকাশ কৰা । {#ex-R1:qno13}
 
@@ -481,6 +524,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 
 @\underline{Solution}:@
 
+{{<scrollable>}}
 আমি জানো -  
 
 @\text{CP} = (\frac{100}{100-\text{L}}) \times SP @ @\quad@ @[@ য'ত @\text{CP}@ = ক্ৰয় মূল্য, @\text{SP}@ = বিক্ৰিমূল্য আৰু @\text{L}@ = শতকৰা লোকচান @]@
@@ -490,6 +534,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 নতুন @ SP = 526.32 \times \frac{105}{100} = 552.63 @
 
 অৰ্থাৎ, বস্তুটো @552.63@ টকাত বেচিলে @5\%@ লাভ হ'লহেতেন।
+{{</scrollable>}}
 
 ### 21. গ্ৰাহকক আকৰ্ষণ কৰিবলৈ এজন ব্যৱসায়ীয়ে এটা চাৰ্টৰ দামত ক্ৰমে @10\%@, @10\%@ আৰু @5\%@ ৰেহাই দিয়ে । তিনিওটাৰ সমতুল ৰেহাই কিমান হ'ব ? {#ex-R1:qno21}
 
@@ -611,7 +656,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 আয়তৰ পৰিসীমা = @120@ চে.মি.
 আয়তৰ দীঘ = @40@ চে.মি.
     
-@\therefore@ আয়তটোৰ প্ৰস্থ = @\frac{\cancel{120}^60}{\cancel{2}} - 40@ চে.মি.@
+@\therefore@ আয়তটোৰ প্ৰস্থ = @\frac{\cancel{120}^60}{\cancel{2}} - 40@ চে.মি.
 @= 60 - 40@ চে.মি.
 @= 20@ চে.মি.
     
@@ -628,13 +673,11 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 
 ৰং লগাবৰ বাবে এৰি থোৱা বেৰখনৰ কালি @ = 16.2 - 2 = 14.2 @ বৰ্গ মিটাৰ  
 
-
 ### 13. এডাল তাঁৰেৰে @10@ চে.মি. বাহুবিশিষ্ট বৰ্গ এটি বনোৱা হ’ল । যদি তাঁৰডালেৰে এটা আয়ত বনোৱা হয় যাৰ দীঘ 12 চে.মি., তেন্তে আয়তটোৰ প্ৰস্থ কিমান? কোনটো ক্ষেত্ৰৰ কালি অধিক ? বৰ্গৰ নে আয়তৰ? {#ex-R2:qno13}
 
 @\underline{Solution:}@
 
 @\therefore@ দুয়োটা ক্ষেত্ৰৰ একে জোখৰ তাৰেৰে বনোৱা হৈছে, সেয়েহে দুয়োটা ক্ষেত্ৰৰে পৰিসীমা সমান।
-
 
 @
 \begin{align*}
@@ -747,6 +790,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 
 @QR@ ভূমি আৰু @PL@ উচ্চতা সাপেক্ষে, @\triangle PQR@ ৰ কালি
 
+{{<scrollable>}}
 @
 \begin{align}
 \triangle PQR \text{ ৰ কালি } & = \frac{1}{2} \times QR \times PL \\
@@ -754,9 +798,11 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 & = 10\;cm^2
 \end{align}
 @
+{{</scrollable>}}
 
 এতিয়া
 
+{{<scrollable>}}
 @
 \begin{align}
 & \Rightarrow \frac{1}{2} \times PR \times QM = \triangle PQR \text{ ৰ কালি } \\
@@ -765,6 +811,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 & \Rightarrow QM = \frac{10}{4} = \frac{5}{2} = 2.5\;cm
 \end{align}
 @
+{{</scrollable>}}
 
 @\therefore QM = 2.5\;cm@
 
@@ -797,6 +844,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 
 আৰু @\triangle ABP@ ৰ কালি = @\triangle APC@ ৰ কালি
 
+{{<scrollable>}}
 @
 \begin{align}
 & \Rightarrow \frac{1}{2} \times BP \times AD = \frac{1}{2} \times PC \times AD \\
@@ -805,6 +853,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 & \Rightarrow PC = 3
 \end{align}
 @
+{{</scrollable>}}
 
 @\therefore PC = 3@ চে:মি:
 
@@ -816,6 +865,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 
 অৰ্দ্ধবৃত্তাকাৰ বাগিচাখনৰ ব্যাসাৰ্দ্ধৰ জোখ @r = 10@ মি:
 
+{{<scrollable>}}
 @
 \begin{align}
 \text{বাগিচাখনৰ কালি} & = \frac{1}{2} \pi r^2 \\
@@ -825,6 +875,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 & = 157\;\text{বৰ্গ:মি:}
 \end{align}
 @
+{{</scrollable>}}
 
 ### 19. @4@ চে:মি: ব্যাসার্ধৰ এটা বৃত্তাকাৰ কাঠৰ টুকুৰাৰ পৰা @3@ চে:মি: ব্যাসার্ধৰ বৃত্ত এটা কাটি পেলোৱা হ'ল। টুকুৰাটোৰ অৱশিষ্ট অংশৰ কালি উলিওৱা । {#ex-R2:qno19}
 
@@ -834,12 +885,14 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 
 ভিতৰৰ:বৃত্তটোৰ কালি = @\pi r^2 = 3.14 \times 3^2 = 28.26@ বৰ্গ:চে:মি:
 
+{{<scrollable>}}
 @
 \begin{align}
 \text{অৱশিষ্ট অংশৰ কালি} & = 50.24 - 28.26 \\
 & = 21.98\;\text{ বৰ্গ:চে:মি:}
 \end{align}
 @
+{{</scrollable>}}
 
 ### 20. @44@ চে:মি: দৈৰ্ঘ্যৰ তাঁৰ এডালৰ পৰা এটা বৃত্তাকাৰ আকৃতি পোৱা গ'ল । বৃত্তটোৰ ব্যাসাৰ্দ্ধ কিমান ? {#ex-R2:qno20}
 
@@ -852,6 +905,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 
 অৰ্থাৎ,
 
+{{<scrollable>}}
 @
 \begin{align}
 & \Rightarrow 2 \pi r = 44 \\
@@ -862,6 +916,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 & \Rightarrow r = 7
 \end{align}
 @
+{{</scrollable>}}
 
 @\therefore@ বৃত্তটোৰ ব্যাসাৰ্দ্ধ = @7@ চে:মি:
 
@@ -876,6 +931,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 
 অৰ্থাৎ,
 
+{{<scrollable>}}
 @
 \begin{align}
 \text{মিনিটৰ কাঁটা ডালৰ আগটোৱে আধাঘণ্টাত অতিক্ৰম কৰা দূৰত্ব} & = \pi r \\
@@ -886,31 +942,42 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 & \approx 62.86 \text{ মিলিমিটাৰ}
 \end{align}
 @
+{{</scrollable>}}
 
 ### 22. @100@ মিটাৰ বাহুবিশিষ্ট বৰ্গাকাৰ উদ্যান এখনৰ ভিতৰফালে চৌহদৰ কাষে কাষে @5@ মিটাৰ বহল এটা ৰাস্তা ৰখা আছে । ৰাস্তাটোৰ কালি উলিওৱা । {#ex-R2:qno22}
 
 @\underline{Solution}:@
 
+
+{{<scrollable>}}
 @
 \begin{align}
 \text{বৰ্গাকাৰ উদ্যানখনৰ কালি} & = 100 \times 100\\
 & = 10000\text{ বৰ্গ:মিটাৰ}
 \end{align}
 @
+{{</scrollable>}}
 
+
+{{<scrollable>}}
 @
 \begin{align}
 \text{ৰাস্তাটো বাদ দি উদ্যানখনৰ বাকী অংশৰ কালি} & = 90 \times 90\\
 & = 8100\text{ বৰ্গ:মিটাৰ}
 \end{align}
 @
+{{</scrollable>}}
 
+
+{{<scrollable>}}
 @
 \begin{align}
 \text{ৰাস্তাটোৰ কালি} & = 10000 - 8100\\
 & = 1900\text{ বৰ্গ:মিটাৰ}
 \end{align}
 @
+{{</scrollable>}}
+
 
 ### 23. @180@ মিটাৰ দৈৰ্ঘ্য আৰু @120@ মিটাৰ প্রস্থৰ আয়তাকাৰ পথাৰ এখনৰ সীমাৰ বাহিৰেৰে @6@ মিটাৰ প্ৰস্থৰ এটা ৰাস্তা আছে। ৰাস্তাটোৰ কালি উলিওৱা । {#ex-R2:qno23}
 
@@ -991,7 +1058,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 @\underline{Solution}:@
 
 চিত্ৰ অনুসৰি -
-
+{{<scrollable>}}
 @
 \begin{align*}
 \text{ABCD ৰ কালি} & = 7 \; \text{চে:মি:} \times 3 \; \text{চে:মি:} \\
@@ -1008,6 +1075,7 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 @
 
 @\therefore \text{ছাঁ দিয়া অংশৰ কালি} = 21 - 9 = 12 \; \text{বৰ্গ: চে:মি:}@
+{{</scrollable>}}
 
 ### 25. তলৰ চতুৰ্ভুজটোৰ কালি উলিওৱা । {#ex-R2:qno25}
 
@@ -1035,6 +1103,8 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 @\underline{Solution}:@
 
 চিত্ৰ অনুসৰি,
+
+{{<scrollable>}}
 @
 \begin{align*}
 \text{চতুৰ্ভুজটোৰ কালি} &= \text{চাৰিওটা ত্ৰিভুজৰ কালিৰ সমষ্টি}\\
@@ -1047,3 +1117,4 @@ L.H.S. & = \frac{1}{2 + \sqrt{3}} + \frac{2}{\sqrt{5} - \sqrt{3}} + \frac{1}{2 -
 &= 11.261
 \end{align*}
 @
+{{</scrollable>}}

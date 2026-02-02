@@ -1,4 +1,92 @@
 {{ define "main" }}
+<style>
+  /* FAQ Accordion */
+  .faq-item {
+    width: 100%;
+    margin-bottom: 1rem !important;
+  }
+
+  /* FAQ Page Title and Section Headings */
+  .faq-item h1,
+  .faq-item h2,
+  h1.text-gray-900,
+  h2.text-gray-900,
+  .text-gray-900 {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .dark .text-gray-900 {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .faq-question {
+    background-color: hsl(var(--background)) !important;
+    border: 1px solid var(--border) !important;
+    border-color: var(--border) !important;
+  }
+
+  .faq-answer,
+  .faq-answer-content {
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: var(--border) !important;
+  }
+
+  /* Override hardcoded Tailwind border colors for FAQ items and containers */
+  .faq-item.border,
+  .faq-item.border-gray-200,
+  .faq-item.border-gray-700,
+  div.border-b.border-gray-200,
+  div.border-b.border-gray-800 {
+    border-color: var(--border) !important;
+  }
+
+  .faq-question span,
+  .faq-question * {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .faq-question:hover {
+    background-color: hsl(var(--muted)) !important;
+  }
+
+  .faq-question-expanded {
+    background-color: hsl(var(--card)) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom: none !important;
+    border-bottom-color: transparent !important;
+  }
+
+  .faq-answer,
+  .faq-answer-content {
+    background-color: hsl(var(--card)) !important;
+  }
+
+  .faq-answer *,
+  .faq-answer-content *,
+  .faq-answer-content,
+  .faq-answer-content p,
+  .faq-answer-content li,
+  .faq-answer-content span,
+  .faq-answer-content div,
+  .faq-answer-content strong,
+  .faq-answer-content em {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .faq-item .faq-question {
+    width: 100% !important;
+  }
+
+  .faq-answer-expanded .faq-answer-content {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .dark .faq-answer-expanded .faq-answer-content {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  }
+</style>
 <div class="max-w-4xl mx-auto p-6 bg-main text-main">
 
   <!-- Header -->
