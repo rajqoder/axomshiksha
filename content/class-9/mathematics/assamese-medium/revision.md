@@ -1,9 +1,8 @@
 ---
 title: পুনৰালোচনা - নৱম শ্ৰেণী (গণিত)
-slug: lesson-1
 reading_time: 120
 date: 2026-02-02T01:07:00+05:30
-lastmod: 2026-02-02T01:07:00+05:30
+lastmod: 2026-02-03T09:53:00+05:30
 math: true
 thumbnail: https://lh3.googleusercontent.com/pw/AP1GczNZSFoFf1-whPjK0EKaJDQ5_UjGPAIzVV4reyTHe7Gl2kmfg327hcjWqj1vFergnzGN_3tHSXhjwXLDhF5Jc1742MzDzu1_3mRuzZ5QzAnjYieaepfS-GsJtJAWybgMESF4IoJIMvYb24xg4bQ9e9PT=w900-h450-s-no-gm?authuser=0
 description: নৱম শ্ৰেণীৰ গণিতৰ প্ৰথম অধ্যায় 'পুনৰালোচনা'ৰ অনুশীলনী R-1 আৰু R-2 ৰ সম্পূৰ্ণ সমাধান। সংখ্যা প্ৰণালী, সূচক আৰু ঘাট, পৰিমিতি - এনেকুৱা ধৰণৰ বিষয়বোৰৰ প্ৰশ্নোত্তৰসমূহ ইয়াত পুনৰালোচনা কৰা হৈছে।
