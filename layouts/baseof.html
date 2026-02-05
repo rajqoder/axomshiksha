@@ -73,18 +73,7 @@
   {{ end }}
   {{ end }}
   {{ end }}
-  {{ $toc := resources.Get "js/toc.js" }}
-  {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
-  "js/toc.js" }}
-  {{ with $toc | js.Build $opts }}
-  {{ if hugo.IsDevelopment }}
-  <script src="{{ .RelPermalink }}"></script>
-  {{ else }}
-  {{ with . | fingerprint }}
-  <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-  {{ end }}
-  {{ end }}
-  {{ end }}
+
   {{ $copyLink := resources.Get "js/copy-link.js" }}
   {{ $opts := dict "minify" (not hugo.IsDevelopment) "sourceMap" (cond hugo.IsDevelopment "external" "") "targetPath"
   "js/copy-link.js" }}
