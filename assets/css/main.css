@@ -361,10 +361,6 @@
     @apply w-full rounded-lg;
   }
 
-  .card-header-img {
-    @apply w-full h-48 object-cover rounded-lg mb-4;
-  }
-
   .post-header-img {
     @apply w-full h-64 object-cover rounded-lg mb-6;
   }
