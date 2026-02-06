@@ -8,7 +8,7 @@ draft: false
 author: dekalasit
 reading_time: 90
 description: সংখ্যা প্ৰণালী - অধ্যায়টোত আমাৰ দৈনন্দিন জীৱনত ব্যৱহৃত বিভিন্ন ধৰণৰ সংখ্যা যেনে - স্ৱাভাৱিক সংখ্যা, পূৰ্ণ সংখ্যা, অখণ্ড সংখ্যা, পৰিমেয় সংখ্যা, অপৰিমেয় সংখ্যা আৰু বিশেষকৈ বাস্তৱ সংখ্যা ৰ বিষয়ে উপলদ্ধ প্ৰশ্নোত্তৰসমূহৰ সমাধান আৰু বিৱৰণ ইয়াত উল্লেখ কৰা হৈছে।
-thumbnail: https://lh3.googleusercontent.com/pw/AP1GczN-_DivbD_b2qVkhJTwGVVxrFo2mGFBlB6ZeUQcwTq06uvL01kMx7s_g5NMJr5RrcpioYRY_dE6sS5hYNtoCJPp9uiGV0TAu8mMa8QZxpgFTfrigxuqCV5LEr4vvXu_TDcVJkBt_ljn1EO6YAmJsfFZ=w900-h450-s-no-gm?authuser=0
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczNVBm22HvFOHKmgh-ZPLDsEaXtlsO_-f5Sc23iKemNGwGCDJipdS_ITvATtVIfiJCmFjIm5chpmTMePwXRSU1Av0oFkgbJar4dgvgtrxVUsTr174Dh6SnYcbpB7_ELO8zvLOdZkVqZ4vQGtjcW7GFx4=w1093-h615-s-no-gm?authuser=0
 chapter_title: সংখ্যা প্ৰণালী
 ---
 

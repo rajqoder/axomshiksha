@@ -1,9 +1,8 @@
 {{ $page := . }}
 <article class="card flex flex-col lg:flex-row gap-6">
     {{ with .Params.thumbnail }}
-    <div class="lg:w-2/5">
-        <img src="{{ . }}" alt="{{ $page.Title }}" class="w-full aspect-[2/1] object-cover rounded-lg"
-            loading="lazy">
+    <div class="lg:w-2/5 shrink-0">
+        <img src="{{ . }}" alt="{{ $page.Title }}" class="w-full aspect-video object-cover rounded-lg" loading="lazy">
     </div>
     {{ end }}
 
@@ -36,9 +35,60 @@
             {{ end }}
         </div>
 
-        <p class="text-main leading-relaxed text-sm mb-4">{{ .Description | truncate 150 "..." }}</p>
+        <p class="text-main leading-relaxed text-sm mb-2 line-clamp-3">{{ .Description }}</p>
 
-        <a href="{{ .RelPermalink }}" class="font-medium text-blue-600 dark:text-blue-400 hover:underline">Read more
-            →</a>
+        <div class="flex justify-between items-end">
+            <a href="{{ .RelPermalink }}" class="font-medium text-blue-600 dark:text-blue-400 hover:underline">Read more
+                →</a>
+
+            <button onclick="handleShare(this)"
+                class="share-btn p-2 rounded-full cursor-pointer hover:bg-blue-500/15 transition-colors text-gray-500 hover:text-blue-600"
+                data-title="{{ .Title }}" data-url="{{ .Permalink }}" data-text="{{ .Description }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+            </button>
+        </div>
+
+        <script>
+            (function () {
+                if (typeof window.handleShare !== 'function') {
+                    window.handleShare = async function (btn) {
+                        const data = btn.dataset;
+                        const shareData = {
+                            title: data.title,
+                            text: data.text,
+                            url: data.url
+                        };
+
+                        try {
+                            if (navigator.share) {
+                                await navigator.share(shareData);
+                            } else {
+                                await navigator.clipboard.writeText(shareData.url);
+
+                                // Visual feedback for copy
+                                const icon = btn.querySelector('svg');
+                                const originalInner = btn.innerHTML;
+
+                                // temporary check icon
+                                btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+
+                                setTimeout(() => {
+                                    btn.innerHTML = originalInner;
+                                }, 2000);
+                            }
+                        } catch (err) {
+                            console.error('Error sharing:', err);
+                        }
+                    };
+                }
+            })();
+        </script>
     </div>
 </article>

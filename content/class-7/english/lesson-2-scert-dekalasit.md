@@ -12,7 +12,7 @@ keywords:
   - textbook
 categories:
   - upper-primary
-thumbnail: https://lh3.googleusercontent.com/pw/AP1GczOaqbutWqwBPx6OfUYxwcpXTlLofkrUAq-anqjj82Y0UKc2_i-yTySmDKJa7q0kTD8bfyj4ArXDPbeYpFvCtGjt5qhMsaIZ56ibjv-G-XThHtDM4gmFcBaJ-VxvSjwhMNCM2xsaFZVngft3wtm2qzkG=w483-h289-s-no-gm?authuser=0
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczM3LYRj2YoQJHkncDUiJ6IQcisL7DIr5DpHqBat-D8RVkEUEFbr0WLBrQgjFjrJUR0fP7PtBPFBdch01loq9_038R7t0XPskRvv6O8H4DlPxrVzcESu40omw4mxlL4RLxD82W9oX1bJ2NRBJGqTe0NY=w1093-h615-s-no-gm?authuser=0
 slug: lesson-2-scert
 author: dekalasit
 chapter_title: Uruka Adventure

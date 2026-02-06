@@ -14,7 +14,7 @@ keywords:
   - lesson-4
 categories:
   - upper-primary
-thumbnail: https://lh3.googleusercontent.com/pw/AP1GczNHBgOtrGx5hjjg1K8fVR2ctM-m4H0ptD8lkU3IfIlFgnCSK9M9PB2sZLZv5y2GnPrvoGxnAIkoaa1ooZcNyOmjhqkOMaklBToW9sO4plcT7Z2-lPPgUDPc-MtD-dyS1sRYdIGo261yOGwm58v31PE=w340-h428-s-no-gm?authuser=0
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczNWgMt9YCDGZLekPBz1MItK2mbd-em85T-50mp4rqc6yebFvXZ24E--Cdc0PAyxekf_pxRcjgAx3PjiMnpKkrR0_8qtVfYAy_qkpGN9Emq1YoXWXPJkeLIZtZ0L_v-KxSoYm3hk2onVeZ1ssHo2cyLa=w1093-h615-s-no-gm?authuser=0
 author: dekalasit
 chapter_title: My Land
 ---

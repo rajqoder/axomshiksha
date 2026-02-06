@@ -13,7 +13,7 @@ draft: false
 slug: lesson-1-scert
 reading_time: 36
 date: 2026-01-07T00:07:15+05:30
-thumbnail: https://lh3.googleusercontent.com/pw/AP1GczORWB6hQct3eoh9qc8lfPJGvzgToTEr0iGhUa-l2_xen8oln0j3_EDSWlEdARobXdcH_AVxJ32H9c-kdNw3Sn4eje6nVzHvdRGXPMAx4iN6yowP1PqWzQ2W9FL4xp50tNpEm8MEcDtYqYZHsRgV92qu=w403-h333-s-no-gm?authuser=0
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczO99NX8L-RFdJG3VzKQJyLf_LKwjpxw6wvjFc2PV5lbbR3W2dQPQbfaBX5kBnzJAGxIkmBaqmrPuhdfS-3RxfNmlOJfzuWlwzF6XgE9oOgMRR_e9jVocLHSwFvNO1xgfeN5TGjY4tIkOP1vzM6qdNLk=w1093-h615-s-no-gm?authuser=0
 author: dekalasit
 chapter_title: Hobbies
 ---

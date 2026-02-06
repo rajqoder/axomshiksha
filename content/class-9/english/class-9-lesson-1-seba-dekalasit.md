@@ -11,7 +11,7 @@ keywords:
   - lesson-1
 categories:
   - secondary
-thumbnail: https://lh3.googleusercontent.com/pw/AP1GczNJ-Kx7l6vRSBWh9F7208FwxJEn_GRpxIhw7vP1AhxP2E55L2PqgqHoqXd_fr3MjhmOQvEP1uSp71YLg8x3i-mzb9zQcTYlQwCtY-dL1SyAL0kz47-s7braSk1IsB3ussmU59XYI3FFzTKhWnBdp9kP=w589-h331-s-no-gm?authuser=0
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczMERNnitb2qVFFwVe1XOZmgzwlpYlW3DMhAxD9oUyo20yXkwrwUqwxc2Cm8U2MoA35nTJuHctVbvtORcw0oUU4tw4NQULiV6p5vXVgz3aBZsqq_4JBf8QKmBYXlxai-393gCxYZL_c9QcxdGPXPnnx4=w1093-h615-s-no-gm?authuser=0
 slug: class-9-lesson-1-seba
 author: dekalasit
 chapter_title: The Fun They Had

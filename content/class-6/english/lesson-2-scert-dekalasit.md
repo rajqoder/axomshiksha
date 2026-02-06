@@ -14,7 +14,7 @@ keywords:
   - lesson-2
 categories:
   - upper-primary
-thumbnail: https://lh3.googleusercontent.com/pw/AP1GczP6dYU1xE5EVgn_UsEWkQGIAIVv96NuSrWQe5X23jm95yQwQCvQi6hj9TmAhBdNmBdPiYlsDRbizVPLDd8RAdDLfnFCaOR0fJywlinOAMBxa51xjATjlV2gzpme4IF2yftiqM5BxpIxXx6OLUg7F7eG=w455-h607-s-no-gm?authuser=0
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczNSO2S_3jQEanx5lxI5KQxBgzEnW-HIyrtzaSInPZIEJAD6Dx67WdG8flY9jukrAfkq9CxgSdQIpHr9EebeR-OOWAG2IQcE9fGTvh1gePYQqcS_nJPre9iOHSKXiZo_PvSaYMLKM8eY9JRp4D2k9VGZ=w1093-h615-s-no-gm?authuser=0
 author: dekalasit
 chapter_title: The Golden Touch
 ---

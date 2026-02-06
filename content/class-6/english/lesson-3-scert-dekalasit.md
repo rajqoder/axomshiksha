@@ -14,7 +14,7 @@ keywords:
   - lesson-3
 categories:
   - upper-primary
-thumbnail: https://lh3.googleusercontent.com/pw/AP1GczOgJYsPO3Pj3qq34D928MaXVvEo_Jl8AXgZsWsCG946jswmngIz6sgNYeMoaq2SY5RqWMdhHBk9ZmOKE-u07LhVGfLnD2v2ypMWK3NivJ-WH7tv-5GI22ciG5NB1ksfSidGSoiGEg_NtrNJ3j4UUoNt=w449-h599-s-no-gm?authuser=0
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczNh16oZVi5EcYrz8SJYxChaBOffnGjqTtGefoJr88YI0yPKcimEu8uEAXWnTvOyqH44hZJp8mSHQ1NPuB--7PsY5GFSkE0DbrNCC1Dvoy4nUPf8s0rTehWnk1gngujE5wFmZKYtiqyOnTNV7pOrAN-c=w1093-h615-s-no-gm?authuser=0
 slug: lesson-3-scert
 author: dekalasit
 chapter_title: A Curious Mind

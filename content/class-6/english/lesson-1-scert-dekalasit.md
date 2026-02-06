@@ -14,7 +14,7 @@ keywords:
   - lesson-1
 categories:
   - upper-primary
-thumbnail: https://lh3.googleusercontent.com/pw/AP1GczPCZRipPws6kXBdXM14em4ySgDoFo69IE7UkxcaIUsRNUHPA7HPpFGXasIBknJXP4mDmp520xVY06OA9u5NYqnfpY_44Q6Clgl40zif_9Qe13Ap_sz57pEupNMn0z5qwbMl1SZ5trPMuEFFaT30PM07=w449-h599-s-no-gm?authuser=0
+thumbnail: https://lh3.googleusercontent.com/pw/AP1GczOQ142rfqROYHh-z0gXz3LJx7yy1i-h79fFhPqh-pr18kbhiV80P-33ZF9Yh-lxck3ub4KmfJf1JcqsonZXv3n5N9-O_O_SDVmNy0Lr5aoB-Ytc5AusU-NtKFhjlqLeMPcI6B4DX0o1sLC99Gq_4lm1=w1025-h615-s-no-gm?authuser=0
 author: dekalasit
 chapter_title: Afternoon on a hill
 ---
