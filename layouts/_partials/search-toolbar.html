@@ -1,0 +1,54 @@
+<div
+    class="bg-white dark:bg-zinc-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 p-4 hover:shadow-md">
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+        <div class="col-span-12 relative group flex items-center gap-2">
+            <div class="relative flex-grow">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg class="h-5 w-5 text-gray-400 group-focus-within:text-blue-500"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <input type="text" id="search-input"
+                    class="block w-full pl-10 pr-3 py-2.5 border border-gray-300 dark:border-gray-700 rounded-lg leading-5 bg-gray-50 dark:bg-zinc-950 placeholder-gray-500 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white dark:focus:bg-zinc-900 sm:text-sm"
+                    placeholder="Search by title..." />
+            </div>
+
+            <!-- Filter Button (Mobile Only) -->
+            <button type="button" onclick="toggleFilterDrawer()"
+                class="lg:hidden p-2.5 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-zinc-950 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchInput = document.getElementById('search-input');
+        const gridItems = document.querySelectorAll('.grid .card');
+
+        function filterItems() {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            gridItems.forEach(item => {
+                const title = item.querySelector('h3').textContent.toLowerCase();
+                const matchesSearch = title.includes(searchTerm);
+
+                if (matchesSearch) {
+                    item.style.display = 'flex'; // Restore flex display for card
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', filterItems);
+    });
+</script>

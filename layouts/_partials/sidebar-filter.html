@@ -1,0 +1,389 @@
+<div class="card mb-8">
+    <h3 class="card-title mb-4 border-b-2 border-primary/20 pb-2 w-fit">Filter Content</h3>
+
+    <!-- Accessibility: Live Region for status updates -->
+    <div id="filter-status" class="sr-only" role="status" aria-live="polite"></div>
+
+    <form class="space-y-4" aria-label="Content Filters" onsubmit="event.preventDefault();">
+        <!-- Course/Class Filter -->
+        <div id="container-course" class="relative">
+            <label id="label-course" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Course /
+                Class</label>
+            <button type="button" id="btn-course" aria-haspopup="listbox" aria-expanded="false"
+                aria-labelledby="label-course btn-course"
+                class="relative w-full bg-white dark:bg-zinc-950 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors">
+                <span class="block truncate" id="text-course">All Courses</span>
+                <span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                    <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+            </button>
+            <ul id="list-course" role="listbox" aria-labelledby="label-course" tabindex="-1"
+                class="hidden absolute z-10 mt-1 w-full bg-white dark:bg-zinc-950 shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-gray-200 dark:ring-gray-700 ring-opacity-5 overflow-auto focus:outline-none sm:text-sm origin-top transition-all duration-200 ease-out transform scale-95 opacity-0">
+                <!-- Options populated by JS -->
+            </ul>
+        </div>
+
+        <!-- Board Filter -->
+        <div id="container-board" class="relative">
+            <label id="label-board"
+                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Board</label>
+            <button type="button" id="btn-board" aria-haspopup="listbox" aria-expanded="false"
+                aria-labelledby="label-board btn-board"
+                class="relative w-full bg-white dark:bg-zinc-950 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors">
+                <span class="block truncate" id="text-board">All Boards</span>
+                <span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                    <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+            </button>
+            <ul id="list-board" role="listbox" aria-labelledby="label-board" tabindex="-1"
+                class="hidden absolute z-10 mt-1 w-full bg-white dark:bg-zinc-950 shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-gray-200 dark:ring-gray-700 ring-opacity-5 overflow-auto focus:outline-none sm:text-sm origin-top transition-all duration-200 ease-out transform scale-95 opacity-0">
+            </ul>
+        </div>
+
+        <!-- Subject Filter -->
+        <div id="container-subject" class="relative">
+            <label id="label-subject"
+                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+            <button type="button" id="btn-subject" aria-haspopup="listbox" aria-expanded="false"
+                aria-labelledby="label-subject btn-subject"
+                class="relative w-full bg-white dark:bg-zinc-950 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors">
+                <span class="block truncate" id="text-subject">All Subjects</span>
+                <span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                    <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+            </button>
+            <ul id="list-subject" role="listbox" aria-labelledby="label-subject" tabindex="-1"
+                class="hidden absolute z-10 mt-1 w-full bg-white dark:bg-zinc-950 shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-gray-200 dark:ring-gray-700 ring-opacity-5 overflow-auto focus:outline-none sm:text-sm origin-top transition-all duration-200 ease-out transform scale-95 opacity-0">
+            </ul>
+        </div>
+
+        <!-- Medium Filter -->
+        <div id="container-medium" class="relative">
+            <label id="label-medium"
+                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Medium</label>
+            <button type="button" id="btn-medium" aria-haspopup="listbox" aria-expanded="false"
+                aria-labelledby="label-medium btn-medium"
+                class="relative w-full bg-white dark:bg-zinc-950 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors">
+                <span class="block truncate" id="text-medium">All Mediums</span>
+                <span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                    <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+            </button>
+            <ul id="list-medium" role="listbox" aria-labelledby="label-medium" tabindex="-1"
+                class="hidden absolute z-10 mt-1 w-full bg-white dark:bg-zinc-950 shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-gray-300 dark:ring-gray-700 ring-opacity-5 overflow-auto focus:outline-none sm:text-sm origin-top transition-all duration-200 ease-out transform scale-95 opacity-0">
+            </ul>
+        </div>
+
+        <!-- Reset Button -->
+        <button id="reset-sidebar-filters" type="button"
+            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+            Reset Filters
+        </button>
+    </form>
+</div>
+
+<!-- JSON Data for Filters -->
+<script type="application/json" id="page-metadata">
+[
+    {{ range $index, $element := .RegularPages }}
+        {{ if $index }},{{ end }}
+        {
+            "id": "{{ .RelPermalink }}",
+            "course": "{{ if .Params.course }}{{ .Params.course }}{{ else }}{{ .Params.class }}{{ end }}",
+            "board": "{{ .Params.board }}",
+            "subject": "{{ .Params.subject }}",
+            "medium": "{{ .Params.medium }}"
+        }
+    {{ end }}
+]
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const statusRegion = document.getElementById('filter-status');
+        const contentCards = document.querySelectorAll('.card[href]');
+        const resetButton = document.getElementById('reset-sidebar-filters');
+
+        // Parse Data
+        let pageData = [];
+        try {
+            pageData = JSON.parse(document.getElementById('page-metadata').textContent);
+        } catch (e) {
+            console.error("Error parsing metadata:", e);
+        }
+
+        // State
+        const state = {
+            course: "",
+            board: "",
+            subject: "",
+            medium: ""
+        };
+
+        // Helper for Custom Select
+        class CustomSelect {
+            constructor(id, options, defaultText, onChange) {
+                this.id = id;
+                this.options = options;
+                this.defaultText = defaultText;
+                this.onChange = onChange;
+                this.value = "";
+
+                this.btn = document.getElementById(`btn-${id}`);
+                this.list = document.getElementById(`list-${id}`);
+                this.text = document.getElementById(`text-${id}`);
+                this.container = document.getElementById(`container-${id}`);
+
+                this.idx = -1; // Focused option index
+                this.isOpen = false;
+
+                this.init();
+            }
+
+            init() {
+                // Populate List
+                this.renderOptions();
+
+                // Event Listeners
+                this.btn.addEventListener('click', () => this.toggle());
+                this.btn.addEventListener('keydown', (e) => this.handleButtonKey(e));
+                this.list.addEventListener('keydown', (e) => this.handleListKey(e));
+
+                // Click outside
+                document.addEventListener('click', (e) => {
+                    if (!this.container.contains(e.target)) {
+                        this.close();
+                    }
+                });
+            }
+
+            renderOptions() {
+                this.list.innerHTML = "";
+
+                // "All" Option
+                const allOption = this.createOptionElement("", this.defaultText, true);
+                this.list.appendChild(allOption);
+
+                // Data Options
+                this.options.forEach(opt => {
+                    const label = opt.charAt(0).toUpperCase() + opt.slice(1);
+                    this.list.appendChild(this.createOptionElement(opt, label));
+                });
+            }
+
+            createOptionElement(value, label, isFirst = false) {
+                const li = document.createElement('li');
+                li.className = "text-gray-900 dark:text-gray-100 cursor-pointer select-none relative py-2 pl-3 pr-9 hover:bg-blue-50 dark:hover:bg-blue-900/20";
+                li.role = "option";
+                li.id = `${this.id}-opt-${value || 'all'}`;
+                li.textContent = label;
+
+                // Checkmark icon
+                const check = document.createElement('span');
+                check.className = "absolute inset-y-0 right-0 flex items-center pr-4 text-blue-600 hidden check-icon";
+                check.innerHTML = `<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>`;
+                li.appendChild(check);
+
+                li.addEventListener('click', () => {
+                    this.select(value, label);
+                });
+
+                return li;
+            }
+
+            toggle() {
+                if (this.isOpen) this.close();
+                else this.open();
+            }
+
+            open() {
+                this.isOpen = true;
+                this.list.classList.remove('hidden');
+                // Small timeout to allow transition
+                requestAnimationFrame(() => {
+                    this.list.classList.remove('scale-95', 'opacity-0');
+                    this.list.classList.add('scale-100', 'opacity-100');
+                });
+                // Prevent background scrolling
+                document.body.style.overflow = 'hidden';
+                this.btn.setAttribute('aria-expanded', 'true');
+                this.btn.classList.remove('cursor-pointer');
+                this.btn.classList.add('cursor-default');
+
+                // Focus current selection or first item
+                const options = this.list.querySelectorAll('li');
+                let focusIdx = 0;
+                options.forEach((opt, i) => {
+                    if (opt.getAttribute('aria-selected') === 'true') focusIdx = i;
+                });
+                this.idx = focusIdx;
+                this.setActiveDescendant(options[this.idx]);
+
+                // We keep focus on button but manage active descendant, 
+                // OR strictly speaking for a listbox, we might want to move focus to the list or an input.
+                // Simplified approach: Button keeps focus, uses aria-activedescendant.
+                // But standard pattern often has a separate listbox focus. Let's try keeping focus on button for simplicity and capturing keys.
+            }
+
+            close() {
+                this.isOpen = false;
+                this.list.classList.remove('scale-100', 'opacity-100');
+                this.list.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    if (!this.isOpen) this.list.classList.add('hidden');
+                }, 200); // match duration
+                this.btn.setAttribute('aria-expanded', 'false');
+                this.btn.removeAttribute('aria-activedescendant');
+
+                // Restore scrolling only if no other dropdowns are open
+                if (document.querySelectorAll('button[aria-expanded="true"]').length === 0) {
+                    document.body.style.overflow = '';
+                }
+
+                this.btn.classList.add('cursor-pointer');
+                this.btn.classList.remove('cursor-default');
+            }
+
+            select(value, label) {
+                this.value = value;
+                this.text.textContent = label;
+
+                // Visual Update in List
+                const options = this.list.querySelectorAll('li');
+                options.forEach(opt => {
+                    const isSelected = opt.id === `${this.id}-opt-${value || 'all'}`;
+                    opt.setAttribute('aria-selected', isSelected);
+                    const icon = opt.querySelector('.check-icon');
+                    if (isSelected) {
+                        icon.classList.remove('hidden');
+                        opt.classList.add('font-semibold');
+                    } else {
+                        icon.classList.add('hidden');
+                        opt.classList.remove('font-semibold');
+                    }
+                });
+
+                this.close();
+                this.onChange(value);
+            }
+
+            reset() {
+                this.select("", this.defaultText);
+            }
+
+            handleButtonKey(e) {
+                if (!this.isOpen) {
+                    if (e.key === 'ArrowDown' || e.key === 'ArrowUp' || e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.open();
+                    }
+                    return;
+                }
+
+                const options = this.list.querySelectorAll('li');
+
+                switch (e.key) {
+                    case 'Escape':
+                        e.preventDefault();
+                        this.close();
+                        break;
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        this.idx = (this.idx + 1) % options.length;
+                        this.setActiveDescendant(options[this.idx]);
+                        break;
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        this.idx = (this.idx - 1 + options.length) % options.length;
+                        this.setActiveDescendant(options[this.idx]);
+                        break;
+                    case 'Enter':
+                    case ' ':
+                        e.preventDefault();
+                        options[this.idx].click();
+                        break;
+                    case 'Tab':
+                        this.close();
+                        break;
+                }
+            }
+
+            setActiveDescendant(el) {
+                if (!el) return;
+                this.btn.setAttribute('aria-activedescendant', el.id);
+                // Visual highlight
+                const options = this.list.querySelectorAll('li');
+                options.forEach(opt => opt.classList.remove('bg-blue-100', 'dark:bg-blue-900/40'));
+                el.classList.add('bg-blue-100', 'dark:bg-blue-900/40');
+                el.scrollIntoView({ block: 'nearest' });
+            }
+        }
+
+        // Filter Logic
+        function filterContent() {
+            const { course, board, subject, medium } = state;
+
+            const validIds = pageData.filter(item => {
+                return (!course || item.course == course) &&
+                    (!board || item.board == board) &&
+                    (!subject || item.subject == subject) &&
+                    (!medium || item.medium == medium);
+            }).map(item => item.id);
+
+            let visibleCount = 0;
+            contentCards.forEach(card => {
+                const href = card.getAttribute('href');
+                if (validIds.includes(href)) {
+                    card.style.display = '';
+                    if (window.getComputedStyle(card).display === 'none') card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update Status
+            const text = visibleCount === 1 ? '1 item found' : `${visibleCount} items found`;
+            statusRegion.textContent = text;
+        }
+
+        // Initialize Dropdowns
+        const uniqueCourses = [...new Set(pageData.map(p => p.course).filter(Boolean))].sort((a, b) => parseInt(a) - parseInt(b) || a.localeCompare(b)); // Better sort for numbers
+        const uniqueBoards = [...new Set(pageData.map(p => p.board).filter(Boolean))].sort();
+        const uniqueSubjects = [...new Set(pageData.map(p => p.subject).filter(Boolean))].sort();
+        const uniqueMediums = [...new Set(pageData.map(p => p.medium).filter(Boolean))].sort();
+
+        const dropdowns = {
+            course: new CustomSelect('course', uniqueCourses, 'All Courses', (val) => { state.course = val; filterContent(); }),
+            board: new CustomSelect('board', uniqueBoards, 'All Boards', (val) => { state.board = val; filterContent(); }),
+            subject: new CustomSelect('subject', uniqueSubjects, 'All Subjects', (val) => { state.subject = val; filterContent(); }),
+            medium: new CustomSelect('medium', uniqueMediums, 'All Mediums', (val) => { state.medium = val; filterContent(); })
+        };
+
+        resetButton.addEventListener('click', () => {
+            Object.values(dropdowns).forEach(d => d.reset());
+            dropdowns.course.btn.focus();
+        });
+
+    });
+</script>

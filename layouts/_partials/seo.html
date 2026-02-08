@@ -117,8 +117,18 @@
 
 
 <!-- Additional SEO Meta Tags -->
+{{ $noindex := false }}
+{{ if or (eq .Section "worksheets") (eq .Section "pyqs") }}
+{{ $noindex = true }}
+{{ end }}
+
+{{ if $noindex }}
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+{{ else }}
 <meta name="robots" content="index, follow">
 <meta name="googlebot" content="index, follow">
+{{ end }}
 <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ .Site.BaseURL }}index.xml">
 
 <!-- Structured Data (JSON-LD) -->

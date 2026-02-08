@@ -11,6 +11,10 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="/worksheets/" class="{{ if eq .RelPermalink " /worksheets/" }}nav-active{{ else }}nav-link{{ end
+            }}">Worksheets</a>
+          <a href="/pyqs/" class="{{ if eq .RelPermalink " /pyqs/" }}nav-active{{ else }}nav-link{{ end
+            }}">PYQs</a>
           <a href="/categories/" class="{{ if eq .RelPermalink " /categories/" }}nav-active{{ else }}nav-link{{ end
             }}">Categories</a>
           <a href="/faq/" class="{{ if eq .RelPermalink " /faq/" }}nav-active{{ else }}nav-link{{ end }}">FAQ</a>
@@ -97,6 +101,8 @@
       </svg>
       Search
     </button>
+    <a href="/worksheets/" class="mobile-link">Worksheets</a>
+    <a href="/pyqs/" class="mobile-link">PYQs</a>
     <a href="/categories/" class="mobile-link">Categories</a>
     <a href="/faq/" class="mobile-link">FAQ</a>
     <a href="/about/" class="mobile-link">About</a>

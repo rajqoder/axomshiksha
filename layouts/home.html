@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "!=" "authors") }}
 <div class="max-w-7xl mx-auto p-6 bg-main text-main">
   <style>
     @keyframes ripple {
@@ -43,8 +44,85 @@
 
     <!-- Main Content -->
     <div class="lg:w-3/4">
+      <!-- Student Resources -->
+      {{ if eq $paginator.PageNumber 1 }}
+      <section class="mb-10">
+        <div class="flex flex-col gap-2 mb-6">
+          <h2 class="text-2xl font-bold text-main">Student Resources</h2>
+          <p class="text-muted-foreground">
+            Focused practice for every level — worksheets for non-board classes and PYQs for board and higher studies.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/worksheets/"
+            class="card group relative overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-primary/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div
+              class="mb-5 flex items-center justify-between rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 p-5 text-white shadow-md relative overflow-hidden">
+              <!-- Decorative Pattern -->
+              <svg
+                class="absolute -bottom-2 -right-2 text-white/10 w-24 h-24 rotate-12 transform group-hover:scale-110 transition-transform duration-500"
+                fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+              </svg>
+              <div class="relative z-10">
+                <p class="text-xs uppercase tracking-wide text-white/80 font-bold mb-1">Worksheets</p>
+                <h3 class="text-xl font-bold">Non-board Classes</h3>
+              </div>
+              <span
+                class="relative z-10 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold backdrop-blur-sm border border-white/10">Class
+                1 - 9</span>
+            </div>
+            <p class="text-muted-foreground mb-4">
+              Skill-building practice sheets with step-by-step guidance for foundational learning.
+            </p>
+            <ul class="flex flex-wrap gap-2 text-xs font-medium text-main">
+              <li class="rounded-full bg-muted px-3 py-1">Printable practice</li>
+              <li class="rounded-full bg-muted px-3 py-1">Concept boosters</li>
+              <li class="rounded-full bg-muted px-3 py-1">Daily revision</li>
+            </ul>
+            <div class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+              Explore Worksheets
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </a>
+
+          <a href="/pyqs/"
+            class="card group relative overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-primary/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div
+              class="mb-5 flex items-center justify-between rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 p-5 text-white shadow-md relative overflow-hidden">
+              <!-- Decorative Pattern -->
+              <svg
+                class="absolute -bottom-2 -right-2 text-white/10 w-24 h-24 rotate-12 transform group-hover:scale-110 transition-transform duration-500"
+                fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" />
+              </svg>
+              <div class="relative z-10">
+                <p class="text-xs uppercase tracking-wide text-white/80 font-bold mb-1">Board & higher studies</p>
+                <h3 class="text-xl font-bold">PYQs</h3>
+              </div>
+              <span
+                class="relative z-10 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold backdrop-blur-sm border border-white/10">Class
+                10+</span>
+            </div>
+            <p class="text-muted-foreground mb-4">
+              Previous year questions curated for board exams, UG, PG, and competitive readiness.
+            </p>
+            <ul class="flex flex-wrap gap-2 text-xs font-medium text-main">
+              <li class="rounded-full bg-muted px-3 py-1">Exam patterns</li>
+              <li class="rounded-full bg-muted px-3 py-1">Marking schemes</li>
+              <li class="rounded-full bg-muted px-3 py-1">Quick revisions</li>
+            </ul>
+            <div class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+              Browse PYQs
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </a>
+        </div>
+      </section>
+      {{ end }}
+
       <!-- Posts -->
-      {{ $paginator := .Paginate (where .Site.RegularPages "Section" "!=" "authors") }}
       <div class="space-y-6">
         {{ range $paginator.Pages }}
         {{ $page := . }}

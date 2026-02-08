@@ -201,6 +201,8 @@
                 {{ if $siblings }}
                 <!-- Filter out "Our Authors" and current page, then limit to 5 -->
                 {{ $filteredSiblings := where $siblings "Title" "ne" "Our Authors" }}
+                {{ $filteredSiblings = where $filteredSiblings "Title" "ne" "Worksheets" }}
+                {{ $filteredSiblings = where $filteredSiblings "Title" "ne" "PYQs" }}
                 {{ $filteredSiblings = where $filteredSiblings "Title" "ne" .Title }}
                 {{ $filteredSiblings = first 5 $filteredSiblings }}
 

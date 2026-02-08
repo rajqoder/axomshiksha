@@ -1,0 +1,102 @@
+<div class="pdf-viewer-container bg-white dark:bg-zinc-900 rounded-xl overflow-hidden shadow-2xl border border-gray-200
+dark:border-gray-800 relative h-[85vh]">
+    <div id="pdf-viewer"
+        class="w-full h-full [--pdf-bg-app:theme(colors.zinc.200)] [--pdf-bg-surface:theme(colors.white)] dark:[--pdf-bg-app:theme(colors.zinc.900)] dark:[--pdf-bg-surface:theme(colors.zinc.900)]">
+    </div>
+</div>
+
+<script type="module">
+    import EmbedPDF from 'https://cdn.jsdelivr.net/npm/@embedpdf/snippet@2/dist/embedpdf.js'
+
+    const pdfViewer = EmbedPDF.init({
+        type: 'container',
+        target: document.getElementById('pdf-viewer'),
+        src: '{{ .Params.pdf }}',
+        disabledCategories: ['annotation', 'redaction', 'panel-comment', 'document-menu'],
+        theme: {
+            preference: document.documentElement.classList.contains('dark') ? 'dark' : 'light',
+            light: {
+                background: {
+                    app: '#e4e4e7', // zinc-200
+                    surface: '#ffffff',
+                    elevated: '#ffffff',
+                }
+            },
+            dark: {
+                background: {
+                    app: '#18181b', // zinc-900
+                    surface: '#18181b',
+                    elevated: '#18181b',
+                }
+            }
+        }
+    });
+
+    // Custom Toolbar Implementation
+    pdfViewer.registry.then(registry => {
+        const ui = registry.getPlugin('ui').provides();
+        const schema = ui.getSchema();
+        const toolbar = schema.toolbars['main-toolbar'];
+
+        const items = JSON.parse(JSON.stringify(toolbar.items));
+        const rightGroup = items.find(item => item.id === 'right-group');
+
+        // Remove view mode selector/tabs
+        const itemsToRemove = ['mode-select-button', 'mode-tabs', 'view-mode'];
+        for (const id of itemsToRemove) {
+            const index = items.findIndex(item => item.id === id);
+            if (index !== -1) {
+                items.splice(index, 1);
+            }
+        }
+
+        const newButtons = [
+            { type: 'command-button', id: 'download-button', commandId: 'document:export', variant: 'icon' },
+            { type: 'command-button', id: 'rotate-button', commandId: 'rotate:clockwise', variant: 'icon' },
+            { type: 'command-button', id: 'fullscreen-button', commandId: 'document:fullscreen', variant: 'icon' },
+            { type: 'command-button', id: 'screenshot-button', commandId: 'document:capture', variant: 'icon' }
+        ];
+
+        if (rightGroup) {
+            // Add buttons to the beginning of the right group
+            rightGroup.items.unshift(...newButtons);
+        } else {
+            // Fallback: create a new group if right-group doesn't exist
+            items.push({
+                type: 'group',
+                id: 'custom-tools',
+                alignment: 'end',
+                items: newButtons
+            });
+        }
+
+        ui.mergeSchema({
+            toolbars: {
+                'main-toolbar': {
+                    ...toolbar,
+                    items
+                }
+            }
+        });
+    });
+
+    // Function to sync theme
+    const syncTheme = () => {
+        const isDark = document.documentElement.classList.contains('dark');
+        pdfViewer.setTheme({ preference: isDark ? 'dark' : 'light' });
+    };
+
+    // Watch for class changes on the html element
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                syncTheme();
+            }
+        });
+    });
+
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class']
+    });
+</script>
