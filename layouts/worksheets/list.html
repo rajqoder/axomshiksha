@@ -95,7 +95,7 @@
 
         <!-- Block 2: Sidebar (Fixed alignment) -->
         <aside id="filter-drawer"
-            class="fixed bottom-0 left-0 right-0 z-[70] bg-white dark:bg-zinc-950 rounded-t-2xl shadow-2xl transform translate-y-full transition-transform duration-300 ease-out lg:translate-y-0 lg:static lg:z-0 lg:shadow-none lg:bg-transparent lg:dark:bg-transparent lg:p-0 lg:col-span-1 lg:row-span-2 lg:h-fit lg:col-start-4 lg:row-start-1 max-h-[85vh] flex flex-col lg:block overscroll-contain">
+            class="will-change-transform transform-gpu fixed bottom-0 left-0 right-0 z-[70] bg-white dark:bg-zinc-950 rounded-t-2xl shadow-2xl transform translate-y-full transition-transform duration-300 ease-out lg:translate-y-0 lg:static lg:z-0 lg:shadow-none lg:bg-transparent lg:dark:bg-transparent lg:p-0 lg:col-span-1 lg:row-span-2 lg:h-fit lg:col-start-4 lg:row-start-1 max-h-[85vh] flex flex-col lg:block overscroll-contain">
 
             <!-- Drag Handle (Mobile Only) -->
             <div id="drawer-handle"
@@ -155,12 +155,16 @@
 
     // Touch Event Handlers for Swipe
     if (handle) {
+        let rafId = null;
+
         handle.addEventListener('touchstart', (e) => {
             startY = e.touches[0].clientY;
             isDragging = true;
             drawerHeight = drawer.offsetHeight;
             isClosingCandidate = false; // Reset state
-            drawer.classList.remove('transition-transform', 'duration-300'); // Disable transition during drag
+
+            // Disable transition during drag using inline style
+            drawer.style.transition = 'none';
         }, { passive: true });
 
         handle.addEventListener('touchmove', (e) => {
@@ -170,34 +174,55 @@
 
             // Only allow dragging down
             if (diff > 0) {
-                drawer.style.transform = `translateY(${diff}px)`;
+                if (rafId) return; // Throttle
 
-                // Haptic Feedback Logic
-                const threshold = drawerHeight * 0.3;
-                const matchesClosing = diff > threshold;
+                rafId = requestAnimationFrame(() => {
+                    drawer.style.transform = `translate3d(0, ${diff}px, 0)`;
 
-                if (matchesClosing !== isClosingCandidate) {
-                    // Crossed threshold
-                    if (navigator.vibrate) navigator.vibrate(50); // Stronger tick
-                    isClosingCandidate = matchesClosing;
-                }
+                    // Haptic Feedback Logic
+                    const threshold = drawerHeight * 0.3;
+                    const matchesClosing = diff > threshold;
+
+                    if (matchesClosing !== isClosingCandidate) {
+                        // Crossed threshold
+                        if (navigator.vibrate) navigator.vibrate(50); // Stronger tick
+                        isClosingCandidate = matchesClosing;
+                    }
+                    rafId = null;
+                });
             }
         }, { passive: true });
 
         handle.addEventListener('touchend', (e) => {
             if (!isDragging) return;
             isDragging = false;
-            drawer.classList.add('transition-transform', 'duration-300'); // Re-enable transition
+
+            // Cancel any pending frame
+            if (rafId) {
+                cancelAnimationFrame(rafId);
+                rafId = null;
+            }
+
+            // Re-enable transition using inline style
+            drawer.style.transition = 'transform 0.3s ease-out';
 
             const diff = currentY - startY;
             const threshold = drawerHeight * 0.3; // Close if dragged more than 30%
 
-            if (diff > threshold) {
-                closeFilterDrawer();
-            } else {
-                // Snap back to open
-                drawer.style.transform = '';
-            }
+            // We need to wait a tiny bit for the transition property to take effect 
+            // before changing the transform, but usually browsers handle this frame boundary ok.
+            // Using requestAnimationFrame to ensure the transition is restored before the transform change.
+            requestAnimationFrame(() => {
+                if (diff > threshold) {
+                    closeFilterDrawer();
+                    // closeFilterDrawer sets a class but we also need to clear our inline transform
+                    // It does: drawer.style.transform = ''; which is good.
+                } else {
+                    // Snap back to open
+                    drawer.style.transform = '';
+                }
+            });
+
             startY = 0;
             currentY = 0;
         });
