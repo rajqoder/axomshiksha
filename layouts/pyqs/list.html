@@ -69,12 +69,12 @@
 
         <!-- Mobile Filter Backdrop -->
         <div id="filter-backdrop" onclick="closeFilterDrawer()"
-            class="fixed inset-0 bg-black/50 z-40 hidden transition-opacity opacity-0 lg:hidden touch-none">
+            class="fixed inset-0 bg-black/50 z-[60] hidden transition-opacity opacity-0 lg:hidden touch-none">
         </div>
 
         <!-- Block 2: Sidebar (Filter) - Middle on mobile, Right on Desktop -->
         <aside id="filter-drawer"
-            class="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-zinc-950 rounded-t-2xl shadow-2xl transform translate-y-full transition-transform duration-300 ease-out lg:translate-y-0 lg:static lg:z-0 lg:shadow-none lg:bg-transparent lg:dark:bg-transparent lg:p-0 lg:col-span-1 lg:row-span-2 lg:h-fit lg:col-start-4 lg:row-start-1 max-h-[85vh] flex flex-col lg:block">
+            class="fixed bottom-0 left-0 right-0 z-[70] bg-white dark:bg-zinc-950 rounded-t-2xl shadow-2xl transform translate-y-full transition-transform duration-300 ease-out lg:translate-y-0 lg:static lg:z-0 lg:shadow-none lg:bg-transparent lg:dark:bg-transparent lg:p-0 lg:col-span-1 lg:row-span-2 lg:h-fit lg:col-start-4 lg:row-start-1 max-h-[85vh] flex flex-col lg:block overscroll-contain">
 
             <!-- Drag Handle (Mobile Only) -->
             <div id="drawer-handle"
@@ -111,6 +111,7 @@
         backdrop.classList.remove('hidden');
         setTimeout(() => backdrop.classList.remove('opacity-0'), 10);
         document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden'; // Lock html
     }
 
     function closeFilterDrawer() {
@@ -119,6 +120,7 @@
         backdrop.classList.add('opacity-0');
         setTimeout(() => backdrop.classList.add('hidden'), 300);
         document.body.style.overflow = '';
+        document.documentElement.style.overflow = ''; // Unlock html
     }
 
     function toggleFilterDrawer() {
@@ -154,7 +156,7 @@
 
                 if (matchesClosing !== isClosingCandidate) {
                     // Crossed threshold
-                    if (navigator.vibrate) navigator.vibrate(20); // Short tick
+                    if (navigator.vibrate) navigator.vibrate(50); // Stronger tick
                     isClosingCandidate = matchesClosing;
                 }
             }
