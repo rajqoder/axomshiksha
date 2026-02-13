@@ -13,8 +13,7 @@
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
           <a href="/worksheets/" class="{{ if eq .RelPermalink " /worksheets/" }}nav-active{{ else }}nav-link{{ end
             }}">Worksheets</a>
-          <a href="/pyqs/" class="{{ if eq .RelPermalink " /pyqs/" }}nav-active{{ else }}nav-link{{ end
-            }}">PYQs</a>
+          <a href="/pyqs/" class="{{ if eq .RelPermalink " /pyqs/" }}nav-active{{ else }}nav-link{{ end }}">PYQs</a>
           <a href="/categories/" class="{{ if eq .RelPermalink " /categories/" }}nav-active{{ else }}nav-link{{ end
             }}">Categories</a>
           <a href="/faq/" class="{{ if eq .RelPermalink " /faq/" }}nav-active{{ else }}nav-link{{ end }}">FAQ</a>
@@ -26,13 +25,8 @@
 
       <!-- Action Buttons -->
       <div class="flex items-center gap-2">
-
-
         <!-- Search Button -->
-        <!-- Search Button -->
-        <button id="open-search"
-          class="rounded-md p-2 text-main mr-2 cursor-pointer"
-          aria-label="Open search">
+        <button id="open-search" class="rounded-md p-2 text-main mr-2 cursor-pointer" aria-label="Open search">
           <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -69,8 +63,11 @@
         </button>
 
         <!-- Hamburger (Mobile Only) -->
-        <button id="menu-open" class="md:hidden rounded-md p-2 text-main cursor-pointer" aria-label="Open menu" aria-expanded="false">
-          ☰
+        <button id="menu-open" class="md:hidden rounded-md p-2 text-main cursor-pointer" aria-label="Open menu"
+          aria-expanded="false">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
       </div>
 
@@ -79,28 +76,28 @@
 </header>
 
 <!-- Overlay -->
-<div id="overlay" class="fixed inset-0 z-40 hidden bg-black/40 md:hidden" tabindex="-1">
+<div id="overlay" class="fixed inset-0 z-[60] hidden bg-black/40 md:hidden" tabindex="-1">
 </div>
 
 <!-- Mobile Sidebar -->
-<aside id="sidebar" class="fixed right-0 top-0 z-50 hidden h-full w-80
+<aside id="sidebar" class="fixed right-0 top-0 z-[70] hidden h-full w-80
               bg-main p-6 shadow-xl md:hidden" role="dialog" aria-modal="true">
 
-  <div class="mb-6 flex items-center justify-between">
-    {{ with resources.Get "logo.png" }}
-    <img src="{{ .Permalink }}" alt="Logo" width="32" height="32" />
-    {{ end }}
-    <button id="menu-close" class="icon-button hover:cursor-pointer text-main" aria-label="Close menu">✕</button>
-  </div>
-
-  <nav class="flex flex-col gap-6 text-base font-medium">
-    <button id="mobile-search-btn" class="mobile-link text-left flex items-center gap-2">
-      <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <div class="mb-6 pb-4 border-b border-main flex items-center justify-between">
+    <button id="mobile-search-logo-btn" class="icon-button hover:cursor-pointer text-main" aria-label="Open search">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
-      Search
     </button>
+    <button id="menu-close" class="icon-button hover:cursor-pointer text-main" aria-label="Close menu">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <nav class="flex flex-col gap-6 text-base font-medium">
     <a href="/worksheets/" class="mobile-link">Worksheets</a>
     <a href="/pyqs/" class="mobile-link">PYQs</a>
     <a href="/categories/" class="mobile-link">Categories</a>

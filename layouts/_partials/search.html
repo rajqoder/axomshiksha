@@ -51,6 +51,18 @@
             });
         }
 
+        const mobileSearchLogoBtn = document.getElementById('mobile-search-logo-btn');
+        if (mobileSearchLogoBtn) {
+            mobileSearchLogoBtn.addEventListener('click', () => {
+                openSearch();
+                const sidebar = document.getElementById('sidebar');
+                if (sidebar && !sidebar.classList.contains('hidden')) {
+                    const menuClose = document.getElementById('menu-close');
+                    if (menuClose) menuClose.click();
+                }
+            });
+        }
+
 
 
         if (searchModal) {
@@ -131,7 +143,7 @@
     .pagefind-ui__search-input {
         color: #353333 !important;
     }
-    
+
     .pagefind-ui__search-clear {
         color: #000000 !important;
     }
@@ -147,7 +159,7 @@
         padding: 0 1rem 1rem 1rem;
     }
 
-    .pagefind-ui__form:before{
+    .pagefind-ui__form:before {
         background-color: #000000 !important;
     }
 </style>
