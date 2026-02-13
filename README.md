@@ -18,6 +18,8 @@ The website is live at: [https://axomshiksha.com/](https://axomshiksha.com/)
 - **Reading Time Estimates**: Estimated reading time for each article
 - **FAQ Section**: Interactive accordion-style FAQ with common questions
 - **Social Media Integration**: Connect with us on various social platforms
+- **PWA Support**: Installable as a native app with offline capabilities
+- **Math Support**: High-quality math rendering using self-hosted MathJax
 
 ## 🛠️ Technology Stack
 
@@ -29,6 +31,7 @@ The website is live at: [https://axomshiksha.com/](https://axomshiksha.com/)
 ### Dependencies
 - `@tailwindcss/cli`: ^4.1.18
 - `tailwindcss`: ^4.1.18
+- `mathjax`: ^4.x (Self-hosted)
 
 ## 📁 Project Structure
 
@@ -83,6 +86,8 @@ The platform covers various educational topics including:
 
 3. **Install dependencies**:
    ```bash
+   bun install
+   # or
    npm install
    ```
 
