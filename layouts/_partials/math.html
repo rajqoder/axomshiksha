@@ -1,17 +1,18 @@
 <script>
     MathJax = {
-        loader: { load: ['[tex]/cancel'] },
+        loader: { load: ['ui/lazy'] },
         tex: {
             displayMath: [['\\[', '\\]'], ['@@', '@@']],  // block
             inlineMath: [['\\(', '\\)'], ['@', '@']],      // inline
-            packages: { '[+]': ['cancel'] }
         },
         chtml: {
             mtextInheritFont: true
         },
         options: {
-            enableMenu: false
+            enableMenu: false,
+            lazyMargin: '200px',
+            lazyAlwaysTypeset: null
         }
     };
 </script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>

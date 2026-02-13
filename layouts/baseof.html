@@ -48,9 +48,21 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  {{ $disableMathGlobal := or (eq .Kind "home") (eq .Kind "taxonomy") (eq .Kind "term") (eq .Section "worksheets") (eq
-  .Section "pyqs") (eq .Section "") }}
-  {{ if or .Params.math (and .Site.Params.math (not $disableMathGlobal)) }}
+
+  {{/* MathJax Logic */}}
+  {{ $shouldLoadMath := false }}
+
+  {{/* Auto-enable for mathematics section */}}
+  {{ if or (eq .Section "mathematics") (in .RelPermalink "/mathematics/") }}
+  {{ $shouldLoadMath = true }}
+  {{ end }}
+
+  {{/* Check Front Matter (overrides previous logic) */}}
+  {{ if isset .Params "math" }}
+  {{ $shouldLoadMath = .Params.math }}
+  {{ end }}
+
+  {{ if $shouldLoadMath }}
   {{ partial "math.html" . }}
   {{ end }}
 </head>
