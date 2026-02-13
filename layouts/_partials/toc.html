@@ -147,8 +147,12 @@
             tocContainer.appendChild(tocList);
 
             // Initial MathJax Typesetting for the TOC
-            if (window.MathJax) {
+            if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
                 MathJax.typesetPromise([tocContainer]).catch(err => console.log('MathJax TOC error:', err));
+            } else if (window.MathJax && window.MathJax.startup && window.MathJax.startup.promise) {
+                window.MathJax.startup.promise.then(() => {
+                    MathJax.typesetPromise([tocContainer]).catch(err => console.log('MathJax TOC error:', err));
+                });
             }
 
             // Setup Observer
