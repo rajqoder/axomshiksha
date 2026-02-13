@@ -13,7 +13,13 @@
   "author": {
     "@type": "Person",
     {{- with .Params.author }}
-    "name": "{{ . }}"
+    {{- $authorHandle := . }}
+    {{- $authorData := index site.Data.writers $authorHandle }}
+    "name": "{{ $authorData.name }}",
+    {{- $authorPage := site.GetPage (printf "/authors/%s" (. | urlize)) }}
+    {{- if $authorPage }}
+    "url": {{ $authorPage.Permalink }}
+    {{- end }}
     {{- end }}
   },
   "publisher": {

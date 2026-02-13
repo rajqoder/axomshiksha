@@ -69,6 +69,8 @@
 <meta property="og:image:width" content="900">
 <meta property="og:image:height" content="450">
 
+{{- $showArticleMeta := and .IsPage (ne .Section "worksheets") (ne .Section "pyqs") (ne .Section "") }}
+{{- if $showArticleMeta }}
 {{- if .Date }}
 <meta property="article:published_time" content="{{ .Date.Format " 2006-01-02" }}">
 {{- end }}
@@ -83,6 +85,7 @@
 {{- with .Params.categories }}
 {{- range . }}
 <meta property="article:section" content="{{ . }}">
+{{- end }}
 {{- end }}
 {{- end }}
 
