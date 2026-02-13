@@ -48,7 +48,9 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  {{ if .Param "math" }}
+  {{ $disableMathGlobal := or (eq .Kind "home") (eq .Kind "taxonomy") (eq .Kind "term") (eq .Section "worksheets") (eq
+  .Section "pyqs") (eq .Section "") }}
+  {{ if or .Params.math (and .Site.Params.math (not $disableMathGlobal)) }}
   {{ partial "math.html" . }}
   {{ end }}
 </head>
