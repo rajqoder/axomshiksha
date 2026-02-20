@@ -46,8 +46,15 @@
                 <div class="card bg-gray-50 dark:bg-[#000] border border-gray-300 dark:border-gray-800">
                     <h3 class="font-bold text-lg mb-4 text-main">More Question Papers</h3>
                     <div class="space-y-3">
-                        {{ $related := where (where .Site.RegularPages "Section" "pyqs") "Permalink" "ne" .Permalink |
-                        first 5 }}
+                        {{ $current := . }}
+                        {{ $pyqs := .CurrentSection.RegularPages }}
+                        {{ $related := slice }}
+                        {{ range $pyqs }}
+                            {{ if and (ne .Permalink $current.Permalink) (eq .Params.board $current.Params.board) (eq (printf "%v" .Params.year) (printf "%v" $current.Params.year)) }}
+                                {{ $related = $related | append . }}
+                            {{ end }}
+                        {{ end }}
+                        {{ $related = first 4 $related }}
                         {{ range $related }}
                         <a href="{{ .RelPermalink }}"
                             class="block p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-all">
@@ -59,9 +66,14 @@
                         {{ end }}
                     </div>
                     <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                        <a href="/pyqs/"
+                        {{ $hasBoardYear := and .Params.board .Params.year }}
+                        {{ $viewAllHref := "/pyqs/" }}
+                        {{ if $hasBoardYear }}
+                            {{ $viewAllHref = printf "/pyqs/?board=%s&year=%v" (.Params.board | urlquery) (.Params.year | urlquery) }}
+                        {{ end }}
+                        <a href="{{ $viewAllHref }}"
                             class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline flex items-center justify-center">
-                            View All PYQs →
+                            View All PYQs ->
                         </a>
                     </div>
                 </div>

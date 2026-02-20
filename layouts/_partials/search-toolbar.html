@@ -32,23 +32,16 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const searchInput = document.getElementById('search-input');
-        const gridItems = document.querySelectorAll('.grid .card');
+        if (!searchInput) return;
 
-        function filterItems() {
-            const searchTerm = searchInput.value.toLowerCase();
+        function syncSearchToController() {
+            const controller = window.__axomContentFilterController;
+            if (!controller || typeof controller.setSearchTerm !== 'function') return;
 
-            gridItems.forEach(item => {
-                const title = item.querySelector('h3').textContent.toLowerCase();
-                const matchesSearch = title.includes(searchTerm);
-
-                if (matchesSearch) {
-                    item.style.display = 'flex'; // Restore flex display for card
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+            controller.setSearchTerm(searchInput.value || '');
         }
 
-        searchInput.addEventListener('input', filterItems);
+        searchInput.addEventListener('input', syncSearchToController);
+        syncSearchToController();
     });
 </script>

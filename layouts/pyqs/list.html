@@ -13,7 +13,7 @@
 
             <!-- PYQs Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {{ $paginator := .Paginate .RegularPages 10 }}
+                {{ $paginator := .Paginate .RegularPages 6 }}
                 {{ range $paginator.Pages }}
                 <a href="{{ .RelPermalink }}" data-class="{{ .Params.class }}" data-subject="{{ .Params.subject }}"
                     class="card !p-4 group flex flex-col h-full hover:shadow-xl hover:shadow-blue-500/5 dark:hover:shadow-blue-900/10 hover:-translate-y-1 border-t-4 border-t-blue-500">
@@ -74,7 +74,7 @@
 
         <!-- Block 2: Sidebar (Filter) - Middle on mobile, Right on Desktop -->
         <aside id="filter-drawer"
-            class="will-change-transform transform-gpu fixed bottom-0 left-0 right-0 z-[70] bg-white dark:bg-zinc-950 rounded-t-2xl shadow-2xl transform translate-y-full transition-transform duration-300 ease-out lg:translate-y-0 lg:static lg:z-0 lg:shadow-none lg:bg-transparent lg:dark:bg-transparent lg:p-0 lg:col-span-1 lg:row-span-2 lg:h-fit lg:col-start-4 lg:row-start-1 max-h-[85vh] flex flex-col lg:block overscroll-contain">
+            class="will-change-transform transform-gpu fixed bottom-0 left-0 right-0 z-[70] bg-white dark:bg-zinc-950 rounded-t-2xl shadow-2xl transform translate-y-full transition-transform duration-300 ease-out lg:translate-y-0 lg:sticky lg:top-24 lg:self-start lg:z-0 lg:shadow-none lg:bg-transparent lg:dark:bg-transparent lg:p-0 lg:col-span-1 lg:row-span-2 lg:h-fit lg:col-start-4 lg:row-start-1 max-h-[85vh] flex flex-col lg:block overscroll-contain">
 
             <!-- Drag Handle (Mobile Only) -->
             <div id="drawer-handle"
@@ -87,7 +87,7 @@
                 <!-- Mobile Header Title (Optional, keeping it clean for now or adding back if needed) -->
                 <h3 class="text-lg font-bold mb-6 lg:hidden">Filters</h3>
 
-                <div class="sticky top-24 space-y-8">
+                <div class="space-y-8">
                     {{ partial "sidebar-filter.html" . }}
                 </div>
             </div>

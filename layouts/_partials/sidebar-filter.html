@@ -111,6 +111,7 @@
             "id": "{{ .RelPermalink }}",
             "course": "{{ if .Params.course }}{{ .Params.course }}{{ else }}{{ .Params.class }}{{ end }}",
             "board": "{{ .Params.board }}",
+            "year": "{{ .Params.year }}",
             "subject": "{{ .Params.subject }}",
             "medium": "{{ .Params.medium }}"
         }
@@ -121,8 +122,11 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const statusRegion = document.getElementById('filter-status');
-        const contentCards = document.querySelectorAll('.card[href]');
+        const contentCards = Array.from(document.querySelectorAll('a.card[href]'));
         const resetButton = document.getElementById('reset-sidebar-filters');
+        const searchInput = document.getElementById('search-input');
+        const urlParams = new URLSearchParams(window.location.search);
+        const paginationNav = document.querySelector('nav.pagination');
 
         // Parse Data
         let pageData = [];
@@ -134,11 +138,26 @@
 
         // State
         const state = {
+            searchTerm: "",
             course: "",
             board: "",
+            year: "",
             subject: "",
             medium: ""
         };
+
+        state.searchTerm = (urlParams.get('q') || "").trim();
+        if (!state.searchTerm && searchInput) {
+            state.searchTerm = (searchInput.value || "").trim();
+        }
+        state.board = (urlParams.get('board') || "").trim();
+        state.course = (urlParams.get('course') || "").trim();
+        state.year = (urlParams.get('year') || "").trim();
+        state.subject = (urlParams.get('subject') || "").trim();
+        state.medium = (urlParams.get('medium') || "").trim();
+        if (searchInput && state.searchTerm) {
+            searchInput.value = state.searchTerm;
+        }
 
         // Helper for Custom Select
         class CustomSelect {
@@ -339,33 +358,93 @@
             }
         }
 
-        // Filter Logic
-        function filterContent() {
-            const { course, board, subject, medium } = state;
+        const metadataById = new Map(pageData.map(item => [item.id, item]));
+        const cardModels = contentCards.map(card => {
+            const titleEl = card.querySelector('h3');
+            return {
+                card,
+                id: card.getAttribute('href'),
+                title: titleEl ? titleEl.textContent.toLowerCase() : ""
+            };
+        });
 
-            const validIds = pageData.filter(item => {
-                return (!course || item.course == course) &&
-                    (!board || item.board == board) &&
-                    (!subject || item.subject == subject) &&
-                    (!medium || item.medium == medium);
-            }).map(item => item.id);
-
+        function applyFilters() {
+            const normalizedSearch = state.searchTerm.toLowerCase();
+            const hasSearch = normalizedSearch.length > 0;
+            const hasFacetFilters = Boolean(state.course || state.board || state.year || state.subject || state.medium);
             let visibleCount = 0;
-            contentCards.forEach(card => {
-                const href = card.getAttribute('href');
-                if (validIds.includes(href)) {
-                    card.style.display = '';
-                    if (window.getComputedStyle(card).display === 'none') card.style.display = 'block';
-                    visibleCount++;
+
+            cardModels.forEach(model => {
+                let matches = true;
+                if (hasSearch) {
+                    // Search-only precedence: ignore sidebar facets while searching.
+                    matches = model.title.includes(normalizedSearch);
                 } else {
-                    card.style.display = 'none';
+                    const meta = metadataById.get(model.id) || {};
+                    matches = (!state.course || meta.course == state.course) &&
+                        (!state.board || meta.board == state.board) &&
+                        (!state.year || String(meta.year) == String(state.year)) &&
+                        (!state.subject || meta.subject == state.subject) &&
+                        (!state.medium || meta.medium == state.medium);
                 }
+
+                model.card.classList.toggle('hidden', !matches);
+                model.card.setAttribute('aria-hidden', matches ? 'false' : 'true');
+                if (matches) visibleCount++;
             });
 
-            // Update Status
             const text = visibleCount === 1 ? '1 item found' : `${visibleCount} items found`;
             statusRegion.textContent = text;
+
+            if (paginationNav) {
+                paginationNav.classList.toggle('hidden', hasSearch || hasFacetFilters);
+            }
         }
+
+        function syncUrlWithState() {
+            const nextParams = new URLSearchParams(window.location.search);
+
+            const setOrDelete = (key, value) => {
+                if (value) nextParams.set(key, value);
+                else nextParams.delete(key);
+            };
+
+            setOrDelete('q', state.searchTerm);
+            setOrDelete('course', state.course);
+            setOrDelete('board', state.board);
+            setOrDelete('year', state.year);
+            setOrDelete('subject', state.subject);
+            setOrDelete('medium', state.medium);
+            nextParams.delete('page');
+
+            const query = nextParams.toString();
+            const nextUrl = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
+            window.history.replaceState({}, "", nextUrl);
+        }
+
+        window.__axomContentFilterController = {
+            setSearchTerm(term) {
+                state.searchTerm = (term || "").trim();
+                syncUrlWithState();
+                applyFilters();
+            },
+            setFacet(name, value) {
+                if (!(name in state)) return;
+                state[name] = value || "";
+                syncUrlWithState();
+                applyFilters();
+            },
+            resetFacets() {
+                state.course = "";
+                state.board = "";
+                state.year = "";
+                state.subject = "";
+                state.medium = "";
+                syncUrlWithState();
+                applyFilters();
+            },
+            apply: applyFilters
+        };
 
         // Initialize Dropdowns
         const uniqueCourses = [...new Set(pageData.map(p => p.course).filter(Boolean))].sort((a, b) => parseInt(a) - parseInt(b) || a.localeCompare(b)); // Better sort for numbers
@@ -374,16 +453,35 @@
         const uniqueMediums = [...new Set(pageData.map(p => p.medium).filter(Boolean))].sort();
 
         const dropdowns = {
-            course: new CustomSelect('course', uniqueCourses, 'All Courses', (val) => { state.course = val; filterContent(); }),
-            board: new CustomSelect('board', uniqueBoards, 'All Boards', (val) => { state.board = val; filterContent(); }),
-            subject: new CustomSelect('subject', uniqueSubjects, 'All Subjects', (val) => { state.subject = val; filterContent(); }),
-            medium: new CustomSelect('medium', uniqueMediums, 'All Mediums', (val) => { state.medium = val; filterContent(); })
+            course: new CustomSelect('course', uniqueCourses, 'All Courses', (val) => { window.__axomContentFilterController.setFacet('course', val); }),
+            board: new CustomSelect('board', uniqueBoards, 'All Boards', (val) => { window.__axomContentFilterController.setFacet('board', val); }),
+            subject: new CustomSelect('subject', uniqueSubjects, 'All Subjects', (val) => { window.__axomContentFilterController.setFacet('subject', val); }),
+            medium: new CustomSelect('medium', uniqueMediums, 'All Mediums', (val) => { window.__axomContentFilterController.setFacet('medium', val); })
         };
+
+        // Apply URL query filters to UI selections if valid.
+        if (state.course && uniqueCourses.includes(state.course)) {
+            dropdowns.course.select(state.course, state.course);
+        }
+        if (state.board && uniqueBoards.includes(state.board)) {
+            dropdowns.board.select(state.board, state.board);
+        }
+        if (state.subject && uniqueSubjects.includes(state.subject)) {
+            dropdowns.subject.select(state.subject, state.subject);
+        }
+        if (state.medium && uniqueMediums.includes(state.medium)) {
+            dropdowns.medium.select(state.medium, state.medium);
+        }
 
         resetButton.addEventListener('click', () => {
             Object.values(dropdowns).forEach(d => d.reset());
+            window.__axomContentFilterController.resetFacets();
+            const resetUrl = `${window.location.pathname}${window.location.hash}`;
+            window.history.replaceState({}, "", resetUrl);
             dropdowns.course.btn.focus();
         });
+
+        applyFilters();
 
     });
 </script>
